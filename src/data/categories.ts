@@ -5,10 +5,19 @@ export interface Category {
 }
 
 export const CATEGORIES: Category[] = [
-  { id: "all", name: "All Videos", description: "Explore the complete video library" },
-  { id: "jaw-tmd", name: "Jaw / TMD", description: "TMJ pain, clicky jaw, lockjaw, and chewing discomfort" },
-  { id: "bruxism", name: "Bruxism", description: "Nighttime teeth grinding, jaw clenching, and masseter tightness" },
-  { id: "trigeminal", name: "Trigeminal Neuralgia", description: "Facial nerve discomfort, sensitivity, and complementary care" },
-  { id: "neck-dizziness", name: "Neck & Dizziness", description: "Cervicogenic dizziness, upper neck stiffness, and balance" },
-  { id: "posture", name: "Posture", description: "Forward head posture, spinal alignment, and ergonomic relief" },
+  {
+    id: "tmj-bruxism",
+    name: "TMJ & Orofacial Therapy",
+    description: "Temporomandibular joint clicking, masseter muscle release, daytime clenching, and bruxism.",
+  },
+  {
+    id: "cervicogenic-neck",
+    name: "Cervicogenic Dizziness & Neck",
+    description: "Upper cervical spine rehabilitation, cervicogenic dizziness, and tension headache protocols.",
+  },
+  {
+    id: "ergonomics",
+    name: "Ergonomics & Desk Workers",
+    description: "Dental ergonomics, posture correction, and micro-break movement routines.",
+  },
 ];
