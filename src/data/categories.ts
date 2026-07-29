@@ -2,27 +2,28 @@ export interface Category {
   id: string;
   name: string;
   description: string;
+  icon?: string;
 }
 
 export const CATEGORIES: Category[] = [
   {
     id: "kaikki",
-    name: "All Videos",
-    description: "All published physical therapy videos and tutorials.",
+    name: "All 68 Videos",
+    description: "All clinical physical therapy videos published by Janne Sakkinen.",
   },
   {
     id: "tmj-bruxism",
-    name: "TMJ & Orofacial Therapy",
-    description: "Temporomandibular joint clicking, masseter muscle release, daytime clenching, and bruxism.",
+    name: "TMJ & Orofacial",
+    description: "TMJ clicking, masseter myofascial release, tooth clenching, and facial pain.",
   },
   {
     id: "ergonomics",
-    name: "Ergonomics & Desk Workers",
-    description: "Dental ergonomics, posture correction, and micro-break movement routines.",
+    name: "Ergonomics",
+    description: "Dental ergonomics, posture correction, and workplace micro-break routines.",
   },
   {
     id: "cervicogenic-neck",
-    name: "Spine & Physical Therapy",
-    description: "Musculoskeletal rehabilitation, inflammation, and spinal biomechanics.",
+    name: "Spine & Joint Care",
+    description: "Back pain, sciatica, shoulder impingement, joint osteoarthritis, and inflammation.",
   },
 ];
