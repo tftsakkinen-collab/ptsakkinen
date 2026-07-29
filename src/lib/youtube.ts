@@ -53,12 +53,14 @@ export async function fetchYouTubeVideos(): Promise<Video[]> {
       const published = publishedMatch ? publishedMatch[1].split("T")[0] : "";
       const thumbnailUrl = thumbnailMatch ? thumbnailMatch[1] : `https://i.ytimg.com/vi/${videoId}/hqdefault.jpg`;
 
+      // FILTER OUT SHORTS (#shorts in title or description or short format)
       const isShort = title.toLowerCase().includes("#shorts") || 
                       description.toLowerCase().includes("#shorts") ||
                       entry.includes("/shorts/");
 
-      if (videoId) {
-        let categoryId = "tmj-bruxism";
+      // STRICTLY INCLUDE ONLY LONG-FORM VIDEOS (exclude Shorts)
+      if (!isShort && videoId) {
+        let categoryId = "ergonomics";
         const lower = (title + " " + description).toLowerCase();
         for (const [key, cat] of Object.entries(CATEGORY_MAP)) {
           if (lower.includes(key)) {
@@ -75,10 +77,10 @@ export async function fetchYouTubeVideos(): Promise<Video[]> {
           title: cleanTitle,
           promiseDescription: description.split("\n")[0].replace(/Free guides.*?https:\/\/\S+/g, "").trim().slice(0, 140) || "Watch evidence-based physical therapy routines.",
           categoryId,
-          duration: isShort ? "01:00" : "07:00",
+          duration: "Full Video",
           publishedAt: published,
           thumbnailUrl,
-          isShort,
+          isShort: false,
         });
       }
     }
