@@ -56,16 +56,16 @@ export default function Footer() {
                 <Link href="/videos" className="hover:text-white transition-colors">Video Library</Link>
               </li>
               <li>
-                <Link href="/free-guide" className="hover:text-white transition-colors">Free Guide</Link>
+                <Link href="/free-guide" className="hover:text-white transition-colors">Free Guides</Link>
               </li>
               <li>
-                <Link href="/workshops" className="hover:text-white transition-colors">Workshops & History</Link>
+                <Link href="/workshops" className="hover:text-white transition-colors">Workshops &amp; History</Link>
               </li>
               <li>
-                <Link href="/contact" className="hover:text-white transition-colors">Contact & Consultations</Link>
+                <Link href="/contact" className="hover:text-white transition-colors">Contact &amp; Consultations</Link>
               </li>
               <li>
-                <Link href="/legal" className="hover:text-white transition-colors">Legal & Medical Disclaimer</Link>
+                <Link href="/legal" className="hover:text-white transition-colors">Legal &amp; Medical Disclaimer</Link>
               </li>
             </ul>
           </div>
