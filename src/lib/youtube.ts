@@ -1,67 +1,90 @@
 import { FALLBACK_VIDEOS, Video } from "@/data/videos";
 import { SITE_CONFIG } from "@/data/config";
 
+// Category assignment mapping by keyword / video title match
 const CATEGORY_MAP: Record<string, string> = {
-  tmj: "jaw-tmd",
-  jaw: "jaw-tmd",
-  clenching: "bruxism",
-  bruxism: "bruxism",
-  teeth: "bruxism",
-  trigeminal: "trigeminal",
-  neuralgia: "trigeminal",
-  dizziness: "neck-dizziness",
-  neck: "neck-dizziness",
-  posture: "posture",
+  tmj: "tmj-bruxism",
+  jaw: "tmj-bruxism",
+  masseter: "tmj-bruxism",
+  bruxism: "tmj-bruxism",
+  clenching: "tmj-bruxism",
+  ergonomics: "ergonomics",
+  posture: "ergonomics",
+  desk: "ergonomics",
+  neck: "cervicogenic-neck",
+  headache: "cervicogenic-neck",
 };
 
 export async function fetchYouTubeVideos(): Promise<Video[]> {
-  const apiKey = process.env.YOUTUBE_API_KEY;
-  const channelId = SITE_CONFIG.youtubeChannelId;
-
-  if (!apiKey || channelId.includes("PLACEHOLDER")) {
-    return FALLBACK_VIDEOS;
-  }
+  const channelId = SITE_CONFIG.youtubeChannelId || "UCz0XuTDgzskIDlzSrZFxsBg";
 
   try {
+    // Fetch real-time YouTube channel RSS feed XML (revalidated automatically)
     const res = await fetch(
-      `https://www.googleapis.com/youtube/v3/search?key=${apiKey}&channelId=${channelId}&part=snippet,id&order=date&maxResults=20&type=video`,
-      { next: { revalidate: 3600 } }
+      `https://www.youtube.com/feeds/videos.xml?channel_id=${channelId}`,
+      { next: { revalidate: 3600 } } // Auto-syncs new videos every hour
     );
 
     if (!res.ok) {
       return FALLBACK_VIDEOS;
     }
 
-    const data = await res.json();
-    if (!data.items || data.items.length === 0) {
+    const xmlText = await res.text();
+    const entries = xmlText.split("<entry>");
+    if (entries.length <= 1) {
       return FALLBACK_VIDEOS;
     }
 
-    return data.items.map((item: any, index: number) => {
-      const title = item.snippet.title || "";
-      const description = item.snippet.description || "";
-      
-      let categoryId = "jaw-tmd";
-      const lower = (title + " " + description).toLowerCase();
-      for (const [key, cat] of Object.entries(CATEGORY_MAP)) {
-        if (lower.includes(key)) {
-          categoryId = cat;
-          break;
-        }
-      }
+    const fetchedVideos: Video[] = [];
 
-      return {
-        id: item.id.videoId || `en-yt-video-${index}`,
-        youtubeId: item.id.videoId || "dQw4w9WgXcQ",
-        title: title,
-        promiseDescription: description.slice(0, 120) || "Watch clinical rehabilitation exercises for jaw and neck pain.",
-        categoryId: categoryId,
-        duration: "14:00",
-        publishedAt: item.snippet.publishedAt?.split("T")[0] || "2024-01-01",
-      };
-    });
+    // Parse each XML entry
+    for (let i = 1; i < entries.length; i++) {
+      const entry = entries[i];
+      
+      const videoIdMatch = entry.match(/<yt:videoId>(.*?)<\/yt:videoId>/);
+      const titleMatch = entry.match(/<title>(.*?)<\/title>/);
+      const descriptionMatch = entry.match(/<media:description>([\s\S]*?)<\/media:description>/);
+      const publishedMatch = entry.match(/<published>(.*?)<\/published>/);
+      const thumbnailMatch = entry.match(/<media:thumbnail url="(.*?)"/);
+
+      const videoId = videoIdMatch ? videoIdMatch[1].trim() : "";
+      const title = titleMatch ? titleMatch[1].replace(/<!\[CDATA\[([\s\S]*?)\]\]>/g, '$1').trim() : "";
+      const description = descriptionMatch ? descriptionMatch[1].replace(/<!\[CDATA\[([\s\S]*?)\]\]>/g, '$1').trim() : "";
+      const published = publishedMatch ? publishedMatch[1].split("T")[0] : "";
+      const thumbnailUrl = thumbnailMatch ? thumbnailMatch[1] : `https://i.ytimg.com/vi/${videoId}/hqdefault.jpg`;
+
+      // FILTER OUT SHORTS (#shorts in title or description or short format)
+      const isShort = title.toLowerCase().includes("#shorts") || 
+                      description.toLowerCase().includes("#shorts") ||
+                      entry.includes("/shorts/");
+
+      if (!isShort && videoId) {
+        let categoryId = "tmj-bruxism";
+        const lower = (title + " " + description).toLowerCase();
+        for (const [key, cat] of Object.entries(CATEGORY_MAP)) {
+          if (lower.includes(key)) {
+            categoryId = cat;
+            break;
+          }
+        }
+
+        fetchedVideos.push({
+          id: videoId,
+          youtubeId: videoId,
+          title: title.replace(/#\w+/g, "").trim(),
+          promiseDescription: description.split("\n")[0].replace(/Free guides.*?https:\/\/\S+/g, "").trim().slice(0, 140) || "Watch evidence-based physical therapy routines.",
+          categoryId,
+          duration: "Full Video",
+          publishedAt: published,
+          thumbnailUrl,
+          isShort: false,
+        });
+      }
+    }
+
+    return fetchedVideos.length > 0 ? fetchedVideos : FALLBACK_VIDEOS;
   } catch (error) {
-    console.error("Failed to fetch YouTube API videos:", error);
+    console.error("YouTube RSS sync error, using fallback videos:", error);
     return FALLBACK_VIDEOS;
   }
 }
