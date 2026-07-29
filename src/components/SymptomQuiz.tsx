@@ -1,9 +1,8 @@
 "use client";
 
 import { useState } from "react";
-import { Sparkles, ArrowRight, CheckCircle2, RefreshCw, GraduationCap } from "lucide-react";
+import { Sparkles, ArrowRight, CheckCircle2, RefreshCw, Play } from "lucide-react";
 import Link from "next/link";
-import { SITE_CONFIG } from "@/data/config";
 
 export default function SymptomQuiz() {
   const [step, setStep] = useState(1);
@@ -24,6 +23,7 @@ export default function SymptomQuiz() {
   const handleReset = () => {
     setStep(1);
     setSymptom(null);
+    setSymptom(null);
     setDuration(null);
     setSubmitted(false);
   };
@@ -37,14 +37,14 @@ export default function SymptomQuiz() {
           <div className="text-center space-y-3">
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#00AEEF]/20 border border-[#00AEEF]/40 text-[#00AEEF] text-xs font-bold uppercase tracking-wider">
               <Sparkles className="w-3.5 h-3.5" />
-              <span>1-Minute Clinical Self-Assessment</span>
+              <span>1-Minute Interactive Symptom Assessment</span>
             </div>
 
             <h2 className="text-3xl sm:text-4xl font-display text-white tracking-wide">
-              EVALUATE YOUR SYMPTOMS & <span className="text-[#00AEEF]">FIND YOUR PROTOCOL</span>
+              ASSESS YOUR SYMPTOMS &amp; <span className="text-[#00AEEF]">FIND REHABILITATION GUIDES</span>
             </h2>
             <p className="text-gray-300 text-sm max-w-xl mx-auto">
-              Answer 2 quick questions to get an OMT physical therapist's recommended pathway.
+              Answer 2 quick questions to get an OMT Physical Therapist recommended guidance path.
             </p>
           </div>
 
@@ -52,14 +52,14 @@ export default function SymptomQuiz() {
           {!submitted && step === 1 && (
             <div className="space-y-4">
               <h3 className="text-lg font-bold text-white text-center">
-                1. Which area is causing the most discomfort?
+                1. Which area is affecting you most?
               </h3>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 {[
-                  { id: "jaw-clenching", label: "Daytime Jaw Clenching & Masseter Tension" },
-                  { id: "tmj-clicking", label: "TMJ Pain, Clicking & Popping" },
-                  { id: "neck-dizziness", label: "Cervicogenic Dizziness & Upper Neck Stiffness" },
-                  { id: "trigeminal-nerve", label: "Facial Nerve Sensitivity & Irritation" },
+                  { id: "tmj-jaw", label: "Jaw Clenching, Bruxism & TMJ Clicking (TMD)" },
+                  { id: "neck-shoulder", label: "Neck & Shoulder Tension / Tension Headaches" },
+                  { id: "low-back", label: "Low Back Pain & Sciatic Nerve Discomfort" },
+                  { id: "knee-hip", label: "Knee or Hip Stiffness / Osteoarthritis" },
                 ].map((item) => (
                   <button
                     key={item.id}
@@ -82,9 +82,9 @@ export default function SymptomQuiz() {
               </h3>
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
                 {[
-                  { id: "acute", label: "Under 2 weeks (Acute)" },
-                  { id: "few-months", label: "1 – 6 months" },
-                  { id: "chronic", label: "Over 6 months (Chronic)" },
+                  { id: "acute", label: "Less than 2 weeks (Acute)" },
+                  { id: "subacute", label: "1 to 6 months" },
+                  { id: "chronic", label: "Over 6 months (Persistent)" },
                 ].map((item) => (
                   <button
                     key={item.id}
@@ -103,34 +103,32 @@ export default function SymptomQuiz() {
             <div className="space-y-6 text-center animate-fadeIn">
               <div className="inline-flex items-center gap-2 text-[#00AEEF] font-bold text-sm">
                 <CheckCircle2 className="w-5 h-5 text-[#00AEEF]" />
-                <span>Self-assessment complete! Your protocol recommendation is ready.</span>
+                <span>Assessment Complete! Recommended path ready.</span>
               </div>
 
               <div className="p-6 rounded-2xl bg-[#000a18] border border-[#00AEEF]/50 text-left space-y-4">
                 <h4 className="text-xl font-bold text-white">
-                  Recommended Protocol: <span className="text-[#00AEEF]">{symptom}</span>
+                  Recommended Path: <span className="text-[#00AEEF]">{symptom}</span>
                 </h4>
                 <p className="text-sm text-gray-300 leading-relaxed">
-                  Based on your selection ({symptom}, duration: {duration}), we recommend starting with a targeted <strong>Clinical PDF Guide</strong> and exploring the structured digital program.
+                  Based on your selected focus ({symptom}, duration: {duration}), we recommend subscribing to access the free PDF guides and watching the exercise videos.
                 </p>
 
                 <div className="flex flex-col sm:flex-row items-center gap-4 pt-2">
-                  <a
-                    href={SITE_CONFIG.beaconsUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
+                  <Link
+                    href="/free-guide"
                     className="w-full sm:w-auto px-6 py-3 rounded-xl bg-[#00AEEF] text-black font-bold text-sm hover:bg-[#33C2F5] transition-all shadow-glow flex items-center justify-center gap-2"
                   >
-                    <span>Download Clinical PDF (Beacons)</span>
+                    <span>Download Free PDF Guides</span>
                     <ArrowRight className="w-4 h-4" />
-                  </a>
+                  </Link>
 
                   <Link
-                    href="/programs"
+                    href="/videos"
                     className="w-full sm:w-auto px-6 py-3 rounded-xl bg-[#0C66B4]/30 border border-[#0C66B4] text-[#00AEEF] font-bold text-sm hover:bg-[#00AEEF] hover:text-black transition-all flex items-center justify-center gap-2"
                   >
-                    <GraduationCap className="w-4 h-4" />
-                    <span>See Digital Programs</span>
+                    <Play className="w-4 h-4" />
+                    <span>Watch Free Videos</span>
                   </Link>
                 </div>
               </div>
@@ -140,7 +138,7 @@ export default function SymptomQuiz() {
                 className="inline-flex items-center gap-2 text-xs text-gray-400 hover:text-white transition-colors"
               >
                 <RefreshCw className="w-3.5 h-3.5" />
-                <span>Retake Self-Assessment</span>
+                <span>Retake assessment</span>
               </button>
             </div>
           )}
