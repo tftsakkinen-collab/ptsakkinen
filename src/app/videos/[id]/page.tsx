@@ -1,9 +1,10 @@
-import { FALLBACK_VIDEOS } from "@/data/videos";
+import { FALLBACK_VIDEOS, Video } from "@/data/videos";
 import { CATEGORIES } from "@/data/categories";
 import Link from "next/link";
-import { ArrowLeft, Download, ShieldCheck, CheckCircle2, Sparkles } from "lucide-react";
+import { ArrowLeft, Download, ShieldCheck, Sparkles, Globe, Play, FileText, ChevronRight } from "lucide-react";
 import { notFound } from "next/navigation";
 import Script from "next/script";
+import VideoCard from "@/components/VideoCard";
 
 export async function generateStaticParams() {
   return FALLBACK_VIDEOS.map((v) => ({
@@ -20,6 +21,11 @@ export default async function SingleVideoPage(props: { params: Promise<{ id: str
   }
 
   const category = CATEGORIES.find((c) => c.id === video.categoryId);
+
+  // Find related videos in the same category (excluding current video)
+  const relatedVideos = FALLBACK_VIDEOS.filter(
+    (v) => v.categoryId === video.categoryId && v.id !== video.id
+  ).slice(0, 3);
 
   // JSON-LD Schemas for AEO & SEO (Article, VideoObject, FAQPage)
   const jsonLd = [
@@ -53,38 +59,8 @@ export default async function SingleVideoPage(props: { params: Promise<{ id: str
       "description": video.promiseDescription,
       "thumbnailUrl": video.thumbnailUrl || `https://i2.ytimg.com/vi/${video.youtubeId}/hqdefault.jpg`,
       "uploadDate": video.publishedAt,
-      "duration": "PT07M01S",
-      "embedUrl": `https://www.youtube.com/embed/${video.youtubeId}`
-    },
-    {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "How long does it take for dietary changes to reduce joint pain?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Initial improvements in energy levels and reduced morning stiffness are typically noted within 2 to 4 weeks of consistent anti-inflammatory nutrition."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Does an anti-inflammatory diet replace physical therapy?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "No. Nutrition does not replace targeted mechanical exercise or clinical physical therapy assessment, but it provides the essential biological environment for tissues to repair."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Why are EPA and DHA omega-3s critical for inflammation?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "The human body requires EPA and DHA to produce resolvins and protectins—molecules that actively terminate the inflammatory response."
-          }
-        }
-      ]
+      "embedUrl": `https://www.youtube.com/embed/${video.youtubeId}`,
+      "transcript": video.transcript || video.promiseDescription
     }
   ];
 
@@ -99,19 +75,34 @@ export default async function SingleVideoPage(props: { params: Promise<{ id: str
 
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-10">
         
-        {/* Back navigation */}
-        <Link
-          href="/videos"
-          className="inline-flex items-center gap-2 text-sm text-[#00AEEF] hover:underline font-medium"
-        >
-          <ArrowLeft className="w-4 h-4" />
-          <span>Back to Video Library</span>
-        </Link>
+        {/* Top Navigation & Language Switcher */}
+        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+          <Link
+            href="/videos"
+            className="inline-flex items-center gap-2 text-sm text-[#00AEEF] hover:underline font-medium"
+          >
+            <ArrowLeft className="w-4 h-4" />
+            <span>Back to Video Library</span>
+          </Link>
+
+          {/* Sister Site Language Link if paired video exists */}
+          {video.pairVideoId && (
+            <a
+              href={`https://www.ftsakkinen.com/videot/${video.pairVideoId}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-xl bg-[#000d21] border border-[#00AEEF]/40 text-[#00AEEF] text-xs font-semibold hover:bg-[#00AEEF] hover:text-black transition-all"
+            >
+              <Globe className="w-3.5 h-3.5" />
+              <span>Suomeksi → ftsakkinen.com</span>
+            </a>
+          )}
+        </div>
 
         {/* Article Header */}
         <div className="space-y-4">
           <div className="inline-block px-3 py-1 rounded-full bg-[#014489]/40 border border-[#00AEEF]/50 text-[#00AEEF] text-xs font-semibold uppercase tracking-wider">
-            {category?.name || "Musculoskeletal Therapy"}
+            {category?.name || "Physical Therapy"}
           </div>
 
           <h1 className="text-3xl sm:text-5xl font-display text-white tracking-wide leading-tight">
@@ -119,12 +110,12 @@ export default async function SingleVideoPage(props: { params: Promise<{ id: str
           </h1>
 
           {/* Author E-E-A-T Badge */}
-          <div className="flex items-center gap-3 pt-2 text-xs text-gray-400 border-b border-[#0C66B4]/30 pb-4">
+          <div className="flex flex-wrap items-center gap-3 pt-2 text-xs text-gray-400 border-b border-[#0C66B4]/30 pb-4">
             <span className="font-semibold text-white">Written by Janne Sakkinen</span>
             <span>•</span>
             <span>OMT Physical Therapist, University Instructor</span>
             <span>•</span>
-            <span>Published {video.publishedAt}</span>
+            <span>Updated {video.publishedAt}</span>
           </div>
         </div>
 
@@ -132,157 +123,81 @@ export default async function SingleVideoPage(props: { params: Promise<{ id: str
         <div className="p-6 rounded-2xl bg-gradient-to-r from-[#000d21] via-[#014489]/30 to-[#000d21] border border-[#00AEEF]/50 shadow-panel space-y-3">
           <div className="flex items-center gap-2 text-[#00AEEF] text-xs font-bold uppercase tracking-wider">
             <Sparkles className="w-4 h-4" />
-            <span>AEO Direct Answer / Executive Summary</span>
+            <span>AEO Direct Answer / Key Summary</span>
           </div>
           <p className="text-base text-gray-200 leading-relaxed font-medium">
-            Persistent tendon, joint, or spinal pain that fails to heal is often perpetuated by low-grade systemic chronic inflammation. This silent inflammation heightens pain sensitivity and delays tissue repair. Incorporating fatty fish (omega-3s), colorful vegetables, and extra virgin olive oil while eliminating ultra-processed foods effectively calms systemic inflammation.
+            {video.promiseDescription}
           </p>
         </div>
 
         {/* Responsive YouTube Embed Container */}
-        <div className="relative aspect-video rounded-2xl bg-black border border-[#0C66B4] overflow-hidden shadow-glow">
-          <iframe
-            src={`https://www.youtube.com/embed/${video.youtubeId}?autoplay=0`}
-            title={video.title}
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen
-            className="w-full h-full"
-          />
+        <div className="space-y-3">
+          <div className="flex items-center gap-2 text-xs font-bold text-white uppercase tracking-wider">
+            <Play className="w-4 h-4 text-[#00AEEF]" />
+            <span>Watch Clinical Video</span>
+          </div>
+          <div className="relative aspect-video rounded-2xl bg-black border border-[#0C66B4] overflow-hidden shadow-glow">
+            <iframe
+              src={`https://www.youtube.com/embed/${video.youtubeId}?autoplay=0`}
+              title={video.title}
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+              className="w-full h-full"
+            />
+          </div>
         </div>
 
-        {/* Main Article Body */}
-        <article className="space-y-8 text-base leading-relaxed text-gray-300">
-          
-          <section className="space-y-4">
-            <h2 className="text-2xl sm:text-3xl font-display text-white">
-              What Is Low-Grade Chronic Inflammation?
-            </h2>
-            <p className="font-semibold text-gray-200">
-              Low-grade chronic inflammation is a persistent, low-level activation of the immune system that does not cause acute swelling but keeps body tissues hypersensitive.
-            </p>
-            <p>
-              Unlike acute inflammation (such as an ankle sprain with immediate redness and repair completing in a week), chronic inflammation operates like a low-burning stove in the background. It does not show up clearly in a mirror, but blood tests often reveal elevated systemic inflammatory markers.
-            </p>
-          </section>
-
-          <section className="space-y-4">
-            <h2 className="text-2xl sm:text-3xl font-display text-white">
-              Why Does Systemic Inflammation Delay Tissue Healing?
-            </h2>
-            <p className="font-semibold text-gray-200">
-              Persistent inflammation sensitizes the central nervous system and impairs the ability of tendons, joints, and muscles to repair themselves after rehabilitation exercise.
-            </p>
-            <p>
-              When your body stays in a constant state of low-grade inflammation, normal mechanical stress on joints and tendons triggers a higher pain signal, and recovery slows down noticeably.
-            </p>
-            
-            <div className="p-4 rounded-xl bg-[#000d21] border border-[#0C66B4]/50 space-y-2">
-              <h3 className="font-bold text-white text-sm flex items-center gap-2">
-                <ShieldCheck className="w-4 h-4 text-[#00AEEF]" />
-                Clinical Insight:
-              </h3>
-              <p className="text-xs text-gray-300">
-                You cannot exercise away chronic inflammation if your diet feeds it every day. Nutrition creates the biological foundation for exercise loading to succeed.
-              </p>
-            </div>
-          </section>
-
-          <section className="space-y-4">
-            <h2 className="text-2xl sm:text-3xl font-display text-white">
-              3 Science-Backed Dietary Changes to Lower Pain
-            </h2>
-
-            <div className="space-y-4">
-              <div className="p-5 rounded-xl bg-[#000d21] border border-[#0C66B4]/40 space-y-2">
-                <h3 className="text-lg font-bold text-[#00AEEF] flex items-center gap-2">
-                  <CheckCircle2 className="w-5 h-5 text-[#00AEEF]" />
-                  1. Eat Fatty Fish at Least Twice a Week
-                </h3>
-                <p className="text-sm">
-                  Salmon, mackerel, and sardines are rich sources of EPA and DHA omega-3 fatty acids that actively signal inflammation to shut down.
-                </p>
-              </div>
-
-              <div className="p-5 rounded-xl bg-[#000d21] border border-[#0C66B4]/40 space-y-2">
-                <h3 className="text-lg font-bold text-[#00AEEF] flex items-center gap-2">
-                  <CheckCircle2 className="w-5 h-5 text-[#00AEEF]" />
-                  2. Add More Colors to Your Plate
-                </h3>
-                <p className="text-sm">
-                  The pigment in every vegetable, berry, and fruit supplies your body with diverse biochemical tools to downregulate inflammation.
-                </p>
-              </div>
-
-              <div className="p-5 rounded-xl bg-[#000d21] border border-[#0C66B4]/40 space-y-2">
-                <h3 className="text-lg font-bold text-[#00AEEF] flex items-center gap-2">
-                  <CheckCircle2 className="w-5 h-5 text-[#00AEEF]" />
-                  3. Switch Your Primary Cooking Fat to Extra Virgin Olive Oil
-                </h3>
-                <p className="text-sm">
-                  Extra virgin olive oil contains oleocanthal, which inhibits inflammatory enzymes along the exact same pathway as ibuprofen.
-                </p>
-              </div>
-            </div>
-          </section>
-
-          {/* FAQ Section */}
-          <section className="space-y-6 pt-6 border-t border-[#0C66B4]/30">
-            <h2 className="text-2xl sm:text-3xl font-display text-white">
-              Frequently Asked Questions (FAQ)
-            </h2>
-
-            <div className="space-y-4">
-              <div className="p-5 rounded-xl bg-[#000d21] border border-[#0C66B4]/30 space-y-2">
-                <h3 className="font-bold text-white text-base">
-                  How long does it take for dietary changes to reduce joint pain?
-                </h3>
-                <p className="text-sm text-gray-300">
-                  Initial improvements in energy levels and reduced morning stiffness are typically noted within 2 to 4 weeks of consistent anti-inflammatory nutrition.
-                </p>
-              </div>
-
-              <div className="p-5 rounded-xl bg-[#000d21] border border-[#0C66B4]/30 space-y-2">
-                <h3 className="font-bold text-white text-base">
-                  Does an anti-inflammatory diet replace physical therapy?
-                </h3>
-                <p className="text-sm text-gray-300">
-                  No. Nutrition does not replace targeted mechanical exercise or clinical physical therapy assessment, but it provides the essential biological environment for tissues to repair.
-                </p>
-              </div>
-
-              <div className="p-5 rounded-xl bg-[#000d21] border border-[#0C66B4]/30 space-y-2">
-                <h3 className="font-bold text-white text-base">
-                  Why are EPA and DHA omega-3s critical for inflammation?
-                </h3>
-                <p className="text-sm text-gray-300">
-                  The human body requires EPA and DHA to produce resolvins and protectins—molecules that actively terminate the inflammatory response.
-                </p>
-              </div>
-            </div>
-          </section>
-
-          {/* Clean In-House Google Drive CTA Banner */}
-          <div className="p-8 rounded-3xl bg-gradient-to-r from-[#000d21] via-[#014489]/40 to-[#000d21] border border-[#00AEEF]/50 shadow-glow space-y-4 text-center">
-            <div className="w-12 h-12 rounded-xl bg-[#00AEEF]/20 text-[#00AEEF] flex items-center justify-center mx-auto">
-              <Download className="w-6 h-6" />
-            </div>
-            <h3 className="text-2xl font-bold text-white">Download Free PDF Physical Therapy Guides</h3>
-            <p className="text-sm text-gray-300 max-w-lg mx-auto">
-              Get instant access to Janne Sakkinen's official Google Drive folder with exercise guides and rehabilitation protocols.
-            </p>
-            <Link
-              href="/free-guide"
-              className="inline-flex items-center gap-2 px-8 py-3.5 rounded-xl bg-[#00AEEF] text-black font-bold text-sm hover:bg-[#33C2F5] transition-all shadow-glow"
-            >
-              <span>Get Free PDF Guides (Google Drive)</span>
-            </Link>
+        {/* Full Text / Video Transcript Section for AI Crawlers and Humans */}
+        <article className="space-y-6 text-base leading-relaxed text-gray-300 pt-4 border-t border-[#0C66B4]/30">
+          <div className="flex items-center gap-2 text-white font-display text-2xl">
+            <FileText className="w-6 h-6 text-[#00AEEF]" />
+            <h2>Full Video Transcript &amp; Clinical Text</h2>
           </div>
 
-          <p className="text-xs text-gray-400 italic pt-4">
-            Medical Disclaimer: The information presented in this article is strictly for educational purposes and does not replace a clinical physical therapy evaluation, medical diagnosis, or individualized treatment plan.
-          </p>
-
+          <div className="p-6 sm:p-8 rounded-2xl bg-[#000d21] border border-[#0C66B4]/40 whitespace-pre-line text-sm leading-relaxed font-sans text-gray-200">
+            {video.transcript || video.promiseDescription}
+          </div>
         </article>
+
+        {/* Cross-linking: Related Videos in Same Category */}
+        {relatedVideos.length > 0 && (
+          <div className="space-y-6 pt-8 border-t border-[#0C66B4]/30">
+            <div className="flex items-center justify-between">
+              <h3 className="text-xl font-bold text-white">Related Physical Therapy Videos &amp; Articles</h3>
+              <Link href="/videos" className="text-xs text-[#00AEEF] hover:underline flex items-center gap-1">
+                <span>View all</span>
+                <ChevronRight className="w-3.5 h-3.5" />
+              </Link>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              {relatedVideos.map((rel) => (
+                <VideoCard key={rel.id} video={rel} />
+              ))}
+            </div>
+          </div>
+        )}
+
+        {/* Lead Magnet CTA Card */}
+        <div className="p-8 rounded-3xl bg-gradient-to-r from-[#000d21] via-[#014489]/40 to-[#000d21] border border-[#00AEEF]/50 shadow-glow space-y-4 text-center">
+          <div className="w-12 h-12 rounded-xl bg-[#00AEEF]/20 text-[#00AEEF] flex items-center justify-center mx-auto">
+            <Download className="w-6 h-6" />
+          </div>
+          <h3 className="text-2xl font-bold text-white">Download Free Exercise PDF Guides</h3>
+          <p className="text-sm text-gray-300 max-w-lg mx-auto">
+            Get instant access to Janne Sakkinen's official Google Drive folder with exercise guides and rehabilitation protocols.
+          </p>
+          <Link
+            href="/free-guide"
+            className="inline-flex items-center gap-2 px-8 py-3.5 rounded-xl bg-[#00AEEF] text-black font-bold text-sm hover:bg-[#33C2F5] transition-all shadow-glow"
+          >
+            <span>Get Free PDF Guides (Google Drive)</span>
+          </Link>
+        </div>
+
+        <p className="text-xs text-gray-400 italic pt-2">
+          Medical Disclaimer: The information presented in this article is strictly for educational purposes and does not replace a clinical physical therapy evaluation, medical diagnosis, or individualized treatment plan.
+        </p>
 
       </div>
     </div>
