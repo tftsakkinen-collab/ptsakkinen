@@ -5,21 +5,21 @@ import { GraduationCap, Award, Briefcase, BookOpen, CheckCircle2, ShieldCheck, F
 export default function TrainingsSection() {
   const mainTrainings = [
     {
-      title: "TMJ Disorders & Orofacial Physical Therapy",
+      title: "Temporomandibular Joint & TMD Physical Therapy",
       target: "Dental Students & Physical Therapists",
-      description: "Clinical physical therapy workshops for TMJ clicking, bruxism, and masseter tension. University instructor at the University of Oulu since 2017.",
+      description: "University lecturer at the Institute of Dentistry, University of Oulu since 2017. Specializing in TMJ dysfunction, jaw clenching, and orofacial pain.",
       icon: GraduationCap,
     },
     {
-      title: "TMJ Therapy Specialty Workshops",
-      target: "Northern Ostrobothnia Summer University",
-      description: "Continuing education provider for physical therapists and healthcare professionals in advanced TMJ assessment and treatment.",
+      title: "TMJ Physical Therapy Seminars",
+      target: "Northern Ostrobothnia Summer University & Healthcare Bodies",
+      description: "Instructing specialized post-graduate seminars for physical therapists and healthcare practitioners on TMJ disorders (2024–).",
       icon: BookOpen,
     },
     {
-      title: "Cervicogenic Dizziness & Upper Neck",
-      target: "Physical Therapy Professionals",
-      description: "Pathomechanics of the upper cervical spine, differential diagnosis of neck headaches, and step-by-step balance rehabilitation.",
+      title: "Musculoskeletal OMT Physical Therapy",
+      target: "Physical Therapy Practitioners",
+      description: "Advanced clinical examination and manual therapy techniques for spinal disorders, neck pain, and joint biomechanics.",
       icon: Award,
     },
   ];
@@ -28,18 +28,18 @@ export default function TrainingsSection() {
     <section className="py-20 bg-[#000d21] border-b border-[#0C66B4]/30 relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-20">
         
-        {/* Section 1: Workshops & Lectures */}
+        {/* Section 1: What Workshops & Lectures Janne Teaches */}
         <div className="space-y-12">
           <div className="text-center max-w-3xl mx-auto space-y-4">
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#0C66B4]/20 border border-[#00AEEF]/40 text-[#00AEEF] text-xs font-bold uppercase tracking-wider">
               <GraduationCap className="w-4 h-4" />
-              <span>Lectures & Professional Workshops</span>
+              <span>Teaching &amp; Keynotes</span>
             </div>
             <h2 className="text-3xl sm:text-5xl font-display text-white tracking-wide">
-              WORKSHOPS & <span className="text-[#00AEEF]">UNIVERSITY TEACHING</span>
+              WORKSHOPS &amp; <span className="text-[#00AEEF]">LECTURES</span>
             </h2>
             <p className="text-gray-300 text-base">
-              Instructor for dental students at the University of Oulu and continuing education provider for physical therapists.
+              Educating dental students at the University of Oulu and instructing post-graduate physical therapy courses on TMJ rehabilitation and dental ergonomics.
             </p>
           </div>
 
@@ -76,10 +76,10 @@ export default function TrainingsSection() {
           <div className="text-center max-w-3xl mx-auto space-y-4">
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#0C66B4]/20 border border-[#00AEEF]/40 text-[#00AEEF] text-xs font-bold uppercase tracking-wider">
               <Briefcase className="w-4 h-4" />
-              <span>Curriculum Vitae & Clinical Experience</span>
+              <span>Curriculum Vitae &amp; Experience</span>
             </div>
             <h2 className="text-3xl sm:text-5xl font-display text-white tracking-wide">
-              CLINICAL CAREER & <span className="text-[#00AEEF]">DEGREES</span>
+              CAREER TIMELINE &amp; <span className="text-[#00AEEF]">DEGREES</span>
             </h2>
           </div>
 
@@ -89,7 +89,7 @@ export default function TrainingsSection() {
             <div className="lg:col-span-6 space-y-6">
               <h3 className="text-2xl font-bold text-white flex items-center gap-2">
                 <GraduationCap className="w-6 h-6 text-[#00AEEF]" />
-                Degrees & OMT Specialization
+                Degrees &amp; Specializations
               </h3>
 
               <div className="space-y-4">
@@ -116,7 +116,7 @@ export default function TrainingsSection() {
             <div className="lg:col-span-6 space-y-6">
               <h3 className="text-2xl font-bold text-white flex items-center gap-2">
                 <Briefcase className="w-6 h-6 text-[#00AEEF]" />
-                Clinical Career History
+                Clinical Work History
               </h3>
 
               <div className="space-y-3">
@@ -144,13 +144,13 @@ export default function TrainingsSection() {
             <div>
               <div className="inline-flex items-center gap-2 text-[#00AEEF] text-sm font-semibold uppercase tracking-widest">
                 <FileCheck className="w-4 h-4" />
-                <span>Specialized Certifications</span>
+                <span>Certifications &amp; Courses</span>
               </div>
               <h3 className="text-2xl sm:text-3xl font-display text-white tracking-wide">
-                POSTGRADUATE COURSES <span className="text-[#00AEEF]">(2011–2026)</span>
+                CONTINUING EDUCATION <span className="text-[#00AEEF]">(2011–2026)</span>
               </h3>
             </div>
-            <span className="text-xs font-mono text-gray-400">20+ Advanced Specialty Certifications</span>
+            <span className="text-xs font-mono text-gray-400">20+ Advanced Post-Graduate Modules</span>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
