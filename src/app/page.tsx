@@ -277,8 +277,8 @@ export default async function HomePage() {
       <section className="py-16 bg-[#000d21] border-b border-[#0C66B4]/30">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <EmailLeadForm
-            title="DOWNLOAD FREE TMJ & JAW SELF-CARE GUIDE"
-            subtitle="Enter your email to receive Janne Sakkinen's clinical 5-page PDF guide (Jaw pain, clicking & bruxism management)."
+            title="JOIN THE NEWSLETTER & ACCESS FREE EXTRA GUIDES"
+            subtitle="Enter your first name and email address below. You'll get immediate access to free additional exercise guides, clinical rehabilitation materials, and new PDF resources as they are published."
           />
         </div>
       </section>
