@@ -12,8 +12,8 @@ export default function Footer() {
           {/* Brand & Identity */}
           <div className="md:col-span-5 space-y-4">
             <Link href="/" className="flex items-center gap-3">
-              <div className="w-8 h-8 rounded-md bg-[#0C66B4] border border-[#00AEEF] flex items-center justify-center">
-                <span className="font-display text-[#00AEEF] text-sm">PT</span>
+              <div className="w-10 h-10 rounded-full overflow-hidden border border-[#00AEEF]/70 bg-black flex items-center justify-center p-0.5 shadow-[0_0_10px_rgba(0,174,239,0.4)]">
+                <img src="/logo.jpg" alt="PT Sakkinen logo" className="w-full h-full object-cover rounded-full" />
               </div>
               <span className="font-display text-xl text-white">
                 PT SAKKINEN<span className="text-[#00AEEF]">.</span>

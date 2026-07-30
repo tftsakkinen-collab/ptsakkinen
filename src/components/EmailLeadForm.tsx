@@ -49,9 +49,14 @@ export default function EmailLeadForm({
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 space-y-10">
         
         <div className="text-center space-y-4">
+          <div className="flex justify-center mb-1">
+            <div className="w-16 h-16 rounded-full overflow-hidden border-2 border-[#00AEEF] shadow-[0_0_20px_rgba(0,174,239,0.5)] bg-black p-0.5">
+              <img src="/logo.jpg" alt="PT Sakkinen logo" className="w-full h-full object-cover rounded-full" />
+            </div>
+          </div>
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#0C66B4]/30 border border-[#00AEEF]/50 text-[#00AEEF] text-xs font-bold uppercase tracking-wider backdrop-blur-md">
             <Sparkles className="w-4 h-4 text-[#00AEEF]" />
-            <span>Free PDF Guides &amp; Google Drive</span>
+            <span>Mailing List &amp; Google Drive Folder</span>
           </div>
 
           <h2 className="text-3xl sm:text-5xl font-display text-white tracking-wide">
