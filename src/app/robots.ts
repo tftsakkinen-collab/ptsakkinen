@@ -6,6 +6,9 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: "*",
       allow: "/",
     },
-    sitemap: "https://www.ptsakkinen.com/sitemap.xml",
+    sitemap: [
+      "https://www.ptsakkinen.com/sitemap.xml",
+      "https://www.ptsakkinen.com/video-sitemap.xml",
+    ],
   };
 }
