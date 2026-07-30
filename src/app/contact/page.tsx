@@ -1,136 +1,73 @@
-import { SITE_CONFIG } from "@/data/config";
-import { Mail, Phone, MapPin, Send, ShieldCheck, Stethoscope } from "lucide-react";
+import AppointmentBookingSection from "@/components/AppointmentBookingSection";
+import { Mail, Phone, MapPin, Building2 } from "lucide-react";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Contact & Appointments | OMT Physical Therapist Janne Sakkinen",
+  description: "Contact OMT Physical Therapist Janne Sakkinen or book clinical consultations at Terveystalo or Norre Occupational Health.",
+  alternates: {
+    canonical: "https://www.ptsakkinen.com/contact",
+    languages: {
+      "en": "https://www.ptsakkinen.com/contact",
+      "fi": "https://www.ftsakkinen.com/yhteystiedot",
+    },
+  },
+};
 
 export default function ContactPage() {
   return (
-    <div className="py-12 md:py-20 bg-[#000a18] min-h-screen">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
-        
-        {/* Header */}
-        <div className="text-center max-w-3xl mx-auto space-y-4">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#0C66B4]/20 border border-[#00AEEF]/40 text-[#00AEEF] text-xs font-bold uppercase tracking-wider">
-            <Mail className="w-4 h-4" />
-            <span>Contact &amp; Inquiries</span>
-          </div>
-
-          <h1 className="text-4xl sm:text-6xl font-display text-white tracking-wide">
-            GET IN TOUCH OR <span className="text-[#00AEEF]">SEND AN INQUIRY</span>
+    <div className="py-16 bg-[#000a18] min-h-screen text-gray-200">
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
+        <div className="text-center space-y-4">
+          <h1 className="text-4xl sm:text-5xl font-display text-white tracking-wide">
+            CONTACT &amp; <span className="text-[#00AEEF]">APPOINTMENTS</span>
           </h1>
-
-          <p className="text-gray-300 text-base sm:text-lg">
-            Have questions about workshops, guides, or professional consultations?
+          <p className="text-gray-300 text-base max-w-xl mx-auto">
+            Questions regarding physical therapy, university lectures, or corporate ergonomics? Get in touch using the details below.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 max-w-6xl mx-auto">
-          
-          {/* Contact Details Card */}
-          <div className="lg:col-span-5 space-y-6">
-            <div className="p-8 rounded-3xl bg-[#000d21] border border-[#0C66B4] space-y-6 shadow-panel">
-              <h2 className="text-2xl font-bold text-white flex items-center gap-2">
-                <Stethoscope className="w-6 h-6 text-[#00AEEF]" />
-                Contact Details
+        {/* Contact Info Card */}
+        <div className="p-8 sm:p-10 rounded-3xl bg-[#000d21] border border-[#0C66B4] shadow-glow space-y-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            
+            <div className="space-y-4">
+              <h2 className="text-xl font-bold text-white flex items-center gap-2">
+                <Building2 className="w-5 h-5 text-[#00AEEF]" />
+                Tiedottajanne Oy
               </h2>
-
-              <div className="space-y-4 text-sm text-gray-300">
-                <div className="flex items-start gap-3">
-                  <MapPin className="w-5 h-5 text-[#00AEEF] shrink-0 mt-0.5" />
-                  <div>
-                    <span className="font-bold text-white block">Location</span>
-                    <span className="text-xs font-mono text-[#00AEEF]">{SITE_CONFIG.clinicAddress}</span>
-                  </div>
+              <div className="space-y-3 text-sm text-gray-300">
+                <div className="flex items-center gap-3">
+                  <MapPin className="w-4 h-4 text-[#00AEEF] shrink-0" />
+                  <span>Lipunkantajantie 21 G, 90670 Oulu, Finland</span>
                 </div>
-
-                <div className="flex items-start gap-3">
-                  <Mail className="w-5 h-5 text-[#00AEEF] shrink-0 mt-0.5" />
-                  <div>
-                    <span className="font-bold text-white block">Email</span>
-                    <span className="text-xs font-mono text-[#00AEEF]">{SITE_CONFIG.contactEmail}</span>
-                  </div>
+                <div className="flex items-center gap-3">
+                  <Mail className="w-4 h-4 text-[#00AEEF] shrink-0" />
+                  <a href="mailto:tiedottajanne@gmail.com" className="hover:underline text-white font-medium">
+                    tiedottajanne@gmail.com
+                  </a>
                 </div>
-
-                <div className="flex items-start gap-3">
-                  <Phone className="w-5 h-5 text-[#00AEEF] shrink-0 mt-0.5" />
-                  <div>
-                    <span className="font-bold text-white block">Phone</span>
-                    <span className="text-xs font-mono text-[#00AEEF]">{SITE_CONFIG.contactPhone}</span>
-                  </div>
+                <div className="flex items-center gap-3">
+                  <Phone className="w-4 h-4 text-[#00AEEF] shrink-0" />
+                  <a href="tel:+358407675529" className="hover:underline text-white font-medium">
+                    +358 40 767 5529
+                  </a>
                 </div>
-              </div>
-
-              {/* Single Authority Proof Rule */}
-              <div className="pt-4 border-t border-[#0C66B4]/30 text-xs text-gray-400 flex items-center gap-2">
-                <ShieldCheck className="w-4 h-4 text-[#00AEEF]" />
-                <span>{SITE_CONFIG.authorityProofs.teaching}</span>
               </div>
             </div>
+
+            <div className="p-6 rounded-2xl bg-[#000a18] border border-[#0C66B4]/40 space-y-3">
+              <h3 className="text-sm font-bold text-white uppercase tracking-wider">OMT Physical Therapist Janne Sakkinen</h3>
+              <p className="text-xs text-gray-300 leading-relaxed">
+                Clinical Specialization: Temporomandibular joint disorders (TMJ/TMD), masseter pain, orofacial therapy, and spinal joint disorders. University instructor at University of Oulu since 2017.
+              </p>
+            </div>
+
           </div>
-
-          {/* Contact Form */}
-          <div className="lg:col-span-7">
-            <form className="p-8 rounded-3xl bg-[#000d21] border border-[#0C66B4] space-y-6 shadow-panel">
-              <h2 className="text-2xl font-bold text-white">Send a Message</h2>
-
-              <div className="space-y-4">
-                <div>
-                  <label className="block text-xs font-bold text-gray-300 uppercase tracking-wider mb-2">
-                    Name *
-                  </label>
-                  <input
-                    type="text"
-                    required
-                    placeholder="Full name"
-                    className="w-full px-4 py-3 rounded-xl bg-[#000a18] border border-[#0C66B4] text-white placeholder-gray-500 focus:outline-none focus:border-[#00AEEF] text-sm"
-                  />
-                </div>
-
-                <div>
-                  <label className="block text-xs font-bold text-gray-300 uppercase tracking-wider mb-2">
-                    Email *
-                  </label>
-                  <input
-                    type="email"
-                    required
-                    placeholder="email@example.com"
-                    className="w-full px-4 py-3 rounded-xl bg-[#000a18] border border-[#0C66B4] text-white placeholder-gray-500 focus:outline-none focus:border-[#00AEEF] text-sm"
-                  />
-                </div>
-
-                <div>
-                  <label className="block text-xs font-bold text-gray-300 uppercase tracking-wider mb-2">
-                    Subject
-                  </label>
-                  <select className="w-full px-4 py-3 rounded-xl bg-[#000a18] border border-[#0C66B4] text-white focus:outline-none focus:border-[#00AEEF] text-sm">
-                    <option>PDF Guides &amp; Materials</option>
-                    <option>Workshops &amp; Keynotes</option>
-                    <option>General Inquiry</option>
-                  </select>
-                </div>
-
-                <div>
-                  <label className="block text-xs font-bold text-gray-300 uppercase tracking-wider mb-2">
-                    Message *
-                  </label>
-                  <textarea
-                    rows={4}
-                    required
-                    placeholder="Write your message here..."
-                    className="w-full px-4 py-3 rounded-xl bg-[#000a18] border border-[#0C66B4] text-white placeholder-gray-500 focus:outline-none focus:border-[#00AEEF] text-sm"
-                  />
-                </div>
-              </div>
-
-              <button
-                type="submit"
-                className="w-full py-4 rounded-xl bg-[#00AEEF] text-black font-bold text-base hover:bg-[#33C2F5] transition-all shadow-glow flex items-center justify-center gap-2"
-              >
-                <Send className="w-4 h-4" />
-                <span>Send Message</span>
-              </button>
-            </form>
-          </div>
-
         </div>
+
+        {/* How do I book an appointment? section */}
+        <AppointmentBookingSection />
       </div>
     </div>
   );

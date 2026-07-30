@@ -1,28 +1,34 @@
 import { SITE_CONFIG } from "@/data/config";
 import { CV_DATA_EN } from "@/data/cv";
-import { GraduationCap, Award, Briefcase, BookOpen, CheckCircle2, ShieldCheck, FileCheck } from "lucide-react";
+import { GraduationCap, Award, Briefcase, BookOpen, CheckCircle2, ShieldCheck, FileCheck, ArrowRight } from "lucide-react";
+import Link from "next/link";
 
 export default function TrainingsSection() {
   const mainTrainings = [
     {
-      title: "Temporomandibular Joint & TMD Physical Therapy",
+      title: "Temporomandibular Disorders & Orofacial Therapy",
       target: "Dental Students & Physical Therapists",
-      description: "University lecturer at the Institute of Dentistry, University of Oulu since 2017. Specializing in TMJ dysfunction, jaw clenching, and orofacial pain.",
+      description: "Clinical courses on TMJ joint disorders, masseter myofascial pain, and facial pain rehabilitation. Instructing at University of Oulu since 2017.",
       icon: GraduationCap,
     },
     {
-      title: "TMJ Physical Therapy Seminars",
-      target: "Northern Ostrobothnia Summer University & Healthcare Bodies",
-      description: "Instructing specialized post-graduate seminars for physical therapists and healthcare practitioners on TMJ disorders (2024–).",
+      title: "TMJ Joint Manual Therapy Workshops",
+      target: "Physical Therapy Associations & Healthcare Providers",
+      description: "Specialized clinical instructor for post-graduate healthcare professionals in jaw joint manual therapy and rehabilitation.",
       icon: BookOpen,
     },
     {
-      title: "Musculoskeletal OMT Physical Therapy",
-      target: "Physical Therapy Practitioners",
-      description: "Advanced clinical examination and manual therapy techniques for spinal disorders, neck pain, and joint biomechanics.",
+      title: "Orthopedic Manual Therapy (OMT)",
+      target: "Licensed Physical Therapists",
+      description: "Advanced post-graduate training focusing on spinal differential diagnosis, cervical spine, and joint mobility disorders.",
       icon: Award,
     },
   ];
+
+  // Truncate to top 3 highlights for homepage
+  const topDegrees = CV_DATA_EN.degrees.slice(0, 3);
+  const topWorkExperience = CV_DATA_EN.workExperience.slice(0, 3);
+  const topCertifications = CV_DATA_EN.certifications.slice(0, 3);
 
   return (
     <section className="py-20 bg-[#000d21] border-b border-[#0C66B4]/30 relative overflow-hidden">
@@ -33,13 +39,13 @@ export default function TrainingsSection() {
           <div className="text-center max-w-3xl mx-auto space-y-4">
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#0C66B4]/20 border border-[#00AEEF]/40 text-[#00AEEF] text-xs font-bold uppercase tracking-wider">
               <GraduationCap className="w-4 h-4" />
-              <span>Teaching &amp; Keynotes</span>
+              <span>Teaching &amp; University Lectures</span>
             </div>
             <h2 className="text-3xl sm:text-5xl font-display text-white tracking-wide">
-              WORKSHOPS &amp; <span className="text-[#00AEEF]">LECTURES</span>
+              CLINICAL <span className="text-[#00AEEF]">COURSES &amp; TEACHING</span>
             </h2>
             <p className="text-gray-300 text-base">
-              Educating dental students at the University of Oulu and instructing post-graduate physical therapy courses on TMJ rehabilitation and dental ergonomics.
+              I instruct physical therapists and dental students at the University of Oulu on TMJ disorders and dental ergonomic posture.
             </p>
           </div>
 
@@ -71,15 +77,15 @@ export default function TrainingsSection() {
           </div>
         </div>
 
-        {/* Section 2: Full Clinical CV & Experience */}
+        {/* Section 2: Truncated Top CV Highlights */}
         <div className="pt-12 border-t border-[#0C66B4]/30 space-y-12">
           <div className="text-center max-w-3xl mx-auto space-y-4">
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#0C66B4]/20 border border-[#00AEEF]/40 text-[#00AEEF] text-xs font-bold uppercase tracking-wider">
               <Briefcase className="w-4 h-4" />
-              <span>Curriculum Vitae &amp; Experience</span>
+              <span>Curriculum Vitae &amp; Clinical Background</span>
             </div>
             <h2 className="text-3xl sm:text-5xl font-display text-white tracking-wide">
-              CAREER TIMELINE &amp; <span className="text-[#00AEEF]">DEGREES</span>
+              CLINICAL EXPERIENCE &amp; <span className="text-[#00AEEF]">DEGREES</span>
             </h2>
           </div>
 
@@ -93,7 +99,7 @@ export default function TrainingsSection() {
               </h3>
 
               <div className="space-y-4">
-                {CV_DATA_EN.degrees.map((deg, idx) => (
+                {topDegrees.map((deg, idx) => (
                   <div
                     key={idx}
                     className="p-6 rounded-2xl bg-[#000a18] border border-[#0C66B4]/50 space-y-2"
@@ -104,9 +110,6 @@ export default function TrainingsSection() {
                     </div>
                     <h4 className="text-lg font-bold text-white">{deg.degree}</h4>
                     <p className="text-sm text-gray-300 font-medium">{deg.institution}</p>
-                    {deg.description && (
-                      <p className="text-xs text-gray-400 pt-1 leading-relaxed">{deg.description}</p>
-                    )}
                   </div>
                 ))}
               </div>
@@ -120,7 +123,7 @@ export default function TrainingsSection() {
               </h3>
 
               <div className="space-y-3">
-                {CV_DATA_EN.workExperience.map((work, idx) => (
+                {topWorkExperience.map((work, idx) => (
                   <div
                     key={idx}
                     className="p-5 rounded-2xl bg-[#000a18] border border-[#0C66B4]/40 flex items-start justify-between gap-4"
@@ -138,23 +141,22 @@ export default function TrainingsSection() {
           </div>
         </div>
 
-        {/* Section 3: Continuing Education & Specialization List */}
+        {/* Section 3: Continuing Education Highlights & Full CV Link Button */}
         <div className="pt-12 border-t border-[#0C66B4]/30 space-y-8">
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-4">
             <div>
               <div className="inline-flex items-center gap-2 text-[#00AEEF] text-sm font-semibold uppercase tracking-widest">
                 <FileCheck className="w-4 h-4" />
-                <span>Certifications &amp; Courses</span>
+                <span>Certifications &amp; Training</span>
               </div>
               <h3 className="text-2xl sm:text-3xl font-display text-white tracking-wide">
-                CONTINUING EDUCATION <span className="text-[#00AEEF]">(2011–2026)</span>
+                POST-GRADUATE COURSES <span className="text-[#00AEEF]">(20+ Courses)</span>
               </h3>
             </div>
-            <span className="text-xs font-mono text-gray-400">20+ Advanced Post-Graduate Modules</span>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-            {CV_DATA_EN.certifications.map((cert, idx) => (
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+            {topCertifications.map((cert, idx) => (
               <div
                 key={idx}
                 className="p-4 rounded-xl bg-[#000a18] border border-[#0C66B4]/40 flex items-start gap-3"
@@ -167,6 +169,17 @@ export default function TrainingsSection() {
                 </div>
               </div>
             ))}
+          </div>
+
+          {/* Full CV Link Button */}
+          <div className="text-center pt-6">
+            <Link
+              href="/workshops"
+              className="inline-flex items-center gap-2 px-8 py-4 rounded-xl bg-[#00AEEF] text-black font-bold text-sm hover:bg-[#33C2F5] transition-all shadow-glow group"
+            >
+              <span>View full CV &amp; training history</span>
+              <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+            </Link>
           </div>
         </div>
 
