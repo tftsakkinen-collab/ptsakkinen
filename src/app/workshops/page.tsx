@@ -1,10 +1,18 @@
 import TrainingsSection from "@/components/TrainingsSection";
 import TestimonialsSection from "@/components/TestimonialsSection";
 import BeaconsWidget from "@/components/BeaconsWidget";
+import type { Metadata } from "next";
 
-export const metadata = {
-  title: "Workshops, Lectures & Clinical Background — PT Sakkinen",
-  description: "Explore OMT physical therapist Janne Sakkinen's professional workshops, university teaching at the University of Oulu, career history, and lecture feedback.",
+export const metadata: Metadata = {
+  title: "Workshops, Lectures & CV | PT Sakkinen",
+  description: "Explore OMT Physical Therapist Janne Sakkinen's university teaching at University of Oulu, clinical work history, and workshop reviews.",
+  alternates: {
+    canonical: "https://www.ptsakkinen.com/workshops",
+    languages: {
+      "en": "https://www.ptsakkinen.com/workshops",
+      "fi": "https://www.ftsakkinen.com/koulutukset",
+    },
+  },
 };
 
 export default function WorkshopsPage() {
