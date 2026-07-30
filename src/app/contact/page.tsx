@@ -49,8 +49,8 @@ export default function ContactPage() {
                 </div>
                 <div className="flex items-center gap-3">
                   <Phone className="w-4 h-4 text-[#00AEEF] shrink-0" />
-                  <a href="tel:+358407675529" className="hover:underline text-white font-medium">
-                    +358 40 767 5529
+                  <a href="tel:+358413274967" className="hover:underline text-white font-medium">
+                    +358 41 327 4967
                   </a>
                 </div>
               </div>
