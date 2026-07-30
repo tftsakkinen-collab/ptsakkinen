@@ -66,6 +66,65 @@ const TOPICS_EN: Record<string, TopicData> = {
   },
 };
 
+const TOPIC_FAQS_EN: Record<string, Array<{ question: string; answer: string }>> = {
+  "tmj-and-jaw-pain": [
+    {
+      question: "What causes jaw pain, TMJ clicking, and bruxism (TMD)?",
+      answer: "Temporomandibular Disorders (TMD) are caused by anatomical and functional tightness in jaw muscles, neck-shoulder postural issues, and disc displacement in the temporomandibular joint. The masseter muscle bears significant mechanical stress during chewing and nighttime teeth grinding (bruxism)."
+    },
+    {
+      question: "What are the most common symptoms of temporomandibular disorders (TMD)?",
+      answer: "Common symptoms include morning jaw joint tightness, restricted mouth opening, ear fullness or radiating pain, and sensations that teeth do not align properly."
+    },
+    {
+      question: "How are TMJ and jaw disorders treated with Orthopedic Manual Therapy (OMT)?",
+      answer: "Treatment includes intraoral myofascial release, joint mobilization, specific cervical spine alignment, and patient-specific home exercises. Targeted physical therapy typically reduces jaw clicking and tightness within 2 to 4 weeks."
+    }
+  ],
+  "neck-pain-and-headaches": [
+    {
+      question: "What causes cervicogenic (neck-related) headaches?",
+      answer: "Dysfunction and stiffness in upper cervical spine joints (C0–C3) can cause cervicogenic headaches, typically felt as unilateral pain behind the eye, temple, or occiput."
+    },
+    {
+      question: "How are neck-shoulder tension and jaw/TMJ disorders connected?",
+      answer: "There is a close neurological and anatomical connection between the cervical spine and the temporomandibular joint. Forward head posture in desk work increases masseter and suboccipital muscle activation, requiring paired evaluation of both jaw and neck."
+    },
+    {
+      question: "How is neck pain and cervicogenic headache treated with physical therapy?",
+      answer: "Physical therapy focuses on deep cervical flexor endurance, thoracic spine mobilization, and targeted posture retraining to achieve lasting relief from tension headaches and neck pain."
+    }
+  ],
+  "back-pain-and-sciatica": [
+    {
+      question: "What is sciatica and what are its symptoms?",
+      answer: "Sciatica refers to sharp or burning pain caused by nerve root compression in the lumbar spine, radiating through the gluteal muscle down the leg."
+    },
+    {
+      question: "What are common causes of lower back pain?",
+      answer: "Most lower back pain is mechanical and benign. Lumbar facet joint restrictions, movement control deficits, and core muscle imbalances are primary triggers."
+    },
+    {
+      question: "What is the most effective physical therapy treatment for back pain and sciatica?",
+      answer: "Active movement is the single most effective intervention. OMT physical therapy assesses directional preference and instructs specific lumbar stabilization exercises to relieve disc pressure."
+    }
+  ],
+  "ergonomics-and-wellness": [
+    {
+      question: "Why are dental professionals particularly prone to neck and back strain?",
+      answer: "Dentists and dental hygienists work daily in asymmetrical, static, forward-bent postures, causing repetitive stress on the cervical spine, upper back, and wrists."
+    },
+    {
+      question: "What are key strategies to prevent chronic musculoskeletal disorders in clinical work?",
+      answer: "Effective ergonomics combines active posture awareness, equipment adjustment, and targeted micro-break stretches to prevent chronic musculoskeletal disorders."
+    },
+    {
+      question: "Who conducts ergonomic training at the University of Oulu?",
+      answer: "OMT Physical Therapist Janne Sakkinen instructs dental ergonomics at the University of Oulu Faculty of Dentistry and conducts post-graduate ergonomics workshops for healthcare professionals."
+    }
+  ]
+};
+
 export async function generateStaticParams() {
   return Object.keys(TOPICS_EN).map((slug) => ({ slug }));
 }
@@ -87,6 +146,7 @@ export async function generateMetadata(props: { params: Promise<{ slug: string }
       languages: {
         "en": canonicalUrl,
         "fi": pairedFiUrl,
+        "x-default": pairedFiUrl,
       },
     },
     openGraph: {
@@ -110,6 +170,7 @@ export default async function TopicHubPage(props: { params: Promise<{ slug: stri
 
   // Filter related videos by category
   const topicVideos = FALLBACK_VIDEOS.filter((v) => v.categoryId === topic.categoryId);
+  const faqs = TOPIC_FAQS_EN[params.slug] || TOPIC_FAQS_EN["tmj-and-jaw-pain"];
 
   const jsonLd = [
     {
@@ -121,6 +182,7 @@ export default async function TopicHubPage(props: { params: Promise<{ slug: stri
         "@type": "Person",
         "name": "Janne Sakkinen",
         "jobTitle": "OMT Physical Therapist",
+        "url": "https://www.ptsakkinen.com/about",
         "worksFor": {
           "@type": "Organization",
           "name": "PT Sakkinen"
@@ -157,6 +219,18 @@ export default async function TopicHubPage(props: { params: Promise<{ slug: stri
           "item": `https://www.ptsakkinen.com/topic/${topic.slug}`
         }
       ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": faqs.map((faq) => ({
+        "@type": "Question",
+        "name": faq.question,
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": faq.answer
+        }
+      }))
     }
   ];
 

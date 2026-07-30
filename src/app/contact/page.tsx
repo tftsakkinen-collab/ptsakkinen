@@ -10,6 +10,7 @@ export const metadata: Metadata = {
     languages: {
       "en": "https://www.ptsakkinen.com/contact",
       "fi": "https://www.ftsakkinen.com/yhteystiedot",
+      "x-default": "https://www.ftsakkinen.com/yhteystiedot",
     },
   },
 };

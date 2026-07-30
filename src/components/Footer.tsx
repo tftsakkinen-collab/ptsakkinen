@@ -53,6 +53,9 @@ export default function Footer() {
                 <Link href="/" className="hover:text-white transition-colors">Home</Link>
               </li>
               <li>
+                <Link href="/about" className="hover:text-white transition-colors">About &amp; Credentials</Link>
+              </li>
+              <li>
                 <Link href="/videos" className="hover:text-white transition-colors">Video Library</Link>
               </li>
               <li>

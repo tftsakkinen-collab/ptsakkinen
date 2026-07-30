@@ -11,6 +11,7 @@ export const metadata: Metadata = {
     languages: {
       "en": "https://www.ptsakkinen.com/videos",
       "fi": "https://www.ftsakkinen.com/videot",
+      "x-default": "https://www.ftsakkinen.com/videot",
     },
   },
 };

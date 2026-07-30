@@ -22,6 +22,7 @@ export const metadata: Metadata = {
     languages: {
       "en": "https://www.ptsakkinen.com/",
       "fi": "https://www.ftsakkinen.com/",
+      "x-default": "https://www.ftsakkinen.com/",
     },
   },
 };
@@ -37,6 +38,7 @@ export default async function HomePage() {
       "@type": "Person",
       "name": "Janne Sakkinen",
       "jobTitle": "OMT Physical Therapist",
+      "url": "https://www.ptsakkinen.com/about",
       "worksFor": {
         "@type": "Organization",
         "name": "Tiedottajanne Oy",
@@ -52,10 +54,29 @@ export default async function HomePage() {
         "email": "tiedottajanne@gmail.com",
         "url": "https://www.ptsakkinen.com"
       },
-      "alumniOf": "University of Oulu",
+      "alumniOf": [
+        "Finnish Society of Orthopedic Manual Therapy (SOMTY)",
+        "Rovaniemi University of Applied Sciences (RAMK)"
+      ],
+      "hasCredential": [
+        {
+          "@type": "EducationalOccupationalCredential",
+          "credentialCategory": "degree",
+          "name": "OMT Physical Therapist (SOMTY 2018–2020)"
+        },
+        {
+          "@type": "EducationalOccupationalCredential",
+          "credentialCategory": "degree",
+          "name": "B.Sc. Physical Therapy (RAMK 2007–2010)"
+        }
+      ],
       "sameAs": [
-        "https://www.youtube.com/@ftsakkinen",
-        "https://www.ftsakkinen.com"
+        "https://www.youtube.com/@ft_sakkinen",
+        "https://www.instagram.com/sakkinenjanne",
+        "https://www.tiktok.com/@sakkinenjanne",
+        "https://beacons.ai/sakkinenjanne",
+        "https://www.ftsakkinen.com",
+        "https://www.ptsakkinen.com"
       ]
     },
     {

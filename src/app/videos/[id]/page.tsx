@@ -40,6 +40,7 @@ export async function generateMetadata(props: { params: Promise<{ id: string }> 
       languages: {
         "en": canonicalUrl,
         "fi": pairedFiUrl,
+        "x-default": pairedFiUrl,
       },
     },
     openGraph: {

@@ -11,9 +11,10 @@ export default function Navbar() {
 
   const navLinks = [
     { name: "Home", href: "/" },
+    { name: "About", href: "/about" },
     { name: "Video Library", href: "/videos" },
     { name: "Free Guide", href: "/free-guide" },
-    { name: "Workshops & History", href: "/workshops" },
+    { name: "Workshops & Credentials", href: "/workshops" },
     { name: "Contact & Consults", href: "/contact" },
   ];
 
