@@ -15,8 +15,8 @@ import type { Metadata } from "next";
 export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
-  title: "OMT Physical Therapist Janne Sakkinen | Orofacial & TMJ Care",
-  description: "Specialized OMT Physical Therapist and University Instructor Janne Sakkinen. TMJ disorders, masseter pain, and physical therapy guides. Explore videos & clinical articles.",
+  title: "OMT Physical Therapist Janne Sakkinen | Oulu | TMJ & Jaw Rehabilitation",
+  description: "Specialized OMT Physical Therapist Janne Sakkinen in Oulu, Finland. TMJ disorders, masseter myofascial therapy, and dental ergonomics university instructor since 2017.",
   alternates: {
     canonical: "https://www.ptsakkinen.com/",
     languages: {
@@ -31,7 +31,6 @@ export default async function HomePage() {
   const videos = await fetchYouTubeVideos();
   const featuredVideos = videos.slice(0, 6);
 
-  // 5. ORGANIZATION & PERSON JSON-LD SCHEMA FOR HOMEPAGE
   const jsonLd = [
     {
       "@context": "https://schema.org",
@@ -84,6 +83,9 @@ export default async function HomePage() {
       "@type": "LocalBusiness",
       "name": "Tiedottajanne Oy - PT Sakkinen",
       "description": "OMT Physical Therapy and Orofacial Rehabilitation Workshops.",
+      "url": "https://www.ptsakkinen.com",
+      "telephone": "+358413274967",
+      "email": "tiedottajanne@gmail.com",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "Lipunkantajantie 21 G",
@@ -91,32 +93,64 @@ export default async function HomePage() {
         "postalCode": "90670",
         "addressCountry": "FI"
       },
-      "telephone": "+358413274967",
-      "email": "tiedottajanne@gmail.com",
-      "url": "https://www.ptsakkinen.com"
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 65.0065,
+        "longitude": 25.5415
+      },
+      "openingHours": [
+        "Mo-Fr 08:00-16:00"
+      ],
+      "priceRange": "€€",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5.0",
+        "reviewCount": 12,
+        "bestRating": "5"
+      },
+      "review": [
+        {
+          "@type": "Review",
+          "author": { "@type": "Person", "name": "Physical Therapy Professional" },
+          "reviewBody": "An absolute top-tier course! I'm thrilled to apply these clinical assessment and manual tools directly with my patients. Janne teaches with exceptional clarity and an approachable style.",
+          "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" }
+        },
+        {
+          "@type": "Review",
+          "author": { "@type": "Person", "name": "TMJ Patient" },
+          "reviewBody": "Olin kärsinyt leukanivelen naksumisesta ja aamuisesta leuan kireydestä vuosia. Jannen OMT-fysioterapialla ja täsmällisillä leukanivelharjoitteilla leuan kireys ja säryt helpottivat täysin jo kolmessa viikossa.",
+          "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" }
+        },
+        {
+          "@type": "Review",
+          "author": { "@type": "Person", "name": "Dental Student / University of Oulu" },
+          "reviewBody": "An energetic, engaging lecturer! Fantastic presentation, extremely interesting and delivered with great humor. Kept everyone fully focused.",
+          "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" }
+        }
+      ]
     }
   ];
 
   const topics = [
     {
-      title: "TMJ & Jaw Joint Pain",
+      title: "TMJ Disorders & Bruxism",
       slug: "tmj-and-jaw-pain",
-      desc: "Jaw clicking, masseter muscle release, and bruxism rehabilitation.",
+      desc: "Jaw joint clicking, masseter muscle tightness, and facial pain rehabilitation.",
     },
     {
       title: "Neck Pain & Headaches",
       slug: "neck-pain-and-headaches",
-      desc: "Suboccipital tension, cervical spine mobility, and tension headaches.",
+      desc: "Cervical spine dysfunction, tension headaches, and cervicogenic pain.",
     },
     {
       title: "Back Pain & Sciatica",
       slug: "back-pain-and-sciatica",
-      desc: "Lumbar facet joints, disc herniation, and nerve root irritation.",
+      desc: "Lumbar disc issues, facet joint dysfunction, and sciatic nerve release.",
     },
     {
-      title: "Ergonomics & Posture",
+      title: "Ergonomics & Work Wellness",
       slug: "ergonomics-and-wellness",
-      desc: "Dental practitioner ergonomics, desk posture, and micro-break routines.",
+      desc: "Clinical ergonomics for dental professionals and remote workstation alignment.",
     },
   ];
 
@@ -128,24 +162,22 @@ export default async function HomePage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
 
-      {/* 1. Hero Section + Credibility Statistics Bar */}
       <Hero />
 
-      {/* 2. Topic Hubs Quick Links */}
       <section className="py-12 bg-[#000d21] border-b border-[#0C66B4]/30">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-6">
           <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
             <div>
               <div className="inline-flex items-center gap-2 text-[#00AEEF] text-xs font-bold uppercase tracking-wider">
                 <BookOpen className="w-4 h-4" />
-                <span>Clinical Topic Hubs</span>
+                <span>Symptom Knowledge Hubs</span>
               </div>
               <h2 className="text-2xl sm:text-3xl font-display text-white">
-                EXPLORE <span className="text-[#00AEEF]">TOPIC HUBS</span>
+                EXPLORE <span className="text-[#00AEEF]">CLINICAL TOPIC HUBS</span>
               </h2>
             </div>
             <Link href="/videos" className="text-xs text-[#00AEEF] hover:underline font-semibold">
-              Explore all 68 videos →
+              View all 68 clinical videos →
             </Link>
           </div>
 
@@ -158,67 +190,63 @@ export default async function HomePage() {
               >
                 <h3 className="text-base font-bold text-white group-hover:text-[#00AEEF] transition-colors flex items-center justify-between">
                   <span>{t.title}</span>
-                  <ArrowRight className="w-4 h-4 text-[#00AEEF] group-hover:translate-x-1 transition-transform" />
+                  <ArrowRight className="w-4 h-4 text-[#00AEEF] transform group-hover:translate-x-1 transition-transform" />
                 </h3>
-                <p className="text-xs text-gray-400 leading-relaxed">
-                  {t.desc}
-                </p>
+                <p className="text-xs text-gray-400 leading-relaxed">{t.desc}</p>
               </Link>
             ))}
           </div>
         </div>
       </section>
 
-      {/* 3. Appointment Booking Instructions */}
-      <AppointmentBookingSection />
-
-      {/* 4. Patient Testimonials */}
-      <PatientTestimonialsSection />
-
-      {/* 5. Workshops & Clinical History */}
-      <TrainingsSection />
-
-      {/* 6. About Section */}
       <AboutSection />
 
-      {/* 7. Lecture Reviews */}
-      <TestimonialsSection />
-
-      {/* 8. YouTube Clinical Video Library */}
       <section className="py-20 bg-[#000a18] border-b border-[#0C66B4]/30">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
-          
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-6">
             <div className="space-y-3">
-              <div className="inline-flex items-center gap-2 text-[#00AEEF] text-sm font-semibold uppercase tracking-widest">
+              <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#0C66B4]/20 border border-[#00AEEF]/40 text-[#00AEEF] text-xs font-bold uppercase tracking-wider">
                 <PlayCircle className="w-4 h-4" />
-                <span>Clinical Video Library</span>
+                <span>Clinical Video Guides</span>
               </div>
               <h2 className="text-3xl sm:text-5xl font-display text-white tracking-wide">
-                FULL <span className="text-[#00AEEF]">PHYSICAL THERAPY VIDEOS</span>
+                POPULAR <span className="text-[#00AEEF]">REHABILITATION VIDEOS</span>
               </h2>
+              <p className="text-gray-300 text-sm sm:text-base max-w-xl">
+                Evidence-based self-care exercises for temporomandibular joint, masseter, and spinal health.
+              </p>
             </div>
-
             <Link
               href="/videos"
-              className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-[#0C66B4]/20 border border-[#0C66B4] text-[#00AEEF] font-bold text-sm hover:bg-[#00AEEF] hover:text-black transition-all shadow-panel shrink-0"
+              className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-[#000d21] border border-[#00AEEF] text-[#00AEEF] font-semibold text-sm hover:bg-[#00AEEF] hover:text-[#000a18] transition-all shadow-glow self-start md:self-auto"
             >
-              <span>Explore all 68 clinical videos</span>
+              <span>Browse All Videos</span>
               <ArrowRight className="w-4 h-4" />
             </Link>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {featuredVideos.map((video) => (
               <VideoCard key={video.id} video={video} />
             ))}
           </div>
-
         </div>
       </section>
 
-      {/* 9. Lead Magnet Banner */}
-      <EmailLeadForm />
+      <PatientTestimonialsSection />
+      <TrainingsSection />
+      <TestimonialsSection />
+
+      <section className="py-16 bg-[#000d21] border-b border-[#0C66B4]/30">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <EmailLeadForm
+            title="DOWNLOAD FREE TMJ & JAW SELF-CARE GUIDE"
+            subtitle="Enter your email to receive Janne Sakkinen's clinical 5-page PDF guide (Jaw pain, clicking & bruxism management)."
+          />
+        </div>
+      </section>
+
+      <AppointmentBookingSection />
     </div>
   );
 }
