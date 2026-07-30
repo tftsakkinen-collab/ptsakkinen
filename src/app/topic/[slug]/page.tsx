@@ -172,12 +172,34 @@ export default async function TopicHubPage(props: { params: Promise<{ slug: stri
   const topicVideos = FALLBACK_VIDEOS.filter((v) => v.categoryId === topic.categoryId);
   const faqs = TOPIC_FAQS_EN[params.slug] || TOPIC_FAQS_EN["tmj-and-jaw-pain"];
 
+  const topicMedicalConditionsEN: Record<string, string> = {
+    "tmj-and-jaw-pain": "Temporomandibular Disorders (TMD)",
+    "neck-pain-and-headaches": "Neck Pain and Cervicogenic Headaches",
+    "back-pain-and-sciatica": "Lower Back Pain and Sciatica",
+    "ergonomics-and-wellness": "Clinical Ergonomics for Dental and Office Workers"
+  };
+
   const jsonLd = [
     {
       "@context": "https://schema.org",
-      "@type": "Article",
+      "@type": ["Article", "MedicalWebPage"],
       "headline": topic.title,
       "description": topic.introSummary,
+      "medicalAudience": {
+        "@type": "MedicalAudience",
+        "audienceType": "Patient"
+      },
+      "lastReviewed": "2026-07-30",
+      "reviewedBy": {
+        "@type": "Person",
+        "name": "Janne Sakkinen",
+        "jobTitle": "OMT Physical Therapist",
+        "url": "https://www.ptsakkinen.com/about"
+      },
+      "about": {
+        "@type": "MedicalCondition",
+        "name": topicMedicalConditionsEN[params.slug] || topic.title
+      },
       "author": {
         "@type": "Person",
         "name": "Janne Sakkinen",
@@ -191,7 +213,13 @@ export default async function TopicHubPage(props: { params: Promise<{ slug: stri
       "publisher": {
         "@type": "Organization",
         "name": "PT Sakkinen",
-        "url": "https://www.ptsakkinen.com"
+        "url": "https://www.ptsakkinen.com",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.ptsakkinen.com/logo-whitebg.png",
+          "width": 600,
+          "height": 60
+        }
       },
       "datePublished": "2024-07-24",
       "dateModified": "2026-07-30"

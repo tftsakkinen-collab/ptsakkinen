@@ -126,6 +126,36 @@ export default async function HomePage() {
           "author": { "@type": "Person", "name": "Dental Student / University of Oulu" },
           "reviewBody": "An energetic, engaging lecturer! Fantastic presentation, extremely interesting and delivered with great humor. Kept everyone fully focused.",
           "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" }
+        },
+        {
+          "@type": "Review",
+          "author": { "@type": "Person", "name": "Post-Op Back Pain Patient" },
+          "reviewBody": "Olin kärsinyt leikkauksen jälkeisestä selkäkivusta ja pelkäsin jo joutuvani uudelleen leikkauskierteeseen. Jannen tutkimuksen ja täsmällisten liikeohjeiden ansiosta normaali arki ja kivuton liikkuminen palasivat parissa kuukaudessa.",
+          "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" }
+        },
+        {
+          "@type": "Review",
+          "author": { "@type": "Person", "name": "Orofacial Therapy Workshop Attendee" },
+          "reviewBody": "A fresh, inspiring, and deep-dive experience! Clarified complex jaw mechanics and hands-on techniques. The 2-day format is outstanding.",
+          "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" }
+        },
+        {
+          "@type": "Review",
+          "author": { "@type": "Person", "name": "Chronic Back Pain Patient" },
+          "reviewBody": "Olen kärsinyt selkäkivuista vuosia ja aiemmin hoito oli vain oireiden peittelyä. Jannen perusteellisessa tutkimuksessa löydettiin vaivan syy, ja täsmällisillä liikeohjeilla selkäkivut kaikkosivat kokonaan ilman lääkkeitä.",
+          "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" }
+        },
+        {
+          "@type": "Review",
+          "author": { "@type": "Person", "name": "Dental Healthcare Personnel" },
+          "reviewBody": "The most engaging online lecture of the whole series! Practical, highly applicable clinical tools for daily practice. Keep up the great work!",
+          "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" }
+        },
+        {
+          "@type": "Review",
+          "author": { "@type": "Person", "name": "Occupational Health Client (Video Home Guides)" },
+          "reviewBody": "Monesti fysioterapiasta saa paperinipun, joka jää pöydälle lojumaan. Janne kuvasi täsmälliset kuntoutusliikkeet suoraan puhelimellani videolle minua varten! Täydellinen tapa varmistaa että liikkeet tekee kotona oikein.",
+          "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" }
         }
       ]
     }
