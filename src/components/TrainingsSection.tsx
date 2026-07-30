@@ -1,34 +1,40 @@
+"use client";
+
+import { useState } from "react";
 import { SITE_CONFIG } from "@/data/config";
 import { CV_DATA_EN } from "@/data/cv";
-import { GraduationCap, Award, Briefcase, BookOpen, CheckCircle2, ShieldCheck, FileCheck, ArrowRight } from "lucide-react";
+import { GraduationCap, Award, Briefcase, BookOpen, CheckCircle2, ShieldCheck, FileCheck, ArrowRight, ChevronDown, ChevronUp } from "lucide-react";
 import Link from "next/link";
 
 export default function TrainingsSection() {
+  const [showAllCertifications, setShowAllCertifications] = useState(false);
+
   const mainTrainings = [
     {
-      title: "Temporomandibular Disorders & Orofacial Therapy",
+      title: "Orofacial Therapy & TMD Physical Therapy",
       target: "Dental Students & Physical Therapists",
-      description: "Clinical courses on TMJ joint disorders, masseter myofascial pain, and facial pain rehabilitation. Instructing at University of Oulu since 2017.",
+      description: "Specialized clinical training in temporomandibular disorders (TMD), jaw joint mechanics, and facial pain rehabilitation. Lecturing at the University of Oulu since 2017.",
       icon: GraduationCap,
     },
     {
-      title: "TMJ Joint Manual Therapy Workshops",
-      target: "Physical Therapy Associations & Healthcare Providers",
-      description: "Specialized clinical instructor for post-graduate healthcare professionals in jaw joint manual therapy and rehabilitation.",
+      title: "Jaw Joint Therapy Workshop",
+      target: "Summer University & Professional Associations",
+      description: "Course instructor for advanced physical therapy workshops focusing on orofacial pain and TMJ rehabilitation (2024–).",
       icon: BookOpen,
     },
     {
-      title: "Orthopedic Manual Therapy (OMT)",
-      target: "Licensed Physical Therapists",
-      description: "Advanced post-graduate training focusing on spinal differential diagnosis, cervical spine, and joint mobility disorders.",
+      title: "Orthopedic Manual Therapy (OMT) Seminars",
+      target: "Physical Therapists & Practitioners",
+      description: "Evidence-based clinical assessment and hands-on manual therapy for neck, spine, and joint dysfunctions.",
       icon: Award,
     },
   ];
 
-  // Truncate to top 3 highlights for homepage
   const topDegrees = CV_DATA_EN.degrees.slice(0, 3);
   const topWorkExperience = CV_DATA_EN.workExperience.slice(0, 3);
-  const topCertifications = CV_DATA_EN.certifications.slice(0, 3);
+  const visibleCertifications = showAllCertifications 
+    ? CV_DATA_EN.certifications 
+    : CV_DATA_EN.certifications.slice(0, 3);
 
   return (
     <section className="py-20 bg-[#000d21] border-b border-[#0C66B4]/30 relative overflow-hidden">
@@ -39,13 +45,13 @@ export default function TrainingsSection() {
           <div className="text-center max-w-3xl mx-auto space-y-4">
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#0C66B4]/20 border border-[#00AEEF]/40 text-[#00AEEF] text-xs font-bold uppercase tracking-wider">
               <GraduationCap className="w-4 h-4" />
-              <span>Teaching &amp; University Lectures</span>
+              <span>Teaching &amp; Lecturing</span>
             </div>
             <h2 className="text-3xl sm:text-5xl font-display text-white tracking-wide">
-              CLINICAL <span className="text-[#00AEEF]">COURSES &amp; TEACHING</span>
+              CLINICAL WORKSHOPS <span className="text-[#00AEEF]">&amp; LECTURES</span>
             </h2>
             <p className="text-gray-300 text-base">
-              I instruct physical therapists and dental students at the University of Oulu on TMJ disorders and dental ergonomic posture.
+              I instruct physical therapists and dental students at the University of Oulu in TMJ rehabilitation and workplace ergonomics.
             </p>
           </div>
 
@@ -77,15 +83,15 @@ export default function TrainingsSection() {
           </div>
         </div>
 
-        {/* Section 2: Truncated Top CV Highlights */}
+        {/* Section 2: Top CV Highlights */}
         <div className="pt-12 border-t border-[#0C66B4]/30 space-y-12">
           <div className="text-center max-w-3xl mx-auto space-y-4">
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#0C66B4]/20 border border-[#00AEEF]/40 text-[#00AEEF] text-xs font-bold uppercase tracking-wider">
               <Briefcase className="w-4 h-4" />
-              <span>Curriculum Vitae &amp; Clinical Background</span>
+              <span>Curriculum Vitae &amp; Clinical Experience</span>
             </div>
             <h2 className="text-3xl sm:text-5xl font-display text-white tracking-wide">
-              CLINICAL EXPERIENCE &amp; <span className="text-[#00AEEF]">DEGREES</span>
+              CAREER &amp; <span className="text-[#00AEEF]">DEGREES</span>
             </h2>
           </div>
 
@@ -95,7 +101,7 @@ export default function TrainingsSection() {
             <div className="lg:col-span-6 space-y-6">
               <h3 className="text-2xl font-bold text-white flex items-center gap-2">
                 <GraduationCap className="w-6 h-6 text-[#00AEEF]" />
-                Degrees &amp; Specializations
+                Degrees &amp; Specialization
               </h3>
 
               <div className="space-y-4">
@@ -141,7 +147,7 @@ export default function TrainingsSection() {
           </div>
         </div>
 
-        {/* Section 3: Continuing Education Highlights & Full CV Link Button */}
+        {/* Section 3: Continuing Education Highlights & Dynamic Expansion Button */}
         <div className="pt-12 border-t border-[#0C66B4]/30 space-y-8">
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-4">
             <div>
@@ -155,11 +161,11 @@ export default function TrainingsSection() {
             </div>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-            {topCertifications.map((cert, idx) => (
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            {visibleCertifications.map((cert, idx) => (
               <div
                 key={idx}
-                className="p-4 rounded-xl bg-[#000a18] border border-[#0C66B4]/40 flex items-start gap-3"
+                className="p-4 rounded-xl bg-[#000a18] border border-[#0C66B4]/40 flex items-start gap-3 transition-all hover:border-[#00AEEF]"
               >
                 <CheckCircle2 className="w-5 h-5 text-[#00AEEF] shrink-0 mt-0.5" />
                 <div>
@@ -171,14 +177,30 @@ export default function TrainingsSection() {
             ))}
           </div>
 
-          {/* Full CV Link Button */}
-          <div className="text-center pt-6">
-            <Link
-              href="/workshops"
-              className="inline-flex items-center gap-2 px-8 py-4 rounded-xl bg-[#00AEEF] text-black font-bold text-sm hover:bg-[#33C2F5] transition-all shadow-glow group"
+          {/* Dynamic Expansion & Full Profile Link Buttons */}
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-6">
+            <button
+              onClick={() => setShowAllCertifications(!showAllCertifications)}
+              className="inline-flex items-center gap-2 px-8 py-4 rounded-xl bg-[#00AEEF] text-black font-bold text-sm hover:bg-[#33C2F5] transition-all shadow-glow group cursor-pointer"
             >
-              <span>View full CV &amp; training history</span>
-              <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+              <span>
+                {showAllCertifications
+                  ? "Show Less"
+                  : `View all post-graduate courses (${CV_DATA_EN.certifications.length} courses)`}
+              </span>
+              {showAllCertifications ? (
+                <ChevronUp className="w-4 h-4" />
+              ) : (
+                <ChevronDown className="w-4 h-4 group-hover:translate-y-0.5 transition-transform" />
+              )}
+            </button>
+
+            <Link
+              href="/about"
+              className="inline-flex items-center gap-2 px-6 py-4 rounded-xl bg-[#000a18] border border-[#0C66B4]/60 text-white font-bold text-sm hover:border-[#00AEEF] hover:text-[#00AEEF] transition-all"
+            >
+              <span>Read full professional philosophy &amp; background</span>
+              <ArrowRight className="w-4 h-4" />
             </Link>
           </div>
         </div>
