@@ -12,6 +12,8 @@ import { fetchYouTubeVideos } from "@/lib/youtube";
 import Script from "next/script";
 import type { Metadata } from "next";
 
+export const revalidate = 0;
+
 export const metadata: Metadata = {
   title: "OMT Physical Therapist Janne Sakkinen | Orofacial & TMJ Care",
   description: "Specialized OMT Physical Therapist and University Instructor Janne Sakkinen. TMJ disorders, masseter pain, and physical therapy guides. Explore videos & clinical articles.",
@@ -149,7 +151,7 @@ export default async function HomePage() {
       {/* 3. Appointment Booking Instructions */}
       <AppointmentBookingSection />
 
-      {/* 4. Patient Testimonials */}
+      {/* 4. Patient Testimonials (Hidden) */}
       <PatientTestimonialsSection />
 
       {/* 5. Workshops & Clinical History */}
