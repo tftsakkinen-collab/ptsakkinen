@@ -42,6 +42,7 @@ export default async function HomePage() {
         "@type": "Organization",
         "name": "Tiedottajanne Oy",
         "legalName": "Tiedottajanne Oy",
+        "image": "https://www.ptsakkinen.com/logo-whitebg.png",
         "address": {
           "@type": "PostalAddress",
           "streetAddress": "Lipunkantajantie 21 G",
@@ -84,6 +85,12 @@ export default async function HomePage() {
       "name": "Tiedottajanne Oy - PT Sakkinen",
       "description": "OMT Physical Therapy and Orofacial Rehabilitation Workshops.",
       "url": "https://www.ptsakkinen.com",
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://www.ptsakkinen.com/janne-sakkinen.jpg",
+        "width": 800,
+        "height": 1000
+      },
       "telephone": "+358413274967",
       "email": "tiedottajanne@gmail.com",
       "address": {
