@@ -21,7 +21,7 @@ export default function PatientTestimonialsSection() {
       stars: 5,
     },
     {
-      name: "Occupational Health Patient (Qt Company)",
+      name: "Occupational Health Patient",
       condition: "Neck-Shoulder Pain & Video Exercise Guides",
       review: "Usually you get a stack of paper exercises that end up sitting on a desk. Janne recorded tailored exercise videos directly on my smartphone! It made executing the rehabilitation plan at home effortless.",
       stars: 5,
@@ -33,7 +33,7 @@ export default function PatientTestimonialsSection() {
       stars: 5,
     },
     {
-      name: "Knee Osteoarthritis Patient & Runner",
+      name: "Knee Osteoarthritis Patient",
       condition: "Knee Joint Osteoarthritis & Strength Training",
       review: "Janne provided targeted strengthening and stability exercises for my knee osteoarthritis. By spring, targeted progressive training enabled me to comfortably run a half-marathon pain-free!",
       stars: 5,
