@@ -1,12 +1,12 @@
 import { SITE_CONFIG } from "@/data/config";
-import { Award, GraduationCap, Briefcase, BookOpen, CheckCircle2, ShieldCheck, FileCheck, ArrowRight, User, MapPin, Mail, Phone } from "lucide-react";
+import { Award, GraduationCap, Briefcase, BookOpen, CheckCircle2, ShieldCheck, FileCheck, ArrowRight, User, MapPin, Mail, Phone, Users, HeartHandshake, Target } from "lucide-react";
 import Link from "next/link";
 import Script from "next/script";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "About Janne Sakkinen | OMT Physical Therapist & Instructor",
-  description: "Learn about Janne Sakkinen, specialized OMT Physical Therapist (SOMTY) and clinical ergonomics instructor at the University of Oulu Faculty of Dentistry (since 2017).",
+  title: "About Janne Sakkinen | OMT Physical Therapist & Occupational Health Specialist",
+  description: "Learn about Janne Sakkinen, specialized OMT Physical Therapist (SOMTY), Occupational Physical Therapy Specialist, and University Instructor at the University of Oulu Faculty of Dentistry (since 2017).",
   alternates: {
     canonical: "https://www.ptsakkinen.com/about",
     languages: {
@@ -25,9 +25,9 @@ export default function AboutPage() {
       "mainEntity": {
         "@type": "Person",
         "name": "Janne Sakkinen",
-        "jobTitle": "OMT Physical Therapist",
+        "jobTitle": "OMT Physical Therapist & Occupational Health Specialist",
         "url": "https://www.ptsakkinen.com/about",
-        "description": "Specialized OMT Physical Therapist and Clinical Ergonomics Instructor at the University of Oulu Faculty of Dentistry since 2017.",
+        "description": "Specialized OMT Physical Therapist, Occupational Health Specialist, and Clinical Ergonomics Instructor at the University of Oulu Faculty of Dentistry since 2017.",
         "worksFor": {
           "@type": "Organization",
           "name": "PT Sakkinen",
@@ -115,7 +115,7 @@ export default function AboutPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16">
         
         {/* Header / Intro */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
@@ -129,7 +129,7 @@ export default function AboutPage() {
               <div className="absolute inset-0 bg-gradient-to-t from-[#000d21] via-transparent to-transparent opacity-60" />
               <div className="absolute bottom-6 left-6 right-6 p-4 rounded-xl bg-[#000d21]/90 border border-[#00AEEF] backdrop-blur-md flex items-center gap-3 text-[#00AEEF] text-xs font-bold shadow-glow">
                 <Award className="w-5 h-5 shrink-0" />
-                <span>OMT Physical Therapist (SOMTY 2018–2020)</span>
+                <span>OMT Physical Therapist &amp; Occupational Health Specialist</span>
               </div>
             </div>
           </div>
@@ -137,7 +137,7 @@ export default function AboutPage() {
           <div className="lg:col-span-7 space-y-6">
             <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#014489]/40 border border-[#00AEEF]/50 text-[#00AEEF] text-xs font-bold uppercase tracking-wider">
               <User className="w-4 h-4" />
-              <span>About &amp; Clinical Background</span>
+              <span>Professional Profile &amp; Background</span>
             </div>
 
             <h1 className="text-4xl sm:text-5xl font-display text-white tracking-wide leading-tight">
@@ -145,15 +145,18 @@ export default function AboutPage() {
             </h1>
 
             <p className="text-gray-300 text-base sm:text-lg leading-relaxed font-medium">
-              Specialized Orthopedic Manual Physical Therapist (OMT) and clinical ergonomics instructor at the University of Oulu Faculty of Dentistry.
+              Experienced OMT Physical Therapist, Occupational Health Specialist, and Clinical Ergonomics Instructor at the University of Oulu Faculty of Dentistry.
             </p>
 
             <div className="space-y-4 text-gray-300 text-sm sm:text-base leading-relaxed">
               <p>
-                My clinical practice focuses on non-surgical rehabilitation of temporomandibular disorders (TMD), masseter hypertonicity, cervicogenic headaches, and complex spine dysfunction.
+                My clinical practice centers on non-surgical prevention and rehabilitation of temporomandibular disorders (TMD), masseter hypertonicity, cervicogenic headaches, and occupational musculoskeletal disorders.
               </p>
               <p>
-                Since 2017, I have instructed dental ergonomics for dental students at the University of Oulu Faculty of Dentistry and conducted post-graduate TMJ physical therapy workshops for healthcare professionals.
+                As an independent practitioner at Terveystalo (digital and clinical occupational health) and Norre Occupational Health, I combine open communication, evidence-based manual therapy, and active movement coaching.
+              </p>
+              <p>
+                For over 7 years (since 2017), I have served as a visiting lecturer and ergonomics specialist at the University of Oulu Faculty of Dentistry, developing clinical ergonomic protocols for dental practitioners.
               </p>
             </div>
 
@@ -162,7 +165,7 @@ export default function AboutPage() {
                 <GraduationCap className="w-6 h-6 text-[#00AEEF] shrink-0 mt-0.5" />
                 <div>
                   <h3 className="text-white font-bold text-sm">University Instructor (2017–)</h3>
-                  <p className="text-xs text-gray-400 mt-1">University of Oulu, Faculty of Dentistry</p>
+                  <p className="text-xs text-gray-400 mt-1">University of Oulu, Faculty of Dentistry (7+ years)</p>
                 </div>
               </div>
               <div className="p-4 rounded-xl bg-[#000d21] border border-[#0C66B4]/60 flex items-start gap-3">
@@ -176,8 +179,53 @@ export default function AboutPage() {
           </div>
         </div>
 
+        {/* Work Philosophy Section */}
+        <div className="space-y-8 p-8 sm:p-10 rounded-3xl bg-[#000d21] border border-[#0C66B4]/60 shadow-panel">
+          <div className="space-y-3">
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#014489]/40 border border-[#00AEEF]/40 text-[#00AEEF] text-xs font-bold uppercase tracking-wider">
+              <HeartHandshake className="w-4 h-4" />
+              <span>Practice Philosophy</span>
+            </div>
+            <h2 className="text-2xl sm:text-3xl font-display text-white">
+              COACHING &amp; SOLUTION-ORIENTED <span className="text-[#00AEEF]">CLINICAL CARE</span>
+            </h2>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div className="p-6 rounded-2xl bg-[#000a18] border border-[#0C66B4]/40 space-y-3">
+              <div className="w-10 h-10 rounded-xl bg-[#00AEEF]/20 text-[#00AEEF] flex items-center justify-center">
+                <HeartHandshake className="w-5 h-5" />
+              </div>
+              <h3 className="text-lg font-bold text-white">Open Interaction &amp; Trust</h3>
+              <p className="text-xs text-gray-300 leading-relaxed">
+                I believe optimal clinical outcomes originate from transparent communication, mutual trust, and thorough individual rehabilitation planning.
+              </p>
+            </div>
+
+            <div className="p-6 rounded-2xl bg-[#000a18] border border-[#0C66B4]/40 space-y-3">
+              <div className="w-10 h-10 rounded-xl bg-[#00AEEF]/20 text-[#00AEEF] flex items-center justify-center">
+                <Target className="w-5 h-5" />
+              </div>
+              <h3 className="text-lg font-bold text-white">Coaching Approach</h3>
+              <p className="text-xs text-gray-300 leading-relaxed">
+                Every client case is evaluated holistically. My motivational coaching style empowers individuals and teams to achieve sustainable health outcomes.
+              </p>
+            </div>
+
+            <div className="p-6 rounded-2xl bg-[#000a18] border border-[#0C66B4]/40 space-y-3">
+              <div className="w-10 h-10 rounded-xl bg-[#00AEEF]/20 text-[#00AEEF] flex items-center justify-center">
+                <Users className="w-5 h-5" />
+              </div>
+              <h3 className="text-lg font-bold text-white">Leadership &amp; Organization</h3>
+              <p className="text-xs text-gray-300 leading-relaxed">
+                Leadership roles in student organizations and tutor coordination have built strong organizational skills and seamless multi-professional collaboration.
+              </p>
+            </div>
+          </div>
+        </div>
+
         {/* Detailed CV Sections */}
-        <div className="space-y-10 pt-8 border-t border-[#0C66B4]/30">
+        <div className="space-y-12 pt-8 border-t border-[#0C66B4]/30">
           <div className="space-y-6">
             <h2 className="text-2xl font-display text-white flex items-center gap-2">
               <GraduationCap className="w-6 h-6 text-[#00AEEF]" />
