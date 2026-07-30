@@ -6,12 +6,12 @@ import { ShieldCheck, Play, ArrowRight, Award, GraduationCap, CheckCircle2, Eye,
 export default function Hero() {
   const stats = [
     {
-      label: "Over 1.1M+",
+      label: "Over 100K+",
       sublabel: "YouTube Views",
       icon: Eye,
     },
     {
-      label: "5,380+ Subscribers",
+      label: "1.1K+ Subscribers",
       sublabel: "Active Community",
       icon: Users,
     },
@@ -98,7 +98,15 @@ export default function Hero() {
             <div className="pt-2 flex items-center gap-4 text-xs text-gray-400">
               <span className="flex items-center gap-1"><CheckCircle2 className="w-4 h-4 text-[#00AEEF]" /> Tiedottajanne Oy</span>
               <span>•</span>
-              <span className="flex items-center gap-1"><CheckCircle2 className="w-4 h-4 text-[#00AEEF]" /> YouTube: @ft_sakkinen</span>
+              <a
+                href={SITE_CONFIG.youtubeUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-1 hover:text-[#00AEEF] transition-colors"
+              >
+                <CheckCircle2 className="w-4 h-4 text-[#00AEEF]" />
+                <span>YouTube: {SITE_CONFIG.youtubeHandle}</span>
+              </a>
             </div>
 
           </div>

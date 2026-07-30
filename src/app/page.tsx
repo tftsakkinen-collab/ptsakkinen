@@ -71,7 +71,7 @@ export default async function HomePage() {
         }
       ],
       "sameAs": [
-        "https://www.youtube.com/@ft_sakkinen",
+        "https://www.youtube.com/@pt_sakkinen",
         "https://www.instagram.com/sakkinenjanne",
         "https://www.tiktok.com/@sakkinenjanne",
         "https://beacons.ai/sakkinenjanne",
