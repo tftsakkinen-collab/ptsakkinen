@@ -212,7 +212,7 @@ export default function AboutPage() {
               <span>Trust &amp; Collaboration</span>
             </h3>
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div className="p-6 rounded-2xl bg-[#000a18] border border-[#0C66B4]/40 space-y-3">
                 <div className="w-10 h-10 rounded-xl bg-[#00AEEF]/20 text-[#00AEEF] flex items-center justify-center">
                   <HeartHandshake className="w-5 h-5" />
@@ -225,21 +225,11 @@ export default function AboutPage() {
 
               <div className="p-6 rounded-2xl bg-[#000a18] border border-[#0C66B4]/40 space-y-3">
                 <div className="w-10 h-10 rounded-xl bg-[#00AEEF]/20 text-[#00AEEF] flex items-center justify-center">
-                  <Users className="w-5 h-5" />
-                </div>
-                <h4 className="text-base font-bold text-white">Leadership &amp; Governance</h4>
-                <p className="text-xs text-gray-300 leading-relaxed">
-                  My leadership roles during my studies — including serving as chair of a student association and as a peer-tutoring coordinator — strengthened my organizational skills and my ability to work with people from all backgrounds.
-                </p>
-              </div>
-
-              <div className="p-6 rounded-2xl bg-[#000a18] border border-[#0C66B4]/40 space-y-3">
-                <div className="w-10 h-10 rounded-xl bg-[#00AEEF]/20 text-[#00AEEF] flex items-center justify-center">
                   <Target className="w-5 h-5" />
                 </div>
                 <h4 className="text-base font-bold text-white">Empowering Professionals &amp; Patients</h4>
                 <p className="text-xs text-gray-300 leading-relaxed">
-                  These experiences continue to serve me well in my clinical and teaching work today, bridging academic expertise with practical tools that empower both professionals and patients.
+                  These experiences serve me daily in clinical practice and university instruction by bridging academic research with practical, real-world tools.
                 </p>
               </div>
             </div>
