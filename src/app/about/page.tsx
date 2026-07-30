@@ -1,12 +1,12 @@
 import { SITE_CONFIG } from "@/data/config";
-import { Award, GraduationCap, Briefcase, BookOpen, CheckCircle2, ShieldCheck, FileCheck, ArrowRight, User, MapPin, Mail, Phone, Users, HeartHandshake, Target } from "lucide-react";
+import { Award, GraduationCap, Briefcase, BookOpen, CheckCircle2, ShieldCheck, FileCheck, ArrowRight, User, MapPin, Mail, Phone, Users, HeartHandshake, Target, Compass } from "lucide-react";
 import Link from "next/link";
 import Script from "next/script";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "About Janne Sakkinen | OMT Physical Therapist & Occupational Health Specialist",
-  description: "Learn about Janne Sakkinen, specialized OMT Physical Therapist (SOMTY), Occupational Physical Therapy Specialist, and University Instructor at the University of Oulu Faculty of Dentistry (since 2017).",
+  title: "About Janne Sakkinen & Philosophy | OMT Physical Therapist",
+  description: "Learn about Janne Sakkinen, specialized OMT Physical Therapist (SOMTY), Occupational Physical Therapy Specialist, University Instructor at the University of Oulu Faculty of Dentistry (since 2017), and practice philosophy.",
   alternates: {
     canonical: "https://www.ptsakkinen.com/about",
     languages: {
@@ -27,7 +27,7 @@ export default function AboutPage() {
         "name": "Janne Sakkinen",
         "jobTitle": "OMT Physical Therapist & Occupational Health Specialist",
         "url": "https://www.ptsakkinen.com/about",
-        "description": "Specialized OMT Physical Therapist, Occupational Health Specialist, and Clinical Ergonomics Instructor at the University of Oulu Faculty of Dentistry since 2017.",
+        "description": "Specialized OMT Physical Therapist, Occupational Health Specialist, and Clinical Ergonomics Instructor at the University of Oulu Faculty of Dentistry since 2017. Driven by a deep passion for promoting physical capacity and functional well-being in work environments. Specialized in treating complex musculoskeletal issues and temporomandibular disorders (TMD). I believe the best client experience comes from open communication, trust, evidence-based manual therapy, and tailored active movement coaching.",
         "worksFor": {
           "@type": "Organization",
           "name": "PT Sakkinen",
@@ -72,7 +72,7 @@ export default function AboutPage() {
         {
           "@type": "ListItem",
           "position": 2,
-          "name": "About",
+          "name": "About & Philosophy",
           "item": "https://www.ptsakkinen.com/about"
         }
       ]
@@ -179,49 +179,72 @@ export default function AboutPage() {
           </div>
         </div>
 
-        {/* Work Philosophy Section */}
-        <div className="space-y-8 p-8 sm:p-10 rounded-3xl bg-[#000d21] border border-[#0C66B4]/60 shadow-panel">
-          <div className="space-y-3">
+        {/* Section: Why I do this work & Practice Philosophy */}
+        <div className="space-y-10 p-8 sm:p-10 rounded-3xl bg-[#000d21] border border-[#0C66B4]/60 shadow-panel">
+          
+          <div className="space-y-4">
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#014489]/40 border border-[#00AEEF]/40 text-[#00AEEF] text-xs font-bold uppercase tracking-wider">
-              <HeartHandshake className="w-4 h-4" />
-              <span>Practice Philosophy</span>
+              <Compass className="w-4 h-4" />
+              <span>Why I do this work</span>
             </div>
-            <h2 className="text-2xl sm:text-3xl font-display text-white">
-              COACHING &amp; SOLUTION-ORIENTED <span className="text-[#00AEEF]">CLINICAL CARE</span>
+            
+            <h2 className="text-2xl sm:text-4xl font-display text-white">
+              PASSION FOR PHYSICAL PERFORMANCE &amp; <span className="text-[#00AEEF]">TAILORED SOLUTIONS</span>
             </h2>
-          </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div className="p-6 rounded-2xl bg-[#000a18] border border-[#0C66B4]/40 space-y-3">
-              <div className="w-10 h-10 rounded-xl bg-[#00AEEF]/20 text-[#00AEEF] flex items-center justify-center">
-                <HeartHandshake className="w-5 h-5" />
-              </div>
-              <h3 className="text-lg font-bold text-white">Open Interaction &amp; Trust</h3>
-              <p className="text-xs text-gray-300 leading-relaxed">
-                I believe optimal clinical outcomes originate from transparent communication, mutual trust, and thorough individual rehabilitation planning.
+            <div className="space-y-4 text-gray-300 text-sm sm:text-base leading-relaxed max-w-4xl">
+              <p>
+                I&apos;m driven by a deep passion for promoting physical capacity and functional well-being — especially in work environments. Since 2010, I&apos;ve worked extensively in occupational physiotherapy and musculoskeletal rehabilitation, and I currently practice in both traditional and digital occupational health at Terveystalo.
               </p>
-            </div>
-
-            <div className="p-6 rounded-2xl bg-[#000a18] border border-[#0C66B4]/40 space-y-3">
-              <div className="w-10 h-10 rounded-xl bg-[#00AEEF]/20 text-[#00AEEF] flex items-center justify-center">
-                <Target className="w-5 h-5" />
-              </div>
-              <h3 className="text-lg font-bold text-white">Coaching Approach</h3>
-              <p className="text-xs text-gray-300 leading-relaxed">
-                Every client case is evaluated holistically. My motivational coaching style empowers individuals and teams to achieve sustainable health outcomes.
+              <p>
+                My core expertise lies in orthopedic manual therapy (OMT), ergonomics, and evidence-based physiotherapy. Over the years, I&apos;ve specialized in treating complex musculoskeletal issues and guiding individuals toward sustainable physical performance in their everyday lives and professions. Whether it&apos;s a dentist with chronic neck pain or a desk worker battling lower back stiffness, I&apos;m driven by the challenge of finding practical, tailored solutions.
               </p>
-            </div>
-
-            <div className="p-6 rounded-2xl bg-[#000a18] border border-[#0C66B4]/40 space-y-3">
-              <div className="w-10 h-10 rounded-xl bg-[#00AEEF]/20 text-[#00AEEF] flex items-center justify-center">
-                <Users className="w-5 h-5" />
-              </div>
-              <h3 className="text-lg font-bold text-white">Leadership &amp; Organization</h3>
-              <p className="text-xs text-gray-300 leading-relaxed">
-                Leadership roles in student organizations and tutor coordination have built strong organizational skills and seamless multi-professional collaboration.
+              <p>
+                In addition to clinical work, I&apos;ve spent over seven years as a visiting lecturer at the University of Oulu&apos;s Faculty of Dentistry, teaching ergonomic strategies to future professionals. I also lecture nationwide on TMJ (temporomandibular joint) dysfunction and its therapy — an area I&apos;ve developed deep specialization in. My aim is always the same: to bridge high-level knowledge with concrete tools that empower both professionals and patients.
               </p>
             </div>
           </div>
+
+          {/* Cards: Trust & Collaboration */}
+          <div className="pt-6 border-t border-[#0C66B4]/30 space-y-6">
+            <h3 className="text-xl font-display text-white flex items-center gap-2">
+              <HeartHandshake className="w-5 h-5 text-[#00AEEF]" />
+              <span>Trust &amp; Collaboration</span>
+            </h3>
+
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              <div className="p-6 rounded-2xl bg-[#000a18] border border-[#0C66B4]/40 space-y-3">
+                <div className="w-10 h-10 rounded-xl bg-[#00AEEF]/20 text-[#00AEEF] flex items-center justify-center">
+                  <HeartHandshake className="w-5 h-5" />
+                </div>
+                <h4 className="text-base font-bold text-white">Solution-Focused Approach</h4>
+                <p className="text-xs text-gray-300 leading-relaxed">
+                  I&apos;ve received consistent feedback from colleagues and clients about my positive attitude and solution-focused approach. I believe the best client experience comes from open communication, trust, and careful planning.
+                </p>
+              </div>
+
+              <div className="p-6 rounded-2xl bg-[#000a18] border border-[#0C66B4]/40 space-y-3">
+                <div className="w-10 h-10 rounded-xl bg-[#00AEEF]/20 text-[#00AEEF] flex items-center justify-center">
+                  <Users className="w-5 h-5" />
+                </div>
+                <h4 className="text-base font-bold text-white">Leadership &amp; Governance</h4>
+                <p className="text-xs text-gray-300 leading-relaxed">
+                  My leadership roles during my studies — including serving as chair of a student association and as a peer-tutoring coordinator — strengthened my organizational skills and my ability to work with people from all backgrounds.
+                </p>
+              </div>
+
+              <div className="p-6 rounded-2xl bg-[#000a18] border border-[#0C66B4]/40 space-y-3">
+                <div className="w-10 h-10 rounded-xl bg-[#00AEEF]/20 text-[#00AEEF] flex items-center justify-center">
+                  <Target className="w-5 h-5" />
+                </div>
+                <h4 className="text-base font-bold text-white">Empowering Professionals &amp; Patients</h4>
+                <p className="text-xs text-gray-300 leading-relaxed">
+                  These experiences continue to serve me well in my clinical and teaching work today, bridging academic expertise with practical tools that empower both professionals and patients.
+                </p>
+              </div>
+            </div>
+          </div>
+
         </div>
 
         {/* Detailed CV Sections */}
