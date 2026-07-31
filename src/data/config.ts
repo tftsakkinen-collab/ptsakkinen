@@ -16,7 +16,7 @@ export const SITE_CONFIG = {
   // Social Media Handles
   youtubeUrl: "https://www.youtube.com/@pt_sakkinen",
   youtubeHandle: "@pt_sakkinen",
-  youtubeChannelId: "UCz0XuTDgzskIDlzSrZFxsBg",
+  youtubeChannelId: "UCbIWSnSD_k3YoTQSqrzi5Bw",
 
   instagramUrl: "https://www.instagram.com/ptsakkinen",
   instagramHandle: "@ptsakkinen",

@@ -16,7 +16,7 @@ const CATEGORY_MAP: Record<string, string> = {
 };
 
 export async function fetchYouTubeVideos(): Promise<Video[]> {
-  const channelId = SITE_CONFIG.youtubeChannelId || "UCz0XuTDgzskIDlzSrZFxsBg";
+  const channelId = SITE_CONFIG.youtubeChannelId || "UCbIWSnSD_k3YoTQSqrzi5Bw";
 
   try {
     // Fetch real-time YouTube channel RSS feed XML (revalidated automatically)
