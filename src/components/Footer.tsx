@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { SITE_CONFIG } from "@/data/config";
 import { Youtube, Globe, ShieldAlert, Mail, Phone, MapPin, Instagram, Video } from "lucide-react";
+import VisitorCounter from "@/components/VisitorCounter";
 
 export default function Footer() {
   return (
@@ -123,6 +124,7 @@ export default function Footer() {
         {/* Bottom Bar */}
         <div className="mt-8 pt-6 border-t border-[#0C66B4]/20 flex flex-col sm:flex-row items-center justify-between text-xs text-gray-400 gap-4">
           <p>© {new Date().getFullYear()} {SITE_CONFIG.companyName} — All rights reserved.</p>
+          <VisitorCounter siteKey="ptsakkinen_com" label="Total Site Visitors" />
           <p className="font-mono text-[11px]">Business ID: {SITE_CONFIG.businessId}</p>
         </div>
       </div>
