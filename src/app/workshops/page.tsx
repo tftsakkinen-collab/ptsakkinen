@@ -14,6 +14,21 @@ export const metadata: Metadata = {
       "x-default": "https://www.ftsakkinen.com/koulutukset",
     },
   },
+  openGraph: {
+    title: "Workshops, Lectures & CV | PT Sakkinen",
+    description: "Explore OMT Physical Therapist Janne Sakkinen's university teaching at University of Oulu, clinical work history, and workshop reviews.",
+    url: "https://www.ptsakkinen.com/workshops",
+    siteName: "PT Sakkinen - OMT Physical Therapist",
+    locale: "en_US",
+    type: "website",
+    images: [{ url: "https://www.ptsakkinen.com/janne-sakkinen.jpg" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Workshops, Lectures & CV | PT Sakkinen",
+    description: "Explore OMT Physical Therapist Janne Sakkinen's university teaching at University of Oulu, clinical work history, and workshop reviews.",
+    images: ["https://www.ptsakkinen.com/janne-sakkinen.jpg"],
+  },
 };
 
 export default function WorkshopsPage() {

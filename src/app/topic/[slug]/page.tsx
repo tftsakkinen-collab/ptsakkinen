@@ -167,6 +167,13 @@ export async function generateMetadata(props: { params: Promise<{ slug: string }
       siteName: "PT Sakkinen - Physical Therapy",
       locale: "en_US",
       type: "article",
+      images: [{ url: "https://www.ptsakkinen.com/logo-whitebg.png" }],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: metaTitle,
+      description: metaDescription,
+      images: ["https://www.ptsakkinen.com/logo-whitebg.png"],
     },
   };
 }

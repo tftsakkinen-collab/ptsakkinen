@@ -15,6 +15,21 @@ export const metadata: Metadata = {
       "x-default": "https://www.ftsakkinen.com/tietoa-minusta",
     },
   },
+  openGraph: {
+    title: "About Janne Sakkinen & Philosophy | OMT Physical Therapist",
+    description: "Learn about Janne Sakkinen, specialized OMT Physical Therapist (SOMTY), Occupational Physical Therapy Specialist, University Instructor at the University of Oulu Faculty of Dentistry (since 2017), and practice philosophy.",
+    url: "https://www.ptsakkinen.com/about",
+    siteName: "PT Sakkinen - OMT Physical Therapist",
+    locale: "en_US",
+    type: "profile",
+    images: [{ url: "https://www.ptsakkinen.com/janne-sakkinen.jpg" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "About Janne Sakkinen & Philosophy | OMT Physical Therapist",
+    description: "Learn about Janne Sakkinen, specialized OMT Physical Therapist (SOMTY), Occupational Physical Therapy Specialist, University Instructor at the University of Oulu Faculty of Dentistry (since 2017), and practice philosophy.",
+    images: ["https://www.ptsakkinen.com/janne-sakkinen.jpg"],
+  },
 };
 
 export default function AboutPage() {
