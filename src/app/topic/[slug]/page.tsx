@@ -168,8 +168,23 @@ export default async function TopicHubPage(props: { params: Promise<{ slug: stri
     notFound();
   }
 
-  // Filter related videos by category
-  const topicVideos = FALLBACK_VIDEOS.filter((v) => v.categoryId === topic.categoryId);
+  // Filter related videos by topic relevance (category + title/description/transcript keywords)
+  const topicVideos = FALLBACK_VIDEOS.filter((v) => {
+    const text = (v.title + " " + v.promiseDescription + " " + (v.transcript || "")).toLowerCase();
+    if (params.slug === "tmj-and-jaw-pain") {
+      return v.categoryId === "tmj-bruxism" || text.includes("jaw") || text.includes("tmj") || text.includes("bruxism") || text.includes("masseter");
+    }
+    if (params.slug === "neck-pain-and-headaches") {
+      return text.includes("neck") || text.includes("headache") || text.includes("cervical") || text.includes("dizziness") || text.includes("head");
+    }
+    if (params.slug === "back-pain-and-sciatica") {
+      return text.includes("back") || text.includes("sciatica") || text.includes("lumbar") || text.includes("disc") || text.includes("spine");
+    }
+    if (params.slug === "ergonomics-and-wellness") {
+      return v.categoryId === "ergonomics" || text.includes("ergonom") || text.includes("work") || text.includes("desk") || text.includes("posture");
+    }
+    return v.categoryId === topic.categoryId;
+  });
   const faqs = TOPIC_FAQS_EN[params.slug] || TOPIC_FAQS_EN["tmj-and-jaw-pain"];
 
   const topicMedicalConditionsEN: Record<string, string> = {

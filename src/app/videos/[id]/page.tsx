@@ -85,7 +85,36 @@ export default async function SingleVideoPage(props: { params: Promise<{ id: str
 
   // Dynamic video-specific FAQ items
   const cleanTitle = video.title.trim();
-  const categoryName = category?.name || "physical therapy";
+  
+  const formatCategoryEN = (catId: string) => {
+    if (catId === "tmj-bruxism") return "TMJ and jaw rehabilitation";
+    if (catId === "ergonomics") return "ergonomics and workplace wellness";
+    return "cervical and musculoskeletal rehabilitation";
+  };
+  const categoryFormatted = formatCategoryEN(video.categoryId);
+
+  // Content type detection for non-exercise videos (Task 2)
+  const videoText = (video.title + " " + video.promiseDescription).toLowerCase();
+  let contentType = "exercise";
+  if (videoText.includes("food") || videoText.includes("diet") || videoText.includes("nutrition") || videoText.includes("inflammation") || videoText.includes("eat")) {
+    contentType = "nutrition";
+  } else if (videoText.includes("interview") || videoText.includes("story") || videoText.includes("myth") || videoText.includes("qa") || videoText.includes("q&a")) {
+    contentType = "interview";
+  } else if (videoText.includes("lecture") || videoText.includes("presentation") || videoText.includes("statistic") || videoText.includes("data")) {
+    contentType = "lecture";
+  }
+
+  let q2Answer = video.transcript
+    ? `The video demonstrates specific movement patterns and clinical exercise progressions: ${video.transcript.slice(0, 220).trim()}...`
+    : `OMT Physical Therapist Janne Sakkinen guides step-by-step clinical protocols and self-care exercises tailored for ${categoryFormatted}.`;
+
+  if (contentType === "nutrition") {
+    q2Answer = `The video provides targeted dietary recommendations, anti-inflammatory nutrition guidelines, and practical lifestyle adjustments. ${video.transcript ? video.transcript.slice(0, 180).trim() + "..." : ""}`;
+  } else if (contentType === "interview") {
+    q2Answer = `The video features a clinical expert discussion, real-world case analysis, and actionable self-care insights. ${video.transcript ? video.transcript.slice(0, 180).trim() + "..." : ""}`;
+  } else if (contentType === "lecture") {
+    q2Answer = `The video presents a clinical lecture session with evidence-based data, educational materials, and ergonomic posture guidance. ${video.transcript ? video.transcript.slice(0, 180).trim() + "..." : ""}`;
+  }
 
   const faqItems = [
     {
@@ -93,10 +122,8 @@ export default async function SingleVideoPage(props: { params: Promise<{ id: str
       answer: video.promiseDescription,
     },
     {
-      question: `How are the instructions in "${cleanTitle}" applied to ${categoryName.toLowerCase()} rehabilitation?`,
-      answer: video.transcript
-        ? `The video demonstrates specific movement patterns and clinical exercise progressions: ${video.transcript.slice(0, 220).trim()}...`
-        : `OMT Physical Therapist Janne Sakkinen guides step-by-step clinical protocols and self-care exercises tailored for ${categoryName.toLowerCase()}.`,
+      question: `How are the instructions in "${cleanTitle}" applied to ${categoryFormatted}?`,
+      answer: q2Answer,
     },
     {
       question: `When should you seek an OMT physical therapy consultation for symptoms related to this topic?`,
