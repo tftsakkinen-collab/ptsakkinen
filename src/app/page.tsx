@@ -25,6 +25,21 @@ export const metadata: Metadata = {
       "x-default": "https://www.ftsakkinen.com/",
     },
   },
+  openGraph: {
+    title: "OMT Physical Therapist Janne Sakkinen | Oulu | TMJ & Jaw Rehabilitation",
+    description: "Specialized OMT Physical Therapist Janne Sakkinen in Oulu, Finland. TMJ disorders, masseter myofascial therapy, and dental ergonomics university instructor since 2017.",
+    url: "https://www.ptsakkinen.com/",
+    siteName: "PT Sakkinen - Physical Therapy",
+    locale: "en_US",
+    type: "website",
+    images: [{ url: "https://www.ptsakkinen.com/janne-sakkinen.jpg" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "OMT Physical Therapist Janne Sakkinen | Oulu | TMJ & Jaw Rehabilitation",
+    description: "Specialized OMT Physical Therapist Janne Sakkinen in Oulu, Finland. TMJ disorders, masseter myofascial therapy, and dental ergonomics university instructor since 2017.",
+    images: ["https://www.ptsakkinen.com/janne-sakkinen.jpg"],
+  },
 };
 
 export default async function HomePage() {

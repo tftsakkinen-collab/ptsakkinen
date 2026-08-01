@@ -26,7 +26,17 @@ export const metadata: Metadata = {
   openGraph: {
     title: "PT Sakkinen — Release Jaw Tension & Overcome TMJ Pain",
     description: "Evidence-based physical therapy programs and video rehabilitation guides.",
+    url: "https://www.ptsakkinen.com",
+    siteName: "PT Sakkinen - Physical Therapy",
+    locale: "en_US",
     type: "website",
+    images: [{ url: "https://www.ptsakkinen.com/janne-sakkinen.jpg" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "PT Sakkinen — Release Jaw Tension & Overcome TMJ Pain",
+    description: "Evidence-based physical therapy programs and video rehabilitation guides.",
+    images: ["https://www.ptsakkinen.com/janne-sakkinen.jpg"],
   },
 };
 
