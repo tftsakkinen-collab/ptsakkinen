@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { Download, CheckCircle2, ShieldCheck, Sparkles, ExternalLink } from "lucide-react";
+import { SITE_CONFIG } from "@/data/config";
 
 interface EmailLeadFormProps {
   title?: string;
@@ -103,7 +104,7 @@ export default function EmailLeadForm({
             <button
               type="submit"
               disabled={isLoading}
-              className="w-full py-4 px-8 rounded-xl bg-[#00AEEF] text-[#000a18] font-bold text-base hover:bg-white transition-all duration-300 shadow-[0_0_25px_rgba(0,174,239,0.5)] flex items-center justify-center gap-3 group"
+              className="w-full py-4 px-8 rounded-xl bg-[#00AEEF] text-[#000a18] font-bold text-base hover:bg-white transition-all duration-300 shadow-[0_0_25px_rgba(0,174,239,0.5)] flex items-center justify-center gap-3 group cursor-pointer"
             >
               <Download className="w-5 h-5 group-hover:scale-110 transition-transform" />
               <span>{isLoading ? "Processing..." : "Join List & Access Free Guides"}</span>
@@ -133,7 +134,7 @@ export default function EmailLeadForm({
 
             <div className="pt-4 border-t border-[#0C66B4]/40">
               <a
-                href="https://drive.google.com"
+                href={SITE_CONFIG.googleDriveUrl}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-[#00AEEF] text-[#000a18] font-bold text-sm hover:bg-white transition-all shadow-glow"

@@ -25,6 +25,7 @@ export const SITE_CONFIG = {
   tiktokHandle: "@ptsakkinen",
 
   beaconsUrl: "https://beacons.ai/ptsakkinen",
+  googleDriveUrl: "https://drive.google.com/drive/folders/10GSV-Au7XPeJRZCAVzhy5fCPgrk-izHM?usp=sharing",
   
   // Authority Proofs
   authorityProofs: {
