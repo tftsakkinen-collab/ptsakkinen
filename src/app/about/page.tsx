@@ -237,6 +237,68 @@ export default function AboutPage() {
 
         </div>
 
+        {/* Clinical Practice Gallery */}
+        <div className="space-y-6 pt-4">
+          <div className="text-center max-w-2xl mx-auto space-y-2">
+            <h2 className="text-2xl sm:text-3xl font-display text-white">
+              CLINICAL PRACTICE &amp; <span className="text-[#00AEEF]">TREATMENT TECHNIQUES</span>
+            </h2>
+            <p className="text-xs sm:text-sm text-gray-400">
+              Authentic clinical photography of OMT physical therapy assessment, TMJ manual therapy, and digital ergonomics.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            <div className="relative aspect-[4/3] rounded-2xl overflow-hidden border border-[#0C66B4]/60 group shadow-panel">
+              <img
+                src="/janne-tmd-intraoral.jpg"
+                alt="Intraoral TMJ physical therapy"
+                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#000d21] via-transparent to-transparent opacity-85" />
+              <span className="absolute bottom-3 left-3 right-3 text-xs font-bold text-white leading-tight">
+                Temporomandibular (TMD) Intraoral Therapy
+              </span>
+            </div>
+
+            <div className="relative aspect-[4/3] rounded-2xl overflow-hidden border border-[#0C66B4]/60 group shadow-panel">
+              <img
+                src="/janne-cervical-treatment.jpg"
+                alt="Cervical spine OMT mobilization"
+                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#000d21] via-transparent to-transparent opacity-85" />
+              <span className="absolute bottom-3 left-3 right-3 text-xs font-bold text-white leading-tight">
+                Upper Cervical OMT Mobilization
+              </span>
+            </div>
+
+            <div className="relative aspect-[4/3] rounded-2xl overflow-hidden border border-[#0C66B4]/60 group shadow-panel">
+              <img
+                src="/janne-tmd-examination.jpg"
+                alt="TMJ and masseter palpation and examination"
+                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#000d21] via-transparent to-transparent opacity-85" />
+              <span className="absolute bottom-3 left-3 right-3 text-xs font-bold text-white leading-tight">
+                Masseter &amp; TMJ Joint Palpation
+              </span>
+            </div>
+
+            <div className="relative aspect-[4/3] rounded-2xl overflow-hidden border border-[#0C66B4]/60 group shadow-panel">
+              <img
+                src="/janne-workstation.jpg"
+                alt="Digital telehealth & workplace ergonomics"
+                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#000d21] via-transparent to-transparent opacity-85" />
+              <span className="absolute bottom-3 left-3 right-3 text-xs font-bold text-white leading-tight">
+                Digital Telehealth &amp; Ergonomics
+              </span>
+            </div>
+          </div>
+        </div>
+
         {/* Detailed CV Sections */}
         <div className="space-y-12 pt-8 border-t border-[#0C66B4]/30">
           <div className="space-y-6">

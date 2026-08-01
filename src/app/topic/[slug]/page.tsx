@@ -305,8 +305,32 @@ export default async function TopicHubPage(props: { params: Promise<{ slug: stri
         <article className="p-8 rounded-3xl bg-[#000d21] border border-[#0C66B4]/50 space-y-6 text-sm sm:text-base leading-relaxed text-gray-200 shadow-panel">
           <div className="flex items-center gap-2 text-white font-display text-2xl border-b border-[#0C66B4]/30 pb-3">
             <BookOpen className="w-6 h-6 text-[#00AEEF]" />
-            <h2>Clinical Synthesis by OMT Physical Therapist</h2>
+            <h2>Clinical Assessment &amp; Rehabilitation Synthesis</h2>
           </div>
+
+          {topic.slug === "tmj-and-jaw-pain" && (
+            <div className="relative aspect-[16/9] rounded-2xl overflow-hidden border border-[#0C66B4]/60 my-4 shadow-panel">
+              <img src="/janne-tmd-intraoral.jpg" alt="TMJ intraoral physical therapy" className="w-full h-full object-cover" />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#000d21] via-transparent to-transparent opacity-80" />
+              <span className="absolute bottom-3 left-4 text-xs font-bold text-white">Photo: Intraoral temporomandibular (TMD) manual physical therapy</span>
+            </div>
+          )}
+
+          {topic.slug === "neck-pain-and-headaches" && (
+            <div className="relative aspect-[16/9] rounded-2xl overflow-hidden border border-[#0C66B4]/60 my-4 shadow-panel">
+              <img src="/janne-cervical-treatment.jpg" alt="Upper cervical spine OMT mobilization" className="w-full h-full object-cover" />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#000d21] via-transparent to-transparent opacity-80" />
+              <span className="absolute bottom-3 left-4 text-xs font-bold text-white">Photo: Upper cervical spine mobilization for cervicogenic headaches</span>
+            </div>
+          )}
+
+          {topic.slug === "ergonomics-and-wellness" && (
+            <div className="relative aspect-[16/9] rounded-2xl overflow-hidden border border-[#0C66B4]/60 my-4 shadow-panel">
+              <img src="/janne-workstation.jpg" alt="Digital telehealth & workplace ergonomics" className="w-full h-full object-cover" />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#000d21] via-transparent to-transparent opacity-80" />
+              <span className="absolute bottom-3 left-4 text-xs font-bold text-white">Photo: Clinical ergonomics & digital occupational health consultation</span>
+            </div>
+          )}
 
           {topic.synthesisHtml.map((paragraph, idx) => (
             <p key={idx} className="leading-relaxed">

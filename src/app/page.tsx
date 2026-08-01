@@ -125,7 +125,7 @@ export default async function HomePage() {
         {
           "@type": "Review",
           "author": { "@type": "Person", "name": "TMJ Patient" },
-          "reviewBody": "Olin kärsinyt leukanivelen naksumisesta ja aamuisesta leuan kireydestä vuosia. Jannen OMT-fysioterapialla ja täsmällisillä leukanivelharjoitteilla leuan kireys ja säryt helpottivat täysin jo kolmessa viikossa.",
+          "reviewBody": "I had suffered from jaw joint clicking and morning jaw tightness for years. With Janne's OMT physical therapy and precise jaw exercises, the jaw tightness and pain were completely relieved in just three weeks.",
           "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" }
         },
         {
@@ -137,7 +137,7 @@ export default async function HomePage() {
         {
           "@type": "Review",
           "author": { "@type": "Person", "name": "Post-Op Back Pain Patient" },
-          "reviewBody": "Olin kärsinyt leikkauksen jälkeisestä selkäkivusta ja pelkäsin jo joutuvani uudelleen leikkauskierteeseen. Jannen tutkimuksen ja täsmällisten liikeohjeiden ansiosta normaali arki ja kivuton liikkuminen palasivat parissa kuukaudessa.",
+          "reviewBody": "I had suffered from post-operative back pain and feared I might end up in a cycle of surgeries. Thanks to Janne's thorough clinical examination and targeted movement instructions, my normal daily life and pain-free movement returned in a couple of months.",
           "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" }
         },
         {
@@ -149,7 +149,7 @@ export default async function HomePage() {
         {
           "@type": "Review",
           "author": { "@type": "Person", "name": "Chronic Back Pain Patient" },
-          "reviewBody": "Olen kärsinyt selkäkivuista vuosia ja aiemmin hoito oli vain oireiden peittelyä. Jannen perusteellisessa tutkimuksessa löydettiin vaivan syy, ja täsmällisillä liikeohjeilla selkäkivut kaikkosivat kokonaan ilman lääkkeitä.",
+          "reviewBody": "I had suffered from chronic back pain for years and previous care only covered up symptoms. Janne's detailed evaluation identified the root cause, and with precise movement exercises, the back pain disappeared completely without medication.",
           "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" }
         },
         {
@@ -161,7 +161,7 @@ export default async function HomePage() {
         {
           "@type": "Review",
           "author": { "@type": "Person", "name": "Occupational Health Client (Video Home Guides)" },
-          "reviewBody": "Monesti fysioterapiasta saa paperinipun, joka jää pöydälle lojumaan. Janne kuvasi täsmälliset kuntoutusliikkeet suoraan puhelimellani videolle minua varten! Täydellinen tapa varmistaa että liikkeet tekee kotona oikein.",
+          "reviewBody": "Often you just get a stack of paper exercise sheets from physical therapy that sit on a desk. Janne recorded exact rehabilitation exercise videos directly on my phone for me! A perfect way to ensure exercises are done correctly at home.",
           "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" }
         }
       ]

@@ -20,7 +20,7 @@ export default function ProgramsPage() {
           </h1>
 
           <p className="text-gray-300 text-base sm:text-lg">
-            Evidence-based video protocols for jaw clenching, TMJ pain, and nerve sensitivity. Accessible worldwide on any device.
+            Evidence-based digital rehabilitation systems for jaw clenching, TMJ disorders, and nerve sensitivity are currently under development. Contact us for inquiries or early updates.
           </p>
         </div>
 
