@@ -1,4 +1,5 @@
 import { FALLBACK_VIDEOS, Video } from "@/data/videos";
+import { EN_TOPIC_VIDEOS_MAP } from "@/data/topicVideosMap";
 import VideoCard from "@/components/VideoCard";
 import Link from "next/link";
 import { ArrowLeft, BookOpen, Sparkles, Home, ChevronRight, Download } from "lucide-react";
@@ -187,21 +188,8 @@ export default async function TopicHubPage(props: { params: Promise<{ slug: stri
   }
 
   const topicVideos = FALLBACK_VIDEOS.filter((v) => {
-    const text = (v.title + " " + v.promiseDescription + " " + (v.transcript || "")).toLowerCase();
-    if (params.slug === "tmj-and-jaw-pain") {
-      return v.categoryId === "tmj-bruxism" || text.includes("jaw") || text.includes("tmj") || text.includes("bruxism") || text.includes("masseter");
-    }
-    if (params.slug === "neck-pain-and-headaches") {
-      return text.includes("neck") || text.includes("headache") || text.includes("cervical") || text.includes("dizziness") || text.includes("head");
-    }
-    if (params.slug === "back-pain-and-sciatica") {
-      if (v.categoryId === "tmj-bruxism") return false;
-      return text.includes("back") || text.includes("sciatica") || text.includes("lumbar") || text.includes("lumbosacral") || text.includes("facet");
-    }
-    if (params.slug === "ergonomics-and-wellness") {
-      return v.categoryId === "ergonomics" || text.includes("ergonom") || text.includes("work") || text.includes("desk") || text.includes("posture");
-    }
-    return v.categoryId === topic.categoryId;
+    const assignedTopics = EN_TOPIC_VIDEOS_MAP[v.id] || [];
+    return assignedTopics.includes(params.slug);
   });
   const faqs = TOPIC_FAQS_EN[params.slug] || TOPIC_FAQS_EN["tmj-and-jaw-pain"];
 
