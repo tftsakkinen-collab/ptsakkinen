@@ -10,6 +10,13 @@
 - [Workshops & CV](https://www.ptsakkinen.com/workshops): University lecture history, post-graduate workshops for physical therapists, and clinical CV (2011–2026).
 - [Contact & Appointments](https://www.ptsakkinen.com/contact): Booking guidance for consultations at Terveystalo, Norre Occupational Health, and Hammasvahti Dental Clinic.
 
+## Clinical Topic Hubs
+
+- [TMJ Disorders & Bruxism](https://www.ptsakkinen.com/topic/tmj-and-jaw-pain): Jaw joint clicking, masseter muscle tightness, and facial pain rehabilitation.
+- [Neck Pain & Headaches](https://www.ptsakkinen.com/topic/neck-pain-and-headaches): Cervical spine dysfunction, tension headaches, and cervicogenic pain.
+- [Back Pain & Sciatica](https://www.ptsakkinen.com/topic/back-pain-and-sciatica): Lumbar disc issues, facet joint dysfunction, and sciatic nerve release.
+- [Ergonomics & Work Wellness](https://www.ptsakkinen.com/topic/ergonomics-and-wellness): Clinical ergonomics for dental professionals and remote workstation alignment.
+
 ## Clinical Practice Locations
 
 - **Terveystalo Clinic**: OMT physical therapy and TMJ evaluation (Oulu & Online). Booking: terveystalo.com

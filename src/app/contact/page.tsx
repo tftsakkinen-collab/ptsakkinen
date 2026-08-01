@@ -13,6 +13,21 @@ export const metadata: Metadata = {
       "x-default": "https://www.ftsakkinen.com/yhteystiedot",
     },
   },
+  openGraph: {
+    title: "Contact & Appointments | OMT Physical Therapist Janne Sakkinen",
+    description: "Contact OMT Physical Therapist Janne Sakkinen or book clinical consultations at Terveystalo or Norre Occupational Health.",
+    url: "https://www.ptsakkinen.com/contact",
+    siteName: "PT Sakkinen - OMT Physical Therapist",
+    locale: "en_US",
+    type: "website",
+    images: [{ url: "https://www.ptsakkinen.com/janne-sakkinen.jpg" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Contact & Appointments | OMT Physical Therapist Janne Sakkinen",
+    description: "Contact OMT Physical Therapist Janne Sakkinen or book clinical consultations at Terveystalo or Norre Occupational Health.",
+    images: ["https://www.ptsakkinen.com/janne-sakkinen.jpg"],
+  },
 };
 
 export default function ContactPage() {

@@ -13,6 +13,21 @@ export const metadata: Metadata = {
       "x-default": "https://www.ftsakkinen.com/ilmaisopas",
     },
   },
+  openGraph: {
+    title: "Free Rehabilitation PDF Guides & Materials | PT Sakkinen",
+    description: "Access official physical therapy exercise PDF guides and clinical TMJ rehabilitation resources via Janne Sakkinen's Google Drive folder.",
+    url: "https://www.ptsakkinen.com/free-guide",
+    siteName: "PT Sakkinen - OMT Physical Therapist",
+    locale: "en_US",
+    type: "website",
+    images: [{ url: "https://www.ptsakkinen.com/logo-whitebg.png" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Free Rehabilitation PDF Guides & Materials | PT Sakkinen",
+    description: "Access official physical therapy exercise PDF guides and clinical TMJ rehabilitation resources via Janne Sakkinen's Google Drive folder.",
+    images: ["https://www.ptsakkinen.com/logo-whitebg.png"],
+  },
 };
 
 export default function FreeGuidePage() {
