@@ -9,6 +9,7 @@ import type { Metadata } from "next";
 interface TopicData {
   slug: string;
   title: string;
+  seoTitle: string;
   fiSlug: string;
   categoryId: string;
   introSummary: string;
@@ -19,6 +20,7 @@ const TOPICS_EN: Record<string, TopicData> = {
   "tmj-and-jaw-pain": {
     slug: "tmj-and-jaw-pain",
     title: "TMJ Disorders, Jaw Joint Clicking & Masseter Pain",
+    seoTitle: "TMJ Disorders, Jaw Pain & Bruxism | PT Sakkinen",
     fiSlug: "leukakipu-ja-tmd",
     categoryId: "tmj-bruxism",
     introSummary: "Comprehensive clinical guide on Temporomandibular Disorders (TMD), masseter myofascial release, joint clicking, and bruxism physical therapy.",
@@ -31,7 +33,8 @@ const TOPICS_EN: Record<string, TopicData> = {
   "neck-pain-and-headaches": {
     slug: "neck-pain-and-headaches",
     title: "Neck Strain, Suboccipital Tightness & Cervicogenic Headaches",
-    fiSlug: "niskakipu-ja-päänsärky",
+    seoTitle: "Neck Pain & Cervicogenic Headaches | PT Sakkinen",
+    fiSlug: "niskakipu-ja-paansarky",
     categoryId: "cervicogenic-neck",
     introSummary: "Clinical synthesis on upper cervical spine dysfunction, neck stiffness, and cervicogenic headache rehabilitation.",
     synthesisHtml: [
@@ -43,7 +46,8 @@ const TOPICS_EN: Record<string, TopicData> = {
   "back-pain-and-sciatica": {
     slug: "back-pain-and-sciatica",
     title: "Low Back Pain, Lumbar Facets & Sciatica Nerve Relief",
-    fiSlug: "selkäkipu-ja-iskias",
+    seoTitle: "Lower Back Pain, Disc Issues & Sciatica | PT Sakkinen",
+    fiSlug: "selkakipu-ja-iskias",
     categoryId: "cervicogenic-neck",
     introSummary: "Expert guide on lumbar spine biomechanics, facet joint locks, disc herniations, and nerve root decompression.",
     synthesisHtml: [
@@ -55,7 +59,8 @@ const TOPICS_EN: Record<string, TopicData> = {
   "ergonomics-and-wellness": {
     slug: "ergonomics-and-wellness",
     title: "Dental Ergonomics, Posture Retraining & Micro-breaks",
-    fiSlug: "ergonomia-ja-työhyvinvointi",
+    seoTitle: "Dental Ergonomics & Clinical Work Postures | PT Sakkinen",
+    fiSlug: "ergonomia-ja-tyohyvinvointi",
     categoryId: "ergonomics",
     introSummary: "Clinical ergonomics guide for dental practitioners and desk workers: workload distribution and posture routines.",
     synthesisHtml: [
@@ -120,7 +125,7 @@ const TOPIC_FAQS_EN: Record<string, Array<{ question: string; answer: string }>>
     },
     {
       question: "Who conducts ergonomic training at the University of Oulu?",
-      answer: "OMT Physical Therapist Janne Sakkinen instructs dental ergonomics at the University of Oulu Faculty of Dentistry and conducts post-graduate ergonomics workshops for healthcare professionals."
+      answer: "OMT Physical Therapist Janne Sakkinen instructs dental ergonomics at the University of Oulu Faculty of Dentistry and conducts post-graduate ergonomics workshops for healthcare professionals"
     }
   ]
 };
@@ -133,8 +138,14 @@ export async function generateMetadata(props: { params: Promise<{ slug: string }
   const params = await props.params;
   const topic = TOPICS_EN[params.slug] || TOPICS_EN["tmj-and-jaw-pain"];
 
-  const metaTitle = `${topic.title.slice(0, 50)} | PT Sakkinen`;
-  const metaDescription = topic.introSummary.slice(0, 155);
+  const safeTruncate = (str: string, len: number) => {
+    if (str.length <= len) return str;
+    const sub = str.slice(0, len);
+    return sub.slice(0, sub.lastIndexOf(" "));
+  };
+
+  const metaTitle = topic.seoTitle;
+  const metaDescription = safeTruncate(topic.introSummary, 155);
   const canonicalUrl = `https://www.ptsakkinen.com/topic/${topic.slug}`;
   const pairedFiUrl = `https://www.ftsakkinen.com/aihe/${topic.fiSlug}`;
 
@@ -168,7 +179,6 @@ export default async function TopicHubPage(props: { params: Promise<{ slug: stri
     notFound();
   }
 
-  // Filter related videos by topic relevance (category + title/description/transcript keywords)
   const topicVideos = FALLBACK_VIDEOS.filter((v) => {
     const text = (v.title + " " + v.promiseDescription + " " + (v.transcript || "")).toLowerCase();
     if (params.slug === "tmj-and-jaw-pain") {
@@ -178,7 +188,8 @@ export default async function TopicHubPage(props: { params: Promise<{ slug: stri
       return text.includes("neck") || text.includes("headache") || text.includes("cervical") || text.includes("dizziness") || text.includes("head");
     }
     if (params.slug === "back-pain-and-sciatica") {
-      return text.includes("back") || text.includes("sciatica") || text.includes("lumbar") || text.includes("disc") || text.includes("spine");
+      if (v.categoryId === "tmj-bruxism") return false;
+      return text.includes("back") || text.includes("sciatica") || text.includes("lumbar") || text.includes("lumbosacral") || text.includes("facet");
     }
     if (params.slug === "ergonomics-and-wellness") {
       return v.categoryId === "ergonomics" || text.includes("ergonom") || text.includes("work") || text.includes("desk") || text.includes("posture");
