@@ -1,5 +1,19 @@
 import EmailLeadForm from "@/components/EmailLeadForm";
 import { BookOpen, ShieldCheck, Sparkles, FolderDown } from "lucide-react";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Free Rehabilitation PDF Guides & Materials | PT Sakkinen",
+  description: "Access official physical therapy exercise PDF guides and clinical TMJ rehabilitation resources via Janne Sakkinen's Google Drive folder.",
+  alternates: {
+    canonical: "https://www.ptsakkinen.com/free-guide",
+    languages: {
+      "en": "https://www.ptsakkinen.com/free-guide",
+      "fi": "https://www.ftsakkinen.com/ilmaisopas",
+      "x-default": "https://www.ftsakkinen.com/ilmaisopas",
+    },
+  },
+};
 
 export default function FreeGuidePage() {
   return (

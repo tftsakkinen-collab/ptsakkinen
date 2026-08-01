@@ -41,7 +41,7 @@ export default function Footer() {
                 className="inline-flex items-center gap-2 text-xs font-medium text-[#00AEEF] hover:underline"
               >
                 <Globe className="w-3.5 h-3.5" />
-                <span>Suomeksi → ftsakkinen.fi</span>
+                <span>Suomeksi → ftsakkinen.com</span>
               </a>
             </div>
           </div>
