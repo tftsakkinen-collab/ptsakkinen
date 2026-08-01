@@ -83,20 +83,25 @@ export default async function SingleVideoPage(props: { params: Promise<{ id: str
     (v) => v.categoryId === video.categoryId && v.id !== video.id
   ).slice(0, 3);
 
-  // FAQ items
+  // Dynamic video-specific FAQ items
+  const cleanTitle = video.title.trim();
+  const categoryName = category?.name || "physical therapy";
+
   const faqItems = [
     {
-      question: `What causes ${video.title.toLowerCase()} and how is it evaluated?`,
+      question: `What clinical topics are covered in "${cleanTitle}"?`,
       answer: video.promiseDescription,
     },
     {
-      question: "When should I consult an OMT Physical Therapist?",
-      answer: "If jaw clicking, facial pain, or neck tightness persists over 1-2 weeks or interferes with eating, chewing, or daily activities.",
+      question: `How are the instructions in "${cleanTitle}" applied to ${categoryName.toLowerCase()} rehabilitation?`,
+      answer: video.transcript
+        ? `The video demonstrates specific movement patterns and clinical exercise progressions: ${video.transcript.slice(0, 220).trim()}...`
+        : `OMT Physical Therapist Janne Sakkinen guides step-by-step clinical protocols and self-care exercises tailored for ${categoryName.toLowerCase()}.`,
     },
     {
-      question: "Are these clinical exercises safe to perform at home?",
-      answer: "Perform all movements gently without forcing sharp pain. Follow the exact movement vectors demonstrated in the video.",
-    }
+      question: `When should you seek an OMT physical therapy consultation for symptoms related to this topic?`,
+      answer: `If symptoms relating to "${cleanTitle}" persist for more than 1–2 weeks, interfere with sleep or daily function, an in-person OMT evaluation is recommended to identify the root cause and ensure proper rehabilitation.`,
+    },
   ];
 
   // 2. STRUCTURED DATA (JSON-LD) SCHEMAS: Article, VideoObject, FAQPage, BreadcrumbList
