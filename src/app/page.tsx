@@ -15,8 +15,8 @@ import type { Metadata } from "next";
 export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
-  title: "OMT Physical Therapist Janne Sakkinen | Oulu | TMJ & Jaw Rehabilitation",
-  description: "Specialized OMT Physical Therapist Janne Sakkinen in Oulu, Finland. TMJ disorders, masseter myofascial therapy, and dental ergonomics university instructor since 2017.",
+  title: "OMT Physical Therapist Janne Sakkinen | TMJ & Jaw Therapy",
+  description: "OMT Physical Therapist Janne Sakkinen in Oulu, Finland. Specializing in TMJ disorders, jaw pain, and dental ergonomics. University instructor since 2017.",
   alternates: {
     canonical: "https://www.ptsakkinen.com/",
     languages: {
@@ -26,8 +26,8 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "OMT Physical Therapist Janne Sakkinen | Oulu | TMJ & Jaw Rehabilitation",
-    description: "Specialized OMT Physical Therapist Janne Sakkinen in Oulu, Finland. TMJ disorders, masseter myofascial therapy, and dental ergonomics university instructor since 2017.",
+    title: "OMT Physical Therapist Janne Sakkinen | TMJ & Jaw Therapy",
+    description: "OMT Physical Therapist Janne Sakkinen in Oulu, Finland. Specializing in TMJ disorders, jaw pain, and dental ergonomics. University instructor since 2017.",
     url: "https://www.ptsakkinen.com/",
     siteName: "PT Sakkinen - Physical Therapy",
     locale: "en_US",
@@ -36,8 +36,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "OMT Physical Therapist Janne Sakkinen | Oulu | TMJ & Jaw Rehabilitation",
-    description: "Specialized OMT Physical Therapist Janne Sakkinen in Oulu, Finland. TMJ disorders, masseter myofascial therapy, and dental ergonomics university instructor since 2017.",
+    title: "OMT Physical Therapist Janne Sakkinen | TMJ & Jaw Therapy",
+    description: "OMT Physical Therapist Janne Sakkinen in Oulu, Finland. Specializing in TMJ disorders, jaw pain, and dental ergonomics. University instructor since 2017.",
     images: ["https://www.ptsakkinen.com/janne-sakkinen.jpg"],
   },
 };
@@ -60,7 +60,6 @@ export default async function HomePage() {
         "image": "https://www.ptsakkinen.com/logo-whitebg.png",
         "address": {
           "@type": "PostalAddress",
-          "streetAddress": "Lipunkantajantie 21 G",
           "addressLocality": "Oulu",
           "postalCode": "90670",
           "addressCountry": "FI"
@@ -110,7 +109,6 @@ export default async function HomePage() {
       "email": "tiedottajanne@gmail.com",
       "address": {
         "@type": "PostalAddress",
-        "streetAddress": "Lipunkantajantie 21 G",
         "addressLocality": "Oulu",
         "postalCode": "90670",
         "addressCountry": "FI"

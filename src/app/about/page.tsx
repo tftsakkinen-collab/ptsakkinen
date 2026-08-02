@@ -1,12 +1,12 @@
 import { SITE_CONFIG } from "@/data/config";
-import { Award, GraduationCap, Briefcase, BookOpen, CheckCircle2, ShieldCheck, FileCheck, ArrowRight, User, MapPin, Mail, Phone, Users, HeartHandshake, Target, Compass } from "lucide-react";
+import { Award, GraduationCap, Briefcase, BookOpen, CheckCircle2, ShieldCheck, FileCheck, ArrowRight, User, MapPin, Mail, Phone, Users, HeartHandshake, Target, Compass, Globe } from "lucide-react";
 import Link from "next/link";
 import Script from "next/script";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "About Janne Sakkinen & Philosophy | OMT Physical Therapist",
-  description: "Learn about Janne Sakkinen, specialized OMT Physical Therapist (SOMTY), Occupational Physical Therapy Specialist, University Instructor at the University of Oulu Faculty of Dentistry (since 2017), and practice philosophy.",
+  title: "About Janne Sakkinen | OMT Physical Therapist Oulu",
+  description: "Learn about Janne Sakkinen, OMT Physical Therapist (SOMTY) & University of Oulu dentistry instructor since 2017. Clinical practice & philosophy.",
   alternates: {
     canonical: "https://www.ptsakkinen.com/about",
     languages: {
@@ -16,8 +16,8 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "About Janne Sakkinen & Philosophy | OMT Physical Therapist",
-    description: "Learn about Janne Sakkinen, specialized OMT Physical Therapist (SOMTY), Occupational Physical Therapy Specialist, University Instructor at the University of Oulu Faculty of Dentistry (since 2017), and practice philosophy.",
+    title: "About Janne Sakkinen | OMT Physical Therapist Oulu",
+    description: "Learn about Janne Sakkinen, OMT Physical Therapist (SOMTY) & University of Oulu dentistry instructor since 2017. Clinical practice & philosophy.",
     url: "https://www.ptsakkinen.com/about",
     siteName: "PT Sakkinen - OMT Physical Therapist",
     locale: "en_US",
@@ -26,8 +26,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "About Janne Sakkinen & Philosophy | OMT Physical Therapist",
-    description: "Learn about Janne Sakkinen, specialized OMT Physical Therapist (SOMTY), Occupational Physical Therapy Specialist, University Instructor at the University of Oulu Faculty of Dentistry (since 2017), and practice philosophy.",
+    title: "About Janne Sakkinen | OMT Physical Therapist Oulu",
+    description: "Learn about Janne Sakkinen, OMT Physical Therapist (SOMTY) & University of Oulu dentistry instructor since 2017. Clinical practice & philosophy.",
     images: ["https://www.ptsakkinen.com/janne-sakkinen.jpg"],
   },
 };
@@ -173,6 +173,12 @@ export default function AboutPage() {
               <p>
                 For over 7 years (since 2017), I have served as a visiting lecturer and ergonomics specialist at the University of Oulu Faculty of Dentistry, developing clinical ergonomic protocols for dental practitioners.
               </p>
+              <div className="p-4 rounded-xl bg-[#000a18] border border-[#0C66B4]/50 text-xs text-gray-300 flex items-start gap-3 mt-3">
+                <Globe className="w-5 h-5 text-[#00AEEF] shrink-0 mt-0.5" />
+                <p>
+                  <strong>International Name Spelling:</strong> In Finnish, my official title and name are written as <em>"FT Janne Säkkinen"</em> (with umlauts 'ä'). On this English website, I use <em>"PT Janne Sakkinen"</em> for global readability. You can visit the official Finnish site at <strong><a href="https://www.ftsakkinen.com" className="text-[#00AEEF] hover:underline">ftsakkinen.com</a></strong>.
+                </p>
+              </div>
             </div>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">

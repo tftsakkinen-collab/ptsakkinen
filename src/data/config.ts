@@ -9,7 +9,7 @@ export const SITE_CONFIG = {
   authorTitle: "Janne Sakkinen",
   
   // Official Contact Info
-  clinicAddress: "Lipunkantajantie 21 G, 90670 Oulu, Finland",
+  clinicLocations: "Terveystalo, Norre, Hammasvahti (Oulu, Finland)",
   contactEmail: "tiedottajanne@gmail.com",
   contactPhone: "+358 41 327 4967",
   
