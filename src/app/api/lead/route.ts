@@ -27,7 +27,7 @@ export async function POST(request: Request) {
             "Content-Type": "application/json",
           },
           body: JSON.stringify({
-            from: "PT Sakkinen Website <onboarding@resend.dev>",
+            from: "PT Sakkinen Website <info@ptsakkinen.com>",
             to: [recipientEmail],
             subject: `New Global Lead (ptsakkinen.com): ${name || email}`,
             html: `
@@ -50,7 +50,7 @@ export async function POST(request: Request) {
             "Content-Type": "application/json",
           },
           body: JSON.stringify({
-            from: "PT Janne Sakkinen <onboarding@resend.dev>",
+            from: "PT Janne Sakkinen <janne@ptsakkinen.com>",
             to: [email],
             subject: `Welcome to PT Sakkinen Rehabilitation Guides${name ? `, ${name}` : ""}!`,
             tags: [
