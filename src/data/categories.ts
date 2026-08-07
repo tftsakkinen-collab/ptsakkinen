@@ -8,7 +8,7 @@ export interface Category {
 export const CATEGORIES: Category[] = [
   {
     id: "kaikki",
-    name: "All 68 Videos",
+    name: "All 69 Videos",
     description: "All clinical physical therapy videos published by Janne Sakkinen.",
   },
   {
@@ -23,7 +23,7 @@ export const CATEGORIES: Category[] = [
   },
   {
     id: "cervicogenic-neck",
-    name: "Spine & Joint Care",
-    description: "Back pain, sciatica, shoulder impingement, joint osteoarthritis, and inflammation.",
+    name: "Spine, Joint & Pelvic Floor",
+    description: "Pelvic floor health, urinary incontinence, back pain, sciatica, shoulder impingement, joint osteoarthritis, and inflammation.",
   },
 ];

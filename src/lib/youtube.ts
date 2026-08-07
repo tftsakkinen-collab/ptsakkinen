@@ -13,6 +13,9 @@ const CATEGORY_MAP: Record<string, string> = {
   desk: "ergonomics",
   neck: "cervicogenic-neck",
   headache: "cervicogenic-neck",
+  pelvic: "cervicogenic-neck",
+  incontinence: "cervicogenic-neck",
+  kegel: "cervicogenic-neck",
 };
 
 function decodeXmlEntities(str: string): string {
@@ -104,3 +107,35 @@ export async function fetchYouTubeVideos(): Promise<Video[]> {
     return FALLBACK_VIDEOS;
   }
 }
+
+export async function getAllVideos(): Promise<Video[]> {
+  const fetched = await fetchYouTubeVideos();
+  const videoMap = new Map<string, Video>();
+
+  for (const v of FALLBACK_VIDEOS) {
+    videoMap.set(v.id, v);
+  }
+
+  for (const v of fetched) {
+    const existing = videoMap.get(v.id);
+    if (existing) {
+      videoMap.set(v.id, {
+        ...existing,
+        ...v,
+        transcript: existing.transcript || v.transcript,
+        pairVideoId: existing.pairVideoId || v.pairVideoId,
+        pairUrl: existing.pairUrl || v.pairUrl,
+      });
+    } else {
+      videoMap.set(v.id, v);
+    }
+  }
+
+  return Array.from(videoMap.values());
+}
+
+export async function getVideoById(id: string): Promise<Video | undefined> {
+  const all = await getAllVideos();
+  return all.find((v) => v.id === id);
+}
+

@@ -2,6 +2,7 @@
 // Maps video IDs directly to relevant clinical topic slugs based on actual content (not broad categories).
 
 export const EN_TOPIC_VIDEOS_MAP: Record<string, string[]> = {
+  "Qh8uK23HSAQ": ["pelvic-floor-and-incontinence", "back-pain-and-sciatica"],
   "D9g_8OtqRk8": ["tmj-and-jaw-pain", "neck-pain-and-headaches", "ergonomics-and-wellness"],
   "t8iCnAUr4pU": ["tmj-and-jaw-pain"],
   "XQzd8Pbh2e4": ["tmj-and-jaw-pain"],
