@@ -1,0 +1,65 @@
+# PT Sakkinen - Complete Physical Therapy & TMJ Rehabilitation Knowledge Base (llms-full.txt)
+
+> Author: Janne Sakkinen, OMT Physical Therapist & University Instructor (University of Oulu Faculty of Dentistry since 2017).
+> Clinical Specialization: Temporomandibular Joint Disorders (TMD/TMJ), Orofacial Therapy, Masseter Hypertrophy & Pain, Bruxism, Cervical Spine & Suboccipital Headaches, Dental Ergonomics.
+> Websites: https://www.ptsakkinen.com (English), https://www.ftsakkinen.com (Finnish)
+
+---
+
+## 1. Temporomandibular Joint Disorders (TMD/TMJ) & Bruxism Protocol
+
+### Key Clinical Concepts
+- **TMJ Clicking & Popping**: Often caused by anterior disc displacement with reduction. Self-care includes avoiding hypermobility, practicing tongue-up rested position (N-position), and avoiding hard chewing during acute inflammation.
+- **Masseter & Purentalihas Tightness**: Clenching teeth at night (bruxism) leads to hypertrophy and pain in the masseter, temporalis, and pterygoid muscles.
+- **Trigeminal Nerve Sensitivity**: Tightness in the upper neck (C1-C3) and jaw muscles can irritate trigeminal nerve branches, causing facial pain, ear fullness, or eye pressure.
+
+### Clinical Self-Care Exercises
+1. **Intraoral Masseter Release**: Wash hands thoroughly, place thumb inside mouth against inner cheek, index finger outside. Apply gentle pressure to tight muscle bands while relaxing the lower jaw.
+2. **Suboccipital Decompression**: Place trigger balls or soft foam under the base of the skull (C0-C2). Tuck chin slightly and breathe deeply for 2-3 minutes.
+3. **Gentle Active Opening Control**: Place tongue tip against the hard palate (behind front teeth). Open mouth slowly only as far as the tongue remains in contact. This prevents jaw deviation and clicking.
+
+---
+
+## 2. Neck Pain, Suboccipital Headaches & Cervicogenic Pain
+
+### Key Clinical Concepts
+- **Cervicogenic Headache**: Originates from C1-C3 cervical spine dysfunction, referring pain behind the eye, temple, or forehead (ram's horn distribution).
+- **Forward Head Posture**: For every inch the head moves forward, the neck muscles support an additional 10 lbs of load, leading to upper trapezius overload and TOS (Thoracic Outlet Syndrome) symptoms.
+
+### Clinical Self-Care Exercises
+1. **Chin Tucks with Deep Neck Flexor Activation**: Lie flat without a pillow. Retract chin backwards toward the floor without tilting the head up. Hold for 5 seconds, repeat 10 times.
+2. **Thoracic Extension over Foam Roller**: Place foam roller at mid-back level. Support head with hands, extend back gently to restore mid-back mobility and reduce neck strain.
+
+---
+
+## 3. Tennis Elbow & Golf Elbow Rehabilitation Protocol
+
+### Key Clinical Concepts
+- **Lateral Epicondylalgia (Tennis Elbow)**: Overload of the extensor carpi radialis brevis (ECRB) tendon.
+- **Medial Epicondylalgia (Golf Elbow)**: Overload of the wrist flexor-pronator muscle group.
+- **Progressive Tendon Loading**: Tendons require heavy, slow isometric and eccentric loading rather than passive rest to stimulate collagen remodeling.
+
+### Clinical Self-Care Exercises
+1. **Forearm Rotational Load**: Using a weighted lever tool (e.g. Janne Säkkinen Forearm Reliever), perform slow pronation and supination movements (3 seconds out, 3 seconds back) for 3 sets of 10 reps.
+2. **Eccentric Wrist Extension**: Support forearm on table, lift wrist with help of other hand, then slowly lower the weight over 4 seconds.
+
+---
+
+## 4. Plantar Fasciitis & Achilles Tendinopathy Protocol
+
+### Key Clinical Concepts
+- **Plantar Fasciitis**: Degenerative collagen change at the calcaneal attachment. Peak pain occurs during morning first steps.
+- **High-Load Calf Strength Training**: Rathleff protocol (calf raises on a slant board or towel under toes) is scientifically proven to reduce plantar fascia strain.
+
+### Clinical Self-Care Exercises
+1. **Rathleff Protocol Calf Raises**: Stand on a slant board or step with a rolled towel under the toes. Rise up on both feet (3 seconds), lower slowly on one foot (3 seconds). 3 sets of 8-12 reps every second day.
+2. **Plantar Fascia Stretch**: Cross affected foot over opposite knee. Pull toes backward toward shin until a stretch is felt in the foot arch. Hold for 30 seconds.
+
+---
+
+## 5. Clinical Practice & Consultation Locations
+
+- **Terveystalo Oulu & Digital Health**: Comprehensive OMT physical therapy and TMJ evaluation. Booking via terveystalo.com
+- **Norre Occupational Health**: Corporate ergonomics and occupational physical therapy. Booking via norre.fi
+- **Hammasvahti Dental Clinic**: Multi-disciplinary dentist-physiotherapist TMJ consultations. Booking via hammasvahti.fi
+- **Contact & Enquiries**: Phone +358 41 327 4967 | Email tiedottajanne@gmail.com

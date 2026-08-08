@@ -54,6 +54,7 @@ export const GEAR_ITEMS: GearItem[] = [
     couponCode: "JANNE15",
     couponDiscount: "15% OFF",
     directUrl: "https://rebrand.ly/omegat3",
+    amazonAsinOrSearch: "Naturecan Omega 3",
   },
   {
     id: "mutjutin",
@@ -61,10 +62,11 @@ export const GEAR_ITEMS: GearItem[] = [
     category: "fitness",
     description: "Physiotherapist-designed muscle release tool for jaw muscles, neck tightness, and myofascial self-care.",
     recommendedReason: "Do you clench teeth or suffer from jaw pain? Mutjutin is an effective tool for self-treating jaw and neck tightness.",
-    badge: "FREE SHIPPING",
+    badge: "RELEASE TOOL",
     couponCode: "SÄKKINEN",
-    couponDiscount: "Free shipping in Finland",
+    couponDiscount: "Special Promo Code",
     directUrl: "https://mutjutin.fi/",
+    amazonAsinOrSearch: "Myofascial Release Jaw Tool",
   },
   {
     id: "faceimage-teippi",
@@ -76,6 +78,7 @@ export const GEAR_ITEMS: GearItem[] = [
     couponCode: "janne10",
     couponDiscount: "10% OFF",
     directUrl: "https://faceimage.fi/",
+    amazonAsinOrSearch: "Gentle Kinesiology Tape for Face",
   },
   {
     id: "thumbs-ai",
@@ -98,6 +101,7 @@ export const GEAR_ITEMS: GearItem[] = [
     couponCode: "JANNE41492",
     couponDiscount: "10% OFF",
     directUrl: "https://jvtwellness.fi/JANNE41492",
+    amazonAsinOrSearch: "Slant Board Calf Stretcher",
   },
   {
     id: "argo-olives",
@@ -107,6 +111,7 @@ export const GEAR_ITEMS: GearItem[] = [
     recommendedReason: "Scientifically backed extra virgin olive oil whose natural compounds support anti-inflammatory response.",
     badge: "Recommended EVOO",
     directUrl: "https://rebrand.ly/oliivioljy",
+    amazonAsinOrSearch: "High Polyphenol Extra Virgin Olive Oil",
   },
   {
     id: "huoltopallot",
@@ -116,15 +121,17 @@ export const GEAR_ITEMS: GearItem[] = [
     recommendedReason: "My go-to tool for improving hip internal rotation, relieving TOS symptoms, and unlocking neck mobility.",
     badge: "Trigger Ball",
     directUrl: "https://rebrand.ly/huoltopallot",
+    amazonAsinOrSearch: "Myofascial Trigger Point Massage Balls",
   },
   {
-    id: "säädettävä-calfboard",
+    id: "adjustable-calfboard",
     name: "Adjustable Slant / Calf Board",
     category: "fitness",
     description: "Adjustable incline board for calf and plantar load management.",
     recommendedReason: "Essential rehab equipment for heel pain, Achilles issues, and plantar fasciitis.",
     badge: "Rehab Board",
     directUrl: "https://rebrand.ly/calfboard",
+    amazonAsinOrSearch: "Adjustable Incline Calf Stretcher Board",
   },
   {
     id: "benro-bk15",
@@ -440,6 +447,7 @@ export const GEAR_ITEMS: GearItem[] = [
     recommendedReason: "My custom-built rehab tool that has helped dozens of clients overcome chronic elbow pain.",
     badge: "Custom Tool",
     directUrl: "https://www.ftsakkinen.com/kyynarpaa-apuvaline",
+    amazonAsinOrSearch: "Tennis Elbow Forearm Exerciser FlexBar",
   },
   {
     id: "heavy-resistance-bands",

@@ -6,23 +6,23 @@ import { ShieldCheck, Play, ArrowRight, Award, GraduationCap, CheckCircle2, Eye,
 export default function Hero() {
   const stats = [
     {
-      label: "Over 100K+",
+      label: "Over 1.1M+",
       sublabel: "YouTube Views",
       icon: Eye,
     },
     {
-      label: "1.1K+ Subscribers",
+      label: "5,380+ Subscribers",
       sublabel: "Active Community",
       icon: Users,
     },
     {
-      label: "68 Clinical Videos",
-      sublabel: "Full Articles",
+      label: "70+ Clinical Videos",
+      sublabel: "Free Articles & Guides",
       icon: Video,
     },
     {
-      label: "Instructor 2017–",
-      sublabel: "University of Oulu",
+      label: "15+ Specializations",
+      sublabel: "Continuing Education",
       icon: GraduationCap,
     },
   ];

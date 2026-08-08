@@ -56,6 +56,17 @@ export default function LegalPage() {
             </p>
           </section>
 
+          {/* FTC & Amazon Affiliate Disclosure */}
+          <section className="space-y-3 pt-6 border-t border-[#0C66B4]/30">
+            <h2 className="text-xl font-bold text-white">4. FTC &amp; Amazon Affiliate Disclosure</h2>
+            <p>
+              PT Sakkinen (ptsakkinen.com) participates in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for sites to earn advertising fees by advertising and linking to Amazon.com (Associate Tag: <code className="text-[#00AEEF] font-mono bg-[#0C66B4]/30 px-1 py-0.5 rounded">ptsakkinen-20</code>).
+            </p>
+            <p>
+              As an Amazon Associate, I earn from qualifying purchases. Clicking on affiliate links or purchasing products through these links does not incur any additional cost to you, but generates a small commission that supports our free physical therapy educational content and video creation.
+            </p>
+          </section>
+
         </div>
 
       </div>

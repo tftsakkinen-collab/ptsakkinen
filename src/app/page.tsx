@@ -11,6 +11,15 @@ import { ArrowRight, PlayCircle, BookOpen } from "lucide-react";
 import { fetchYouTubeVideos } from "@/lib/youtube";
 import Script from "next/script";
 import type { Metadata } from "next";
+import dynamicImport from "next/dynamic";
+
+const SymptomNavigator = dynamicImport(() => import("@/components/SymptomNavigator"), {
+  ssr: true,
+});
+
+const PhysioAiSearch = dynamicImport(() => import("@/components/PhysioAiSearch"), {
+  ssr: true,
+});
 
 export const dynamic = "force-dynamic";
 
@@ -220,8 +229,12 @@ export default async function HomePage() {
 
       <Hero />
 
+      <SymptomNavigator />
+
       <section className="py-12 bg-[#000d21] border-b border-[#0C66B4]/30">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-6">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
+          <PhysioAiSearch />
+
           <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
             <div>
               <div className="inline-flex items-center gap-2 text-[#00AEEF] text-xs font-bold uppercase tracking-wider">

@@ -31,6 +31,7 @@ export const SITE_CONFIG = {
   authorityProofs: {
     teaching: "University of Oulu Faculty of Medicine / Institute of Dentistry (2017–)",
     credentials: "OMT Physical Therapist (SOMTY), B.Sc. Healthcare",
+    valvira: "Licensed Healthcare Professional (Valvira / Terhikki Registered)",
     appointments: "Tiedottajanne Oy — OMT Physical Therapy & Keynote Lectures",
     qualification: "OMT Physical Therapist (SOMTY 2018–2020)",
   },

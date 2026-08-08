@@ -65,12 +65,14 @@ export default function AboutPage() {
           }
         ],
         "sameAs": [
+          "https://www.oulu.fi/",
+          "https://www.terveystalo.com/",
+          "https://www.ftsakkinen.com/",
+          "https://www.ptsakkinen.com/",
           "https://www.youtube.com/@pt_sakkinen",
           "https://www.instagram.com/sakkinenjanne",
           "https://www.tiktok.com/@sakkinenjanne",
-          "https://beacons.ai/sakkinenjanne",
-          "https://www.ftsakkinen.com",
-          "https://www.ptsakkinen.com"
+          "https://beacons.ai/sakkinenjanne"
         ]
       }
     },
