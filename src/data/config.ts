@@ -14,15 +14,15 @@ export const SITE_CONFIG = {
   contactPhone: "+358 41 327 4967",
   
   // Social Media Handles
-  youtubeUrl: "https://www.youtube.com/@pt_sakkinen",
-  youtubeHandle: "@pt_sakkinen",
-  youtubeChannelId: "UCbIWSnSD_k3YoTQSqrzi5Bw",
+  youtubeUrl: "https://www.youtube.com/@ft_sakkinen",
+  youtubeHandle: "@ft_sakkinen",
+  youtubeChannelId: "UCz0XuTDgzskIDlzSrZFxsBg",
 
-  instagramUrl: "https://www.instagram.com/ptsakkinen",
-  instagramHandle: "@ptsakkinen",
+  instagramUrl: "https://www.instagram.com/sakkinenjanne",
+  instagramHandle: "@sakkinenjanne",
 
-  tiktokUrl: "https://www.tiktok.com/@ptsakkinen",
-  tiktokHandle: "@ptsakkinen",
+  tiktokUrl: "https://www.tiktok.com/@sakkinenjanne",
+  tiktokHandle: "@sakkinenjanne",
 
   beaconsUrl: "https://beacons.ai/ptsakkinen",
   googleDriveUrl: "https://drive.google.com/drive/folders/10GSV-Au7XPeJRZCAVzhy5fCPgrk-izHM?usp=sharing",
