@@ -125,10 +125,16 @@ export default async function HomePage() {
       "aggregateRating": {
         "@type": "AggregateRating",
         "ratingValue": "5.0",
-        "reviewCount": 12,
+        "reviewCount": 13,
         "bestRating": "5"
       },
       "review": [
+        {
+          "@type": "Review",
+          "author": { "@type": "Person", "name": "Occupational Health Client (Field Technician)" },
+          "reviewBody": "I visited your clinic for lower back pain. Under your guidance, I learned the correct lifting technique, and I have had virtually no lower back issues since. Whenever mild tightness appears, I do the physical therapy exercises you taught me and get immediate relief. Thank you for your work – fantastic to see results that last!",
+          "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" }
+        },
         {
           "@type": "Review",
           "author": { "@type": "Person", "name": "Physical Therapy Professional" },

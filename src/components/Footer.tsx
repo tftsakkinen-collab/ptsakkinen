@@ -60,6 +60,9 @@ export default function Footer() {
                 <Link href="/videos" className="hover:text-white transition-colors">Video Library</Link>
               </li>
               <li>
+                <Link href="/gear" className="hover:text-white transition-colors text-[#00AEEF]">My Gear &amp; Tools</Link>
+              </li>
+              <li>
                 <Link href="/free-guide" className="hover:text-white transition-colors">Free Guides</Link>
               </li>
               <li>

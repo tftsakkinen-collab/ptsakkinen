@@ -19,18 +19,18 @@ export default function AppointmentBookingSection() {
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {/* Option 1: Terveystalo */}
-          <div className="p-7 rounded-3xl bg-[#000d21] border border-[#0C66B4]/60 space-y-4 shadow-panel hover:border-[#00AEEF] transition-all flex flex-col justify-between">
-            <div className="space-y-4">
-              <div className="flex items-center justify-between">
-                <div className="w-10 h-10 rounded-xl bg-[#00AEEF]/20 text-[#00AEEF] flex items-center justify-center font-bold">
-                  <Building2 className="w-5 h-5" />
+          <div className="p-7 rounded-3xl bg-[#000d21] border border-[#0C66B4]/60 space-y-4 shadow-panel hover:border-[#00AEEF] transition-all flex flex-col justify-between text-center items-center">
+            <div className="space-y-4 w-full flex flex-col items-center">
+              <div className="flex flex-col items-center gap-3">
+                <div className="w-12 h-12 rounded-xl bg-[#00AEEF]/20 text-[#00AEEF] flex items-center justify-center font-bold">
+                  <Building2 className="w-6 h-6" />
                 </div>
-                <span className="text-[11px] font-mono text-[#00AEEF] bg-[#014489]/30 px-2.5 py-1 rounded-full border border-[#00AEEF]/30">
+                <span className="text-[11px] font-mono text-[#00AEEF] bg-[#014489]/30 px-3 py-1 rounded-full border border-[#00AEEF]/30">
                   Oulu &amp; Online
                 </span>
               </div>
-              <h3 className="text-xl font-bold text-white">Terveystalo Clinic</h3>
-              <p className="text-xs sm:text-sm text-gray-300 leading-relaxed">
+              <h3 className="text-xl font-bold text-white text-center">Terveystalo Clinic</h3>
+              <p className="text-xs sm:text-sm text-gray-300 leading-relaxed text-center break-words">
                 Physical therapy and TMJ evaluation. Book via the Terveystalo online booking portal or mobile app by searching for "Janne Sakkinen".
               </p>
             </div>
@@ -38,7 +38,7 @@ export default function AppointmentBookingSection() {
               href="https://www.terveystalo.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 text-xs font-bold text-[#00AEEF] hover:underline pt-2 border-t border-[#0C66B4]/30"
+              className="inline-flex items-center justify-center gap-2 text-xs font-bold text-[#00AEEF] hover:underline pt-3 border-t border-[#0C66B4]/30 w-full text-center"
             >
               <span>Terveystalo Booking Portal</span>
               <ExternalLink className="w-3.5 h-3.5" />
@@ -46,18 +46,18 @@ export default function AppointmentBookingSection() {
           </div>
 
           {/* Option 2: Norre Työterveys */}
-          <div className="p-7 rounded-3xl bg-[#000d21] border border-[#0C66B4]/60 space-y-4 shadow-panel hover:border-[#00AEEF] transition-all flex flex-col justify-between">
-            <div className="space-y-4">
-              <div className="flex items-center justify-between">
-                <div className="w-10 h-10 rounded-xl bg-[#00AEEF]/20 text-[#00AEEF] flex items-center justify-center font-bold">
-                  <ShieldCheck className="w-5 h-5" />
+          <div className="p-7 rounded-3xl bg-[#000d21] border border-[#0C66B4]/60 space-y-4 shadow-panel hover:border-[#00AEEF] transition-all flex flex-col justify-between text-center items-center">
+            <div className="space-y-4 w-full flex flex-col items-center">
+              <div className="flex flex-col items-center gap-3">
+                <div className="w-12 h-12 rounded-xl bg-[#00AEEF]/20 text-[#00AEEF] flex items-center justify-center font-bold">
+                  <ShieldCheck className="w-6 h-6" />
                 </div>
-                <span className="text-[11px] font-mono text-[#00AEEF] bg-[#014489]/30 px-2.5 py-1 rounded-full border border-[#00AEEF]/30">
+                <span className="text-[11px] font-mono text-[#00AEEF] bg-[#014489]/30 px-3 py-1 rounded-full border border-[#00AEEF]/30">
                   Occupational Health
                 </span>
               </div>
-              <h3 className="text-xl font-bold text-white">Norre Occupational Health</h3>
-              <p className="text-xs sm:text-sm text-gray-300 leading-relaxed">
+              <h3 className="text-xl font-bold text-white text-center">Norre Occupational Health</h3>
+              <p className="text-xs sm:text-sm text-gray-300 leading-relaxed text-center break-words">
                 Orofacial physical therapy and TMJ consultation for corporate occupational health clients via the Norre portal.
               </p>
             </div>
@@ -65,7 +65,7 @@ export default function AppointmentBookingSection() {
               href="https://norre.fi"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 text-xs font-bold text-[#00AEEF] hover:underline pt-2 border-t border-[#0C66B4]/30"
+              className="inline-flex items-center justify-center gap-2 text-xs font-bold text-[#00AEEF] hover:underline pt-3 border-t border-[#0C66B4]/30 w-full text-center"
             >
               <span>Norre Corporate Portal</span>
               <ExternalLink className="w-3.5 h-3.5" />
@@ -73,18 +73,18 @@ export default function AppointmentBookingSection() {
           </div>
 
           {/* Option 3: Hammasvahti */}
-          <div className="p-7 rounded-3xl bg-[#000d21] border border-[#0C66B4]/60 space-y-4 shadow-panel hover:border-[#00AEEF] transition-all flex flex-col justify-between">
-            <div className="space-y-4">
-              <div className="flex items-center justify-between">
-                <div className="w-10 h-10 rounded-xl bg-[#00AEEF]/20 text-[#00AEEF] flex items-center justify-center font-bold">
-                  <Stethoscope className="w-5 h-5" />
+          <div className="p-7 rounded-3xl bg-[#000d21] border border-[#0C66B4]/60 space-y-4 shadow-panel hover:border-[#00AEEF] transition-all flex flex-col justify-between text-center items-center">
+            <div className="space-y-4 w-full flex flex-col items-center">
+              <div className="flex flex-col items-center gap-3">
+                <div className="w-12 h-12 rounded-xl bg-[#00AEEF]/20 text-[#00AEEF] flex items-center justify-center font-bold">
+                  <Stethoscope className="w-6 h-6" />
                 </div>
-                <span className="text-[11px] font-mono text-[#00AEEF] bg-[#014489]/30 px-2.5 py-1 rounded-full border border-[#00AEEF]/30">
+                <span className="text-[11px] font-mono text-[#00AEEF] bg-[#014489]/30 px-3 py-1 rounded-full border border-[#00AEEF]/30">
                   Dental Clinic
                 </span>
               </div>
-              <h3 className="text-xl font-bold text-white">Hammasvahti Dental Clinic</h3>
-              <p className="text-xs sm:text-sm text-gray-300 leading-relaxed">
+              <h3 className="text-xl font-bold text-white text-center">Hammasvahti Dental Clinic</h3>
+              <p className="text-xs sm:text-sm text-gray-300 leading-relaxed text-center break-words">
                 Specialized jaw joint and TMJ physical therapy consultations at Hammasvahti Dental Clinic. Book directly via Hammasvahti.
               </p>
             </div>
@@ -92,7 +92,7 @@ export default function AppointmentBookingSection() {
               href="https://www.hammasvahti.fi"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 text-xs font-bold text-[#00AEEF] hover:underline pt-2 border-t border-[#0C66B4]/30"
+              className="inline-flex items-center justify-center gap-2 text-xs font-bold text-[#00AEEF] hover:underline pt-3 border-t border-[#0C66B4]/30 w-full text-center"
             >
               <span>Hammasvahti Booking Portal</span>
               <ExternalLink className="w-3.5 h-3.5" />

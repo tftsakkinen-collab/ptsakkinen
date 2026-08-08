@@ -21,6 +21,12 @@ export default function PatientTestimonialsSection() {
       stars: 5,
     },
     {
+      name: "Occupational Health Client (Field Technician)",
+      condition: "Lower Back Pain, Lifting Technique & Exercises",
+      review: "I visited your clinic for lower back pain. Under your guidance, I learned the correct lifting technique, and I have had virtually no lower back issues since. Whenever mild tightness appears, I do the physical therapy exercises you taught me and get immediate relief. Thank you for your work – fantastic to see results that last!",
+      stars: 5,
+    },
+    {
       name: "Occupational Health Patient",
       condition: "Neck-Shoulder Pain & Video Exercise Guides",
       review: "Usually you get a stack of paper exercises that end up sitting on a desk. Janne recorded tailored exercise videos directly on my smartphone! It made executing the rehabilitation plan at home effortless.",
@@ -62,28 +68,25 @@ export default function PatientTestimonialsSection() {
           {patientReviews.map((review, idx) => (
             <div
               key={idx}
-              className="p-6 sm:p-8 rounded-3xl bg-[#000d21] border border-[#0C66B4]/40 hover:border-[#00AEEF] transition-all space-y-4 shadow-panel flex flex-col justify-between group"
+              className="p-6 sm:p-8 rounded-3xl bg-[#000d21] border border-[#0C66B4]/40 hover:border-[#00AEEF] transition-all space-y-4 shadow-panel flex flex-col justify-between group text-center items-center"
             >
-              <div className="space-y-4">
-                <div className="flex items-center justify-between">
-                  <div className="flex items-center gap-1 text-amber-400">
-                    {[...Array(review.stars)].map((_, i) => (
-                      <Star key={i} className="w-4 h-4 fill-amber-400" />
-                    ))}
-                  </div>
-                  <Quote className="w-6 h-6 text-[#00AEEF]/40 group-hover:text-[#00AEEF] transition-colors" />
+              <div className="space-y-4 w-full flex flex-col items-center">
+                <div className="flex items-center justify-center gap-1 text-amber-400">
+                  {[...Array(review.stars)].map((_, i) => (
+                    <Star key={i} className="w-4 h-4 fill-amber-400" />
+                  ))}
                 </div>
 
-                <p className="text-sm text-gray-200 leading-relaxed italic">
+                <p className="text-sm text-gray-200 leading-relaxed italic text-center break-words">
                   "{review.review}"
                 </p>
               </div>
 
-              <div className="pt-4 border-t border-[#0C66B4]/30 space-y-1">
-                <div className="text-sm font-bold text-white group-hover:text-[#00AEEF] transition-colors">
+              <div className="pt-4 border-t border-[#0C66B4]/30 space-y-1 w-full text-center">
+                <div className="text-sm font-bold text-white group-hover:text-[#00AEEF] transition-colors text-center">
                   {review.name}
                 </div>
-                <div className="text-xs text-[#00AEEF] font-medium">
+                <div className="text-xs text-[#00AEEF] font-medium text-center">
                   {review.condition}
                 </div>
               </div>
