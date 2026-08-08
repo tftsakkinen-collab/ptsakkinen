@@ -12,19 +12,19 @@ export default function Navbar() {
   const navLinks = [
     { name: "Home", href: "/" },
     { name: "About", href: "/about" },
-    { name: "Video Library", href: "/videos" },
-    { name: "My Gear & Tools", href: "/gear" },
+    { name: "Videos", href: "/videos" },
+    { name: "Gear & Tools", href: "/gear" },
     { name: "Free Guide", href: "/free-guide" },
-    { name: "Workshops & Credentials", href: "/workshops" },
-    { name: "Contact & Consults", href: "/contact" },
+    { name: "Workshops", href: "/workshops" },
+    { name: "Contact", href: "/contact" },
   ];
 
   return (
-    <header className="sticky top-0 z-50 bg-[#000a18]/90 backdrop-blur-md border-b border-[#0C66B4]/40">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-20">
+    <header className="sticky top-0 z-50 bg-[#000a18]/95 backdrop-blur-md border-b border-[#0C66B4]/40">
+      <div className="w-full max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex items-center justify-between h-20 gap-4">
           {/* Brand Logo with Official Image */}
-          <Link href="/" className="flex items-center gap-3 group">
+          <Link href="/" className="flex items-center gap-3 shrink-0 group">
             <div className="relative w-11 h-11 rounded-full overflow-hidden border-2 border-[#00AEEF] bg-[#000a18] flex items-center justify-center shadow-[0_0_15px_rgba(0,174,239,0.8)] group-hover:scale-105 transition-transform p-0.5">
               <img
                 src="/logo-whitebg.png?v=20260730"
@@ -33,7 +33,7 @@ export default function Navbar() {
               />
             </div>
             <div className="flex flex-col">
-              <span className="font-display text-2xl tracking-wide text-white group-hover:text-[#00AEEF] transition-colors">
+              <span className="font-display text-xl sm:text-2xl tracking-wide text-white group-hover:text-[#00AEEF] transition-colors">
                 PT SAKKINEN<span className="text-[#00AEEF]">.</span>
               </span>
               <span className="text-[10px] text-gray-400 uppercase tracking-widest -mt-1 font-sans">
@@ -42,16 +42,16 @@ export default function Navbar() {
             </div>
           </Link>
 
-          {/* Desktop Nav */}
-          <nav className="hidden md:flex items-center gap-7">
+          {/* Desktop Nav - Evenly Spaced & Centered */}
+          <nav className="hidden lg:flex items-center justify-center flex-1 gap-6 xl:gap-8">
             {navLinks.map((link) => {
               const isActive = pathname === link.href;
               return (
                 <Link
                   key={link.href}
                   href={link.href}
-                  className={`text-sm font-medium transition-colors hover:text-[#00AEEF] relative py-1 ${
-                    isActive ? "text-[#00AEEF]" : "text-gray-300"
+                  className={`text-sm font-semibold transition-colors hover:text-[#00AEEF] whitespace-nowrap relative py-1.5 ${
+                    isActive ? "text-[#00AEEF]" : "text-gray-200"
                   }`}
                 >
                   {link.name}
@@ -64,7 +64,7 @@ export default function Navbar() {
           </nav>
 
           {/* Desktop CTA & Language Switcher */}
-          <div className="hidden md:flex items-center gap-3">
+          <div className="hidden lg:flex items-center gap-3 shrink-0">
             <a
               href="https://www.ftsakkinen.com"
               title="Suomeksi — ftsakkinen.com"
@@ -76,10 +76,10 @@ export default function Navbar() {
             </a>
             <Link
               href="/free-guide"
-              className="px-4 py-2 rounded-lg bg-[#00AEEF] text-black font-semibold text-sm hover:bg-[#33C2F5] transition-all shadow-glow flex items-center gap-2"
+              className="px-4 py-2 rounded-lg bg-[#00AEEF] text-black font-bold text-xs sm:text-sm hover:bg-[#33C2F5] transition-all shadow-glow flex items-center gap-2 whitespace-nowrap"
             >
               <Download className="w-4 h-4" />
-              Get Free Guide
+              <span>Get Free Guide</span>
             </Link>
           </div>
 
