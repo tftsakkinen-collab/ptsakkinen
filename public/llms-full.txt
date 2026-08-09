@@ -1,6 +1,6 @@
 # PT Sakkinen (ptsakkinen.com) — Full AEO Knowledge Base (llms-full.txt)
 
-> Complete AEO (Answer Engine Optimization) direct answers and video guides by Janne Sakkinen, OMT Physical Therapist (SOMTY). Contains exact clinical summaries and transcripts for all 70 physical therapy videos.
+> Complete AEO (Answer Engine Optimization) direct answers and video guides by Janne Sakkinen, OMT Physical Therapist (SOMTY). Contains exact clinical summaries and transcripts for all 69 physical therapy videos.
 
 ## Pelvic Floor Physiotherapy & Incontinence
 
@@ -220,12 +220,6 @@
 - **Category**: Neck Pain, Cervical Spine & Tension Headaches
 - **Direct Clinical Answer**: Janne covers the anatomy, testing and self-treatment (soft tissue work, stretching and nerve gliding) for the three most common upper-limb nerve entrapments: the median nerve, the ulnar nerve, and the radial nerve.
 - **Full Clinical Summary**: Welcome to the video all about upper limb nerve entrapments. If you know exactly which entrapment you have, go to the timestamps below, but if you don't have a clue then check the whole video through.  Median nerve. Do you feel that your hand is going numb in the area of the thumb, index finger and middle finger, and you are wondering what is happening? If you suffer from this kind of peripheral nerve problem, typical symptoms include tingling, n...
-
-### Physiotherapist: 3 Foods Secretly Fueling Your Chronic Pain
-- **URL**: https://www.ptsakkinen.com/videos/9C-yL1kBgH8
-- **Category**: Neck Pain, Cervical Spine & Tension Headaches
-- **Direct Clinical Answer**: Explains how chronic low-grade inflammation slows healing and increases pain sensitivity, and gives three practical dietary changes (fatty fish, colorful vegetables, olive oil) to help calm it.
-- **Full Clinical Summary**: If you got something that just won't heal, a tendon, a joint, a muscle or your back and you have done the physio, the stretching, stayed active, done everything right but still there is something there simmering. Have somebody asked you this: What are you eating? In this video I'm going to walk through the connection of the most people never hear. How the food is either feeding or cooling the inflammation that's slowing your recovery. There is a ...
 
 ### No doctor no problem physiotherapy myths you still believe
 - **URL**: https://www.ptsakkinen.com/videos/MF0GnkE9ekM

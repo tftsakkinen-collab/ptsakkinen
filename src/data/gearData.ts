@@ -440,16 +440,6 @@ export const GEAR_ITEMS: GearItem[] = [
     amazonAsinOrSearch: "Fitbit Fitness Tracker",
   },
   {
-    id: "elbow-device",
-    name: "Janne Säkkinen Elbow Reliever",
-    category: "fitness",
-    description: "Custom-designed physical therapy relief tool for tennis elbow and tendon load management.",
-    recommendedReason: "My custom-built rehab tool that has helped dozens of clients overcome chronic elbow pain.",
-    badge: "Custom Tool",
-    directUrl: "https://www.ftsakkinen.com/kyynarpaa-apuvaline",
-    amazonAsinOrSearch: "Tennis Elbow Forearm Exerciser FlexBar",
-  },
-  {
     id: "heavy-resistance-bands",
     name: "Heavy-Duty Resistance Loop Bands",
     category: "fitness",
