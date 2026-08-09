@@ -10,8 +10,10 @@ export const SITE_CONFIG = {
   
   // Official Contact Info
   clinicLocations: "Terveystalo, Norre, Hammasvahti (Oulu, Finland)",
+  streetAddress: "Lipunkantajantie 21 G, 90670 Oulu, Finland",
   contactEmail: "tiedottajanne@gmail.com",
   contactPhone: "+358 41 327 4967",
+  totalVideosCount: 68,
   
   // Social Media Handles
   youtubeUrl: "https://www.youtube.com/@pt_sakkinen",

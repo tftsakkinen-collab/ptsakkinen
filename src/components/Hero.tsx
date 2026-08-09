@@ -16,7 +16,7 @@ export default function Hero() {
       icon: Users,
     },
     {
-      label: "70+ Clinical Videos",
+      label: `${SITE_CONFIG.totalVideosCount} Clinical Videos`,
       sublabel: "Free Articles & Guides",
       icon: Video,
     },
