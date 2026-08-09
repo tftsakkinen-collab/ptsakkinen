@@ -17,6 +17,7 @@ export default function Navbar() {
     { name: "Free Guides", href: "/free-guide" },
     { name: "Workshops", href: "/workshops" },
     { name: "Contact", href: "/contact" },
+    { name: "Legal", href: "/legal" },
   ];
 
   return (
