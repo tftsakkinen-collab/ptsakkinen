@@ -12,9 +12,9 @@ export default function Navbar() {
   const navLinks = [
     { name: "Home", href: "/" },
     { name: "About", href: "/about" },
-    { name: "Videos", href: "/videos" },
-    { name: "Gear & Tools", href: "/gear" },
-    { name: "Free Guide", href: "/free-guide" },
+    { name: "Video Library", href: "/videos" },
+    { name: "My Gear", href: "/gear" },
+    { name: "Free Guides", href: "/free-guide" },
     { name: "Workshops", href: "/workshops" },
     { name: "Contact", href: "/contact" },
   ];

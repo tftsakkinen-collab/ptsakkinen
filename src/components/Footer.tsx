@@ -27,6 +27,7 @@ export default function Footer() {
             {/* Company Info */}
             <div className="pt-2 text-xs space-y-1 text-gray-300">
               <p className="font-bold text-white">{SITE_CONFIG.companyName}</p>
+              <p className="text-[11px] text-[#00AEEF] font-medium">✓ Licensed Healthcare Professional (Valvira / Terhikki Registered)</p>
               <p className="flex items-center gap-1.5"><MapPin className="w-3.5 h-3.5 text-[#00AEEF]" /> {SITE_CONFIG.clinicLocations}</p>
               <p className="flex items-center gap-1.5"><Phone className="w-3.5 h-3.5 text-[#00AEEF]" /> {SITE_CONFIG.contactPhone}</p>
               <p className="flex items-center gap-1.5"><Mail className="w-3.5 h-3.5 text-[#00AEEF]" /> {SITE_CONFIG.contactEmail}</p>
@@ -54,25 +55,25 @@ export default function Footer() {
                 <Link href="/" className="hover:text-white transition-colors">Home</Link>
               </li>
               <li>
-                <Link href="/about" className="hover:text-white transition-colors">About &amp; Credentials</Link>
+                <Link href="/about" className="hover:text-white transition-colors">About</Link>
               </li>
               <li>
                 <Link href="/videos" className="hover:text-white transition-colors">Video Library</Link>
               </li>
               <li>
-                <Link href="/gear" className="hover:text-white transition-colors text-[#00AEEF]">My Gear &amp; Tools</Link>
+                <Link href="/gear" className="hover:text-white transition-colors text-[#00AEEF]">My Gear</Link>
               </li>
               <li>
                 <Link href="/free-guide" className="hover:text-white transition-colors">Free Guides</Link>
               </li>
               <li>
-                <Link href="/workshops" className="hover:text-white transition-colors">Workshops &amp; History</Link>
+                <Link href="/workshops" className="hover:text-white transition-colors">Workshops</Link>
               </li>
               <li>
-                <Link href="/contact" className="hover:text-white transition-colors">Contact &amp; Consultations</Link>
+                <Link href="/contact" className="hover:text-white transition-colors">Contact</Link>
               </li>
               <li>
-                <Link href="/legal" className="hover:text-white transition-colors">Legal &amp; Medical Disclaimer</Link>
+                <Link href="/legal" className="hover:text-white transition-colors">Legal</Link>
               </li>
             </ul>
           </div>

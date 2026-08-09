@@ -53,13 +53,26 @@ const SYMPTOM_DATA: SymptomTopic[] = [
     summary: "Cervical stiffness, tension headaches, suboccipital tightness, and dizziness.",
     recommendedVideos: [
       { id: "t8iCnAUr4pU", title: "Cervicogenic Headache & Neck Relief" },
-      { id: "8H_k0lrebJ0", title: "Upper Cervical Mobility & Decompression" },
+      { id: "0MKwbFkXQ2w", title: "Upper Cervical Mobility & Decompression" },
     ],
     recommendedGear: [
       { name: "Cervical Traction Neck Pillow", url: "/gear", note: "Relieves upper cervical pressure and opens thoracic spine" },
       { name: "Acupressure Mat & Pillow Set", url: "/gear", note: "Releases suboccipital muscle tension" },
     ],
     pdfGuide: "Cervical Spine & Headache Home Guide PDF",
+  },
+  {
+    id: "pelvic-floor",
+    name: "Pelvic Floor & Incontinence",
+    iconName: "🌸",
+    summary: "Pelvic floor hypertonicity, urinary incontinence during jumping/running, and kegel mistakes.",
+    recommendedVideos: [
+      { id: "8H_k0lrebJ0", title: "Physiotherapist: Squeezing (Kegels) Can Worsen Incontinence" },
+    ],
+    recommendedGear: [
+      { name: "Pelvic Floor Biofeedback Trainer", url: "/gear", note: "Physical therapist recommended tool for controlled relaxation and strength" },
+    ],
+    pdfGuide: "Pelvic Floor Rehabilitation & Relaxation Guide PDF",
   },
   {
     id: "tennis-elbow",
@@ -98,7 +111,7 @@ const SYMPTOM_DATA: SymptomTopic[] = [
     summary: "Lumbar tightness, piriformis sciatica radiating to glute/leg, and spinal stiffness.",
     recommendedVideos: [
       { id: "t8iCnAUr4pU", title: "Lower Back Pain & Sciatica Decompression" },
-      { id: "8H_k0lrebJ0", title: "Lumbar Spine Mobility & Core Stabilization" },
+      { id: "TqVWQND9g64", title: "Lumbar Spine Mobility & Core Stabilization" },
     ],
     recommendedGear: [
       { name: "High-Density Foam Roller", url: "/gear", note: "Releases gluteal and thoracic fascial restriction" },
@@ -133,7 +146,7 @@ export default function SymptomNavigator() {
         </div>
 
         {/* Symptom Tab Selector */}
-        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3">
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3">
           {SYMPTOM_DATA.map((sym) => {
             const isActive = sym.id === selectedId;
             return (

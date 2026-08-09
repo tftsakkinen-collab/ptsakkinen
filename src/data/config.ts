@@ -14,8 +14,8 @@ export const SITE_CONFIG = {
   contactPhone: "+358 41 327 4967",
   
   // Social Media Handles
-  youtubeUrl: "https://www.youtube.com/@ft_sakkinen",
-  youtubeHandle: "@ft_sakkinen",
+  youtubeUrl: "https://www.youtube.com/@pt_sakkinen",
+  youtubeHandle: "@pt_sakkinen",
   youtubeChannelId: "UCz0XuTDgzskIDlzSrZFxsBg",
 
   instagramUrl: "https://www.instagram.com/sakkinenjanne",

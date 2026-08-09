@@ -198,6 +198,13 @@ export default function AboutPage() {
                   <p className="text-xs text-gray-400 mt-1">SOMTY 2.5 Years (2018–2020)</p>
                 </div>
               </div>
+              <div className="p-4 rounded-xl bg-[#000d21] border border-[#00AEEF]/60 flex items-start gap-3 sm:col-span-2">
+                <FileCheck className="w-6 h-6 text-[#00AEEF] shrink-0 mt-0.5" />
+                <div>
+                  <h3 className="text-white font-bold text-sm">Valvira &amp; Terhikki Registration</h3>
+                  <p className="text-xs text-gray-300 mt-1">Licensed Healthcare Professional (Valvira / Terhikki Registered OMT Physical Therapist)</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>

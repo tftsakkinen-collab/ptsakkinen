@@ -66,6 +66,10 @@ export default function Hero() {
             {/* Authority Pills */}
             <div className="pt-2 flex flex-wrap items-center gap-3 text-xs text-gray-300">
               <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-[#000d21] border border-[#0C66B4]/50">
+                <ShieldCheck className="w-4 h-4 text-[#00AEEF]" />
+                <span>Licensed Healthcare Professional (Valvira / Terhikki Registered)</span>
+              </div>
+              <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-[#000d21] border border-[#0C66B4]/50">
                 <GraduationCap className="w-4 h-4 text-[#00AEEF]" />
                 <span>University of Oulu (Faculty of Dentistry) since 2017</span>
               </div>
@@ -95,7 +99,9 @@ export default function Hero() {
             </div>
 
             {/* Trust Micro-Bullet */}
-            <div className="pt-2 flex items-center gap-4 text-xs text-gray-400">
+            <div className="pt-2 flex flex-wrap items-center gap-4 text-xs text-gray-400">
+              <span className="flex items-center gap-1"><CheckCircle2 className="w-4 h-4 text-[#00AEEF]" /> Valvira / Terhikki Registered</span>
+              <span>•</span>
               <span className="flex items-center gap-1"><CheckCircle2 className="w-4 h-4 text-[#00AEEF]" /> Tiedottajanne Oy</span>
               <span>•</span>
               <a

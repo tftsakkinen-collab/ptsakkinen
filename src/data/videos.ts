@@ -28,6 +28,19 @@ export const FALLBACK_VIDEOS: Video[] = [
     "pairUrl": "https://www.ftsakkinen.com/videot/8H_k0lrebJ0",
     "isShort": false
   },
+  {
+    "id": "9C-yL1kBgH8",
+    "youtubeId": "9C-yL1kBgH8",
+    "title": "Physiotherapist: 3 Foods Secretly Fueling Your Chronic Pain",
+    "promiseDescription": "Explains how chronic low-grade inflammation slows healing and increases pain sensitivity, and gives three practical dietary changes (fatty fish, colorful vegetables, olive oil) to help calm it.",
+    "categoryId": "cervicogenic-neck",
+    "duration": "Full Video",
+    "publishedAt": "2024-07-24",
+    "thumbnailUrl": "https://i2.ytimg.com/vi/9C-yL1kBgH8/hqdefault.jpg",
+    "pairVideoId": "9C-yL1kBgH8",
+    "pairUrl": "https://www.ftsakkinen.com/videot/9C-yL1kBgH8",
+    "isShort": false
+  },
 
   {
     "id": "D9g_8OtqRk8",
