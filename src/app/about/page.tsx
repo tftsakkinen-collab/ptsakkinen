@@ -1,6 +1,7 @@
 import { SITE_CONFIG } from "@/data/config";
 import { Award, GraduationCap, Briefcase, BookOpen, CheckCircle2, ShieldCheck, FileCheck, ArrowRight, User, MapPin, Mail, Phone, Users, HeartHandshake, Target, Compass, Globe } from "lucide-react";
 import Link from "next/link";
+import { PersonPhysicianSchema, BreadcrumbSchema } from "@/components/JsonLdSchemas";
 import Script from "next/script";
 import type { Metadata } from "next";
 
@@ -126,6 +127,13 @@ export default function AboutPage() {
 
   return (
     <div className="py-12 bg-[#000a18] min-h-screen text-gray-200 space-y-16">
+      <PersonPhysicianSchema />
+      <BreadcrumbSchema
+        items={[
+          { name: "Home", url: "https://www.ptsakkinen.com/" },
+          { name: "About Janne Säkkinen", url: "https://www.ptsakkinen.com/about" },
+        ]}
+      />
       <Script
         id="json-ld-about-en"
         type="application/ld+json"

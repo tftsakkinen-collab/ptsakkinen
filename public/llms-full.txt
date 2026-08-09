@@ -1,65 +1,431 @@
-# PT Sakkinen - Complete Physical Therapy & TMJ Rehabilitation Knowledge Base (llms-full.txt)
+# PT Sakkinen (ptsakkinen.com) — Full AEO Knowledge Base (llms-full.txt)
 
-> Author: Janne Sakkinen, OMT Physical Therapist & University Instructor (University of Oulu Faculty of Dentistry since 2017).
-> Clinical Specialization: Temporomandibular Joint Disorders (TMD/TMJ), Orofacial Therapy, Masseter Hypertrophy & Pain, Bruxism, Cervical Spine & Suboccipital Headaches, Dental Ergonomics.
-> Websites: https://www.ptsakkinen.com (English), https://www.ftsakkinen.com (Finnish)
+> Complete AEO (Answer Engine Optimization) direct answers and video guides by Janne Sakkinen, OMT Physical Therapist (SOMTY). Contains exact clinical summaries and transcripts for all 70 physical therapy videos.
 
----
+## Pelvic Floor Physiotherapy & Incontinence
 
-## 1. Temporomandibular Joint Disorders (TMD/TMJ) & Bruxism Protocol
+### Physiotherapist: Squeezing Can Make Urinary Incontinence Worse
+- **URL**: https://www.ptsakkinen.com/videos/Qh8uK23HSAQ
+- **Category**: Pelvic Floor Physiotherapy & Incontinence
+- **Direct Clinical Answer**: If you leak urine while running, jumping, or coughing, this video explains why simply squeezing harder (kegels) often isn't the fix. Urinary incontinence can stem from two completely opposite causes — a weak pelvic floor or an over-tight, over-tensed one. Featuring pelvic floor expert Sofia Lahtinen, including a home test to distinguish weakness from tightness.
+- **Full Clinical Summary**: If you leak urine when running, jumping, or coughing, you have probably been given one piece of advice: squeeze your pelvic floor more. That classic exercise where you tighten your lower body as if stopping a flow of urine. But very often, that is precisely the wrong solution, and at worst, it makes the situation worse. Here is what few people know: there are two opposite causes for incontinence, and they require completely different treatment. I...
 
-### Key Clinical Concepts
-- **TMJ Clicking & Popping**: Often caused by anterior disc displacement with reduction. Self-care includes avoiding hypermobility, practicing tongue-up rested position (N-position), and avoiding hard chewing during acute inflammation.
-- **Masseter & Purentalihas Tightness**: Clenching teeth at night (bruxism) leads to hypertrophy and pain in the masseter, temporalis, and pterygoid muscles.
-- **Trigeminal Nerve Sensitivity**: Tightness in the upper neck (C1-C3) and jaw muscles can irritate trigeminal nerve branches, causing facial pain, ear fullness, or eye pressure.
+## Neck Pain, Cervical Spine & Tension Headaches
 
-### Clinical Self-Care Exercises
-1. **Intraoral Masseter Release**: Wash hands thoroughly, place thumb inside mouth against inner cheek, index finger outside. Apply gentle pressure to tight muscle bands while relaxing the lower jaw.
-2. **Suboccipital Decompression**: Place trigger balls or soft foam under the base of the skull (C0-C2). Tuck chin slightly and breathe deeply for 2-3 minutes.
-3. **Gentle Active Opening Control**: Place tongue tip against the hard palate (behind front teeth). Open mouth slowly only as far as the tongue remains in contact. This prevents jaw deviation and clicking.
+### Physiotherapist: 3 Foods Secretly Fueling Your Chronic Pain
+- **URL**: https://www.ptsakkinen.com/videos/9C-yL1kBgH8
+- **Category**: Neck Pain, Cervical Spine & Tension Headaches
+- **Direct Clinical Answer**: Explains how chronic low-grade inflammation slows healing and increases pain sensitivity, and gives three practical dietary changes (fatty fish, colorful vegetables, olive oil) to help calm it.
 
----
+### 97% of Knee Pain Sufferers Never Hear This From Their Doctor
+- **URL**: https://www.ptsakkinen.com/videos/dYUlArPXYPI
+- **Category**: Neck Pain, Cervical Spine & Tension Headaches
+- **Direct Clinical Answer**: Breaks down five key facts about knee osteoarthritis, emphasizing that pain doesn't equal joint damage and that movement, not rest, is the best way to manage and improve the condition.
+- **Full Clinical Summary**: Do you have a knee pain or stiffness and wonder, could it be osteoarthritis? You are in the right place, because this video is just for you. In this video, I'll share 5 key things everyone with the knee osteoarthritis should know. You will gain understanding what actually happens in osteoarthritis, why pain doesn't always reflect to the condition of the knee and what you can start by doing today to feel yourself better. Many people are afraid tha...
 
-## 2. Neck Pain, Suboccipital Headaches & Cervicogenic Pain
+### The real reason your neck gets stuck
+- **URL**: https://www.ptsakkinen.com/videos/Mlc-FEDHfWM
+- **Category**: Neck Pain, Cervical Spine & Tension Headaches
+- **Direct Clinical Answer**: Explains why the neck can suddenly "lock up" (facet joints, muscle guarding, posture) and demonstrates stretches and self-mobilization techniques for the trapezius and splenius muscles to restore movement.
+- **Full Clinical Summary**: You woke up in the morning and suddenly you just can't turn your head or maybe you want to start driving from your home. You try to glance a right hand mirror and then it hits you. A sharp pain shooting through your neck and it hurts like hell. Is it just a bullet muscle or could it be something else? And when should you actually go and see the doctor? You'll get answer to these questions in this video along with the tips on what to do if this is...
 
-### Key Clinical Concepts
-- **Cervicogenic Headache**: Originates from C1-C3 cervical spine dysfunction, referring pain behind the eye, temple, or forehead (ram's horn distribution).
-- **Forward Head Posture**: For every inch the head moves forward, the neck muscles support an additional 10 lbs of load, leading to upper trapezius overload and TOS (Thoracic Outlet Syndrome) symptoms.
+### The Truth About Back Pain They Never Told You
+- **URL**: https://www.ptsakkinen.com/videos/WbS3gNQ8JDQ
+- **Category**: Neck Pain, Cervical Spine & Tension Headaches
+- **Direct Clinical Answer**: Busts twelve common myths about back pain, explaining that pain doesn't equal damage, backs can't "go out of place," and that staying active is more effective than rest, injections or surgery for most people.
+- **Full Clinical Summary**: Thinking that pain means damage, that your back is out of the place or that the rest will fix it faster. in this video we are busting 12 of the biggest back pain myths and the last one might just change how you think about the pain. My name is Janne Säkkinen and I'm a physiotherapist and today we will be diving into the 12 of the most common back pain myths I hear from the patients almost every week. These beliefs can slow down the recovery and c...
 
-### Clinical Self-Care Exercises
-1. **Chin Tucks with Deep Neck Flexor Activation**: Lie flat without a pillow. Retract chin backwards toward the floor without tilting the head up. Hold for 5 seconds, repeat 10 times.
-2. **Thoracic Extension over Foam Roller**: Place foam roller at mid-back level. Support head with hands, extend back gently to restore mid-back mobility and reduce neck strain.
+### Surprising Truths About Lower Back Pain – Pro Tips You Can Do at Home!
+- **URL**: https://www.ptsakkinen.com/videos/cOstttqZ5ig
+- **Category**: Neck Pain, Cervical Spine & Tension Headaches
+- **Direct Clinical Answer**: Covers the most common causes of low back pain, teaches the straight-leg-raise and slump tests to check for sciatica, and shows self-massage points along the posterior chain to relieve typical low back pain.
+- **Full Clinical Summary**: Low back pain is the most common musculoskeletal issue and almost everyone suffers from it at some point of their lives. Many myths and misconceptions surround low back pain and they can prevent you from getting the true belief to the problem. In this video we will reveal the most typical cause of the low back pain, what causes it, how it most often occurs and how you can effectively treat the typical issue at home so you can quickly return to yo...
 
----
+### Rib Pain After Injury? Try This Easy Taping Trick
+- **URL**: https://www.ptsakkinen.com/videos/GAmEsksIy38
+- **Category**: Neck Pain, Cervical Spine & Tension Headaches
+- **Direct Clinical Answer**: Explains rib cage anatomy and how rib injuries happen (using a jiu-jitsu injury story as an example), then demonstrates a kinesiology taping technique to relieve rib pain.
+- **Full Clinical Summary**: So, what these ribs I'm eating have in common with the rib pain, what you might feel right now. If you have an injury on the background, you have might hurt these intercostal muscles, what are between the ribs. And when they get hurt, oh man, it can be seriously painful. You probably are here because you have been googling for a good answer and easy solution for this kind of issues. And I say this, you have landed in the right place. Because in j...
 
-## 3. Tennis Elbow & Golf Elbow Rehabilitation Protocol
+### Pain in your heel? 98% forget these important exercises!
+- **URL**: https://www.ptsakkinen.com/videos/A7uCyimWLDk
+- **Category**: Neck Pain, Cervical Spine & Tension Headaches
+- **Direct Clinical Answer**: Provides a full progression of calf and plantar fascia stretches plus isometric and strengthening exercises for heel/sole pain, with guidance on pacing progression based on next-morning pain.
+- **Full Clinical Summary**: Plantar fasciitis, in other words irritation of the connective tissue in the sole of the foot, can be really troublesome and may become a long-term issue. But you are here now to get the best exercises for the maintenance and rehab and that is exactly what you are going to get from this video. When stretching the plantar fascia push the heel bone downwards with the other hand while other hand lift the toes significantly upwards and then you try t...
 
-### Key Clinical Concepts
-- **Lateral Epicondylalgia (Tennis Elbow)**: Overload of the extensor carpi radialis brevis (ECRB) tendon.
-- **Medial Epicondylalgia (Golf Elbow)**: Overload of the wrist flexor-pronator muscle group.
-- **Progressive Tendon Loading**: Tendons require heavy, slow isometric and eccentric loading rather than passive rest to stimulate collagen remodeling.
+### Plantar Fasciitis Isn't What You Think – The Truth About Heel Pain
+- **URL**: https://www.ptsakkinen.com/videos/skGh36G6qdg
+- **Category**: Neck Pain, Cervical Spine & Tension Headaches
+- **Direct Clinical Answer**: Explains the real mechanism behind plantar fasciitis (load management rather than pure inflammation), debunks myths about heel spurs and massage, and teaches self-tests to check calf and ankle tightness as contributing causes.
+- **Full Clinical Summary**: Does sharp pain in the heel feel immediately at the morning or when you get up? Or does the taking the steps hurt when you have been still for a moment? If you feel strong pain in the sole area, then you might suffer from plantar fasciitis. And what in earth is that? In this video I'm going to tell you what is this painful situation and how to get rid of this problem. Interesting in this problem is that two-thirds are due to absolutely terrible s...
 
-### Clinical Self-Care Exercises
-1. **Forearm Rotational Load**: Using a weighted lever tool (e.g. Janne Säkkinen Forearm Reliever), perform slow pronation and supination movements (3 seconds out, 3 seconds back) for 3 sets of 10 reps.
-2. **Eccentric Wrist Extension**: Support forearm on table, lift wrist with help of other hand, then slowly lower the weight over 4 seconds.
+### Forget perfect posture – this matters more
+- **URL**: https://www.ptsakkinen.com/videos/XiKjwTJ3bqk
+- **Category**: Neck Pain, Cervical Spine & Tension Headaches
+- **Direct Clinical Answer**: Argues that there is no single "correct" posture — citing large cohort research showing no correlation between spinal curves and pain — and that consistent movement matters far more than static alignment.
+- **Full Clinical Summary**: What is good poster really? Probably you have heard the stories when you were younger that you need to be in certain alignment from the front and the from the side lumbar and chest and the neck curve should be somewhere bui or in midline that you would be normal. Frankly there is a loads of variations from the lumbara curve to thoratic curve to cervical curve and it doesn't matter in all we have this cohort 66 and 86 where the n is 10,000 so 10,0...
 
----
+### This Simple Test Reveals What's Wrong With Your Shoulder
+- **URL**: https://www.ptsakkinen.com/videos/AWVJZCUdPuE
+- **Category**: Neck Pain, Cervical Spine & Tension Headaches
+- **Direct Clinical Answer**: Highlights the shoulder's external rotator muscles as a commonly overlooked strengthening target and demonstrates a series of resistance-band and dumbbell exercises to build shoulder stability and reduce pain.
+- **Full Clinical Summary**: Are you struggling with the shoulder problems? Is sleeping on your side difficult or does your arm feel painful when using properly? In most of the cases shoulder issues stems from the weakness in just few key muscles. This weakness gradually leads to pain and starts interfering more and more in everyday activities. You are not alone and in this video you are going to get excellent guidance how to get rid of this annoying problem. The last exerci...
 
-## 4. Plantar Fasciitis & Achilles Tendinopathy Protocol
+### My Head Feels Too Heavy: The Truth About Neck Instability
+- **URL**: https://www.ptsakkinen.com/videos/pMYzl0bUV4M
+- **Category**: Neck Pain, Cervical Spine & Tension Headaches
+- **Direct Clinical Answer**: Explains cervical (neck) instability through a patient story, listing its subjective and objective signs, and demonstrates deep neck flexor strengthening exercises to help rebuild control and reduce the "heavy head" feeling.
+- **Full Clinical Summary**: Does it feel like it's really hard to support your head? Your neck easily gets stiff or locked and you constantly feel that you want to crack your neck. This is a very typical cervical spine issue and sometimes it can be even a bit scary for the clients. For this reason I wanted to make this video to help you to understand the causes and consequences behind this and as well give you some easy exercises what you can do home to help to alleviate th...
 
-### Key Clinical Concepts
-- **Plantar Fasciitis**: Degenerative collagen change at the calcaneal attachment. Peak pain occurs during morning first steps.
-- **High-Load Calf Strength Training**: Rathleff protocol (calf raises on a slant board or towel under toes) is scientifically proven to reduce plantar fascia strain.
+### Hand numbness? This radial nerve floss gives fast relief
+- **URL**: https://www.ptsakkinen.com/videos/S4QLrdTcOp4
+- **Category**: Neck Pain, Cervical Spine & Tension Headaches
+- **Direct Clinical Answer**: Janne focuses on the radial nerve, the third most common upper-limb nerve entrapment, covering its anatomical path, soft tissue treatment, stretching, a nerve provocation test, and progressive nerve gliding exercises.
+- **Full Clinical Summary**: Is the hand numb from the more distal part of the upper arm, and from the back of the forearm, and also from the palm side between the thumb and index finger? If you suffer from this kind of peripheral nerve problem, typical symptoms include tingling, numbness, prickling sensations, or electric-shock-like sensations in the hand, and in more advanced cases the normal sensation of the skin may begin to change. This condition is the third most commo...
 
-### Clinical Self-Care Exercises
-1. **Rathleff Protocol Calf Raises**: Stand on a slant board or step with a rolled towel under the toes. Rise up on both feet (3 seconds), lower slowly on one foot (3 seconds). 3 sets of 8-12 reps every second day.
-2. **Plantar Fascia Stretch**: Cross affected foot over opposite knee. Pull toes backward toward shin until a stretch is felt in the foot arch. Hold for 30 seconds.
+### 3 Key Areas You MUST Check If You Have TOS Symptoms!
+- **URL**: https://www.ptsakkinen.com/videos/Ml7ajdUWynM
+- **Category**: Neck Pain, Cervical Spine & Tension Headaches
+- **Direct Clinical Answer**: A follow-up video detailing the anatomy of the scalene, subclavius and pectoralis minor muscles involved in thoracic outlet syndrome and giving specific stretches and provocation tests for each.
+- **Full Clinical Summary**: In the first video we covered the prevalence and symptoms of the thoracic outlet syndrome in more in detail. In this video we will take a closer look at very important anatomical factors and how they can be maintained. There are three important areas to recognize. The first is the scalenius muscle. The second is the space under the clavicular. And the third is the area under the pectoralis minor. The scalenous muscle may pull the first and the se...
 
----
+### Thoracic Outlet Syndrome: What Doctors Don't Always Tell You
+- **URL**: https://www.ptsakkinen.com/videos/vJ521L0uCps
+- **Category**: Neck Pain, Cervical Spine & Tension Headaches
+- **Direct Clinical Answer**: An in-depth overview of thoracic outlet syndrome — prevalence, risk factors, anatomical differences by sex, and how nerve, artery and vein-related symptoms differ, plus how the condition relates to the medial, ulnar and radial nerves.
+- **Full Clinical Summary**: What is TOS or Thoratic Outlet Syndrome? It's a collection of issues what causes pain or symptoms in the neck or upper limb area due to the pressure of the nerves or blood vessels. In a big picture, about 8% of the population experiences these symptoms most commonly in the dominant hand, around 81% of the case. The symptoms typically appear in individuals aged 20 to 50 with average age of onset at 40.7 years. Unfortunately, symptoms are three to ...
 
-## 5. Clinical Practice & Consultation Locations
+### Throat Tightness & Swallowing Problems – Causes & Easy Relief
+- **URL**: https://www.ptsakkinen.com/videos/IXiRvfGrqVI
+- **Category**: Neck Pain, Cervical Spine & Tension Headaches
+- **Direct Clinical Answer**: Explains the muscles and structures involved in swallowing, how posture, stress and hydration affect swallowing, and demonstrates self-palpation and massage techniques for throat tightness and lump-in-throat sensations.
+- **Full Clinical Summary**: Swallowing. That is what we do thousand times in every day and yet one of the most complex mechanics our body performs. And if you start sensing lump sensation in your throat or swallowing becomes challenging, it can be really scary. After this, when you go to the doctor, then at that point doctor's task is to safeguard life. So in that point, life-threatening factors must be ruled out. After this, further examinations are likely to be conducted....
 
-- **Terveystalo Oulu & Digital Health**: Comprehensive OMT physical therapy and TMJ evaluation. Booking via terveystalo.com
-- **Norre Occupational Health**: Corporate ergonomics and occupational physical therapy. Booking via norre.fi
-- **Hammasvahti Dental Clinic**: Multi-disciplinary dentist-physiotherapist TMJ consultations. Booking via hammasvahti.fi
-- **Contact & Enquiries**: Phone +358 41 327 4967 | Email tiedottajanne@gmail.com
+### Safe & Effective Gym Exercises for Lower Back Pain Relief
+- **URL**: https://www.ptsakkinen.com/videos/S9wZ2A2n_cI
+- **Category**: Neck Pain, Cervical Spine & Tension Headaches
+- **Direct Clinical Answer**: A demonstrated gym workout routine using a landmine and other equipment, featuring safe compound and core exercises suitable for people managing lower back pain.
+- **Full Clinical Summary**: After lifting heavy weights at the gym for long enough, you might find yourself so stiff that standing straight feels impossible and moving becomes more challenging. At that point you start wondering what should I actually do at the gym. Well, now when I hit the gym couple of times a week, I figured that I would share my fairytale workout with you. Maybe this will give you new training ideas so you will get inspired and try something completely d...
+
+### Ulnar Nerve Pain? Fix Numbness in Ring & Little Finger
+- **URL**: https://www.ptsakkinen.com/videos/dzfWqb6O25k
+- **Category**: Neck Pain, Cervical Spine & Tension Headaches
+- **Direct Clinical Answer**: Covers the anatomy, symptoms and self-testing of ulnar nerve entrapment causing numbness in the ring and little fingers, plus massage, stretching and nerve gliding exercises for relief.
+- **Full Clinical Summary**: Are you experiencing issues in your little hand, ring finger and you are wondering how to relieve this discomfort? Most likely, it's the second most common upper limb peripheral nerve problem which manifests as tingling, numbness, tingling, electric shock like sensations in the hand and, in more advanced cases, changes in skin sensations. In this video we will go through everything you need to know and how to relieve this condition. Let's start w...
+
+### Fix Neck Pain in 6 Minutes — Physiotherapist's Simple Routine
+- **URL**: https://www.ptsakkinen.com/videos/BpvR4oeIwUo
+- **Category**: Neck Pain, Cervical Spine & Tension Headaches
+- **Direct Clinical Answer**: A guided six-minute routine of neck stretches and self-massage techniques targeting the upper neck, suboccipital muscles, sternocleidomastoid and temporalis to relieve neck pain and stiffness.
+- **Full Clinical Summary**: Do you suffer from the neck pain and need easy exercises for the pain relief? During this video you will get variety of the tools to help to ease the neck pain and support self-care Let's start with the center and upper part of the neck. The movement is the chin tuck Stay in good upright posture and gently press your chin downwards so that it stays in level in horizontal plane Then begin straightening the forward curve of your cervical spine Brin...
+
+### Shoulder Pain? It Could Be Your Neck! (Simple Test & Treatment)
+- **URL**: https://www.ptsakkinen.com/videos/isoboqQCAxo
+- **Category**: Neck Pain, Cervical Spine & Tension Headaches
+- **Direct Clinical Answer**: Explains the most common causes of shoulder pain (rotator cuff tendinopathy, subacromial impingement) and how to test whether neck nerve root involvement is contributing, with self-massage and stretching tips.
+- **Full Clinical Summary**: Is your shoulder currently hurting at the rest and during the movement and you need some help? Do you want easy stretching and treatment instructions for your issue? Or do you want to rule out is the neck bad guy in the background? It's great that you click it on this video as now we will going to go through the most common cause of the shoulder problems and easy solution for them. Shoulder problems are common and they affect most of the people i...
+
+### The Best Exercises for Preventing and Managing Piriformis Pain
+- **URL**: https://www.ptsakkinen.com/videos/6SreaKHllwA
+- **Category**: Neck Pain, Cervical Spine & Tension Headaches
+- **Direct Clinical Answer**: Demonstrates piriformis muscle anatomy, self-massage techniques, multiple stretching positions, and strengthening exercises (glute bridges, side planks) for preventing and managing piriformis-related pain.
+- **Full Clinical Summary**: Do you want to find the best exercises and routines to prevent and manage your piriformis pain? Fantastic! You are in the right place. In this video we'll go over simple massage and self-treatment techniques as well various stretching exercises. You'll undoubtedly discover the best ways to address your specific issue. At the end of the video you'll also get advice when an athlete or casual exerciser can return safely to their usual activities. Pi...
+
+### Piriformis or Sciatica? The Ultimate Guide to Diagnosing Your Pain
+- **URL**: https://www.ptsakkinen.com/videos/NWAo1IpRoKE
+- **Category**: Neck Pain, Cervical Spine & Tension Headaches
+- **Direct Clinical Answer**: Compares the typical symptom patterns and clinical tests for piriformis syndrome versus sciatica, teaching several self-tests (internal/external rotation, slump test) to help identify the true source of buttock/leg pain.
+- **Full Clinical Summary**: Piriformis, also called the pear-shaped muscle, may be behind abnormal buttock or pelvic pain and you clicked on this video because you want to determine which is the cause of the symptoms. Absolutely great, because this information package is surely comprehensive and with the instructions in this video you can easily test at home which one is the cause of the trouble. In piriformis-related symptoms there are certain specific characteristics and ...
+
+### This Nerve Pain Is Often Misdiagnosed — Don't Miss These Key Signs!
+- **URL**: https://www.ptsakkinen.com/videos/tDewavZrww4
+- **Category**: Neck Pain, Cervical Spine & Tension Headaches
+- **Direct Clinical Answer**: Covers the anatomy, symptoms and self-testing of radial nerve entrapment in the forearm/hand, plus massage, stretching and nerve gliding techniques to relieve the numbness and tingling.
+- **Full Clinical Summary**: is the hand numb from the more distal part of the upper arm, from the back of the forearm, and also from the palm side between the thumb and index finger. If you suffer this kind of peripheral nerve problem, typical symptoms include tingling, numbness, prickling sensations, electric shock-like sensations in the hand, and more in advanced cases, the normal sensations of the skin may begin to change. This condition is the third most common upper li...
+
+### Unlock Your Neck: Easy Stretches for Tight Scalene and Sternocleidomastoid Muscles
+- **URL**: https://www.ptsakkinen.com/videos/PduJzX0_5R0
+- **Category**: Neck Pain, Cervical Spine & Tension Headaches
+- **Direct Clinical Answer**: Janne covers the anatomy of the scalene muscles and sternocleidomastoid, and demonstrates specific stretches and self-massage techniques (including a lacrosse-ball trick) to relieve neck tightness, tension headaches, and arm symptoms.
+- **Full Clinical Summary**: Have you noticed a tightness or tenderness in the muscles around the neck? Do certain neck structures cramp easily, or do you experience significant movement limitations in your neck? Are you feeling tingling or numbness in your arm, or perhaps suffering from tension headaches? Great news, you have come to the right place. We're going to go through everything you need to know about the anatomy of the lateral neck muscles and how you can easily al...
+
+### Nerve Pain & Tingling? Watch This Before Taking Medication!
+- **URL**: https://www.ptsakkinen.com/videos/YnMr9bf3rtM
+- **Category**: Neck Pain, Cervical Spine & Tension Headaches
+- **Direct Clinical Answer**: Teaches a self-test for upper limb nerve tension and demonstrates progressive nerve gliding exercises, from basic to advanced, to relieve tingling, numbness and nerve-related arm symptoms.
+- **Full Clinical Summary**: Do you have symptoms in this area? Would you like to find out, is there nerve related issues present on the background? In this video, I'll show you how to test both symptomatic and non-symptomatic sides and guide through simple and more advanced nerve gliding exercises Nerve related symptoms often include tingling, numbness, tingling sensations, electric shock-like feelings and in some cases, muscle wasting in the area innevate by the nerve Here...
+
+### Neck pain? 2-minute fix you can do right now
+- **URL**: https://www.ptsakkinen.com/videos/N9WcRBMDf6A
+- **Category**: Neck Pain, Cervical Spine & Tension Headaches
+- **Direct Clinical Answer**: Janne discusses tension headaches, their ischemic pain mechanism, and upper cervical spine anatomy, then honestly reviews the Atlas Care/Atlas TS neck relief tools compared to a simple baking roll or lacrosse ball for self-treatment.
+- **Full Clinical Summary**: Do you suffer from tension headaches in the back of the head, and you feel that you need some sort of solution? Well if so, I've seen many patients with this issue, and if the front muscles are in good shape but the patient has extreme neck sensitivity in this area, I often recommend using a massage roller or something similar to get those areas treated.  Now that I've covered neck-related issues from multiple angles, I'm also interested in what ...
+
+### Relieve Knee Pain: How to Tape Your Knee Effectively
+- **URL**: https://www.ptsakkinen.com/videos/1c4RmgBbzL4
+- **Category**: Neck Pain, Cervical Spine & Tension Headaches
+- **Direct Clinical Answer**: Janne demonstrates two knee taping techniques that use slight rotation of the leg to offload painful structures (e.g. in osteoarthritis), showing exactly where and how to apply the tape strips.
+- **Full Clinical Summary**: Have you experienced knee pain that started without any injury and you feel like you want some sort of relief somehow? Can you tape your knee? Of course you can - this is such an inexpensive experiment that it only costs a few euros, just the price of traditional sports tape.  If, for example, you need to adjust the load on the knee due to osteoarthritis, the easiest way is through slight rotation. Which of these rotations matches your symptoms m...
+
+### This Taping Trick Brings Instant Relief From Pregnancy Back Pain
+- **URL**: https://www.ptsakkinen.com/videos/DuHSygedLF8
+- **Category**: Neck Pain, Cervical Spine & Tension Headaches
+- **Direct Clinical Answer**: Janne explains why the shifting center of gravity during pregnancy can cause back pain and demonstrates a step-by-step kinesio taping method to support the belly and lower back.
+- **Full Clinical Summary**: Want to go from this to this? During pregnancy the center of gravity begins to shift further from the body's midline and the body starts preparing for the upcoming birth. As a result certain tissues become more flexible, which may lead to back pain. How can this back pain be alleviated, and can the belly be supported with kinesio taping? Yes, it can, and it's definitely worth trying this taping method.  If it's your first time applying the kinesi...
+
+### Discover the Benefits of Barefoot Shoes: From Improved Walking Efficiency to Better Balance
+- **URL**: https://www.ptsakkinen.com/videos/VqRwWdVB1Ig
+- **Category**: Neck Pain, Cervical Spine & Tension Headaches
+- **Direct Clinical Answer**: Janne explains the biomechanics of barefoot/minimal shoes - zero drop, wide toe box, foot muscle activation and proprioception - describes tests for ankle and big toe mobility, and lists the situations (surgery, diabetes/nerve injury, major structural support needs) where barefoot shoes are not appropriate.
+- **Full Clinical Summary**: What are barefoot shoes, or have you thought about buying shoes but haven't taken the step forward? Joke aside, in this video I explain what barefoot shoes are and what kind of benefits you can get from them - also, at the end of the video, I tell you the cases when barefoot shoes are not a good option.  Let's start with the simple terms related to the topic, and what benefits come from them. Barefoot shoes are shoes that don't restrict movement ...
+
+### Is your neck causing your dizziness? How to test and fix it (physio)
+- **URL**: https://www.ptsakkinen.com/videos/6_qdNUQUtUU
+- **Category**: Neck Pain, Cervical Spine & Tension Headaches
+- **Direct Clinical Answer**: Janne explains how the cervical spine's proprioceptive system contributes to balance, describes clinical tests used to identify cervicogenic dizziness versus benign paroxysmal positional vertigo, lists red-flag symptoms, and outlines the physiotherapy approach.
+- **Full Clinical Summary**: Dizziness is a really common symptom in clinical practice, and there is a wide variety of reasons behind it, such as issues with the cervical spine. How exactly can the cervical spine cause dizziness, and what should be done about this challenge? If you're interested in the topic, this is definitely the video for you.  Let's start with the basics of balance. When it comes to maintaining posture we need a lot of information from our eyes, the bala...
+
+### Tennis Elbow Won't Heal? Do This One Fix at Home
+- **URL**: https://www.ptsakkinen.com/videos/Q60gAR73CtQ
+- **Category**: Neck Pain, Cervical Spine & Tension Headaches
+- **Direct Clinical Answer**: Janne explains the mechanical pain mechanism behind tennis elbow and shows a simple self-massage technique targeting the bony structures at the elbow to relieve symptoms.
+- **Full Clinical Summary**: Here you can see a customer trying to carry a 1.5 liter bottle of soda with a sore hand - no way! Here, another customer makes the same claim - it doesn't work, no! Here, both customers make the same statement after 5 minutes of maintenance - and do you want to do the same for yourself? In this video you will get all the information you need to treat the initial stages of tennis elbow.  The symptoms may have started without any specific injury or...
+
+### The Real Reason Your Shoulder Still Hurts — A Physiotherapist Explains
+- **URL**: https://www.ptsakkinen.com/videos/X1pCzC2L1FQ
+- **Category**: Neck Pain, Cervical Spine & Tension Headaches
+- **Direct Clinical Answer**: Janne breaks down rotator cuff syndrome anatomy and why external rotators often stop working properly after shoulder pain, then walks through a progressive rehab sequence (wall external rotation test, taping, shoulder abduction, wall presses) to restore normal shoulder function.
+- **Full Clinical Summary**: Does your shoulder bother you both at rest and in motion, leaving you wondering how on earth to fix this discomfort? You are not alone in this, and since quite a bunch of shoulder clients have come through the clinic lately, let's create a simple guide to early-stage rehabilitation of the shoulder, and also provide instructions on how to train the shoulder in the long run.  Rotator cuff syndrome is the most common disorder of the shoulder, and un...
+
+### How to Improve Spinal Mobility and Test Upper Back Flexibility?
+- **URL**: https://www.ptsakkinen.com/videos/skczGEWyipc
+- **Category**: Neck Pain, Cervical Spine & Tension Headaches
+- **Direct Clinical Answer**: Janne shows how to test thoracic spine rotation and extension range of motion, then gives a set of exercises (half-kneeling twist, seated elbows, towel roll, ball reach) targeted to whichever direction is stiffest.
+- **Full Clinical Summary**: Do you want to easily improve stiffness in your thoracic spine at home? First we need to determine whether rotation or extension is the stiffest movement.  How do you check the range of motion for rotation? First sit on a stable chair, preferably in front of a large mirror, then cross your arms over your shoulders and begin rotating your torso with the arms held horizontally at both sides. As you rotate your body to the left, observe how far the ...
+
+### Hands go numb at night? It might not be carpal tunnel
+- **URL**: https://www.ptsakkinen.com/videos/hC9W9rhTwnM
+- **Category**: Neck Pain, Cervical Spine & Tension Headaches
+- **Direct Clinical Answer**: Janne covers carpal tunnel syndrome prevalence, risk factors, symptoms, and how to test and treat median nerve irritation with night splints, ergonomic changes, and progressive neurodynamic sliders.
+- **Full Clinical Summary**: Hello, this is Janne. Have you ever heard the term carpal tunnel syndrome? In this video I'm going to cover the prevalence of it, what the typical symptoms are, how to prevent it, and how to ease irritation of the median nerve. Let's dive in.  Carpal tunnel syndrome is the most common upper limb nerve entrapment, and it causes issues with the median nerve. The median nerve goes underneath the transverse carpal ligament of the wrist. The structure...
+
+### Ankle Sprain Recovery: Test Your Balance and Identify Weaknesses
+- **URL**: https://www.ptsakkinen.com/videos/fSYF1TeodfM
+- **Category**: Neck Pain, Cervical Spine & Tension Headaches
+- **Direct Clinical Answer**: Janne introduces the Star Excursion Balance Test as a way to evaluate balance, strength, endurance and mobility of the lower extremity after an ankle or knee injury, and demonstrates how to set it up and interpret asymmetries.
+- **Full Clinical Summary**: Sprained ankles of all kinds are very common, and it happens to everyone who is active. In my patient work several clients have asked how to effectively rehabilitate their ankles. I stumbled upon a very interesting test that can also be used for training if you have an ankle or knee injury in the background: the Star Excursion Balance Test.  This is a clinical test used to evaluate balance and control during movement and lower extremity function....
+
+### The 3 most common nerve compressions in the upper limb - easily alleviate symptoms at home!
+- **URL**: https://www.ptsakkinen.com/videos/Qcv2Jle5fb8
+- **Category**: Neck Pain, Cervical Spine & Tension Headaches
+- **Direct Clinical Answer**: Janne covers the anatomy, testing and self-treatment (soft tissue work, stretching and nerve gliding) for the three most common upper-limb nerve entrapments: the median nerve, the ulnar nerve, and the radial nerve.
+- **Full Clinical Summary**: Welcome to the video all about upper limb nerve entrapments. If you know exactly which entrapment you have, go to the timestamps below, but if you don't have a clue then check the whole video through.  Median nerve. Do you feel that your hand is going numb in the area of the thumb, index finger and middle finger, and you are wondering what is happening? If you suffer from this kind of peripheral nerve problem, typical symptoms include tingling, n...
+
+### Physiotherapist: 3 Foods Secretly Fueling Your Chronic Pain
+- **URL**: https://www.ptsakkinen.com/videos/9C-yL1kBgH8
+- **Category**: Neck Pain, Cervical Spine & Tension Headaches
+- **Direct Clinical Answer**: Explains how chronic low-grade inflammation slows healing and increases pain sensitivity, and gives three practical dietary changes (fatty fish, colorful vegetables, olive oil) to help calm it.
+- **Full Clinical Summary**: If you got something that just won't heal, a tendon, a joint, a muscle or your back and you have done the physio, the stretching, stayed active, done everything right but still there is something there simmering. Have somebody asked you this: What are you eating? In this video I'm going to walk through the connection of the most people never hear. How the food is either feeding or cooling the inflammation that's slowing your recovery. There is a ...
+
+### No doctor no problem physiotherapy myths you still believe
+- **URL**: https://www.ptsakkinen.com/videos/MF0GnkE9ekM
+- **Category**: Neck Pain, Cervical Spine & Tension Headaches
+- **Direct Clinical Answer**: Answers frequently asked questions about physiotherapy in Finland — what it is, when you need a referral, insurance/Kela reimbursement, and the difference between massage and physiotherapy.
+- **Full Clinical Summary**: One thing is really important, night pain is the king. So, now we're going to cover frequently asked questions about musculoskeletal physiotherapy what I ran into quite frequently. What is physiotherapy? Physiotherapy is a part of social and healthcare area when we are focused on the moving and the maintenance and reducing the pay. During the physiotherapy sessions we might use guidance and counseling. We can use therapeutic exercises and also we...
+
+### How to Relieve Back Pain Under the Shoulder Blade – Stretch That Works
+- **URL**: https://www.ptsakkinen.com/videos/-0aDEE3r1-4
+- **Category**: Neck Pain, Cervical Spine & Tension Headaches
+- **Direct Clinical Answer**: Janne explains how rib and intercostal muscle irritation can cause pain under or between the shoulder blades, and demonstrates a lacrosse-ball self-mobilization technique to relieve it.
+- **Full Clinical Summary**: How do I get a stretch under the shoulder blade? Yes, this question has come up several times in reception work, and let's answer it thoroughly now. Typically the symptoms have started without any single injury, but repetitive strain may be causing the whole problem - whether it's work- or leisure-related strain. Symptoms sometimes may feel unilateral, on the right or on the left, under the shoulder blade, between the shoulder blades, or above th...
+
+### Test your real strength at home — what the result actually tells you
+- **URL**: https://www.ptsakkinen.com/videos/gmXcw1Py1Sc
+- **Category**: Neck Pain, Cervical Spine & Tension Headaches
+- **Direct Clinical Answer**: Janne walks through four at-home strength/endurance tests - push-ups, overhead dumbbell presses, sit-ups and squats - describing correct form, common mistakes, and how to score the results against reference values.
+- **Full Clinical Summary**: Have you ever thought about how to conveniently test your muscle strength at home? Here is a video for you - if you need to focus on a specific part, check the timeline below; reference values are shown after each test in the video at that point.  Push-up: place your hands shoulder-width apart, fingers pointing forward, and in the bottom position your thumbs reach your shoulders, feet are at shoulder width. Lower the body from the starting positi...
+
+### Tension headaches? The neck trigger nobody treats (physio fix)
+- **URL**: https://www.ptsakkinen.com/videos/6e-74MthRBs
+- **Category**: Neck Pain, Cervical Spine & Tension Headaches
+- **Direct Clinical Answer**: Janne explains the diagnostic criteria and ischemic pain mechanism of tension-type headache, then demonstrates deep neck flexor strengthening (chin tuck progressions) and suboccipital self-massage with a lacrosse ball or baking roll.
+- **Full Clinical Summary**: Hello, this is Janne. Today I'll cover tension-type headache: the reasons in the background, typical symptoms, and how to treat this kind of issue. At the end of the video you will find exercises for the deep neck flexor muscle group and how to relax the upper neck area.  Tension-type headache is the most common form of headache. Typically there is tension in the neck and shoulder muscles in the background. Tension-type headache typically comes a...
+
+### Chronic back pain that won't quit — a physio's fix that isn't rest
+- **URL**: https://www.ptsakkinen.com/videos/EG_yElXgy14
+- **Category**: Neck Pain, Cervical Spine & Tension Headaches
+- **Direct Clinical Answer**: Drawing on national treatment guidelines, Janne covers spinal anatomy, classifies low back pain (non-specific, sciatica, and serious/red-flag causes), lists factors that slow healing, and explains the direct-access physiotherapy assessment process, pain medication use, sleep, stress and daily-life recommendations.
+- **Full Clinical Summary**: Eight out of ten adults experience back pain at some point in their lives, and it's very common for episodes of back pain to recur. I've had back pain myself, and I know how to live with it when it occurs, and later you'll get great tips on how to cope with back pain when it occurs. Back pain is a bit like a cold, and certain factors contribute to its prevalence. In this video I'll present how back pain can be treated and what factors underlie ba...
+
+### Quick and Easy Ankle Taping Tutorial: Fix Your Sprain in a Snap!
+- **URL**: https://www.ptsakkinen.com/videos/wHznHkMDV78
+- **Category**: Neck Pain, Cervical Spine & Tension Headaches
+- **Direct Clinical Answer**: Janne demonstrates a detailed rigid-tape ankle taping technique for lateral ankle sprains, showing both how he applies it to a patient in clinic and how to apply it to your own ankle for external support.
+- **Full Clinical Summary**: Ankle sprains are a very common injury, and at the start of summer I decided to make a small video about ankle taping. About 85 percent of ankle injuries occur on the lateral side of the ankle, because the mechanism of injury is the inversion direction. The purpose of taping is to provide good external support in the first few days. Small and mild ankle injuries heal up on their own within 14 days of injury, and the bigger the issue, the more att...
+
+### How to Know More About Pain | Definition of Pain and How to Treat Pain
+- **URL**: https://www.ptsakkinen.com/videos/_vN1gyLAIHM
+- **Category**: Neck Pain, Cervical Spine & Tension Headaches
+- **Direct Clinical Answer**: Janne gives an accessible explanation of the official definition of pain, the different nerve fiber groups involved in transmitting pain signals, and walks through the main pain mechanisms - mechanical, inflammatory, ischemic, peripheral neurogenic, neuropathic, nociplastic, and the psychosocial/chronic and iatrogenic aspects of pain - with everyday examples.
+- **Full Clinical Summary**: Hello, this is Janne. This video's purpose is to give you a simple explanation of what pain is and what kind of pain mechanisms people have. Healthcare personnel tend to use terminology that is really difficult to understand - the purpose of this video is to break down those difficult terms in an easier way.  Why do we have pain? It comes from evolution, and we need it to learn new sets of skills to survive much better. What is the definition of ...
+
+### Hypermobility Test: Try These Movements to Assess Your Joint Flexibility
+- **URL**: https://www.ptsakkinen.com/videos/SxzHvc49vl8
+- **Category**: Neck Pain, Cervical Spine & Tension Headaches
+- **Direct Clinical Answer**: Clinical walkthrough of the 9-point Beighton hypermobility assessment score, explaining joint laxity testing criteria and stabilization principles.
+- **Full Clinical Summary**: Joint hypermobility occurs when connective tissues, ligaments, and joint capsules possess an unusually high degree of elasticity and flexibility. While high flexibility can be advantageous in certain sports, systemic joint hypermobility often leads to joint instability, chronic muscle fatigue, frequent sprains, and unexplained musculoskeletal pain.  In this video, we go through the clinical Beighton Score hypermobility assessment protocol — a sta...
+
+## TMJ, Jaw Pain & Bruxism Rehabilitation
+
+### Jaw Pain or TMJ? Simple Test to Find the Real Cause (Muscle vs Joint)
+- **URL**: https://www.ptsakkinen.com/videos/D9g_8OtqRk8
+- **Category**: TMJ, Jaw Pain & Bruxism Rehabilitation
+- **Direct Clinical Answer**: Explains typical masseter trigger-point referral patterns and teaches a simple stick-bite test to determine whether jaw/tooth/ear pain is coming from the chewing muscles or the jaw joint itself.
+- **Full Clinical Summary**: Do you feel pain in your cheeks or in your teeth even though you've been told that the structure everything looks normal? Does your jaw feel stiff during the morning? Or do you sometimes feel the pressure in your ears? Or maybe a faint buzzing sound? And maybe you're wondering where does this is actually coming from? Most people immediately think that the problem must be the jaw joint. But often the real cause is somewhere else. There is one powe...
+
+### Jaw Muscle Pain That Won't Go Away? Fix Your Masseter Step by Step
+- **URL**: https://www.ptsakkinen.com/videos/t8iCnAUr4pU
+- **Category**: TMJ, Jaw Pain & Bruxism Rehabilitation
+- **Direct Clinical Answer**: Walks through what overloads the jaw's masseter muscle (stress, clenching, posture) and demonstrates precise self-massage, stretching and taping techniques for both the superficial and deep parts of the muscle.
+- **Full Clinical Summary**: If you are already tried to stretch, maybe even bite splits, but your muscle is still painful, the problem is probably not that you are doing too little. It's more likely that you are doing things in the wrong order or targeting the wrong structures. In this video, we will build clear framework. First, we will look what actually overloads the chewing muscles. Then we will go to talk about splints and botox and what do they really do. And finally,...
+
+### How to Stop Clenching Your Jaw (It's Not Just Stress)
+- **URL**: https://www.ptsakkinen.com/videos/XQzd8Pbh2e4
+- **Category**: TMJ, Jaw Pain & Bruxism Rehabilitation
+- **Direct Clinical Answer**: Explains the stress/hormone drivers behind daytime and nighttime teeth clenching (bruxism) and gives practical relaxation techniques, mouth guard tips, and a bedtime breathing routine to reduce clenching.
+- **Full Clinical Summary**: ... Have you ever woken up and feeling that your jaw is on fire, or notice during the day that you are clenching your teeth without even realizing it? Or maybe your face starts to look like Ridge Forrester's. Your teeth are chipping and your jaw muscles feel like a concrete. Even the massage therapist cannot get them to relax. If that sounds familiar, you are not definitely alone. In this video, we'll break down the teeth clenching, or bruxism, r...
+
+### Trigeminal Neuralgia Face Taping — Step-by-Step Relief
+- **URL**: https://www.ptsakkinen.com/videos/imW12SkS304
+- **Category**: TMJ, Jaw Pain & Bruxism Rehabilitation
+- **Direct Clinical Answer**: Step-by-step demonstration of applying kinesiology tape over the three trigeminal nerve exit points on the face to help ease irritation and pressure from trigeminal neuralgia.
+- **Full Clinical Summary**: Do you want to get yourself from this situation to this? Are you suffering from some sort of trigeminal nerve irritation and you want to ease the pressure on the openings of those nerve roots? Faceimage tape is really good for the skin because there is no irritations coming from the glue typically. But first you want to test that out with applying some tape for example to your forearm. Keep it for a few hours in there and if you get this irritati...
+
+### Trigeminal Neuralgia Meds: Pain Gone, Life Gone Too? (Patient Story)
+- **URL**: https://www.ptsakkinen.com/videos/LRF-cMNdWHQ
+- **Category**: TMJ, Jaw Pain & Bruxism Rehabilitation
+- **Direct Clinical Answer**: An interview with a long-term trigeminal neuralgia patient describing what the pain actually feels like, the long road to diagnosis, medication side effects, and the emotional and social toll of living with the condition.
+- **Full Clinical Summary**: What's the worst thing people have said to you about this pain? >> Well, probably how your face can be so incredibly sore and painful that you can't even eat or talk, for example. Belittling is honestly maybe the very worst thing that comes out of people's mouths. Or then now that you're on sick leave, you can do all sorts of fun things. When in reality, I'm basically just lying on the couch just trying to breathe. >> Today, my guest is Murvy Nep...
+
+### Most Trigeminal Neuralgia Patients Don't Need Surgery — Here's Why
+- **URL**: https://www.ptsakkinen.com/videos/57g-9r9HP3I
+- **Category**: TMJ, Jaw Pain & Bruxism Rehabilitation
+- **Direct Clinical Answer**: A Q&A covering the most common questions about trigeminal neuralgia — symptoms, triggers, why MRIs often look normal, how it differs from dental pain, and when medication or surgery is considered.
+- **Full Clinical Summary**: If you click at to this video, there is a good chance that you've been thinking these things. Is this trigeminal neuralgia? Why does it flare up? Why is my MRI normal? And what actually helps? Today, I'm doing trigeminal neuralgia So, I will be answering most common questions people ask online, and I'll keep it practical and core. Quick note still. This video is only for the education purposes, not for diagnosis. If you have a severe sudden facia...
+
+### Trigeminal Neuralgia Flare-Up? Do This First (And Avoid This)
+- **URL**: https://www.ptsakkinen.com/videos/0pm7Zb74-iY
+- **Category**: TMJ, Jaw Pain & Bruxism Rehabilitation
+- **Direct Clinical Answer**: A step-by-step flare-up protocol for trigeminal neuralgia and facial pain, prioritizing nervous-system calming techniques (breathing, gentle touch, visualization) before any gentle nerve mobilization.
+- **Full Clinical Summary**: If you are dealing with facial pain, jaw tension, headaches or trigeminal nerve symptoms, this video is about what to do when the pain is already faring up. Because when the pain is high, most people make the same mistakes. They stretch harder, force the movement or push through. And that is what often makes the flare up even worse. So today I'm going to give you a simple plan. First, we need to calm the system. Only after that, if the pain is lo...
+
+### Why Trigeminal Nerve Pain Strikes at Random (Facial Pain Explained)
+- **URL**: https://www.ptsakkinen.com/videos/2W17fj7Tz4U
+- **Category**: TMJ, Jaw Pain & Bruxism Rehabilitation
+- **Direct Clinical Answer**: Explains the anatomy of the trigeminal nerve's three branches, why facial pain can feel like it "moves around," and why calming the nervous system works better than aggressive stretching during flare-ups.
+- **Full Clinical Summary**: Do you suffer from sudden facial pain, jaw tension, headaches or weird symptoms that doesn't make any sense? Like one day it feels in your jaw, then in your teeth, then in your cheek and then it turns to headache. If that sounds familiar, this video is just for you. In this video we'll be talking about the trigeminal related pain including TMJ issues like jaw, joint pain or clicking, paroxysm meaning the teeth grinding, tension headaches or vague...
+
+### Stiff jaw every morning? The masseter fix you can do at home
+- **URL**: https://www.ptsakkinen.com/videos/pgviiSR2Qks
+- **Category**: TMJ, Jaw Pain & Bruxism Rehabilitation
+- **Direct Clinical Answer**: A comprehensive guide to treating a stiff jaw at home, covering jaw joint mobilization techniques and detailed self-massage/stretching methods for the masseter, temporalis and medial pterygoid muscles.
+- **Full Clinical Summary**: Welcome to the first aid guide for the stiff jaw. I'm Janne Säkkinen, OMT & occupational physiotherapist, specialized in TMD issues. When dealing with the stiff jaw, there are important underlying factors that need to be understood. Once these factors are understood, you can easily manage your own stiff jaw. For this reason, I have created a comprehensive online course that will help you learn how to treat your stiff jaw effectively and safely wi...
+
+### Your tinnitus might come from your jaw — the bruxism link nobody checks
+- **URL**: https://www.ptsakkinen.com/videos/Ot9gFTYCUg4
+- **Category**: TMJ, Jaw Pain & Bruxism Rehabilitation
+- **Direct Clinical Answer**: Explains how jaw joint clicking, masseter muscle hypertonicity, and nocturnal teeth clenching (bruxism) can trigger or intensify somatosensory tinnitus via trigeminocervical brainstem convergence, and provides diagnostic provocation tests.
+- **Full Clinical Summary**: Tinnitus is a ringing, buzzing, or hissing sound in the ears that can be deeply frustrating when standard ear-nose-throat evaluations show no structural ear damage. What many patients and even clinicians miss is the direct neurological and mechanical connection between temporomandibular joint (TMJ) disorders, masseter muscle tension, bruxism, and somatosensory tinnitus.  The trigeminal nerve (cranial nerve V) provides sensory innervation to the j...
+
+### How to stop jaw pain at home — the masseter release nobody shows
+- **URL**: https://www.ptsakkinen.com/videos/71vpOJ8p6XM
+- **Category**: TMJ, Jaw Pain & Bruxism Rehabilitation
+- **Direct Clinical Answer**: A step-by-step home self-care protocol demonstrating extraoral masseter palpation, deep intraoral masseter and pterygoid release, and resting tongue position alignment to reduce jaw tightness and bruxism strain.
+- **Full Clinical Summary**: Jaw pain, masseter muscle tightness, and TMJ tenderness are among the most common complaints I treat in my clinical practice. Many people try external cheek massages, but they miss the deep masseter and medial pterygoid fibers that store the vast majority of chronic tension.  In this home rehabilitation guide, I'll walk you through a safe, step-by-step intraoral and extraoral masseter release technique that you can perform yourself in under three...
+
+## Dental Ergonomics & Workplace Alignment
+
+### Struggling to See at Work? The Truth About Special Computer Glasses Explained
+- **URL**: https://www.ptsakkinen.com/videos/bGTIDpmQ5V8
+- **Category**: Dental Ergonomics & Workplace Alignment
+- **Direct Clinical Answer**: Explains the Finnish rules and measurement process for getting employer-provided special computer/work glasses, including how to measure screen height, distance, and workstation setup for the optician.
+- **Full Clinical Summary**: Are you a computer workstation employee working remotely or at the office and you're starting to have some sort of challenges with work vision? In this video we'll go through what factors must be taken into account in specialized work glasses measurements and when you are entitled to have those special work glasses. Your own civilian glasses must be up to date and only after this you are entitled for the special work glasses. Special work glasses...
+
+### Why Ergonomics Matter: Protecting Dentists from Early Retirement
+- **URL**: https://www.ptsakkinen.com/videos/l19qNLAX7zk
+- **Category**: Dental Ergonomics & Workplace Alignment
+- **Direct Clinical Answer**: A university guest lecture on ergonomics for dentistry students, covering why dental professionals face high rates of musculoskeletal injury and early retirement, plus practical posture, chair, tool and pacing recommendations.
+- **Full Clinical Summary**: I'm Occupational Physiotherapist Janne Säkkinen. I've been this kind of visiting lecturer from 2017 in this university facility. The Sau and you are and Maria-Liisa Laitala and all those persons asked me, can I have this kind of ergonomic presentations for the dentistry students? And this is the reason why I'm here. If you have any questions, concerns about the topic, hit me and I will try to answer best I can. And we have a few slides to go thro...
+
+### Are Lifts Hazardous? Learn the Proper Technique for Safe Lifting!
+- **URL**: https://www.ptsakkinen.com/videos/jM_3mAJRKJc
+- **Category**: Dental Ergonomics & Workplace Alignment
+- **Direct Clinical Answer**: Janne compares three lifting techniques (straight-leg/stoop, squat, and semi-squat), discusses which muscle groups and metabolic demands each favors, and explains a graded approach to managing lifting-related back pain.
+- **Full Clinical Summary**: Have you ever heard the comment that you should lift in the "right way"? Well, what on earth is the right way, and what kind of lifting methods are there? In this video we'll go through these lifting techniques and what the literature says about how we should lift in everyday life.  Lifting is unavoidable - it occurs in daily activities, at the gym, or even on shopping trips. The interesting thing is that lifting is generally associated with back...
+
+### The Ultimate Guide to Lab Ergonomics: Comfort & Safety
+- **URL**: https://www.ptsakkinen.com/videos/dVFni5ybI0Y
+- **Category**: Dental Ergonomics & Workplace Alignment
+- **Direct Clinical Answer**: Clinical ergonomics guidance tailored for laboratory professionals, detailing microscope head positioning, pipetting force reduction, biosafety cabinet armrest setups, and micro-break routines.
+- **Full Clinical Summary**: Laboratory environments present unique ergonomic challenges — prolonged standing at fume hoods, repetitive pipetting, static neck flexion while peering into microscopes, and awkward reaches inside biosafety cabinets. Left unaddressed, these sustained postures lead to severe neck stiffness, shoulder impingement, and lumbar fatigue.  In this comprehensive guide to lab ergonomics, we break down clinical adjustments for every major laboratory worksta...
+
+### Optimize Your Ergonomics for Remote Work: Easy Home Office Setup Tips
+- **URL**: https://www.ptsakkinen.com/videos/MSU1-16ztHo
+- **Category**: Dental Ergonomics & Workplace Alignment
+- **Direct Clinical Answer**: Janne gives practical home-office ergonomics guidance covering chair height and tilt, armrest and desk height using a forearm measurement, monitor distance and height (with and without reading glasses), standing desk/saddle chair setup, and marking preferred height settings for easy reuse.
+- **Full Clinical Summary**: Have you set up your gear and gadgets for your home office, and now you're wondering how to adjust them? Don't worry, this video will walk you through how to optimize your ergonomics for remote work, and afterwards you'll be unstoppable in your remote tasks. At the end of the video there is a little tip for those who don't have a desk with memory settings, and everyone else can surely benefit from these home office tips too.  Let's start with the...
+
+### Tight chest from desk work? One move that opens it up
+- **URL**: https://www.ptsakkinen.com/videos/me-VACYuWK4
+- **Category**: Dental Ergonomics & Workplace Alignment
+- **Direct Clinical Answer**: Janne gives exercises for chest and thoracic spine stiffness caused by prolonged desk posture, including rotation exercises (dropping hood, around-the-world, seated push-pull) and extension exercises (crossed-arm lean, ball-assisted supine mobilization).
+- **Full Clinical Summary**: Stiffness of the chest and thoracic spine can cause different pains, and in this video I'm going to give you a few examples of exercises you can use to ease your symptoms. I cover a few rotation-direction exercises and a few extension-direction exercises. If you don't have any trauma in the background, you don't have night pain, and the symptoms have been present for a longer period, then this video is for you. If you have chest issues along with...
+
+### Stand Tall: How to Improve Your Posture While Working from Home
+- **URL**: https://www.ptsakkinen.com/videos/n1HmcEXMR_8
+- **Category**: Dental Ergonomics & Workplace Alignment
+- **Direct Clinical Answer**: Four actionable clinical corrections to eliminate forward head posture, rounded shoulders, and upper back strain during home office work.
+- **Full Clinical Summary**: Working from home has revolutionized flexibility, but it has also led to a surge in forward head posture, slouched shoulders, and lower back fatigue. When you slouch on a couch or work at an unadjusted kitchen table, the mechanical load on your cervical spine increases exponentially — at a 45-degree forward tilt, your head exerts over 22 kg (49 lbs) of force on your neck muscles and intervertebral discs!  In this guide, I share four actionable po...
+
+### Unlocking Driving Comfort: Create the Perfect Ergonomic Posture
+- **URL**: https://www.ptsakkinen.com/videos/dJM56-W3-ek
+- **Category**: Dental Ergonomics & Workplace Alignment
+- **Direct Clinical Answer**: Janne demonstrates how to set up a car driving position, covering seat height, pedal distance, backrest angle and lumbar support, steering wheel distance and hand position, headrest height, and mirror adjustment.
+- **Full Clinical Summary**: Okay, now we're going to give you a few tips on how to get your driving posture a bit better.  First, the seating height - it should be around halfway up the glass. When we think about the distance to the pedals, if we fully extend our knee it's not going to be a good case - I want to have my knee bent 20 to 30 degrees while I do the braking, so I will grab the seat and pull it forward. Now when I press the brake down there is a nice angle in the...
+
+### Ergonomic Tips for Laptop Users: How to Avoid Strain and Discomfort
+- **URL**: https://www.ptsakkinen.com/videos/-Gi3ejwtHRQ
+- **Category**: Dental Ergonomics & Workplace Alignment
+- **Direct Clinical Answer**: In a sponsored review of laptop stands, Janne explains the benefits of raising a laptop (cooling, neck posture, using an external keyboard/mouse), demonstrates a vertical laptop bracket, and recommends investing in a proper monitor arm for a permanent setup.
+- **Full Clinical Summary**: If you are working from home with a laptop and you want to improve your ergonomics, this video is for you. This video has been made in commercial partnership with a company that sent me different kinds of laptop stands so you could get an idea of what options are available and how to use them. In the upper corner of the video you can see the code name of the current stand, and all the links will be down below. During this video I'll just put lapt...
+
+### Adjusting Your Office Chair for Optimal Comfort and Ergonomics
+- **URL**: https://www.ptsakkinen.com/videos/7b0ZsbVEHT4
+- **Category**: Dental Ergonomics & Workplace Alignment
+- **Direct Clinical Answer**: A step-by-step ergonomic adjustment guide for office chairs, covering seat height, seat pan depth, lumbar cushion placement, and armrest alignment.
+- **Full Clinical Summary**: An improperly adjusted office chair is one of the leading causes of lower back pain, sciatica, and thoracic tightness among desk workers. Even the most expensive ergonomic chair will not protect your spine if it is not fitted to your unique anatomical proportions.  In this practical walkthrough, I demonstrate how to systematically adjust your office chair in four logical steps:  Step 1: Seat Height Adjustment: Sit fully back in the chair. Lower o...
+
+### Easy way to adjust office chair - easy tips for working home
+- **URL**: https://www.ptsakkinen.com/videos/Hb_WrBiajJg
+- **Category**: Dental Ergonomics & Workplace Alignment
+- **Direct Clinical Answer**: Janne, introducing himself as an orthopedic manual and occupational health physiotherapist, walks through adjusting an office chair's seat height, backrest angle and lumbar support, and shows how to measure and set the correct desk height using a measuring tape.
+- **Full Clinical Summary**: Hello! My name is Janne Sakkinen. I am an orthopedic manual and also occupational health physiotherapist.  During the pandemic, people needed to work from home, so for a good work chair you will need adjustment for the height, the backrest angle, and also the backrest needs to feel good for your back. Here is a viable office chair that has seat height adjustment, backrest angle and height adjustment, armrest height adjustment, and also a lever fo...
+
+### Working in bed / sofa ergonomics
+- **URL**: https://www.ptsakkinen.com/videos/TJsNDjNukmk
+- **Category**: Dental Ergonomics & Workplace Alignment
+- **Direct Clinical Answer**: Janne explains the anatomy and course of the sciatic nerve and how prolonged sitting on a sofa or in bed can cause tingling or numbness in the legs, then demonstrates a pillow-supported working posture for the couch or bed that avoids nerve irritation.
+- **Full Clinical Summary**: Hello, this is Janne. So, tips for sofa or couch work. The sciatic nerve starts from lumbar level four up to sacral level three - that is the biggest and widest nerve in our system. In the back area it goes to our sacral plexus, and that is a tight space in the anterior part of the sacrum where the nerve roots go, and after that it goes underneath the glutes, down the back of the thigh, continuing downwards into the thigh, and in the distal third...
+
+### The Science Behind Ergonomics: Why It Matters for Your Health
+- **URL**: https://www.ptsakkinen.com/videos/hGKHbMQGQ6Q
+- **Category**: Dental Ergonomics & Workplace Alignment
+- **Direct Clinical Answer**: In the first part of an ergonomics series, Janne defines ergonomics from its Greek roots, gives everyday examples of poor design (light switches, doors), and outlines the main subcategories: physical, cognitive, and organizational ergonomics.
+- **Full Clinical Summary**: Ergonomics in an easy way. In this video series I'll go through what it is in depth, what the benefits are, and what the purpose of an ergonomic point of view is.  Ergonomics is the study of employees and work interactions to improve employee well-being and increase effective results. With good ergonomics, the purpose is to increase safety, promote employee health, promote well-being at work, and make work error-free. If using some product or tas...
+
+### Cognitive and Organizational Ergonomics
+- **URL**: https://www.ptsakkinen.com/videos/lZaeBvGKzII
+- **Category**: Dental Ergonomics & Workplace Alignment
+- **Direct Clinical Answer**: In part two of his ergonomics series, Janne covers principles for well-designed work tasks (meaningful, varied, allowing independent judgment and feedback) and workplace requirements (adjustable furniture, safe and easy-to-use equipment, appropriate lighting and sound) that together create good workflow and prevent burnout.
+- **Full Clinical Summary**: Welcome back to learn more about ergonomics - here is part two about ergonomics. In this video I'm going to cover the following: what is good to know about task planning, or principles for the employee. If you are working as a manager, is there something you can improve in day-to-day tasks to make them even better for employees? ---    ## TULE-vaivat...
+

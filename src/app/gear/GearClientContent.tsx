@@ -135,11 +135,23 @@ export default function GearClientContent() {
                         {item.category === "fitness" && "🏋️‍♂️ Fitness & Recovery"}
                         {item.category === "software" && "💻 Software"}
                       </span>
-                      {item.badge && (
-                        <span className="text-xs font-bold text-[#00AEEF] bg-[#0C66B4]/20 border border-[#00AEEF]/40 px-2.5 py-1 rounded-md">
-                          {item.badge}
-                        </span>
-                      )}
+                      <div className="flex items-center gap-1.5 flex-wrap justify-end">
+                        {(item.adtractionUrl || item.directUrl) && !item.amazonAsinOrSearch && (
+                          <span className="text-[10px] font-semibold text-amber-300 bg-amber-950/60 border border-amber-500/40 px-2 py-0.5 rounded-full">
+                            Affiliate Link
+                          </span>
+                        )}
+                        {item.amazonAsinOrSearch && (
+                          <span className="text-[10px] font-semibold text-sky-300 bg-sky-950/60 border border-sky-500/40 px-2 py-0.5 rounded-full">
+                            Amazon Affiliate
+                          </span>
+                        )}
+                        {item.badge && (
+                          <span className="text-xs font-bold text-[#00AEEF] bg-[#0C66B4]/20 border border-[#00AEEF]/40 px-2.5 py-1 rounded-md">
+                            {item.badge}
+                          </span>
+                        )}
+                      </div>
                     </div>
 
                     {/* Title */}

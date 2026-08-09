@@ -6,8 +6,8 @@ import type { Metadata } from "next";
 export const revalidate = 3600;
 
 export const metadata: Metadata = {
-  title: "Clinical Video Library | 68 Video Articles | PT Sakkinen",
-  description: "Explore all 68 physical therapy videos and AEO articles by Janne Sakkinen covering TMJ disorders, dental ergonomics, spine and joint care.",
+  title: "Clinical Video Library | 70 Video Articles | PT Sakkinen",
+  description: "Explore all 70 physical therapy videos and AEO articles by Janne Sakkinen covering TMJ disorders, dental ergonomics, spine and joint care.",
   alternates: {
     canonical: "https://www.ptsakkinen.com/videos",
     languages: {

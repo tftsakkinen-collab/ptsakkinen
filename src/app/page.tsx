@@ -9,8 +9,9 @@ import AppointmentBookingSection from "@/components/AppointmentBookingSection";
 import Link from "next/link";
 import { ArrowRight, PlayCircle, BookOpen } from "lucide-react";
 import { fetchYouTubeVideos } from "@/lib/youtube";
-import Script from "next/script";
+import { PersonPhysicianSchema } from "@/components/JsonLdSchemas";
 import type { Metadata } from "next";
+import Script from "next/script";
 import dynamicImport from "next/dynamic";
 
 const SymptomNavigator = dynamicImport(() => import("@/components/SymptomNavigator"), {
@@ -219,6 +220,7 @@ export default async function HomePage() {
 
   return (
     <div>
+      <PersonPhysicianSchema />
       <Script
         id="homepage-json-ld"
         type="application/ld+json"
@@ -244,7 +246,7 @@ export default async function HomePage() {
               </h2>
             </div>
             <Link href="/videos" className="text-xs text-[#00AEEF] hover:underline font-semibold">
-              View all 68 clinical videos →
+              View all 70 clinical videos →
             </Link>
           </div>
 
