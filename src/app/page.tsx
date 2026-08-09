@@ -94,10 +94,10 @@ export default async function HomePage() {
         }
       ],
       "sameAs": [
-        "https://www.youtube.com/@pt_sakkinen",
-        "https://www.instagram.com/sakkinenjanne",
-        "https://www.tiktok.com/@sakkinenjanne",
-        "https://beacons.ai/sakkinenjanne",
+        "https://www.youtube.com/channel/UCbIWSnSD_k3YoTQSqrzi5Bw",
+        "https://www.instagram.com/ptsakkinen/",
+        "https://www.tiktok.com/@ptsakkinen",
+        "https://beacons.ai/ptsakkinen",
         "https://www.ftsakkinen.com",
         "https://www.ptsakkinen.com"
       ]

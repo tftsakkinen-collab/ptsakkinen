@@ -16,15 +16,15 @@ export const SITE_CONFIG = {
   totalVideosCount: 68,
   
   // Social Media Handles
-  youtubeUrl: "https://www.youtube.com/@pt_sakkinen",
+  youtubeUrl: "https://www.youtube.com/channel/UCbIWSnSD_k3YoTQSqrzi5Bw",
   youtubeHandle: "@pt_sakkinen",
-  youtubeChannelId: "UCz0XuTDgzskIDlzSrZFxsBg",
+  youtubeChannelId: "UCbIWSnSD_k3YoTQSqrzi5Bw",
 
-  instagramUrl: "https://www.instagram.com/sakkinenjanne",
-  instagramHandle: "@sakkinenjanne",
+  instagramUrl: "https://www.instagram.com/ptsakkinen/",
+  instagramHandle: "@ptsakkinen",
 
-  tiktokUrl: "https://www.tiktok.com/@sakkinenjanne",
-  tiktokHandle: "@sakkinenjanne",
+  tiktokUrl: "https://www.tiktok.com/@ptsakkinen",
+  tiktokHandle: "@ptsakkinen",
 
   beaconsUrl: "https://beacons.ai/ptsakkinen",
   googleDriveUrl: "https://drive.google.com/drive/folders/10GSV-Au7XPeJRZCAVzhy5fCPgrk-izHM?usp=sharing",
