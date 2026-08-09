@@ -17,6 +17,7 @@ import {
   GEAR_CATEGORIES,
   getAmazonUrl,
 } from "@/data/gearData";
+import { trackEvent } from "@/lib/analytics";
 
 export default function GearClientContent() {
   const [selectedCategory, setSelectedCategory] = useState<string>("all");
@@ -38,6 +39,7 @@ export default function GearClientContent() {
   const handleCopyCoupon = (id: string, code: string) => {
     navigator.clipboard.writeText(code);
     setCopiedId(id);
+    trackEvent("copy_promo_code", { itemId: id, code });
     setTimeout(() => setCopiedId(null), 2500);
   };
 
