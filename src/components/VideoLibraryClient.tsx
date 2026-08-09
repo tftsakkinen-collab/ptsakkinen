@@ -192,7 +192,7 @@ export default function VideoLibraryClient({ videos, categories }: VideoLibraryC
                   }}
                   className="text-[#00AEEF] hover:underline font-semibold"
                 >
-                  Show all 68 videos
+                  Show all 69 videos
                 </button>
               )}
             </div>
@@ -213,7 +213,7 @@ export default function VideoLibraryClient({ videos, categories }: VideoLibraryC
                   }}
                   className="px-4 py-2 rounded-lg bg-[#00AEEF] text-black font-bold text-xs"
                 >
-                  Show all 68 videos
+                  Show all 69 videos
                 </button>
               </div>
             )}

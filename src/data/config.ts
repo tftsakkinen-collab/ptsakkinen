@@ -1,7 +1,7 @@
 export const SITE_CONFIG = {
   brandName: "PT Sakkinen",
   companyName: "Tiedottajanne Oy",
-  businessId: "3305813-7",
+  businessId: "3505813-7",
   domain: "ptsakkinen.com",
   sisterSiteName: "FT Säkkinen (Suomi)",
   sisterSiteUrl: "https://www.ftsakkinen.com",
@@ -13,7 +13,7 @@ export const SITE_CONFIG = {
   streetAddress: "Oulu, Finland",
   contactEmail: "tiedottajanne@gmail.com",
   contactPhone: "+358 41 327 4967",
-  totalVideosCount: 68,
+  totalVideosCount: 69,
   
   // Social Media Handles
   youtubeUrl: "https://www.youtube.com/channel/UCbIWSnSD_k3YoTQSqrzi5Bw",

@@ -6,8 +6,8 @@ import type { Metadata } from "next";
 export const revalidate = 3600;
 
 export const metadata: Metadata = {
-  title: "Clinical Video Library | 70 Video Articles | PT Sakkinen",
-  description: "Explore all 70 physical therapy videos and AEO articles by Janne Sakkinen covering TMJ disorders, dental ergonomics, spine and joint care.",
+  title: "Clinical Video Library | 69 Video Articles | PT Sakkinen",
+  description: "Explore all 69 physical therapy videos and AEO articles by Janne Sakkinen covering TMJ disorders, dental ergonomics, spine and joint care.",
   alternates: {
     canonical: "https://www.ptsakkinen.com/videos",
     languages: {
@@ -17,8 +17,8 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "Clinical Video Library | 68 Video Articles | PT Sakkinen",
-    description: "Explore all 68 physical therapy videos and AEO articles by Janne Sakkinen covering TMJ disorders, dental ergonomics, spine and joint care.",
+    title: "Clinical Video Library | 69 Video Articles | PT Sakkinen",
+    description: "Explore all 69 physical therapy videos and AEO articles by Janne Sakkinen covering TMJ disorders, dental ergonomics, spine and joint care.",
     url: "https://www.ptsakkinen.com/videos",
     siteName: "PT Sakkinen - OMT Physical Therapist",
     locale: "en_US",
@@ -27,8 +27,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Clinical Video Library | 68 Video Articles | PT Sakkinen",
-    description: "Explore all 68 physical therapy videos and AEO articles by Janne Sakkinen covering TMJ disorders, dental ergonomics, spine and joint care.",
+    title: "Clinical Video Library | 69 Video Articles | PT Sakkinen",
+    description: "Explore all 69 physical therapy videos and AEO articles by Janne Sakkinen covering TMJ disorders, dental ergonomics, spine and joint care.",
     images: ["https://www.ptsakkinen.com/logo-whitebg.png"],
   },
 };

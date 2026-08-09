@@ -246,7 +246,7 @@ export default async function HomePage() {
               </h2>
             </div>
             <Link href="/videos" className="text-xs text-[#00AEEF] hover:underline font-semibold">
-              View all 70 clinical videos →
+              View all 69 clinical videos →
             </Link>
           </div>
 
