@@ -75,11 +75,16 @@ export async function fetchYouTubeVideos(): Promise<Video[]> {
 
       if (!isShort && videoId) {
         let categoryId = "ergonomics";
-        const lower = (title + " " + description).toLowerCase();
-        for (const [key, cat] of Object.entries(CATEGORY_MAP)) {
-          if (lower.includes(key)) {
-            categoryId = cat;
-            break;
+        const fallbackMatch = FALLBACK_VIDEOS.find(fv => fv.id === videoId);
+        if (fallbackMatch && fallbackMatch.categoryId) {
+          categoryId = fallbackMatch.categoryId;
+        } else {
+          const lower = (title + " " + description).toLowerCase();
+          for (const [key, cat] of Object.entries(CATEGORY_MAP)) {
+            if (lower.includes(key)) {
+              categoryId = cat;
+              break;
+            }
           }
         }
 
@@ -122,6 +127,7 @@ export async function getAllVideos(): Promise<Video[]> {
       videoMap.set(v.id, {
         ...existing,
         ...v,
+        categoryId: existing.categoryId || v.categoryId,
         transcript: existing.transcript || v.transcript,
         pairVideoId: existing.pairVideoId || v.pairVideoId,
         pairUrl: existing.pairUrl || v.pairUrl,

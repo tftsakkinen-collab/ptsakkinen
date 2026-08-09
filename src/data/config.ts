@@ -1,7 +1,7 @@
 export const SITE_CONFIG = {
   brandName: "PT Sakkinen",
   companyName: "Tiedottajanne Oy",
-  businessId: "3505813-7",
+  businessId: "3305813-7",
   domain: "ptsakkinen.com",
   sisterSiteName: "FT Säkkinen (Suomi)",
   sisterSiteUrl: "https://www.ftsakkinen.com",
