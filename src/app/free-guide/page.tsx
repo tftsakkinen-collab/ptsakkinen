@@ -68,6 +68,50 @@ export default function FreeGuidePage() {
         </div>
       </div>
 
+      {/* What's Included in the PDF Guides Section */}
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8 pt-6">
+        <div className="text-center max-w-2xl mx-auto space-y-2">
+          <h2 className="text-2xl sm:text-3xl font-display text-white uppercase tracking-wide">
+            WHAT IS INCLUDED IN <span className="text-[#00AEEF]">YOUR PDF GUIDES</span>
+          </h2>
+          <p className="text-sm text-gray-300">
+            Clinical protocols developed by OMT Physical Therapist Janne Sakkinen for home practice.
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="p-6 rounded-2xl bg-gradient-to-b from-[#000d21] to-[#000814] border border-[#0C66B4]/40 hover:border-[#00AEEF]/60 transition-all space-y-3">
+            <div className="w-10 h-10 rounded-xl bg-[#014489]/40 border border-[#00AEEF]/40 text-[#00AEEF] flex items-center justify-center font-bold">
+              01
+            </div>
+            <h3 className="font-bold text-lg text-white">TMJ &amp; Masseter Protocols</h3>
+            <p className="text-xs text-gray-300 leading-relaxed">
+              Step-by-step intraoral and extraoral masseter myofascial release, pterygoid decompression, and tongue resting alignment for jaw pain and teeth clenching.
+            </p>
+          </div>
+
+          <div className="p-6 rounded-2xl bg-gradient-to-b from-[#000d21] to-[#000814] border border-[#0C66B4]/40 hover:border-[#00AEEF]/60 transition-all space-y-3">
+            <div className="w-10 h-10 rounded-xl bg-[#014489]/40 border border-[#00AEEF]/40 text-[#00AEEF] flex items-center justify-center font-bold">
+              02
+            </div>
+            <h3 className="font-bold text-lg text-white">Ergonomics &amp; Workstation Alignment</h3>
+            <p className="text-xs text-gray-300 leading-relaxed">
+              Calculated chair heights, monitor distances, pipetting &amp; lab posture adjustments, and 30-second micro-break routines for remote desk workers and dental professionals.
+            </p>
+          </div>
+
+          <div className="p-6 rounded-2xl bg-gradient-to-b from-[#000d21] to-[#000814] border border-[#0C66B4]/40 hover:border-[#00AEEF]/60 transition-all space-y-3">
+            <div className="w-10 h-10 rounded-xl bg-[#014489]/40 border border-[#00AEEF]/40 text-[#00AEEF] flex items-center justify-center font-bold">
+              03
+            </div>
+            <h3 className="font-bold text-lg text-white">Spine &amp; Cervicogenic Headache Release</h3>
+            <p className="text-xs text-gray-300 leading-relaxed">
+              Thoracic rotation drills, chin tucks, sciatic nerve glides, and lumbar decompression protocols to restore full mobility.
+            </p>
+          </div>
+        </div>
+      </div>
+
     </div>
   );
 }

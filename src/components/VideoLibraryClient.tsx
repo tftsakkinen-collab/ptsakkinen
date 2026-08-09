@@ -36,7 +36,7 @@ export default function VideoLibraryClient({ videos, categories }: VideoLibraryC
         <div className="text-center max-w-4xl mx-auto space-y-4">
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#0C66B4]/20 border border-[#00AEEF]/40 text-[#00AEEF] text-xs font-bold uppercase tracking-wider">
             <PlayCircle className="w-4 h-4" />
-            <span>ALL 68 CLINICAL REHABILITATION VIDEOS</span>
+            <span>ALL {videos.length} CLINICAL REHABILITATION VIDEOS</span>
           </div>
 
           <h1 className="text-4xl sm:text-6xl font-display text-white tracking-wide">
@@ -44,7 +44,7 @@ export default function VideoLibraryClient({ videos, categories }: VideoLibraryC
           </h1>
 
           <p className="text-gray-300 text-base sm:text-lg leading-relaxed max-w-3xl mx-auto">
-            Explore OMT Physical Therapist Janne Sakkinen's full library of 68 published physical therapy videos and AEO-optimized articles organized into three clinical specializations.
+            Explore OMT Physical Therapist Janne Sakkinen's full library of {videos.length} published physical therapy videos and AEO-optimized articles organized into three clinical specializations.
           </p>
         </div>
 
@@ -55,7 +55,7 @@ export default function VideoLibraryClient({ videos, categories }: VideoLibraryC
             <Search className="w-5 h-5 text-gray-400 absolute left-4 top-1/2 -translate-y-1/2" />
             <input
               type="text"
-              placeholder="Search across all 68 videos (e.g. jaw, TMJ, neck)..."
+              placeholder={`Search across all ${videos.length} videos (e.g. jaw, TMJ, neck)...`}
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
               className="w-full pl-12 pr-4 py-3.5 rounded-xl bg-[#000d21] border border-[#0C66B4] text-white placeholder-gray-400 focus:outline-none focus:border-[#00AEEF] focus:ring-1 focus:ring-[#00AEEF] text-sm font-sans"
