@@ -53,7 +53,7 @@ export default function GearClientContent() {
             <span>Tools &amp; Recommendations</span>
           </div>
 
-          <h1 className="font-display text-4xl sm:text-5xl lg:text-6xl tracking-wide text-white mb-6">
+          <h1 className="font-display text-2xl sm:text-4xl lg:text-6xl tracking-wide text-white mb-6 break-words">
             MY GEAR &amp; <span className="text-[#00AEEF]">TOOLS</span>
           </h1>
 
@@ -127,7 +127,7 @@ export default function GearClientContent() {
               return (
                 <div
                   key={item.id}
-                  className="flex flex-col justify-between rounded-2xl bg-gradient-to-b from-[#000d21] to-[#000814] border border-[#0C66B4]/40 hover:border-[#00AEEF]/70 transition-all duration-300 hover:shadow-[0_0_25px_rgba(0,174,239,0.25)] p-6 group"
+                  className="flex flex-col justify-between rounded-2xl bg-gradient-to-b from-[#000d21] to-[#000814] border border-[#0C66B4]/40 hover:border-[#00AEEF]/70 transition-all duration-300 hover:shadow-[0_0_25px_rgba(0,174,239,0.25)] p-4 sm:p-6 group"
                 >
                   <div>
                     {/* Badge & Category Header */}

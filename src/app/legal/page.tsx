@@ -13,12 +13,12 @@ export default function LegalPage() {
             <span>Legal Documentation</span>
           </div>
 
-          <h1 className="text-4xl sm:text-5xl font-display text-white tracking-wide">
-            PRIVACY POLICY & <span className="text-[#00AEEF]">MEDICAL DISCLAIMER</span>
+          <h1 className="text-2xl sm:text-4xl md:text-5xl font-display text-white tracking-wide break-words">
+            PRIVACY POLICY &amp; <span className="text-[#00AEEF]">MEDICAL DISCLAIMER</span>
           </h1>
         </div>
 
-        <div className="p-8 rounded-3xl bg-[#000d21] border border-[#0C66B4]/40 space-y-8 text-gray-300 text-sm leading-relaxed">
+        <div className="p-4 sm:p-8 rounded-3xl bg-[#000d21] border border-[#0C66B4]/40 space-y-8 text-gray-300 text-sm leading-relaxed">
           
           {/* Medical Disclaimer */}
           <section className="space-y-3">

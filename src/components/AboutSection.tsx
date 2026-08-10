@@ -21,9 +21,9 @@ export default function AboutSection() {
               <div className="absolute inset-0 bg-gradient-to-t from-[#000d21] via-transparent to-transparent opacity-60" />
 
               {/* Single Authority Proof Banner on card */}
-              <div className="absolute bottom-6 left-6 right-6 p-3 rounded-xl bg-[#000d21]/90 border border-[#00AEEF] backdrop-blur-md flex items-center justify-center gap-2 text-[#00AEEF] text-xs font-bold shadow-glow">
+              <div className="absolute bottom-3 left-3 right-3 sm:bottom-6 sm:left-6 sm:right-6 p-2 sm:p-3 rounded-xl bg-[#000d21]/90 border border-[#00AEEF] backdrop-blur-md flex items-center justify-center gap-2 text-[#00AEEF] text-[11px] sm:text-xs font-bold shadow-glow">
                 <Award className="w-4 h-4 shrink-0" />
-                <span>{SITE_CONFIG.authorityProofs.appointments}</span>
+                <span className="text-center">{SITE_CONFIG.authorityProofs.appointments}</span>
               </div>
             </div>
           </div>
@@ -34,8 +34,8 @@ export default function AboutSection() {
               <span>Clinical Background</span>
             </div>
 
-            <h2 className="text-3xl sm:text-4xl font-display text-white tracking-wide">
-              SPECIALIZED CARE FOR <span className="text-[#00AEEF]">JAW & HEAD DISORDERS</span>
+            <h2 className="text-2xl sm:text-4xl font-display text-white tracking-wide break-words">
+              SPECIALIZED CARE FOR <span className="text-[#00AEEF]">JAW &amp; HEAD DISORDERS</span>
             </h2>
 
             <div className="space-y-4 text-gray-300 text-base leading-relaxed">

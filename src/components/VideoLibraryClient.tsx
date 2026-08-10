@@ -39,7 +39,7 @@ export default function VideoLibraryClient({ videos, categories }: VideoLibraryC
             <span>ALL {videos.length} CLINICAL REHABILITATION VIDEOS</span>
           </div>
 
-          <h1 className="text-4xl sm:text-6xl font-display text-white tracking-wide">
+          <h1 className="text-2xl sm:text-4xl lg:text-6xl font-display text-white tracking-wide break-words">
             COMPLETE <span className="text-[#00AEEF]">CLINICAL VIDEO LIBRARY</span>
           </h1>
 
