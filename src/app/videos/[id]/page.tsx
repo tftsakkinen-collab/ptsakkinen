@@ -109,11 +109,11 @@ export default async function SingleVideoPage(props: { params: Promise<{ id: str
   // Content type detection for non-exercise videos (Task 2)
   const videoText = (video.title + " " + video.promiseDescription).toLowerCase();
   let contentType = "exercise";
-  if (videoText.includes("food") || videoText.includes("diet") || videoText.includes("nutrition") || videoText.includes("meal") || videoText.includes("eat")) {
+  if (/\b(food|diet|nutrition|meals?|eating|nutrients?|recipes?)\b/i.test(videoText)) {
     contentType = "nutrition";
-  } else if (videoText.includes("interview") || videoText.includes("story") || videoText.includes("myth") || videoText.includes("qa") || videoText.includes("q&a")) {
+  } else if (/\b(interview|story|myths?|q&a|qa)\b/i.test(videoText)) {
     contentType = "interview";
-  } else if (videoText.includes("lecture") || videoText.includes("presentation") || videoText.includes("statistic") || videoText.includes("data")) {
+  } else if (/\b(lecture|presentation|statistics?|data)\b/i.test(videoText)) {
     contentType = "lecture";
   }
 

@@ -1,5 +1,6 @@
 import Hero from "@/components/Hero";
 import AboutSection from "@/components/AboutSection";
+import FeaturedMediaSection from "@/components/FeaturedMediaSection";
 import VideoCard from "@/components/VideoCard";
 import EmailLeadForm from "@/components/EmailLeadForm";
 import TrainingsSection from "@/components/TrainingsSection";
@@ -267,6 +268,7 @@ export default async function HomePage() {
       </section>
 
       <AboutSection />
+      <FeaturedMediaSection />
 
       <section className="py-16 bg-[#000a18] border-b border-[#0C66B4]/30">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-10">

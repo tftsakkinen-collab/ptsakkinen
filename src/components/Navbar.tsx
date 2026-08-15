@@ -13,6 +13,7 @@ export default function Navbar() {
     { name: "Home", href: "/" },
     { name: "About", href: "/about" },
     { name: "Video Library", href: "/videos" },
+    { name: "Programs", href: "/programs" },
     { name: "My Gear", href: "/gear" },
     { name: "Free Guides", href: "/free-guide" },
     { name: "Workshops", href: "/workshops" },
