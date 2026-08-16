@@ -1,4 +1,5 @@
 import { NextResponse } from "next/server";
+import { SITE_CONFIG } from "@/data/config";
 import fs from "fs";
 import path from "path";
 
