@@ -82,19 +82,19 @@ export default function Hero() {
             {/* Primary Action Buttons */}
             <div className="pt-4 flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
               <Link
-                href="/free-guide"
+                href="/contact"
                 className="px-8 py-4 rounded-xl bg-[#00AEEF] text-black font-bold text-base hover:bg-[#33C2F5] transition-all shadow-glow flex items-center justify-center gap-2 group text-center"
               >
-                <span>Get Free PDF Guides</span>
+                <span>Book Online Consultation</span>
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </Link>
 
               <Link
-                href="/videos"
+                href="/free-guide"
                 className="px-8 py-4 rounded-xl bg-[#000d21] border border-[#0C66B4] text-white font-bold text-base hover:border-[#00AEEF] hover:bg-[#001533] transition-all flex items-center justify-center gap-2 text-center"
               >
                 <Play className="w-4 h-4 text-[#00AEEF] fill-[#00AEEF]" />
-                <span>Explore {SITE_CONFIG.totalVideosCount} Free Videos</span>
+                <span>Get Free Clinical Guides &amp; Videos</span>
               </Link>
             </div>
 
