@@ -141,7 +141,8 @@ export default function ContactForm() {
                 onChange={(e) => setSubject(e.target.value)}
                 className="w-full px-4 py-3 rounded-xl bg-[#000a18] border border-[#0C66B4]/60 text-white focus:outline-none focus:border-[#00AEEF] text-sm"
               >
-                <option value="Appointment & Consultation">Appointment &amp; Consultation</option>
+                <option value="Online Virtual Consultation (Video Call)">Online Virtual Consultation (Video Call)</option>
+                <option value="Appointment & Consultation (Oulu, Finland)">Appointment in Oulu, Finland</option>
                 <option value="Workshops & Keynotes">Workshops &amp; Keynotes</option>
                 <option value="Dental Ergonomics">Dental Ergonomics</option>
                 <option value="Other Inquiry">Other Inquiry</option>
@@ -151,7 +152,7 @@ export default function ContactForm() {
 
           <div>
             <label htmlFor="contact-message" className="block text-xs font-semibold text-gray-300 uppercase tracking-wider mb-1.5">
-              Message *
+              Message &amp; Preferred Time Zone *
             </label>
             <textarea
               id="contact-message"
@@ -159,7 +160,7 @@ export default function ContactForm() {
               rows={4}
               value={message}
               onChange={(e) => setMessage(e.target.value)}
-              placeholder="Write your message here..."
+              placeholder="Describe your main symptoms (e.g. TMJ, jaw clicking, neck pain) and mention your country & time zone for virtual video appointments..."
               className="w-full px-4 py-3 rounded-xl bg-[#000a18] border border-[#0C66B4]/60 text-white placeholder-gray-500 focus:outline-none focus:border-[#00AEEF] text-sm"
             />
           </div>
