@@ -1,5 +1,112 @@
-import { NextResponse } from "next/server";
-import { SITE_CONFIG } from "@/data/config";
+import fs from "fs";
+import path from "path";
+
+async function saveSubscriberToGithub(newEntry: any) {
+  const githubToken = process.env.GITHUB_TOKEN;
+  if (!githubToken) {
+    console.warn("⚠️ GITHUB_TOKEN missing in environment variables. Cannot write global subscriber to GitHub.");
+    return;
+  }
+
+  try {
+    const owner = "tftsakkinen-collab";
+    const repo = "ptsakkinen";
+    const filePath = "src/data/subscribers.json";
+    const url = `https://api.github.com/repos/${owner}/${repo}/contents/${filePath}`;
+
+    const getRes = await fetch(url, {
+      headers: {
+        Authorization: `Bearer ${githubToken}`,
+        Accept: "application/vnd.github.v3+json",
+        "User-Agent": "ptsakkinen-app"
+      }
+    });
+
+    let currentContent: any[] = [];
+    let sha = "";
+
+    if (getRes.ok) {
+      const fileData = await getRes.json();
+      sha = fileData.sha;
+      const decoded = Buffer.from(fileData.content, "base64").toString("utf-8");
+      currentContent = JSON.parse(decoded);
+    }
+
+    const existingIndex = currentContent.findIndex((s: any) => s.email.toLowerCase() === newEntry.email.toLowerCase());
+    if (existingIndex >= 0) {
+      currentContent[existingIndex] = { ...currentContent[existingIndex], ...newEntry };
+    } else {
+      currentContent.push(newEntry);
+    }
+
+    const updatedBase64 = Buffer.from(JSON.stringify(currentContent, null, 2), "utf-8").toString("base64");
+
+    const putRes = await fetch(url, {
+      method: "PUT",
+      headers: {
+        Authorization: `Bearer ${githubToken}`,
+        Accept: "application/vnd.github.v3+json",
+        "Content-Type": "application/json",
+        "User-Agent": "ptsakkinen-app"
+      },
+      body: JSON.stringify({
+        message: `auto(lead): new global subscriber ${newEntry.email}`,
+        content: updatedBase64,
+        sha: sha || undefined
+      })
+    });
+
+    if (putRes.ok) {
+      console.log(`✔ Global subscriber ${newEntry.email} saved to GitHub subscribers.json!`);
+    } else {
+      const errText = await putRes.text();
+      console.error("✖ GitHub API save failed:", putRes.status, errText);
+    }
+  } catch (err) {
+    console.warn("Could not save global subscriber to GitHub:", err);
+  }
+}
+
+function saveSubscriberLocally(name: string, email: string, source: string = "Global Website", locale: string = "en") {
+  const nameParts = (name || "").trim().split(" ");
+  const firstName = nameParts[0] || "";
+  const lastName = nameParts.slice(1).join(" ") || "";
+
+  const newEntry = {
+    first_name: firstName,
+    last_name: lastName,
+    email: email,
+    source: `Kotisivut / ptsakkinen.com (${source})`,
+    platform: "Website",
+    locale: locale,
+    date_added: new Date().toISOString().split("T")[0],
+    delivered: true,
+    delivered_at: new Date().toISOString()
+  };
+
+  try {
+    const filePath = path.join(process.cwd(), "src/data/subscribers.json");
+    let subscribers: any[] = [];
+    if (fs.existsSync(filePath)) {
+      const content = fs.readFileSync(filePath, "utf-8");
+      subscribers = JSON.parse(content);
+    }
+
+    const existingIndex = subscribers.findIndex((s: any) => s.email.toLowerCase() === email.toLowerCase());
+
+    if (existingIndex >= 0) {
+      subscribers[existingIndex] = { ...subscribers[existingIndex], ...newEntry };
+    } else {
+      subscribers.push(newEntry);
+    }
+
+    fs.writeFileSync(filePath, JSON.stringify(subscribers, null, 2), "utf-8");
+  } catch (err) {
+    console.warn("Could not write to subscribers.json in ptsakkinen:", err);
+  }
+
+  saveSubscriberToGithub(newEntry).catch(e => console.warn("GitHub global subscriber sync background error:", e));
+}
 
 export async function POST(request: Request) {
   try {
@@ -9,6 +116,8 @@ export async function POST(request: Request) {
     if (!email) {
       return NextResponse.json({ error: "Email is required" }, { status: 400 });
     }
+
+    saveSubscriberLocally(name, email, guide || "Global Lead", locale);
 
     const recipientEmail = SITE_CONFIG.contactEmail || "tiedottajanne@gmail.com";
     const resendApiKey = process.env.RESEND_API_KEY;
