@@ -91,7 +91,7 @@ export default async function HomePage() {
         {
           "@type": "EducationalOccupationalCredential",
           "credentialCategory": "degree",
-          "name": "B.Sc. Physical Therapy (RAMK 2007–2010)"
+          "name": "Physical Therapist (RAMK 2007–2010)"
         }
       ],
       "sameAs": [
