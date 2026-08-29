@@ -17,8 +17,8 @@ export default function Hero() {
           <div className="lg:col-span-7 space-y-8 text-center lg:text-left">
             
             {/* Top Pill Badge */}
-            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/5 border border-[#00AEEF]/40 text-[#00AEEF] text-xs font-bold uppercase tracking-wider backdrop-blur-md shadow-glow">
-              <Sparkles className="w-4 h-4 text-[#00AEEF]" />
+            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/5 border border-[#00AEEF]/40 text-[#67e8f9] text-xs font-bold uppercase tracking-wider backdrop-blur-md shadow-glow">
+              <Sparkles className="w-4 h-4 text-[#67e8f9]" />
               <span>@pt_sakkinen • Global YouTube Channel &amp; Physical Therapy</span>
             </div>
 
@@ -53,7 +53,7 @@ export default function Hero() {
                 href="/videos"
                 className="px-6 py-4 rounded-2xl bg-white/5 border border-white/15 hover:border-[#00AEEF] text-white font-semibold text-sm sm:text-base hover:bg-white/10 transition-all backdrop-blur-md flex items-center gap-2"
               >
-                <Play className="w-4 h-4 text-[#00AEEF] fill-current" />
+                <Play className="w-4 h-4 text-[#67e8f9] fill-current" />
                 <span>Explore Video Library</span>
               </Link>
             </div>
@@ -61,15 +61,15 @@ export default function Hero() {
             {/* Trust Bullets & Stats */}
             <div className="pt-4 flex flex-wrap items-center justify-center lg:justify-start gap-6 text-xs text-gray-400 font-medium">
               <span className="flex items-center gap-1.5">
-                <CheckCircle2 className="w-4 h-4 text-[#00AEEF] shrink-0" /> Valvira / Terhikki Licensed OMT
+                <CheckCircle2 className="w-4 h-4 text-[#67e8f9] shrink-0" /> Valvira / Terhikki Licensed OMT
               </span>
               <span>•</span>
               <span className="flex items-center gap-1.5">
-                <CheckCircle2 className="w-4 h-4 text-[#00AEEF] shrink-0" /> University of Oulu Lecturer
+                <CheckCircle2 className="w-4 h-4 text-[#67e8f9] shrink-0" /> University of Oulu Lecturer
               </span>
               <span>•</span>
               <span className="flex items-center gap-1.5">
-                <Eye className="w-4 h-4 text-[#00AEEF] shrink-0" /> 1.1M+ YouTube Views
+                <Eye className="w-4 h-4 text-[#67e8f9] shrink-0" /> 1.1M+ YouTube Views
               </span>
             </div>
 
@@ -90,14 +90,14 @@ export default function Hero() {
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
                 
                 {/* Channel Badge Overlay */}
-                <div className="absolute top-3 left-3 px-3 py-1 rounded-full bg-black/70 border border-[#00AEEF]/40 text-[#00AEEF] text-[11px] font-bold uppercase tracking-wider backdrop-blur-md">
+                <div className="absolute top-3 left-3 px-3 py-1 rounded-full bg-black/70 border border-[#00AEEF]/40 text-[#67e8f9] text-[11px] font-bold uppercase tracking-wider backdrop-blur-md">
                   @pt_sakkinen
                 </div>
 
                 {/* Bottom Caption Overlay */}
                 <div className="absolute bottom-3 left-3 right-3 p-3 rounded-xl bg-black/80 backdrop-blur-md border border-white/10 text-left space-y-0.5">
                   <h3 className="text-sm font-bold text-white">Janne Sakkinen</h3>
-                  <p className="text-[11px] text-[#00AEEF] font-semibold">OMT Physical Therapist &amp; Specialist</p>
+                  <p className="text-[11px] text-[#67e8f9] font-semibold">OMT Physical Therapist &amp; Specialist</p>
                   <p className="text-[10px] text-gray-400">Faculty Lecturer, University of Oulu (2017–)</p>
                 </div>
               </div>
@@ -105,7 +105,7 @@ export default function Hero() {
               {/* Mini Channel Metric Card */}
               <div className="p-3.5 rounded-xl bg-white/5 border border-white/10 flex items-center justify-between text-xs">
                 <div className="flex items-center gap-2.5">
-                  <div className="w-8 h-8 rounded-lg bg-[#00AEEF]/20 text-[#00AEEF] flex items-center justify-center font-bold">
+                  <div className="w-8 h-8 rounded-lg bg-[#00AEEF]/20 text-[#67e8f9] flex items-center justify-center font-bold">
                     <Users className="w-4 h-4" />
                   </div>
                   <div>
@@ -117,7 +117,7 @@ export default function Hero() {
                   href={SITE_CONFIG.youtubeChannelUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="px-2.5 py-1 rounded-lg bg-[#00AEEF]/20 text-[#00AEEF] hover:bg-[#00AEEF] hover:text-black font-bold text-[10px] transition-all"
+                  className="px-2.5 py-1 rounded-lg bg-[#00AEEF]/20 text-[#67e8f9] hover:bg-[#00AEEF] hover:text-black font-bold text-[10px] transition-all"
                 >
                   Subscribe ↗
                 </a>

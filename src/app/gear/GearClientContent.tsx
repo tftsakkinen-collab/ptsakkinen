@@ -48,13 +48,13 @@ export default function GearClientContent() {
       <div className="max-w-7xl mx-auto">
         {/* Header Hero Section */}
         <div className="text-center max-w-3xl mx-auto mb-12">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#0C66B4]/20 border border-[#00AEEF]/40 text-[#00AEEF] text-xs font-semibold uppercase tracking-wider mb-4 shadow-[0_0_15px_rgba(0,174,239,0.3)]">
-            <Sparkles className="w-4 h-4 text-[#00AEEF]" />
+          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#0C66B4]/20 border border-[#00AEEF]/40 text-[#67e8f9] text-xs font-semibold uppercase tracking-wider mb-4 shadow-[0_0_15px_rgba(0,174,239,0.3)]">
+            <Sparkles className="w-4 h-4 text-[#67e8f9]" />
             <span>Tools &amp; Recommendations</span>
           </div>
 
           <h1 className="font-display text-2xl sm:text-4xl lg:text-6xl tracking-wide text-white mb-6 break-words">
-            MY GEAR &amp; <span className="text-[#00AEEF]">TOOLS</span>
+            MY GEAR &amp; <span className="text-[#67e8f9]">TOOLS</span>
           </h1>
 
           <p className="text-gray-300 text-lg leading-relaxed mb-6">
@@ -63,11 +63,11 @@ export default function GearClientContent() {
 
           {/* FTC & Amazon Affiliate Disclosure Box */}
           <div className="p-4 rounded-xl bg-[#000d21]/90 border border-[#0C66B4]/50 text-left text-xs text-gray-300 flex items-start gap-3 shadow-lg">
-            <Info className="w-5 h-5 text-[#00AEEF] shrink-0 mt-0.5" />
+            <Info className="w-5 h-5 text-[#67e8f9] shrink-0 mt-0.5" />
             <div>
               <span className="font-semibold text-white">FTC &amp; Amazon Affiliate Disclosure:</span>{" "}
               As an Amazon Associate, I earn from qualifying purchases made using links on this page (Associate Tag:{" "}
-              <code className="text-[#00AEEF] font-mono bg-[#0C66B4]/30 px-1 py-0.5 rounded">
+              <code className="text-[#67e8f9] font-mono bg-[#0C66B4]/30 px-1 py-0.5 rounded">
                 ptsakkinen-20
               </code>
               ). Purchasing through these links incurs no extra cost to you, but provides a small commission that directly supports free physical therapy content creation!
@@ -132,7 +132,7 @@ export default function GearClientContent() {
                   <div>
                     {/* Badge & Category Header */}
                     <div className="flex items-center justify-between gap-2 mb-3">
-                      <span className="text-[11px] font-semibold tracking-wider text-[#00AEEF] uppercase bg-[#0C66B4]/20 px-2.5 py-1 rounded-md border border-[#00AEEF]/30">
+                      <span className="text-[11px] font-semibold tracking-wider text-[#67e8f9] uppercase bg-[#0C66B4]/20 px-2.5 py-1 rounded-md border border-[#00AEEF]/30">
                         {item.category === "camera" && "🎥 Camera & Audio"}
                         {item.category === "fitness" && "🏋️‍♂️ Fitness & Recovery"}
                         {item.category === "software" && "💻 Software"}
@@ -149,7 +149,7 @@ export default function GearClientContent() {
                           </span>
                         )}
                         {item.badge && (
-                          <span className="text-xs font-bold text-[#00AEEF] bg-[#0C66B4]/20 border border-[#00AEEF]/40 px-2.5 py-1 rounded-md">
+                          <span className="text-xs font-bold text-[#67e8f9] bg-[#0C66B4]/20 border border-[#00AEEF]/40 px-2.5 py-1 rounded-md">
                             {item.badge}
                           </span>
                         )}
@@ -157,7 +157,7 @@ export default function GearClientContent() {
                     </div>
 
                     {/* Title */}
-                    <h3 className="font-bold text-xl text-white group-hover:text-[#00AEEF] transition-colors mb-2">
+                    <h3 className="font-bold text-xl text-white group-hover:text-[#67e8f9] transition-colors mb-2">
                       {item.name}
                     </h3>
 
@@ -168,8 +168,8 @@ export default function GearClientContent() {
 
                     {/* Recommended Reason */}
                     <div className="p-3.5 rounded-xl bg-[#00050f] border border-[#0C66B4]/30 mb-6">
-                      <div className="text-xs font-bold text-[#00AEEF] uppercase tracking-wider mb-1 flex items-center gap-1.5">
-                        <Sparkles className="w-3.5 h-3.5 text-[#00AEEF]" />
+                      <div className="text-xs font-bold text-[#67e8f9] uppercase tracking-wider mb-1 flex items-center gap-1.5">
+                        <Sparkles className="w-3.5 h-3.5 text-[#67e8f9]" />
                         <span>Why I use it:</span>
                       </div>
                       <p className="text-gray-300 text-xs italic leading-normal">
@@ -186,7 +186,7 @@ export default function GearClientContent() {
                           <span className="text-[10px] text-gray-400 uppercase tracking-wider">
                             Promo Code
                           </span>
-                          <span className="font-mono font-bold text-sm text-[#00AEEF]">
+                          <span className="font-mono font-bold text-sm text-[#67e8f9]">
                             {item.couponCode}{" "}
                             {item.couponDiscount && `(${item.couponDiscount})`}
                           </span>

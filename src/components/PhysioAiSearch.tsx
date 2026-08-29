@@ -29,11 +29,11 @@ export default function PhysioAiSearch() {
   return (
     <div className="p-4 sm:p-8 rounded-3xl bg-gradient-to-r from-[#000d21] via-[#014489]/30 to-[#000d21] border border-[#00AEEF]/50 shadow-glow space-y-6">
       <div className="flex items-center gap-3">
-        <div className="w-10 h-10 rounded-xl bg-[#00AEEF]/20 text-[#00AEEF] flex items-center justify-center shrink-0">
+        <div className="w-10 h-10 rounded-xl bg-[#00AEEF]/20 text-[#67e8f9] flex items-center justify-center shrink-0">
           <Bot className="w-5 h-5" />
         </div>
         <div>
-          <div className="flex items-center gap-2 text-xs font-bold text-[#00AEEF] uppercase tracking-wider">
+          <div className="flex items-center gap-2 text-xs font-bold text-[#67e8f9] uppercase tracking-wider">
             <Sparkles className="w-3.5 h-3.5" />
             <span>AI Physio Assistant</span>
           </div>
@@ -72,9 +72,9 @@ export default function PhysioAiSearch() {
                 href={`/videos/${vid.id}`}
                 className="p-4 rounded-xl bg-[#000814] border border-[#0C66B4]/40 hover:border-[#00AEEF] transition-all flex items-start gap-3 group"
               >
-                <Play className="w-4 h-4 text-[#00AEEF] shrink-0 mt-1 fill-current group-hover:scale-110 transition-transform" />
+                <Play className="w-4 h-4 text-[#67e8f9] shrink-0 mt-1 fill-current group-hover:scale-110 transition-transform" />
                 <div>
-                  <h4 className="text-xs font-bold text-white group-hover:text-[#00AEEF] transition-colors leading-snug">
+                  <h4 className="text-xs font-bold text-white group-hover:text-[#67e8f9] transition-colors leading-snug">
                     {vid.title}
                   </h4>
                   <p className="text-[11px] text-gray-400 line-clamp-2 mt-1">

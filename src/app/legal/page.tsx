@@ -8,13 +8,13 @@ export default function LegalPage() {
         
         {/* Header */}
         <div className="space-y-4">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#0C66B4]/20 border border-[#00AEEF]/40 text-[#00AEEF] text-xs font-bold uppercase tracking-wider">
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#0C66B4]/20 border border-[#00AEEF]/40 text-[#67e8f9] text-xs font-bold uppercase tracking-wider">
             <FileText className="w-4 h-4" />
             <span>Legal Documentation</span>
           </div>
 
           <h1 className="text-2xl sm:text-4xl md:text-5xl font-display text-white tracking-wide break-words">
-            PRIVACY POLICY &amp; <span className="text-[#00AEEF]">MEDICAL DISCLAIMER</span>
+            PRIVACY POLICY &amp; <span className="text-[#67e8f9]">MEDICAL DISCLAIMER</span>
           </h1>
         </div>
 
@@ -23,7 +23,7 @@ export default function LegalPage() {
           {/* Medical Disclaimer */}
           <section className="space-y-3">
             <h2 className="text-xl font-bold text-white flex items-center gap-2">
-              <ShieldCheck className="w-5 h-5 text-[#00AEEF]" />
+              <ShieldCheck className="w-5 h-5 text-[#67e8f9]" />
               1. Medical Disclaimer
             </h2>
             <p>
@@ -60,7 +60,7 @@ export default function LegalPage() {
           <section className="space-y-3 pt-6 border-t border-[#0C66B4]/30">
             <h2 className="text-xl font-bold text-white">4. FTC &amp; Amazon Affiliate Disclosure</h2>
             <p>
-              PT Sakkinen (ptsakkinen.com) participates in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for sites to earn advertising fees by advertising and linking to Amazon.com (Associate Tag: <code className="text-[#00AEEF] font-mono bg-[#0C66B4]/30 px-1 py-0.5 rounded">ptsakkinen-20</code>).
+              PT Sakkinen (ptsakkinen.com) participates in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for sites to earn advertising fees by advertising and linking to Amazon.com (Associate Tag: <code className="text-[#67e8f9] font-mono bg-[#0C66B4]/30 px-1 py-0.5 rounded">ptsakkinen-20</code>).
             </p>
             <p>
               As an Amazon Associate, I earn from qualifying purchases. Clicking on affiliate links or purchasing products through these links does not incur any additional cost to you, but generates a small commission that supports our free physical therapy educational content and video creation.

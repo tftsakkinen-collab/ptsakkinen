@@ -21,7 +21,7 @@ export default function AboutSection() {
               <div className="absolute inset-0 bg-gradient-to-t from-[#000d21] via-transparent to-transparent opacity-60" />
 
               {/* Single Authority Proof Banner on card */}
-              <div className="absolute bottom-3 left-3 right-3 sm:bottom-6 sm:left-6 sm:right-6 p-2 sm:p-3 rounded-xl bg-[#000d21]/90 border border-[#00AEEF] backdrop-blur-md flex items-center justify-center gap-2 text-[#00AEEF] text-[11px] sm:text-xs font-bold shadow-glow">
+              <div className="absolute bottom-3 left-3 right-3 sm:bottom-6 sm:left-6 sm:right-6 p-2 sm:p-3 rounded-xl bg-[#000d21]/90 border border-[#00AEEF] backdrop-blur-md flex items-center justify-center gap-2 text-[#67e8f9] text-[11px] sm:text-xs font-bold shadow-glow">
                 <Award className="w-4 h-4 shrink-0" />
                 <span className="text-center">{SITE_CONFIG.authorityProofs.appointments}</span>
               </div>
@@ -30,12 +30,12 @@ export default function AboutSection() {
 
           {/* Story & Content */}
           <div className="lg:col-span-7 space-y-6">
-            <div className="inline-flex items-center gap-2 text-[#00AEEF] text-sm font-semibold uppercase tracking-widest">
+            <div className="inline-flex items-center gap-2 text-[#67e8f9] text-sm font-semibold uppercase tracking-widest">
               <span>Clinical Background</span>
             </div>
 
             <h2 className="text-2xl sm:text-4xl font-display text-white tracking-wide break-words">
-              SPECIALIZED CARE FOR <span className="text-[#00AEEF]">JAW &amp; HEAD DISORDERS</span>
+              SPECIALIZED CARE FOR <span className="text-[#67e8f9]">JAW &amp; HEAD DISORDERS</span>
             </h2>
 
             <div className="space-y-4 text-gray-300 text-base leading-relaxed">
@@ -53,21 +53,21 @@ export default function AboutSection() {
             {/* Authority Badges Grid */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4">
               <div className="p-4 rounded-xl bg-[#0C66B4]/10 border border-[#0C66B4]/40 flex items-start gap-3">
-                <UserCheck className="w-6 h-6 text-[#00AEEF] shrink-0 mt-1" />
+                <UserCheck className="w-6 h-6 text-[#67e8f9] shrink-0 mt-1" />
                 <div>
                   <h3 className="text-white font-bold text-sm">{SITE_CONFIG.authorityProofs.qualification}</h3>
                   <p className="text-xs text-gray-400 mt-1">Specialized TMD certification (2015)</p>
                 </div>
               </div>
               <div className="p-4 rounded-xl bg-[#0C66B4]/10 border border-[#0C66B4]/40 flex items-start gap-3">
-                <Award className="w-6 h-6 text-[#00AEEF] shrink-0 mt-1" />
+                <Award className="w-6 h-6 text-[#67e8f9] shrink-0 mt-1" />
                 <div>
                   <h3 className="text-white font-bold text-sm">University Instructor</h3>
                   <p className="text-xs text-gray-400 mt-1">{SITE_CONFIG.authorityProofs.teaching}</p>
                 </div>
               </div>
               <div className="p-4 rounded-xl bg-[#0C66B4]/10 border border-[#00AEEF]/60 flex items-start gap-3 sm:col-span-2">
-                <Stethoscope className="w-6 h-6 text-[#00AEEF] shrink-0 mt-1" />
+                <Stethoscope className="w-6 h-6 text-[#67e8f9] shrink-0 mt-1" />
                 <div>
                   <h3 className="text-white font-bold text-sm">Valvira &amp; Terhikki Registration</h3>
                   <p className="text-xs text-gray-300 mt-1">{SITE_CONFIG.authorityProofs.valvira}</p>

@@ -42,7 +42,7 @@ export default function VideoCard({ video }: VideoCardProps) {
           </div>
 
           {/* Category Tag */}
-          <div className="absolute top-3 left-3 px-2.5 py-1 rounded-md bg-[#014489]/90 border border-[#00AEEF]/50 text-[#00AEEF] text-xs font-semibold uppercase tracking-wider backdrop-blur-sm">
+          <div className="absolute top-3 left-3 px-2.5 py-1 rounded-md bg-[#014489]/90 border border-[#00AEEF]/50 text-[#67e8f9] text-xs font-semibold uppercase tracking-wider backdrop-blur-sm">
             {category?.name || "Physical Therapy"}
           </div>
 
@@ -55,7 +55,7 @@ export default function VideoCard({ video }: VideoCardProps) {
 
         {/* Details */}
         <div className="p-4 sm:p-6 space-y-2.5 text-center flex flex-col items-center min-w-0">
-          <h3 className="text-base sm:text-xl font-bold text-white group-hover:text-[#00AEEF] transition-colors leading-snug text-center break-words w-full">
+          <h3 className="text-base sm:text-xl font-bold text-white group-hover:text-[#67e8f9] transition-colors leading-snug text-center break-words w-full">
             {video.title}
           </h3>
           <p className="text-xs sm:text-sm text-gray-300 line-clamp-2 leading-relaxed text-center">
@@ -68,7 +68,7 @@ export default function VideoCard({ video }: VideoCardProps) {
       <div className="px-4 pb-4 pt-1 sm:px-6 sm:pb-6 sm:pt-2">
         <Link
           href={`/videos/${video.id}`}
-          className="inline-flex items-center justify-center w-full py-2.5 rounded-xl bg-[#0C66B4]/20 border border-[#0C66B4]/50 text-[#00AEEF] font-semibold text-xs sm:text-sm hover:bg-[#00AEEF] hover:text-black transition-all gap-2 text-center"
+          className="inline-flex items-center justify-center w-full py-2.5 rounded-xl bg-[#0C66B4]/20 border border-[#0C66B4]/50 text-[#67e8f9] font-semibold text-xs sm:text-sm hover:bg-[#00AEEF] hover:text-black transition-all gap-2 text-center"
         >
           Watch Video &amp; Details
           <ArrowUpRight className="w-4 h-4 shrink-0" />

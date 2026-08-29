@@ -45,13 +45,13 @@ export default function TestimonialsSection() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
         
         <div className="text-center max-w-3xl mx-auto space-y-4">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#0C66B4]/20 border border-[#00AEEF]/40 text-[#00AEEF] text-xs font-bold uppercase tracking-wider">
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#0C66B4]/20 border border-[#00AEEF]/40 text-[#67e8f9] text-xs font-bold uppercase tracking-wider">
             <MessageSquareQuote className="w-4 h-4" />
             <span>Authentic Workshop & Lecture Testimonials</span>
           </div>
 
           <h2 className="text-3xl sm:text-5xl font-display text-white tracking-wide">
-            REAL FEEDBACK FROM <span className="text-[#00AEEF]">LECTURES & WORKSHOPS</span>
+            REAL FEEDBACK FROM <span className="text-[#67e8f9]">LECTURES & WORKSHOPS</span>
           </h2>
           <p className="text-gray-300 text-base">
             Verified feedback from attendees, physical therapy professionals, and dental students at the University of Oulu and specialty workshops.
@@ -66,10 +66,10 @@ export default function TestimonialsSection() {
             >
               <div className="space-y-4 w-full flex flex-col items-center">
                 <div className="flex flex-col items-center gap-2 w-full">
-                  <span className="text-xs font-bold text-[#00AEEF] uppercase tracking-wider text-center">
+                  <span className="text-xs font-bold text-[#67e8f9] uppercase tracking-wider text-center">
                     {item.category}
                   </span>
-                  <div className="flex items-center justify-center gap-1 text-[#00AEEF]">
+                  <div className="flex items-center justify-center gap-1 text-[#67e8f9]">
                     {[...Array(item.rating)].map((_, i) => (
                       <Star key={i} className="w-3.5 h-3.5 fill-current" />
                     ))}
@@ -82,11 +82,11 @@ export default function TestimonialsSection() {
               </div>
 
               <div className="pt-4 border-t border-[#0C66B4]/30 flex items-center justify-center gap-2 text-xs text-gray-300 w-full text-center">
-                <UserCheck className="w-3.5 h-3.5 text-[#00AEEF] shrink-0" />
+                <UserCheck className="w-3.5 h-3.5 text-[#67e8f9] shrink-0" />
                 <span className="font-semibold text-white break-words text-center">
                   {item.target}
                 </span>
-                <CheckCircle2 className="w-4 h-4 text-[#00AEEF] shrink-0" />
+                <CheckCircle2 className="w-4 h-4 text-[#67e8f9] shrink-0" />
               </div>
             </div>
           ))}

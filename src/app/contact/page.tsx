@@ -38,7 +38,7 @@ export default function ContactPage() {
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
         <div className="text-center space-y-4">
           <h1 className="text-2xl sm:text-4xl md:text-5xl font-display text-white tracking-wide break-words">
-            CONTACT &amp; <span className="text-[#00AEEF]">APPOINTMENTS</span>
+            CONTACT &amp; <span className="text-[#67e8f9]">APPOINTMENTS</span>
           </h1>
           <p className="text-gray-300 text-base max-w-xl mx-auto">
             Questions regarding physical therapy, university lectures, or corporate ergonomics? Book an appointment or send a message using the form below.
@@ -52,25 +52,25 @@ export default function ContactPage() {
           <div className="lg:col-span-5 space-y-6">
             <div className="p-4 sm:p-8 rounded-3xl bg-[#000d21] border border-[#0C66B4] shadow-glow space-y-6">
               <h2 className="text-xl font-bold text-white flex items-center gap-2">
-                <Building2 className="w-5 h-5 text-[#00AEEF]" />
+                <Building2 className="w-5 h-5 text-[#67e8f9]" />
                 Tiedottajanne Oy
               </h2>
               <div className="space-y-4 text-sm text-gray-300">
                 <div className="flex items-start gap-3">
-                  <MapPin className="w-5 h-5 text-[#00AEEF] shrink-0 mt-0.5" />
+                  <MapPin className="w-5 h-5 text-[#67e8f9] shrink-0 mt-0.5" />
                   <div>
                     <span className="font-semibold text-white block">Practices in Oulu, Finland:</span>
                     <span className="text-xs text-gray-400">Terveystalo, Norre Occupational Health &amp; Hammasvahti</span>
                   </div>
                 </div>
                 <div className="flex items-center gap-3">
-                  <Mail className="w-5 h-5 text-[#00AEEF] shrink-0" />
+                  <Mail className="w-5 h-5 text-[#67e8f9] shrink-0" />
                   <a href="mailto:tiedottajanne@gmail.com" className="hover:underline text-white font-medium">
                     tiedottajanne@gmail.com
                   </a>
                 </div>
                 <div className="flex items-center gap-3">
-                  <Phone className="w-5 h-5 text-[#00AEEF] shrink-0" />
+                  <Phone className="w-5 h-5 text-[#67e8f9] shrink-0" />
                   <a href="tel:+358413274967" className="hover:underline text-white font-medium">
                     +358 41 327 4967
                   </a>

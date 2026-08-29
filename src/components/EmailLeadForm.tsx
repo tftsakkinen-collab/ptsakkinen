@@ -62,8 +62,8 @@ export default function EmailLeadForm({
               <img src="/logo-whitebg.png" alt="PT Sakkinen logo" className="w-full h-full object-contain rounded-full" />
             </div>
           </div>
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#0C66B4]/30 border border-[#00AEEF]/50 text-[#00AEEF] text-xs font-bold uppercase tracking-wider backdrop-blur-md">
-            <Sparkles className="w-4 h-4 text-[#00AEEF]" />
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#0C66B4]/30 border border-[#00AEEF]/50 text-[#67e8f9] text-xs font-bold uppercase tracking-wider backdrop-blur-md">
+            <Sparkles className="w-4 h-4 text-[#67e8f9]" />
             <span>Newsletter &amp; Free Extra Guides</span>
           </div>
 
@@ -119,7 +119,7 @@ export default function EmailLeadForm({
 
             <div className="flex items-center justify-center gap-6 pt-2 text-xs text-gray-400 font-medium">
               <span className="flex items-center gap-1.5">
-                <ShieldCheck className="w-4 h-4 text-[#00AEEF]" />
+                <ShieldCheck className="w-4 h-4 text-[#67e8f9]" />
                 Sent to your inbox
               </span>
               <span>•</span>
@@ -128,7 +128,7 @@ export default function EmailLeadForm({
           </form>
         ) : (
           <div className="p-8 sm:p-10 rounded-3xl bg-[#000d21] border-2 border-[#00AEEF] space-y-6 text-center shadow-glow">
-            <div className="w-16 h-16 rounded-full bg-[#00AEEF]/20 text-[#00AEEF] flex items-center justify-center mx-auto border border-[#00AEEF]/40">
+            <div className="w-16 h-16 rounded-full bg-[#00AEEF]/20 text-[#67e8f9] flex items-center justify-center mx-auto border border-[#00AEEF]/40">
               <CheckCircle2 className="w-10 h-10" />
             </div>
 

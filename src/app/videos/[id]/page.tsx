@@ -240,7 +240,7 @@ export default async function SingleVideoPage(props: { params: Promise<{ id: str
         <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-2">
           <Link
             href="/videos"
-            className="inline-flex items-center gap-2 text-sm text-[#00AEEF] hover:underline font-medium"
+            className="inline-flex items-center gap-2 text-sm text-[#67e8f9] hover:underline font-medium"
           >
             <ArrowLeft className="w-4 h-4" />
             <span>Back to Video Library</span>
@@ -249,16 +249,16 @@ export default async function SingleVideoPage(props: { params: Promise<{ id: str
         <div className="space-y-4">
           {/* Visible Breadcrumb Navigation - Directly Above Title */}
           <nav aria-label="Breadcrumb" className="flex flex-wrap items-center gap-2 text-xs text-gray-400 font-medium pb-1">
-            <Link href="/" className="hover:text-[#00AEEF] flex items-center gap-1 transition-colors">
+            <Link href="/" className="hover:text-[#67e8f9] flex items-center gap-1 transition-colors">
               <Home className="w-3.5 h-3.5" />
               <span>Home</span>
             </Link>
             <ChevronRight className="w-3.5 h-3.5 text-gray-600 shrink-0" />
-            <Link href="/videos" className="hover:text-[#00AEEF] transition-colors">
+            <Link href="/videos" className="hover:text-[#67e8f9] transition-colors">
               Videos
             </Link>
             <ChevronRight className="w-3.5 h-3.5 text-gray-600 shrink-0" />
-            <span className="text-[#00AEEF] font-semibold truncate max-w-[150px] sm:max-w-none">
+            <span className="text-[#67e8f9] font-semibold truncate max-w-[150px] sm:max-w-none">
               {category?.name || "Physical Therapy"}
             </span>
             <ChevronRight className="w-3.5 h-3.5 text-gray-600 shrink-0" />
@@ -267,7 +267,7 @@ export default async function SingleVideoPage(props: { params: Promise<{ id: str
             </span>
           </nav>
 
-          <div className="inline-block px-3 py-1 rounded-full bg-[#014489]/40 border border-[#00AEEF]/50 text-[#00AEEF] text-xs font-semibold uppercase tracking-wider">
+          <div className="inline-block px-3 py-1 rounded-full bg-[#014489]/40 border border-[#00AEEF]/50 text-[#67e8f9] text-xs font-semibold uppercase tracking-wider">
             {category?.name || "Physical Therapy"}
           </div>
 
@@ -287,7 +287,7 @@ export default async function SingleVideoPage(props: { params: Promise<{ id: str
 
         {/* AEO Direct Answer Box */}
         <div className="p-6 rounded-2xl bg-gradient-to-r from-[#000d21] via-[#014489]/30 to-[#000d21] border border-[#00AEEF]/50 shadow-panel space-y-3">
-          <div className="flex items-center gap-2 text-[#00AEEF] text-xs font-bold uppercase tracking-wider">
+          <div className="flex items-center gap-2 text-[#67e8f9] text-xs font-bold uppercase tracking-wider">
             <Sparkles className="w-4 h-4" />
             <span>AEO Direct Answer / Key Summary</span>
           </div>
@@ -298,7 +298,7 @@ export default async function SingleVideoPage(props: { params: Promise<{ id: str
 
         {/* Responsive YouTube Embed Container */}
         <div className="space-y-3">
-          <div className="flex items-center gap-2 text-xs font-bold text-[#00AEEF] uppercase tracking-wider">
+          <div className="flex items-center gap-2 text-xs font-bold text-[#67e8f9] uppercase tracking-wider">
             <Play className="w-4 h-4" />
             <span>Watch Clinical Video</span>
           </div>
@@ -319,7 +319,7 @@ export default async function SingleVideoPage(props: { params: Promise<{ id: str
         {/* FAQ Section & FAQPage Schema */}
         <div className="space-y-6 pt-6 border-t border-[#0C66B4]/30">
           <div className="flex items-center gap-2 text-white font-display text-2xl">
-            <HelpCircle className="w-6 h-6 text-[#00AEEF]" />
+            <HelpCircle className="w-6 h-6 text-[#67e8f9]" />
             <h2>Frequently Asked Questions (FAQ)</h2>
           </div>
 
@@ -330,7 +330,7 @@ export default async function SingleVideoPage(props: { params: Promise<{ id: str
                 className="p-6 rounded-2xl bg-[#000d21] border border-[#0C66B4]/40 space-y-2"
               >
                 <h3 className="text-base font-bold text-white flex items-start gap-2">
-                  <span className="text-[#00AEEF]">Q:</span> {faq.question}
+                  <span className="text-[#67e8f9]">Q:</span> {faq.question}
                 </h3>
                 <p className="text-sm text-gray-300 leading-relaxed pl-6">
                   {faq.answer}
@@ -345,7 +345,7 @@ export default async function SingleVideoPage(props: { params: Promise<{ id: str
           <div className="space-y-6 pt-8 border-t border-[#0C66B4]/30">
             <div className="flex items-center justify-between">
               <h3 className="text-xl font-bold text-white">Related Physical Therapy Videos &amp; Articles</h3>
-              <Link href="/videos" className="text-xs text-[#00AEEF] hover:underline flex items-center gap-1">
+              <Link href="/videos" className="text-xs text-[#67e8f9] hover:underline flex items-center gap-1">
                 <span>View all</span>
                 <ChevronRight className="w-3.5 h-3.5" />
               </Link>
@@ -361,7 +361,7 @@ export default async function SingleVideoPage(props: { params: Promise<{ id: str
 
         {/* Lead Magnet CTA Card */}
         <div className="p-8 rounded-3xl bg-gradient-to-r from-[#000d21] via-[#014489]/40 to-[#000d21] border border-[#00AEEF]/50 shadow-glow space-y-4 text-center">
-          <div className="w-12 h-12 rounded-xl bg-[#00AEEF]/20 text-[#00AEEF] flex items-center justify-center mx-auto">
+          <div className="w-12 h-12 rounded-xl bg-[#00AEEF]/20 text-[#67e8f9] flex items-center justify-center mx-auto">
             <Download className="w-6 h-6" />
           </div>
           <h3 className="text-2xl font-bold text-white">Download Free Exercise PDF Guides</h3>

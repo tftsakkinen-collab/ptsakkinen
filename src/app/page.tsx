@@ -236,15 +236,15 @@ export default async function HomePage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
           <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
             <div>
-              <div className="inline-flex items-center gap-2 text-[#00AEEF] text-xs font-bold uppercase tracking-wider">
+              <div className="inline-flex items-center gap-2 text-[#67e8f9] text-xs font-bold uppercase tracking-wider">
                 <BookOpen className="w-4 h-4" />
                 <span>Symptom Knowledge Hubs</span>
               </div>
               <h2 className="text-2xl sm:text-3xl font-display text-white">
-                EXPLORE <span className="text-[#00AEEF]">CLINICAL TOPIC HUBS</span>
+                EXPLORE <span className="text-[#67e8f9]">CLINICAL TOPIC HUBS</span>
               </h2>
             </div>
-            <Link href="/videos" className="text-xs text-[#00AEEF] hover:underline font-semibold">
+            <Link href="/videos" className="text-xs text-[#67e8f9] hover:underline font-semibold">
               View all 69 clinical videos →
             </Link>
           </div>
@@ -256,9 +256,9 @@ export default async function HomePage() {
                 href={`/topic/${t.slug}`}
                 className="p-5 rounded-2xl bg-[#000a18] border border-[#0C66B4]/50 hover:border-[#00AEEF] transition-all space-y-2 group"
               >
-                <h3 className="text-base font-bold text-white group-hover:text-[#00AEEF] transition-colors flex items-center justify-between">
+                <h3 className="text-base font-bold text-white group-hover:text-[#67e8f9] transition-colors flex items-center justify-between">
                   <span>{t.title}</span>
-                  <ArrowRight className="w-4 h-4 text-[#00AEEF] transform group-hover:translate-x-1 transition-transform" />
+                  <ArrowRight className="w-4 h-4 text-[#67e8f9] transform group-hover:translate-x-1 transition-transform" />
                 </h3>
                 <p className="text-xs text-gray-400 leading-relaxed">{t.desc}</p>
               </Link>
@@ -274,12 +274,12 @@ export default async function HomePage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-10">
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-6">
             <div className="space-y-3">
-              <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#0C66B4]/20 border border-[#00AEEF]/40 text-[#00AEEF] text-xs font-bold uppercase tracking-wider">
+              <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#0C66B4]/20 border border-[#00AEEF]/40 text-[#67e8f9] text-xs font-bold uppercase tracking-wider">
                 <PlayCircle className="w-4 h-4" />
                 <span>Clinical Video Guides</span>
               </div>
               <h2 className="text-3xl sm:text-4xl font-display text-white tracking-wide">
-                POPULAR <span className="text-[#00AEEF]">REHABILITATION VIDEOS</span>
+                POPULAR <span className="text-[#67e8f9]">REHABILITATION VIDEOS</span>
               </h2>
               <p className="text-gray-300 text-sm max-w-xl">
                 Evidence-based self-care exercises for temporomandibular joint, masseter, and spinal health.
@@ -287,7 +287,7 @@ export default async function HomePage() {
             </div>
             <Link
               href="/videos"
-              className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-[#000d21] border border-[#00AEEF] text-[#00AEEF] font-semibold text-xs hover:bg-[#00AEEF] hover:text-[#000a18] transition-all shadow-glow self-start md:self-auto"
+              className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-[#000d21] border border-[#00AEEF] text-[#67e8f9] font-semibold text-xs hover:bg-[#00AEEF] hover:text-[#000a18] transition-all shadow-glow self-start md:self-auto"
             >
               <span>Browse All 69 Videos</span>
               <ArrowRight className="w-4 h-4" />

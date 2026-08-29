@@ -40,13 +40,13 @@ export default function FeaturedMediaSection() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 space-y-12">
         
         <div className="text-center space-y-4 max-w-3xl mx-auto">
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#0C66B4]/20 border border-[#00AEEF]/50 text-[#00AEEF] text-xs font-bold uppercase tracking-wider backdrop-blur-md">
-            <Newspaper className="w-4 h-4 text-[#00AEEF]" />
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#0C66B4]/20 border border-[#00AEEF]/50 text-[#67e8f9] text-xs font-bold uppercase tracking-wider backdrop-blur-md">
+            <Newspaper className="w-4 h-4 text-[#67e8f9]" />
             <span>Featured In Media &amp; Publications</span>
           </div>
 
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-display text-white tracking-wide">
-            JANNE SAKKINEN <span className="text-[#00AEEF]">IN THE MEDIA</span>
+            JANNE SAKKINEN <span className="text-[#67e8f9]">IN THE MEDIA</span>
           </h2>
 
           <p className="text-gray-300 text-sm sm:text-base leading-relaxed">
@@ -62,8 +62,8 @@ export default function FeaturedMediaSection() {
             >
               <div className="space-y-4">
                 <div className="flex items-center justify-between gap-2 border-b border-[#0C66B4]/30 pb-4">
-                  <span className="text-xs font-bold text-[#00AEEF] uppercase tracking-wider flex items-center gap-1.5">
-                    <Award className="w-3.5 h-3.5 text-[#00AEEF]" />
+                  <span className="text-xs font-bold text-[#67e8f9] uppercase tracking-wider flex items-center gap-1.5">
+                    <Award className="w-3.5 h-3.5 text-[#67e8f9]" />
                     {art.publisher}
                   </span>
                   <span className="px-2.5 py-1 rounded-full bg-[#014489]/40 border border-[#00AEEF]/30 text-[10px] font-semibold text-gray-300">
@@ -71,12 +71,12 @@ export default function FeaturedMediaSection() {
                   </span>
                 </div>
 
-                <h3 className="text-lg sm:text-xl font-bold text-white leading-snug group-hover:text-[#00AEEF] transition-colors">
+                <h3 className="text-lg sm:text-xl font-bold text-white leading-snug group-hover:text-[#67e8f9] transition-colors">
                   {art.title}
                 </h3>
 
                 <div className="p-4 rounded-xl bg-[#000a18] border-l-2 border-[#00AEEF] text-xs text-gray-300 italic space-y-1">
-                  <div className="flex items-center gap-1 text-[#00AEEF] font-bold not-italic text-[10px]">
+                  <div className="flex items-center gap-1 text-[#67e8f9] font-bold not-italic text-[10px]">
                     <Quote className="w-3 h-3" />
                     <span>Key Article Quote:</span>
                   </div>
@@ -105,7 +105,7 @@ export default function FeaturedMediaSection() {
 
         <div className="p-6 rounded-2xl bg-[#000a18] border border-[#0C66B4]/40 flex flex-col sm:flex-row items-center justify-between gap-4 text-center sm:text-left backdrop-blur-md">
           <div className="flex items-center gap-3">
-            <Sparkles className="w-6 h-6 text-[#00AEEF] shrink-0" />
+            <Sparkles className="w-6 h-6 text-[#67e8f9] shrink-0" />
             <div>
               <h4 className="text-sm font-bold text-white">Clinical Research &amp; Academic Expertise</h4>
               <p className="text-xs text-gray-400">Janne Sakkinen serves as a guest lecturer at the University of Oulu and OMT physical therapy specialist.</p>
@@ -113,7 +113,7 @@ export default function FeaturedMediaSection() {
           </div>
           <a
             href="/about"
-            className="shrink-0 px-5 py-2.5 rounded-xl bg-[#0C66B4]/30 border border-[#00AEEF]/50 text-[#00AEEF] text-xs font-bold hover:bg-[#00AEEF] hover:text-black transition-all"
+            className="shrink-0 px-5 py-2.5 rounded-xl bg-[#0C66B4]/30 border border-[#00AEEF]/50 text-[#67e8f9] text-xs font-bold hover:bg-[#00AEEF] hover:text-black transition-all"
           >
             Learn More About Janne →
           </a>

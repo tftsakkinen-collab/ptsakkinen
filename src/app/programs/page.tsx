@@ -10,13 +10,13 @@ export default function ProgramsPage() {
         
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto space-y-4">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#0C66B4]/20 border border-[#00AEEF]/40 text-[#00AEEF] text-xs font-bold uppercase tracking-wider">
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#0C66B4]/20 border border-[#00AEEF]/40 text-[#67e8f9] text-xs font-bold uppercase tracking-wider">
             <GraduationCap className="w-4 h-4" />
             <span>Clinical Rehabilitation Programs</span>
           </div>
 
           <h1 className="text-4xl sm:text-6xl font-display text-white tracking-wide">
-            STRUCTURED <span className="text-[#00AEEF]">REHABILITATION SYSTEMS</span>
+            STRUCTURED <span className="text-[#67e8f9]">REHABILITATION SYSTEMS</span>
           </h1>
 
           <p className="text-gray-300 text-base sm:text-lg">
@@ -34,7 +34,7 @@ export default function ProgramsPage() {
         {/* FAQ & Trust Box */}
         <div className="max-w-4xl mx-auto p-8 rounded-3xl bg-[#000d21] border border-[#0C66B4]/40 space-y-6">
           <h2 className="text-2xl font-bold text-white text-center flex items-center justify-center gap-2">
-            <HelpCircle className="w-6 h-6 text-[#00AEEF]" />
+            <HelpCircle className="w-6 h-6 text-[#67e8f9]" />
             Frequently Asked Questions
           </h2>
 

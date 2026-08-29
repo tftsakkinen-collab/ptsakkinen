@@ -47,16 +47,16 @@ export default function TrainingsSection() {
 
           <div className="flex flex-wrap items-center justify-between gap-4 border-b border-[#0C66B4]/40 pb-6">
             <div className="flex flex-wrap items-center gap-3">
-              <span className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#00AEEF]/20 border border-[#00AEEF] text-[#00AEEF] text-xs font-bold uppercase tracking-wider">
+              <span className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#00AEEF]/20 border border-[#00AEEF] text-[#67e8f9] text-xs font-bold uppercase tracking-wider">
                 <Sparkles className="w-3.5 h-3.5" />
                 Featured Online Masterclass
               </span>
               <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#014489]/40 border border-[#0C66B4] text-gray-200 text-xs font-semibold">
-                <Video className="w-3.5 h-3.5 text-[#00AEEF]" />
+                <Video className="w-3.5 h-3.5 text-[#67e8f9]" />
                 Co-created with FoxStudy
               </span>
             </div>
-            <span className="text-xs font-mono text-[#00AEEF] bg-[#000a18] px-3 py-1 rounded-md border border-[#0C66B4]/50">
+            <span className="text-xs font-mono text-[#67e8f9] bg-[#000a18] px-3 py-1 rounded-md border border-[#0C66B4]/50">
               For Healthcare Professionals
             </span>
           </div>
@@ -64,7 +64,7 @@ export default function TrainingsSection() {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
             <div className="lg:col-span-8 space-y-4">
               <h2 className="text-2xl sm:text-4xl font-display text-white tracking-wide leading-tight">
-                Craniomandibular Dysfunction (CMD): <span className="text-[#00AEEF]">Assessment &amp; Treatment</span>
+                Craniomandibular Dysfunction (CMD): <span className="text-[#67e8f9]">Assessment &amp; Treatment</span>
               </h2>
               <p className="text-gray-300 text-base sm:text-lg leading-relaxed">
                 A comprehensive online masterclass for physical therapists, osteopaths, manual therapists, and dentists. Learn evidence-based clinical assessment protocols, jaw joint biomechanics, and hands-on treatment techniques for CMD and TMJ disorders.
@@ -72,19 +72,19 @@ export default function TrainingsSection() {
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2">
                 <div className="flex items-center gap-2 text-xs sm:text-sm text-gray-200">
-                  <CheckCircle2 className="w-4 h-4 text-[#00AEEF] shrink-0" />
+                  <CheckCircle2 className="w-4 h-4 text-[#67e8f9] shrink-0" />
                   <span>Differential diagnosis &amp; TMJ palpation</span>
                 </div>
                 <div className="flex items-center gap-2 text-xs sm:text-sm text-gray-200">
-                  <CheckCircle2 className="w-4 h-4 text-[#00AEEF] shrink-0" />
+                  <CheckCircle2 className="w-4 h-4 text-[#67e8f9] shrink-0" />
                   <span>Manual therapy &amp; exercise progression</span>
                 </div>
                 <div className="flex items-center gap-2 text-xs sm:text-sm text-gray-200">
-                  <CheckCircle2 className="w-4 h-4 text-[#00AEEF] shrink-0" />
+                  <CheckCircle2 className="w-4 h-4 text-[#67e8f9] shrink-0" />
                   <span>100% Online &amp; Self-paced learning</span>
                 </div>
                 <div className="flex items-center gap-2 text-xs sm:text-sm text-gray-200">
-                  <CheckCircle2 className="w-4 h-4 text-[#00AEEF] shrink-0" />
+                  <CheckCircle2 className="w-4 h-4 text-[#67e8f9] shrink-0" />
                   <span>Practical clinical application for practice</span>
                 </div>
               </div>
@@ -110,12 +110,12 @@ export default function TrainingsSection() {
         {/* Section 1: What Workshops & Lectures Janne Teaches */}
         <div className="space-y-12">
           <div className="text-center max-w-3xl mx-auto space-y-4">
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#0C66B4]/20 border border-[#00AEEF]/40 text-[#00AEEF] text-xs font-bold uppercase tracking-wider">
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#0C66B4]/20 border border-[#00AEEF]/40 text-[#67e8f9] text-xs font-bold uppercase tracking-wider">
               <GraduationCap className="w-4 h-4" />
               <span>Teaching &amp; Lecturing</span>
             </div>
             <h2 className="text-3xl sm:text-5xl font-display text-white tracking-wide">
-              CLINICAL WORKSHOPS <span className="text-[#00AEEF]">&amp; LECTURES</span>
+              CLINICAL WORKSHOPS <span className="text-[#67e8f9]">&amp; LECTURES</span>
             </h2>
             <p className="text-gray-300 text-base">
               I instruct physical therapists and dental students at the University of Oulu in TMJ rehabilitation and workplace ergonomics.
@@ -130,11 +130,11 @@ export default function TrainingsSection() {
                   key={idx}
                   className="p-8 rounded-3xl bg-[#000a18] border border-[#0C66B4] space-y-4 shadow-panel hover:border-[#00AEEF] transition-all group"
                 >
-                  <div className="w-12 h-12 rounded-2xl bg-[#014489]/40 border border-[#00AEEF]/50 text-[#00AEEF] flex items-center justify-center group-hover:scale-110 transition-transform">
+                  <div className="w-12 h-12 rounded-2xl bg-[#014489]/40 border border-[#00AEEF]/50 text-[#67e8f9] flex items-center justify-center group-hover:scale-110 transition-transform">
                     <Icon className="w-6 h-6" />
                   </div>
                   <div className="space-y-1">
-                    <span className="text-xs font-semibold text-[#00AEEF] uppercase tracking-wider block">
+                    <span className="text-xs font-semibold text-[#67e8f9] uppercase tracking-wider block">
                       {item.target}
                     </span>
                     <h3 className="text-xl font-bold text-white tracking-wide">
@@ -153,12 +153,12 @@ export default function TrainingsSection() {
         {/* Section 2: Top CV Highlights */}
         <div className="pt-12 border-t border-[#0C66B4]/30 space-y-12">
           <div className="text-center max-w-3xl mx-auto space-y-4">
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#0C66B4]/20 border border-[#00AEEF]/40 text-[#00AEEF] text-xs font-bold uppercase tracking-wider">
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#0C66B4]/20 border border-[#00AEEF]/40 text-[#67e8f9] text-xs font-bold uppercase tracking-wider">
               <Briefcase className="w-4 h-4" />
               <span>Curriculum Vitae &amp; Clinical Experience</span>
             </div>
             <h2 className="text-3xl sm:text-5xl font-display text-white tracking-wide">
-              CAREER &amp; <span className="text-[#00AEEF]">DEGREES</span>
+              CAREER &amp; <span className="text-[#67e8f9]">DEGREES</span>
             </h2>
           </div>
 
@@ -167,7 +167,7 @@ export default function TrainingsSection() {
             {/* Degrees & Basic Education */}
             <div className="lg:col-span-6 space-y-6">
               <h3 className="text-2xl font-bold text-white flex items-center gap-2">
-                <GraduationCap className="w-6 h-6 text-[#00AEEF]" />
+                <GraduationCap className="w-6 h-6 text-[#67e8f9]" />
                 Degrees &amp; Specialization
               </h3>
 
@@ -177,7 +177,7 @@ export default function TrainingsSection() {
                     key={idx}
                     className="p-6 rounded-2xl bg-[#000a18] border border-[#0C66B4]/50 space-y-2"
                   >
-                    <div className="flex items-center justify-between text-xs text-[#00AEEF] font-mono">
+                    <div className="flex items-center justify-between text-xs text-[#67e8f9] font-mono">
                       <span>{deg.duration}</span>
                       <ShieldCheck className="w-4 h-4" />
                     </div>
@@ -191,7 +191,7 @@ export default function TrainingsSection() {
             {/* Clinical Work Experience */}
             <div className="lg:col-span-6 space-y-6">
               <h3 className="text-2xl font-bold text-white flex items-center gap-2">
-                <Briefcase className="w-6 h-6 text-[#00AEEF]" />
+                <Briefcase className="w-6 h-6 text-[#67e8f9]" />
                 Clinical Work History
               </h3>
 
@@ -205,7 +205,7 @@ export default function TrainingsSection() {
                       <h4 className="text-base font-bold text-white">{work.title}</h4>
                       <p className="text-xs text-gray-300">{work.organization}</p>
                     </div>
-                    <span className="text-xs font-mono text-[#00AEEF] shrink-0">{work.period}</span>
+                    <span className="text-xs font-mono text-[#67e8f9] shrink-0">{work.period}</span>
                   </div>
                 ))}
               </div>
@@ -218,12 +218,12 @@ export default function TrainingsSection() {
         <div className="pt-12 border-t border-[#0C66B4]/30 space-y-8">
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-4">
             <div>
-              <div className="inline-flex items-center gap-2 text-[#00AEEF] text-sm font-semibold uppercase tracking-widest">
+              <div className="inline-flex items-center gap-2 text-[#67e8f9] text-sm font-semibold uppercase tracking-widest">
                 <FileCheck className="w-4 h-4" />
                 <span>Certifications &amp; Training</span>
               </div>
               <h3 className="text-2xl sm:text-3xl font-display text-white tracking-wide">
-                POST-GRADUATE COURSES <span className="text-[#00AEEF]">(20+ Courses)</span>
+                POST-GRADUATE COURSES <span className="text-[#67e8f9]">(20+ Courses)</span>
               </h3>
             </div>
           </div>
@@ -234,11 +234,11 @@ export default function TrainingsSection() {
                 key={idx}
                 className="p-4 rounded-xl bg-[#000a18] border border-[#0C66B4]/40 flex items-start gap-3 transition-all hover:border-[#00AEEF]"
               >
-                <CheckCircle2 className="w-5 h-5 text-[#00AEEF] shrink-0 mt-0.5" />
+                <CheckCircle2 className="w-5 h-5 text-[#67e8f9] shrink-0 mt-0.5" />
                 <div>
                   <h4 className="text-xs font-bold text-white leading-snug">{cert.title}</h4>
                   <p className="text-[11px] text-gray-400 mt-1">{cert.instructorOrOrg}</p>
-                  <span className="text-[10px] font-mono text-[#00AEEF] mt-1 block">{cert.year}</span>
+                  <span className="text-[10px] font-mono text-[#67e8f9] mt-1 block">{cert.year}</span>
                 </div>
               </div>
             ))}
@@ -264,7 +264,7 @@ export default function TrainingsSection() {
 
             <Link
               href="/about"
-              className="inline-flex items-center gap-2 px-6 py-4 rounded-xl bg-[#000a18] border border-[#0C66B4]/60 text-white font-bold text-sm hover:border-[#00AEEF] hover:text-[#00AEEF] transition-all"
+              className="inline-flex items-center gap-2 px-6 py-4 rounded-xl bg-[#000a18] border border-[#0C66B4]/60 text-white font-bold text-sm hover:border-[#00AEEF] hover:text-[#67e8f9] transition-all"
             >
               <span>Read full professional philosophy &amp; background</span>
               <ArrowRight className="w-4 h-4" />

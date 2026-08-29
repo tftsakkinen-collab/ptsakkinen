@@ -30,13 +30,13 @@ export default function FaqAccordion() {
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
         
         <div className="text-center space-y-4">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#0C66B4]/20 border border-[#00AEEF]/40 text-[#00AEEF] text-xs font-bold uppercase tracking-wider">
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#0C66B4]/20 border border-[#00AEEF]/40 text-[#67e8f9] text-xs font-bold uppercase tracking-wider">
             <HelpCircle className="w-4 h-4" />
             <span>Frequently Asked Questions</span>
           </div>
 
           <h2 className="text-3xl sm:text-5xl font-display text-white tracking-wide">
-            FREQUENTLY ASKED <span className="text-[#00AEEF]">CLINICAL QUESTIONS</span>
+            FREQUENTLY ASKED <span className="text-[#67e8f9]">CLINICAL QUESTIONS</span>
           </h2>
         </div>
 
@@ -50,11 +50,11 @@ export default function FaqAccordion() {
               >
                 <button
                   onClick={() => setOpenIdx(isOpen ? null : idx)}
-                  className="w-full p-6 text-left font-bold text-base sm:text-lg text-white flex items-center justify-between gap-4 hover:text-[#00AEEF] transition-colors"
+                  className="w-full p-6 text-left font-bold text-base sm:text-lg text-white flex items-center justify-between gap-4 hover:text-[#67e8f9] transition-colors"
                 >
                   <span>{faq.q}</span>
                   <ChevronDown
-                    className={`w-5 h-5 text-[#00AEEF] shrink-0 transition-transform duration-300 ${
+                    className={`w-5 h-5 text-[#67e8f9] shrink-0 transition-transform duration-300 ${
                       isOpen ? "rotate-180" : ""
                     }`}
                   />

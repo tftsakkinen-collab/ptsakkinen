@@ -17,7 +17,7 @@ export default function ProgramCard({ program }: ProgramCardProps) {
       <div className="flex flex-col items-center text-center">
         {/* Top Badge */}
         {program.badge && (
-          <div className="inline-block px-3.5 py-1 rounded-full bg-[#00AEEF]/10 border border-[#00AEEF]/40 text-[#00AEEF] text-xs font-bold uppercase tracking-wider mb-4 mx-auto">
+          <div className="inline-block px-3.5 py-1 rounded-full bg-[#00AEEF]/10 border border-[#00AEEF]/40 text-[#67e8f9] text-xs font-bold uppercase tracking-wider mb-4 mx-auto">
             {program.badge}
           </div>
         )}
@@ -36,7 +36,7 @@ export default function ProgramCard({ program }: ProgramCardProps) {
         <ul className="space-y-3 mb-8 w-full text-left">
           {program.details.map((detail, idx) => (
             <li key={idx} className="flex items-start gap-3 text-xs sm:text-sm text-gray-200">
-              <Check className="w-4 h-4 text-[#00AEEF] shrink-0 mt-0.5" />
+              <Check className="w-4 h-4 text-[#67e8f9] shrink-0 mt-0.5" />
               <span className="break-words">{detail}</span>
             </li>
           ))}
@@ -47,7 +47,7 @@ export default function ProgramCard({ program }: ProgramCardProps) {
       <div className="pt-6 border-t border-[#0C66B4]/30 space-y-4 w-full">
         <div className="flex items-baseline justify-between px-1">
           <span className="text-xs text-gray-400 uppercase tracking-wider font-mono">Status</span>
-          <span className="text-sm font-bold text-[#00AEEF] font-mono">
+          <span className="text-sm font-bold text-[#67e8f9] font-mono">
             {program.pricePlaceholder}
           </span>
         </div>
@@ -55,7 +55,7 @@ export default function ProgramCard({ program }: ProgramCardProps) {
         {program.isPlaceholder ? (
           <a
             href="mailto:tiedottajanne@gmail.com?subject=Clinical%20Program%20Inquiry"
-            className="w-full py-3.5 rounded-xl bg-[#0C66B4]/20 border border-[#00AEEF]/50 text-[#00AEEF] font-bold text-sm hover:bg-[#00AEEF]/10 transition-all text-center flex items-center justify-center gap-2"
+            className="w-full py-3.5 rounded-xl bg-[#0C66B4]/20 border border-[#00AEEF]/50 text-[#67e8f9] font-bold text-sm hover:bg-[#00AEEF]/10 transition-all text-center flex items-center justify-center gap-2"
           >
             <span>Inquire via Email</span>
             <ExternalLink className="w-4 h-4" />
@@ -74,7 +74,7 @@ export default function ProgramCard({ program }: ProgramCardProps) {
 
         {!program.isPlaceholder && (
           <p className="text-[11px] text-center text-gray-400 flex items-center justify-center gap-1">
-            <ShieldCheck className="w-3.5 h-3.5 text-[#00AEEF]" />
+            <ShieldCheck className="w-3.5 h-3.5 text-[#67e8f9]" />
             Secure International Checkout (Stripe)
           </p>
         )}

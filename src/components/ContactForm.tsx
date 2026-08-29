@@ -64,7 +64,7 @@ export default function ContactForm() {
 
       {status === "success" ? (
         <div className="p-6 rounded-2xl bg-[#00AEEF]/10 border border-[#00AEEF] text-white space-y-3">
-          <div className="flex items-center gap-3 text-[#00AEEF] font-bold text-lg">
+          <div className="flex items-center gap-3 text-[#67e8f9] font-bold text-lg">
             <CheckCircle2 className="w-6 h-6" />
             <span>Your message has been sent!</span>
           </div>
@@ -73,7 +73,7 @@ export default function ContactForm() {
           </p>
           <button
             onClick={() => setStatus("idle")}
-            className="mt-2 text-xs font-semibold text-[#00AEEF] underline hover:text-white"
+            className="mt-2 text-xs font-semibold text-[#67e8f9] underline hover:text-white"
           >
             Send another message
           </button>

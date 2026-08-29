@@ -17,7 +17,7 @@ export default function Footer() {
                 <img src="/logo.jpg" alt="PT Sakkinen logo" className="w-full h-full object-cover rounded-full" />
               </div>
               <span className="font-display text-xl text-white">
-                PT SAKKINEN<span className="text-[#00AEEF]">.</span>
+                PT SAKKINEN<span className="text-[#67e8f9]">.</span>
               </span>
             </Link>
             <p className="text-xs text-gray-300 leading-relaxed max-w-sm">
@@ -27,10 +27,10 @@ export default function Footer() {
             {/* Company Info */}
             <div className="pt-2 text-xs space-y-1 text-gray-300">
               <p className="font-bold text-white">{SITE_CONFIG.companyName}</p>
-              <p className="text-[11px] text-[#00AEEF] font-medium">✓ Licensed Healthcare Professional (Valvira / Terhikki Registered)</p>
-              <p className="flex items-center gap-1.5"><MapPin className="w-3.5 h-3.5 text-[#00AEEF]" /> {SITE_CONFIG.streetAddress}</p>
-              <p className="flex items-center gap-1.5"><Phone className="w-3.5 h-3.5 text-[#00AEEF]" /> {SITE_CONFIG.contactPhone}</p>
-              <p className="flex items-center gap-1.5"><Mail className="w-3.5 h-3.5 text-[#00AEEF]" /> {SITE_CONFIG.contactEmail}</p>
+              <p className="text-[11px] text-[#67e8f9] font-medium">✓ Licensed Healthcare Professional (Valvira / Terhikki Registered)</p>
+              <p className="flex items-center gap-1.5"><MapPin className="w-3.5 h-3.5 text-[#67e8f9]" /> {SITE_CONFIG.streetAddress}</p>
+              <p className="flex items-center gap-1.5"><Phone className="w-3.5 h-3.5 text-[#67e8f9]" /> {SITE_CONFIG.contactPhone}</p>
+              <p className="flex items-center gap-1.5"><Mail className="w-3.5 h-3.5 text-[#67e8f9]" /> {SITE_CONFIG.contactEmail}</p>
             </div>
 
             {/* Sister Site Link */}
@@ -39,7 +39,7 @@ export default function Footer() {
                 href={SITE_CONFIG.sisterSiteUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 text-xs font-medium text-[#00AEEF] hover:underline"
+                className="inline-flex items-center gap-2 text-xs font-medium text-[#67e8f9] hover:underline"
               >
                 <Globe className="w-3.5 h-3.5" />
                 <span>Suomeksi → ftsakkinen.com</span>
@@ -49,7 +49,7 @@ export default function Footer() {
 
           {/* Quick Links */}
           <div className="md:col-span-3 space-y-3">
-            <h4 className="text-xs font-bold text-[#00AEEF] uppercase tracking-wider">Navigation</h4>
+            <h4 className="text-xs font-bold text-[#67e8f9] uppercase tracking-wider">Navigation</h4>
             <ul className="space-y-2 text-xs">
               <li>
                 <Link href="/" className="hover:text-white transition-colors">Home</Link>
@@ -61,7 +61,7 @@ export default function Footer() {
                 <Link href="/videos" className="hover:text-white transition-colors">Video Library</Link>
               </li>
               <li>
-                <Link href="/gear" className="hover:text-white transition-colors text-[#00AEEF]">My Gear</Link>
+                <Link href="/gear" className="hover:text-white transition-colors text-[#67e8f9]">My Gear</Link>
               </li>
               <li>
                 <Link href="/free-guide" className="hover:text-white transition-colors">Free Guides</Link>
@@ -80,33 +80,33 @@ export default function Footer() {
 
           {/* Social Channels */}
           <div className="md:col-span-4 space-y-3">
-            <h4 className="text-xs font-bold text-[#00AEEF] uppercase tracking-wider">Official Social Channels</h4>
+            <h4 className="text-xs font-bold text-[#67e8f9] uppercase tracking-wider">Official Social Channels</h4>
             <div className="flex flex-col space-y-2 text-xs">
               <a
                 href={SITE_CONFIG.youtubeUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 text-gray-300 hover:text-[#00AEEF] transition-colors font-medium"
+                className="inline-flex items-center gap-2 text-gray-300 hover:text-[#67e8f9] transition-colors font-medium"
               >
-                <Youtube className="w-4 h-4 text-[#00AEEF]" />
+                <Youtube className="w-4 h-4 text-[#67e8f9]" />
                 <span>YouTube ({SITE_CONFIG.youtubeHandle})</span>
               </a>
               <a
                 href={SITE_CONFIG.instagramUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 text-gray-300 hover:text-[#00AEEF] transition-colors font-medium"
+                className="inline-flex items-center gap-2 text-gray-300 hover:text-[#67e8f9] transition-colors font-medium"
               >
-                <Instagram className="w-4 h-4 text-[#00AEEF]" />
+                <Instagram className="w-4 h-4 text-[#67e8f9]" />
                 <span>Instagram ({SITE_CONFIG.instagramHandle})</span>
               </a>
               <a
                 href={SITE_CONFIG.tiktokUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 text-gray-300 hover:text-[#00AEEF] transition-colors font-medium"
+                className="inline-flex items-center gap-2 text-gray-300 hover:text-[#67e8f9] transition-colors font-medium"
               >
-                <Video className="w-4 h-4 text-[#00AEEF]" />
+                <Video className="w-4 h-4 text-[#67e8f9]" />
                 <span>TikTok ({SITE_CONFIG.tiktokHandle})</span>
               </a>
             </div>
@@ -116,7 +116,7 @@ export default function Footer() {
 
         {/* Medical Disclaimer Box */}
         <div className="mt-10 p-5 rounded-2xl bg-[#000d21] border border-[#0C66B4]/40 flex items-start gap-3">
-          <ShieldAlert className="w-5 h-5 text-[#00AEEF] shrink-0 mt-0.5" />
+          <ShieldAlert className="w-5 h-5 text-[#67e8f9] shrink-0 mt-0.5" />
           <div className="text-xs text-gray-400 space-y-1 leading-relaxed">
             <p className="font-semibold text-gray-300">Medical Disclaimer:</p>
             <p>
@@ -128,10 +128,10 @@ export default function Footer() {
         {/* Bottom Bar */}
         <div className="mt-8 pt-6 border-t border-[#0C66B4]/20 flex flex-col sm:flex-row items-center justify-between text-xs text-gray-400 gap-4">
           <div className="flex flex-wrap items-center gap-2">
-            <div className="flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-[#000d21] border border-[#00AEEF]/40 text-[#00AEEF] text-[11px] font-medium shadow-glow">
+            <div className="flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-[#000d21] border border-[#00AEEF]/40 text-[#67e8f9] text-[11px] font-medium shadow-glow">
               <span className="font-bold text-amber-400">✓ Valvira / Terhikki</span>
             </div>
-            <div className="flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-[#000d21] border border-[#00AEEF]/40 text-[#00AEEF] text-[11px] font-medium">
+            <div className="flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-[#000d21] border border-[#00AEEF]/40 text-[#67e8f9] text-[11px] font-medium">
               <span className="text-gray-300">Registered OMT Physical Therapist (SOMTY)</span>
             </div>
           </div>

@@ -295,21 +295,21 @@ export default async function TopicHubPage(props: { params: Promise<{ slug: stri
         
         {/* Breadcrumbs */}
         <nav aria-label="Breadcrumb" className="flex flex-wrap items-center gap-2 text-xs text-gray-400 font-medium">
-          <Link href="/" className="hover:text-[#00AEEF] flex items-center gap-1 transition-colors">
+          <Link href="/" className="hover:text-[#67e8f9] flex items-center gap-1 transition-colors">
             <Home className="w-3.5 h-3.5" />
             <span>Home</span>
           </Link>
           <ChevronRight className="w-3.5 h-3.5 text-gray-600 shrink-0" />
-          <Link href="/videos" className="hover:text-[#00AEEF] transition-colors">
+          <Link href="/videos" className="hover:text-[#67e8f9] transition-colors">
             Videos &amp; Topics
           </Link>
           <ChevronRight className="w-3.5 h-3.5 text-gray-600 shrink-0" />
-          <span className="text-[#00AEEF] font-semibold">{topic.title}</span>
+          <span className="text-[#67e8f9] font-semibold">{topic.title}</span>
         </nav>
 
         {/* Top Header */}
         <div className="space-y-4">
-          <div className="inline-block px-3.5 py-1.5 rounded-full bg-[#014489]/40 border border-[#00AEEF]/50 text-[#00AEEF] text-xs font-semibold uppercase tracking-wider">
+          <div className="inline-block px-3.5 py-1.5 rounded-full bg-[#014489]/40 border border-[#00AEEF]/50 text-[#67e8f9] text-xs font-semibold uppercase tracking-wider">
             Clinical Topic Hub &amp; Resource
           </div>
 
@@ -325,7 +325,7 @@ export default async function TopicHubPage(props: { params: Promise<{ slug: stri
         {/* Written Synthesis Article */}
         <article className="p-8 rounded-3xl bg-[#000d21] border border-[#0C66B4]/50 space-y-6 text-sm sm:text-base leading-relaxed text-gray-200 shadow-panel">
           <div className="flex items-center gap-2 text-white font-display text-2xl border-b border-[#0C66B4]/30 pb-3">
-            <BookOpen className="w-6 h-6 text-[#00AEEF]" />
+            <BookOpen className="w-6 h-6 text-[#67e8f9]" />
             <h2>Clinical Assessment &amp; Rehabilitation Synthesis</h2>
           </div>
 
@@ -364,7 +364,7 @@ export default async function TopicHubPage(props: { params: Promise<{ slug: stri
         <div className="space-y-6 pt-6 border-t border-[#0C66B4]/30">
           <div className="flex items-center justify-between">
             <h2 className="text-2xl font-display text-white flex items-center gap-2">
-              <Sparkles className="w-5 h-5 text-[#00AEEF]" />
+              <Sparkles className="w-5 h-5 text-[#67e8f9]" />
               <span>Related Clinical Videos ({topicVideos.length} videos)</span>
             </h2>
           </div>
@@ -378,7 +378,7 @@ export default async function TopicHubPage(props: { params: Promise<{ slug: stri
 
         {/* CTA Lead Magnet */}
         <div className="p-8 rounded-3xl bg-gradient-to-r from-[#000d21] via-[#014489]/40 to-[#000d21] border border-[#00AEEF]/50 shadow-glow space-y-4 text-center">
-          <div className="w-12 h-12 rounded-xl bg-[#00AEEF]/20 text-[#00AEEF] flex items-center justify-center mx-auto">
+          <div className="w-12 h-12 rounded-xl bg-[#00AEEF]/20 text-[#67e8f9] flex items-center justify-center mx-auto">
             <Download className="w-6 h-6" />
           </div>
           <h3 className="text-2xl font-bold text-white">Download Free Topic Exercise PDF Guides</h3>

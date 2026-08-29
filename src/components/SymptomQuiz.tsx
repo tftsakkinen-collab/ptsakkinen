@@ -35,13 +35,13 @@ export default function SymptomQuiz() {
           
           {/* Header */}
           <div className="text-center space-y-3">
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#00AEEF]/20 border border-[#00AEEF]/40 text-[#00AEEF] text-xs font-bold uppercase tracking-wider">
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#00AEEF]/20 border border-[#00AEEF]/40 text-[#67e8f9] text-xs font-bold uppercase tracking-wider">
               <Sparkles className="w-3.5 h-3.5" />
               <span>1-Minute Interactive Symptom Assessment</span>
             </div>
 
             <h2 className="text-3xl sm:text-4xl font-display text-white tracking-wide">
-              ASSESS YOUR SYMPTOMS &amp; <span className="text-[#00AEEF]">FIND REHABILITATION GUIDES</span>
+              ASSESS YOUR SYMPTOMS &amp; <span className="text-[#67e8f9]">FIND REHABILITATION GUIDES</span>
             </h2>
             <p className="text-gray-300 text-sm max-w-xl mx-auto">
               Answer 2 quick questions to get an OMT Physical Therapist recommended guidance path.
@@ -67,7 +67,7 @@ export default function SymptomQuiz() {
                     className="p-5 rounded-2xl bg-[#014489]/20 border border-[#0C66B4] text-white font-semibold text-sm hover:border-[#00AEEF] hover:bg-[#00AEEF]/10 transition-all text-left flex items-center justify-between group"
                   >
                     <span>{item.label}</span>
-                    <ArrowRight className="w-4 h-4 text-[#00AEEF] group-hover:translate-x-1 transition-transform" />
+                    <ArrowRight className="w-4 h-4 text-[#67e8f9] group-hover:translate-x-1 transition-transform" />
                   </button>
                 ))}
               </div>
@@ -101,14 +101,14 @@ export default function SymptomQuiz() {
           {/* Quiz Result View */}
           {submitted && (
             <div className="space-y-6 text-center animate-fadeIn">
-              <div className="inline-flex items-center gap-2 text-[#00AEEF] font-bold text-sm">
-                <CheckCircle2 className="w-5 h-5 text-[#00AEEF]" />
+              <div className="inline-flex items-center gap-2 text-[#67e8f9] font-bold text-sm">
+                <CheckCircle2 className="w-5 h-5 text-[#67e8f9]" />
                 <span>Assessment Complete! Recommended path ready.</span>
               </div>
 
               <div className="p-6 rounded-2xl bg-[#000a18] border border-[#00AEEF]/50 text-left space-y-4">
                 <h4 className="text-xl font-bold text-white">
-                  Recommended Path: <span className="text-[#00AEEF]">{symptom}</span>
+                  Recommended Path: <span className="text-[#67e8f9]">{symptom}</span>
                 </h4>
                 <p className="text-sm text-gray-300 leading-relaxed">
                   Based on your selected focus ({symptom}, duration: {duration}), we recommend subscribing to access the free PDF guides and watching the exercise videos.
@@ -125,7 +125,7 @@ export default function SymptomQuiz() {
 
                   <Link
                     href="/videos"
-                    className="w-full sm:w-auto px-6 py-3 rounded-xl bg-[#0C66B4]/30 border border-[#0C66B4] text-[#00AEEF] font-bold text-sm hover:bg-[#00AEEF] hover:text-black transition-all flex items-center justify-center gap-2"
+                    className="w-full sm:w-auto px-6 py-3 rounded-xl bg-[#0C66B4]/30 border border-[#0C66B4] text-[#67e8f9] font-bold text-sm hover:bg-[#00AEEF] hover:text-black transition-all flex items-center justify-center gap-2"
                   >
                     <Play className="w-4 h-4" />
                     <span>Watch Free Videos</span>

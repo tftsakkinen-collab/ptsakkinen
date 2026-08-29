@@ -35,8 +35,8 @@ export default function Navbar() {
               />
             </div>
             <div className="flex flex-col">
-              <span className="font-display text-xl sm:text-2xl tracking-wide text-white group-hover:text-[#00AEEF] transition-colors">
-                PT SAKKINEN<span className="text-[#00AEEF]">.</span>
+              <span className="font-display text-xl sm:text-2xl tracking-wide text-white group-hover:text-[#67e8f9] transition-colors">
+                PT SAKKINEN<span className="text-[#67e8f9]">.</span>
               </span>
               <span className="text-[10px] text-gray-400 uppercase tracking-widest -mt-1 font-sans">
                 OMT Physical Therapist
@@ -52,8 +52,8 @@ export default function Navbar() {
                 <Link
                   key={link.href}
                   href={link.href}
-                  className={`text-sm font-semibold transition-colors hover:text-[#00AEEF] whitespace-nowrap relative py-1.5 ${
-                    isActive ? "text-[#00AEEF]" : "text-gray-200"
+                  className={`text-sm font-semibold transition-colors hover:text-[#67e8f9] whitespace-nowrap relative py-1.5 ${
+                    isActive ? "text-[#67e8f9]" : "text-gray-200"
                   }`}
                 >
                   {link.name}
@@ -72,7 +72,7 @@ export default function Navbar() {
               title="Suomeksi — ftsakkinen.com"
               className="inline-flex items-center gap-1.5 px-3 py-2 rounded-lg border border-[#0C66B4]/60 bg-[#000d21] text-xs font-semibold text-gray-200 hover:text-white hover:border-[#00AEEF] hover:bg-[#0C66B4]/30 transition-all shadow-sm"
             >
-              <Globe className="w-4 h-4 text-[#00AEEF]" />
+              <Globe className="w-4 h-4 text-[#67e8f9]" />
               <span className="text-gray-500 font-normal">EN /</span>
               <span>FI</span>
             </a>
@@ -89,7 +89,7 @@ export default function Navbar() {
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             aria-label="Toggle navigation"
-            className="lg:hidden p-2 rounded-lg bg-[#0C66B4]/20 border border-[#0C66B4]/50 text-white hover:text-[#00AEEF]"
+            className="lg:hidden p-2 rounded-lg bg-[#0C66B4]/20 border border-[#0C66B4]/50 text-white hover:text-[#67e8f9]"
           >
             {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
           </button>
@@ -109,7 +109,7 @@ export default function Navbar() {
                   onClick={() => setMobileMenuOpen(false)}
                   className={`px-3 py-2 rounded-md text-base font-medium transition-colors ${
                     isActive
-                      ? "bg-[#0C66B4]/30 text-[#00AEEF] border-l-4 border-[#00AEEF]"
+                      ? "bg-[#0C66B4]/30 text-[#67e8f9] border-l-4 border-[#00AEEF]"
                       : "text-gray-300 hover:bg-[#0C66B4]/10 hover:text-white"
                   }`}
                 >
@@ -123,7 +123,7 @@ export default function Navbar() {
               href="https://www.ftsakkinen.com"
               className="w-full py-2.5 rounded-lg border border-[#0C66B4]/60 bg-[#000a18] text-gray-200 text-center text-sm font-semibold hover:border-[#00AEEF] transition-all flex items-center justify-center gap-2"
             >
-              <Globe className="w-4 h-4 text-[#00AEEF]" />
+              <Globe className="w-4 h-4 text-[#67e8f9]" />
               Vaihda Suomeksi (ftsakkinen.com)
             </a>
             <Link

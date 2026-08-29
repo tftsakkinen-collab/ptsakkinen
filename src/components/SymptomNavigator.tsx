@@ -131,13 +131,13 @@ export default function SymptomNavigator() {
         
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto space-y-4">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#0C66B4]/20 border border-[#00AEEF]/40 text-[#00AEEF] text-xs font-bold uppercase tracking-wider">
-            <Activity className="w-4 h-4 text-[#00AEEF]" />
+          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#0C66B4]/20 border border-[#00AEEF]/40 text-[#67e8f9] text-xs font-bold uppercase tracking-wider">
+            <Activity className="w-4 h-4 text-[#67e8f9]" />
             <span>Interactive Clinical Navigator</span>
           </div>
 
           <h2 className="font-display text-2xl sm:text-4xl md:text-5xl text-white tracking-wide break-words">
-            FIND YOUR <span className="text-[#00AEEF]">REHABILITATION PROTOCOL</span>
+            FIND YOUR <span className="text-[#67e8f9]">REHABILITATION PROTOCOL</span>
           </h2>
 
           <p className="text-gray-300 text-base sm:text-lg leading-relaxed">
@@ -172,8 +172,8 @@ export default function SymptomNavigator() {
           {/* Col 1: Summary & PDF Download */}
           <div className="space-y-6 flex flex-col justify-between h-full">
             <div className="space-y-4">
-              <div className="flex items-center gap-2 text-[#00AEEF] text-xs font-bold uppercase tracking-wider h-6">
-                <Activity className="w-4 h-4 text-[#00AEEF]" />
+              <div className="flex items-center gap-2 text-[#67e8f9] text-xs font-bold uppercase tracking-wider h-6">
+                <Activity className="w-4 h-4 text-[#67e8f9]" />
                 <span>Condition Overview</span>
               </div>
               <div className="flex items-center gap-3">
@@ -186,7 +186,7 @@ export default function SymptomNavigator() {
             </div>
 
             <div className="p-5 rounded-2xl bg-[#014489]/20 border border-[#00AEEF]/40 space-y-3">
-              <div className="flex items-center gap-2 text-xs font-bold text-[#00AEEF] uppercase tracking-wider">
+              <div className="flex items-center gap-2 text-xs font-bold text-[#67e8f9] uppercase tracking-wider">
                 <Download className="w-4 h-4" />
                 <span>Free Rehab PDF Guide</span>
               </div>
@@ -204,7 +204,7 @@ export default function SymptomNavigator() {
           {/* Col 2: Clinical Video Recommendations */}
           <div className="space-y-4 flex flex-col justify-between h-full">
             <div className="space-y-4">
-              <div className="flex items-center gap-2 text-[#00AEEF] text-xs font-bold uppercase tracking-wider h-6">
+              <div className="flex items-center gap-2 text-[#67e8f9] text-xs font-bold uppercase tracking-wider h-6">
                 <Play className="w-4 h-4" />
                 <span>Recommended Videos</span>
               </div>
@@ -216,11 +216,11 @@ export default function SymptomNavigator() {
                     href={`/videos/${vid.id}`}
                     className="p-4 rounded-2xl bg-[#000814] border border-[#0C66B4]/40 hover:border-[#00AEEF] hover:bg-[#000d21] transition-all flex items-start gap-3 group"
                   >
-                    <div className="w-8 h-8 rounded-lg bg-[#00AEEF]/20 text-[#00AEEF] flex items-center justify-center shrink-0 mt-0.5 group-hover:bg-[#00AEEF] group-hover:text-black transition-all">
+                    <div className="w-8 h-8 rounded-lg bg-[#00AEEF]/20 text-[#67e8f9] flex items-center justify-center shrink-0 mt-0.5 group-hover:bg-[#00AEEF] group-hover:text-black transition-all">
                       <Play className="w-4 h-4 fill-current" />
                     </div>
                     <div>
-                      <h4 className="text-xs font-bold text-white group-hover:text-[#00AEEF] transition-colors leading-snug">
+                      <h4 className="text-xs font-bold text-white group-hover:text-[#67e8f9] transition-colors leading-snug">
                         {vid.title}
                       </h4>
                       <span className="text-[10px] text-gray-400">Watch Clinical Guide →</span>
@@ -249,7 +249,7 @@ export default function SymptomNavigator() {
                       <span className="text-xs font-bold text-white">{gear.name}</span>
                       <Link
                         href={gear.url}
-                        className="text-[11px] text-[#00AEEF] font-semibold hover:underline flex items-center gap-1"
+                        className="text-[11px] text-[#67e8f9] font-semibold hover:underline flex items-center gap-1"
                       >
                         <span>Explore</span>
                         <ArrowRight className="w-3 h-3" />

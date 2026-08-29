@@ -152,7 +152,7 @@ export default function AboutPage() {
                 className="w-full h-full object-cover object-top"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-[#000d21] via-transparent to-transparent opacity-60" />
-              <div className="absolute bottom-6 left-6 right-6 p-4 rounded-xl bg-[#000d21]/90 border border-[#00AEEF] backdrop-blur-md flex items-center gap-3 text-[#00AEEF] text-xs font-bold shadow-glow">
+              <div className="absolute bottom-6 left-6 right-6 p-4 rounded-xl bg-[#000d21]/90 border border-[#00AEEF] backdrop-blur-md flex items-center gap-3 text-[#67e8f9] text-xs font-bold shadow-glow">
                 <Award className="w-5 h-5 shrink-0" />
                 <span>OMT Physical Therapist &amp; Occupational Health Specialist</span>
               </div>
@@ -160,13 +160,13 @@ export default function AboutPage() {
           </div>
 
           <div className="lg:col-span-7 space-y-6">
-            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#014489]/40 border border-[#00AEEF]/50 text-[#00AEEF] text-xs font-bold uppercase tracking-wider">
+            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#014489]/40 border border-[#00AEEF]/50 text-[#67e8f9] text-xs font-bold uppercase tracking-wider">
               <User className="w-4 h-4" />
               <span>Professional Profile &amp; Background</span>
             </div>
 
             <h1 className="text-4xl sm:text-5xl font-display text-white tracking-wide leading-tight">
-              JANNE SAKKINEN <span className="text-[#00AEEF]">— OMT PHYSICAL THERAPIST</span>
+              JANNE SAKKINEN <span className="text-[#67e8f9]">— OMT PHYSICAL THERAPIST</span>
             </h1>
 
             <p className="text-gray-300 text-base sm:text-lg leading-relaxed font-medium">
@@ -184,30 +184,30 @@ export default function AboutPage() {
                 For over 7 years (since 2017), I have served as a visiting lecturer and ergonomics specialist at the University of Oulu Faculty of Dentistry, developing clinical ergonomic protocols for dental practitioners.
               </p>
               <div className="p-4 rounded-xl bg-[#000a18] border border-[#0C66B4]/50 text-xs text-gray-300 flex items-start gap-3 mt-3">
-                <Globe className="w-5 h-5 text-[#00AEEF] shrink-0 mt-0.5" />
+                <Globe className="w-5 h-5 text-[#67e8f9] shrink-0 mt-0.5" />
                 <p>
-                  <strong>International Name Spelling:</strong> In Finnish, my official title and name are written as <em>"FT Janne Säkkinen"</em> (with umlauts 'ä'). On this English website, I use <em>"PT Janne Sakkinen"</em> for global readability. You can visit the official Finnish site at <strong><a href="https://www.ftsakkinen.com" className="text-[#00AEEF] hover:underline">ftsakkinen.com</a></strong>.
+                  <strong>International Name Spelling:</strong> In Finnish, my official title and name are written as <em>"FT Janne Säkkinen"</em> (with umlauts 'ä'). On this English website, I use <em>"PT Janne Sakkinen"</em> for global readability. You can visit the official Finnish site at <strong><a href="https://www.ftsakkinen.com" className="text-[#67e8f9] hover:underline">ftsakkinen.com</a></strong>.
                 </p>
               </div>
             </div>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
               <div className="p-4 rounded-xl bg-[#000d21] border border-[#0C66B4]/60 flex items-start gap-3">
-                <GraduationCap className="w-6 h-6 text-[#00AEEF] shrink-0 mt-0.5" />
+                <GraduationCap className="w-6 h-6 text-[#67e8f9] shrink-0 mt-0.5" />
                 <div>
                   <h3 className="text-white font-bold text-sm">University Instructor (2017–)</h3>
                   <p className="text-xs text-gray-400 mt-1">University of Oulu, Faculty of Dentistry (7+ years)</p>
                 </div>
               </div>
               <div className="p-4 rounded-xl bg-[#000d21] border border-[#0C66B4]/60 flex items-start gap-3">
-                <ShieldCheck className="w-6 h-6 text-[#00AEEF] shrink-0 mt-0.5" />
+                <ShieldCheck className="w-6 h-6 text-[#67e8f9] shrink-0 mt-0.5" />
                 <div>
                   <h3 className="text-white font-bold text-sm">OMT Specialization</h3>
                   <p className="text-xs text-gray-400 mt-1">SOMTY 2.5 Years (2018–2020)</p>
                 </div>
               </div>
               <div className="p-4 rounded-xl bg-[#000d21] border border-[#00AEEF]/60 flex items-start gap-3 sm:col-span-2">
-                <FileCheck className="w-6 h-6 text-[#00AEEF] shrink-0 mt-0.5" />
+                <FileCheck className="w-6 h-6 text-[#67e8f9] shrink-0 mt-0.5" />
                 <div>
                   <h3 className="text-white font-bold text-sm">Valvira &amp; Terhikki Registration</h3>
                   <p className="text-xs text-gray-300 mt-1">Licensed Healthcare Professional (Valvira / Terhikki Registered OMT Physical Therapist)</p>
@@ -221,13 +221,13 @@ export default function AboutPage() {
         <div className="space-y-10 p-8 sm:p-10 rounded-3xl bg-[#000d21] border border-[#0C66B4]/60 shadow-panel">
           
           <div className="space-y-4">
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#014489]/40 border border-[#00AEEF]/40 text-[#00AEEF] text-xs font-bold uppercase tracking-wider">
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#014489]/40 border border-[#00AEEF]/40 text-[#67e8f9] text-xs font-bold uppercase tracking-wider">
               <Compass className="w-4 h-4" />
               <span>Why I do this work</span>
             </div>
             
             <h2 className="text-2xl sm:text-4xl font-display text-white">
-              PASSION FOR PHYSICAL PERFORMANCE &amp; <span className="text-[#00AEEF]">TAILORED SOLUTIONS</span>
+              PASSION FOR PHYSICAL PERFORMANCE &amp; <span className="text-[#67e8f9]">TAILORED SOLUTIONS</span>
             </h2>
 
             <div className="space-y-4 text-gray-300 text-sm sm:text-base leading-relaxed max-w-4xl">
@@ -246,13 +246,13 @@ export default function AboutPage() {
           {/* Cards: Trust & Collaboration */}
           <div className="pt-6 border-t border-[#0C66B4]/30 space-y-6">
             <h3 className="text-xl font-display text-white flex items-center gap-2">
-              <HeartHandshake className="w-5 h-5 text-[#00AEEF]" />
+              <HeartHandshake className="w-5 h-5 text-[#67e8f9]" />
               <span>Trust &amp; Collaboration</span>
             </h3>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div className="p-6 rounded-2xl bg-[#000a18] border border-[#0C66B4]/40 space-y-3">
-                <div className="w-10 h-10 rounded-xl bg-[#00AEEF]/20 text-[#00AEEF] flex items-center justify-center">
+                <div className="w-10 h-10 rounded-xl bg-[#00AEEF]/20 text-[#67e8f9] flex items-center justify-center">
                   <HeartHandshake className="w-5 h-5" />
                 </div>
                 <h4 className="text-base font-bold text-white">Solution-Focused Approach</h4>
@@ -262,7 +262,7 @@ export default function AboutPage() {
               </div>
 
               <div className="p-6 rounded-2xl bg-[#000a18] border border-[#0C66B4]/40 space-y-3">
-                <div className="w-10 h-10 rounded-xl bg-[#00AEEF]/20 text-[#00AEEF] flex items-center justify-center">
+                <div className="w-10 h-10 rounded-xl bg-[#00AEEF]/20 text-[#67e8f9] flex items-center justify-center">
                   <Target className="w-5 h-5" />
                 </div>
                 <h4 className="text-base font-bold text-white">Empowering Professionals &amp; Patients</h4>
@@ -279,7 +279,7 @@ export default function AboutPage() {
         <div className="space-y-6 pt-4">
           <div className="text-center max-w-2xl mx-auto space-y-2">
             <h2 className="text-2xl sm:text-3xl font-display text-white">
-              CLINICAL PRACTICE &amp; <span className="text-[#00AEEF]">TREATMENT TECHNIQUES</span>
+              CLINICAL PRACTICE &amp; <span className="text-[#67e8f9]">TREATMENT TECHNIQUES</span>
             </h2>
             <p className="text-xs sm:text-sm text-gray-400">
               Authentic clinical photography of OMT physical therapy assessment, TMJ manual therapy, and digital ergonomics.
@@ -341,13 +341,13 @@ export default function AboutPage() {
         <div className="space-y-12 pt-8 border-t border-[#0C66B4]/30">
           <div className="space-y-6">
             <h2 className="text-2xl font-display text-white flex items-center gap-2">
-              <GraduationCap className="w-6 h-6 text-[#00AEEF]" />
+              <GraduationCap className="w-6 h-6 text-[#67e8f9]" />
               <span>Education &amp; Credentials</span>
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {degrees.map((deg, idx) => (
                 <div key={idx} className="p-6 rounded-2xl bg-[#000d21] border border-[#0C66B4]/50 space-y-2">
-                  <span className="text-xs font-mono text-[#00AEEF] px-2.5 py-1 rounded-md bg-[#014489]/30 inline-block">
+                  <span className="text-xs font-mono text-[#67e8f9] px-2.5 py-1 rounded-md bg-[#014489]/30 inline-block">
                     {deg.duration}
                   </span>
                   <h3 className="text-base font-bold text-white pt-1">{deg.degree}</h3>
@@ -360,7 +360,7 @@ export default function AboutPage() {
 
           <div className="space-y-6">
             <h2 className="text-2xl font-display text-white flex items-center gap-2">
-              <Briefcase className="w-6 h-6 text-[#00AEEF]" />
+              <Briefcase className="w-6 h-6 text-[#67e8f9]" />
               <span>Clinical Experience &amp; Appointments</span>
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -369,7 +369,7 @@ export default function AboutPage() {
                   <div>
                     <div className="flex items-center justify-between">
                       <h3 className="text-base font-bold text-white">{work.title}</h3>
-                      <span className="text-xs font-mono text-[#00AEEF] bg-[#014489]/30 px-2.5 py-1 rounded-md">
+                      <span className="text-xs font-mono text-[#67e8f9] bg-[#014489]/30 px-2.5 py-1 rounded-md">
                         {work.period}
                       </span>
                     </div>

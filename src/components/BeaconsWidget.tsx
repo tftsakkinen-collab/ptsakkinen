@@ -10,13 +10,13 @@ export default function BeaconsWidget() {
         <div className="p-8 sm:p-12 rounded-3xl bg-gradient-to-r from-[#000d21] via-[#014489]/30 to-[#000d21] border border-[#00AEEF]/50 shadow-panel relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
           
           <div className="lg:col-span-8 space-y-4 text-left">
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#0C66B4]/30 border border-[#00AEEF]/40 text-[#00AEEF] text-xs font-bold uppercase tracking-wider">
-              <Sparkles className="w-4 h-4 text-[#00AEEF]" />
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#0C66B4]/30 border border-[#00AEEF]/40 text-[#67e8f9] text-xs font-bold uppercase tracking-wider">
+              <Sparkles className="w-4 h-4 text-[#67e8f9]" />
               <span>Free Physical Therapy PDF Guides</span>
             </div>
 
             <h2 className="text-3xl sm:text-4xl font-display text-white tracking-wide">
-              DOWNLOAD FREE <span className="text-[#00AEEF]">PDF GUIDES &amp; MATERIALS</span>
+              DOWNLOAD FREE <span className="text-[#67e8f9]">PDF GUIDES &amp; MATERIALS</span>
             </h2>
 
             <p className="text-gray-300 text-sm sm:text-base leading-relaxed max-w-xl">
@@ -24,9 +24,9 @@ export default function BeaconsWidget() {
             </p>
 
             <div className="flex items-center gap-4 text-xs text-gray-400 pt-1">
-              <span className="flex items-center gap-1.5"><ShieldCheck className="w-4 h-4 text-[#00AEEF]" /> Zero spam</span>
+              <span className="flex items-center gap-1.5"><ShieldCheck className="w-4 h-4 text-[#67e8f9]" /> Zero spam</span>
               <span>•</span>
-              <span className="flex items-center gap-1.5"><Download className="w-4 h-4 text-[#00AEEF]" /> Direct Google Drive access</span>
+              <span className="flex items-center gap-1.5"><Download className="w-4 h-4 text-[#67e8f9]" /> Direct Google Drive access</span>
             </div>
           </div>
 

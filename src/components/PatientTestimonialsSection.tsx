@@ -50,13 +50,13 @@ export default function PatientTestimonialsSection() {
     <section className="py-20 bg-[#000a18] border-b border-[#0C66B4]/30 relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
         <div className="text-center max-w-3xl mx-auto space-y-4">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#0C66B4]/20 border border-[#00AEEF]/40 text-[#00AEEF] text-xs font-bold uppercase tracking-wider">
+          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#0C66B4]/20 border border-[#00AEEF]/40 text-[#67e8f9] text-xs font-bold uppercase tracking-wider">
             <HeartPulse className="w-4 h-4" />
             <span>Authentic Patient Testimonials</span>
           </div>
 
           <h2 className="text-3xl sm:text-5xl font-display text-white tracking-wide">
-            CLINICAL <span className="text-[#00AEEF]">PATIENT REVIEWS</span>
+            CLINICAL <span className="text-[#67e8f9]">PATIENT REVIEWS</span>
           </h2>
 
           <p className="text-sm sm:text-base text-gray-300 max-w-2xl mx-auto leading-relaxed">
@@ -83,10 +83,10 @@ export default function PatientTestimonialsSection() {
               </div>
 
               <div className="pt-4 border-t border-[#0C66B4]/30 space-y-1 w-full text-center">
-                <div className="text-sm font-bold text-white group-hover:text-[#00AEEF] transition-colors text-center">
+                <div className="text-sm font-bold text-white group-hover:text-[#67e8f9] transition-colors text-center">
                   {review.name}
                 </div>
-                <div className="text-xs text-[#00AEEF] font-medium text-center">
+                <div className="text-xs text-[#67e8f9] font-medium text-center">
                   {review.condition}
                 </div>
               </div>

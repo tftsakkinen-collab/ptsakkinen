@@ -34,13 +34,13 @@ export default function VideoLibraryClient({ videos, categories }: VideoLibraryC
         
         {/* Header Section */}
         <div className="text-center max-w-4xl mx-auto space-y-4">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#0C66B4]/20 border border-[#00AEEF]/40 text-[#00AEEF] text-xs font-bold uppercase tracking-wider">
+          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#0C66B4]/20 border border-[#00AEEF]/40 text-[#67e8f9] text-xs font-bold uppercase tracking-wider">
             <PlayCircle className="w-4 h-4" />
             <span>ALL {videos.length} CLINICAL REHABILITATION VIDEOS</span>
           </div>
 
           <h1 className="text-2xl sm:text-4xl lg:text-6xl font-display text-white tracking-wide break-words">
-            COMPLETE <span className="text-[#00AEEF]">CLINICAL VIDEO LIBRARY</span>
+            COMPLETE <span className="text-[#67e8f9]">CLINICAL VIDEO LIBRARY</span>
           </h1>
 
           <p className="text-gray-300 text-base sm:text-lg leading-relaxed max-w-3xl mx-auto">
@@ -83,7 +83,7 @@ export default function VideoLibraryClient({ videos, categories }: VideoLibraryC
                 >
                   <span>{cat.name}</span>
                   <span className={`px-2 py-0.5 rounded-full text-[11px] font-bold ${
-                    active ? "bg-black/20 text-black" : "bg-[#014489] text-[#00AEEF]"
+                    active ? "bg-black/20 text-black" : "bg-[#014489] text-[#67e8f9]"
                   }`}>
                     {count}
                   </span>
@@ -102,7 +102,7 @@ export default function VideoLibraryClient({ videos, categories }: VideoLibraryC
               <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
                 <div className="space-y-1">
                   <h2 className="text-2xl sm:text-3xl font-display text-white flex items-center gap-3">
-                    <span className="w-8 h-8 rounded-lg bg-[#00AEEF]/20 text-[#00AEEF] flex items-center justify-center text-sm font-bold">1</span>
+                    <span className="w-8 h-8 rounded-lg bg-[#00AEEF]/20 text-[#67e8f9] flex items-center justify-center text-sm font-bold">1</span>
                     TMJ &amp; OROFACIAL THERAPY ({tmjVideos.length} videos)
                   </h2>
                   <p className="text-xs sm:text-sm text-gray-400">
@@ -111,7 +111,7 @@ export default function VideoLibraryClient({ videos, categories }: VideoLibraryC
                 </div>
                 <button
                   onClick={() => setSelectedCategory("tmj-bruxism")}
-                  className="text-xs text-[#00AEEF] hover:underline font-semibold self-start sm:self-auto"
+                  className="text-xs text-[#67e8f9] hover:underline font-semibold self-start sm:self-auto"
                 >
                   Filter TMJ only →
                 </button>
@@ -129,7 +129,7 @@ export default function VideoLibraryClient({ videos, categories }: VideoLibraryC
               <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
                 <div className="space-y-1">
                   <h2 className="text-2xl sm:text-3xl font-display text-white flex items-center gap-3">
-                    <span className="w-8 h-8 rounded-lg bg-[#00AEEF]/20 text-[#00AEEF] flex items-center justify-center text-sm font-bold">2</span>
+                    <span className="w-8 h-8 rounded-lg bg-[#00AEEF]/20 text-[#67e8f9] flex items-center justify-center text-sm font-bold">2</span>
                     ERGONOMICS &amp; WORKPLACE WELLNESS ({ergonomicsVideos.length} videos)
                   </h2>
                   <p className="text-xs sm:text-sm text-gray-400">
@@ -138,7 +138,7 @@ export default function VideoLibraryClient({ videos, categories }: VideoLibraryC
                 </div>
                 <button
                   onClick={() => setSelectedCategory("ergonomics")}
-                  className="text-xs text-[#00AEEF] hover:underline font-semibold self-start sm:self-auto"
+                  className="text-xs text-[#67e8f9] hover:underline font-semibold self-start sm:self-auto"
                 >
                   Filter Ergonomics only →
                 </button>
@@ -156,7 +156,7 @@ export default function VideoLibraryClient({ videos, categories }: VideoLibraryC
               <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
                 <div className="space-y-1">
                   <h2 className="text-2xl sm:text-3xl font-display text-white flex items-center gap-3">
-                    <span className="w-8 h-8 rounded-lg bg-[#00AEEF]/20 text-[#00AEEF] flex items-center justify-center text-sm font-bold">3</span>
+                    <span className="w-8 h-8 rounded-lg bg-[#00AEEF]/20 text-[#67e8f9] flex items-center justify-center text-sm font-bold">3</span>
                     SPINE &amp; MUSCULOSKELETAL CARE ({spineVideos.length} videos)
                   </h2>
                   <p className="text-xs sm:text-sm text-gray-400">
@@ -165,7 +165,7 @@ export default function VideoLibraryClient({ videos, categories }: VideoLibraryC
                 </div>
                 <button
                   onClick={() => setSelectedCategory("cervicogenic-neck")}
-                  className="text-xs text-[#00AEEF] hover:underline font-semibold self-start sm:self-auto"
+                  className="text-xs text-[#67e8f9] hover:underline font-semibold self-start sm:self-auto"
                 >
                   Filter Spine &amp; Joint Care only →
                 </button>
@@ -190,7 +190,7 @@ export default function VideoLibraryClient({ videos, categories }: VideoLibraryC
                     setSelectedCategory("kaikki");
                     setSearchQuery("");
                   }}
-                  className="text-[#00AEEF] hover:underline font-semibold"
+                  className="text-[#67e8f9] hover:underline font-semibold"
                 >
                   Show all 69 videos
                 </button>
