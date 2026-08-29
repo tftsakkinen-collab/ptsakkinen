@@ -70,7 +70,7 @@ export default function Navbar() {
             <a
               href="https://www.ftsakkinen.com"
               title="Suomeksi — ftsakkinen.com"
-              className="inline-flex items-center gap-1.5 px-3 py-2 rounded-lg border border-[#0C66B4]/60 bg-[#000d21] text-xs font-semibold text-gray-200 hover:text-white hover:border-[#00AEEF] hover:bg-[#0C66B4]/30 transition-all shadow-sm"
+              className="inline-flex items-center gap-1.5 px-3.5 py-2.5 min-h-[44px] rounded-lg border border-[#0C66B4]/60 bg-[#000d21] text-xs font-semibold text-gray-200 hover:text-white hover:border-[#00AEEF] hover:bg-[#0C66B4]/30 transition-all shadow-sm"
             >
               <Globe className="w-4 h-4 text-[#67e8f9]" />
               <span className="text-slate-300 font-normal">EN /</span>
@@ -78,7 +78,7 @@ export default function Navbar() {
             </a>
             <Link
               href="/free-guide"
-              className="px-4 py-2 rounded-lg bg-[#00AEEF] text-black font-bold text-xs sm:text-sm hover:bg-[#33C2F5] transition-all shadow-glow flex items-center gap-2 whitespace-nowrap"
+              className="px-5 py-2.5 min-h-[48px] rounded-lg bg-[#00AEEF] text-black font-bold text-xs sm:text-sm hover:bg-[#33C2F5] transition-all shadow-glow flex items-center gap-2 whitespace-nowrap cursor-pointer"
             >
               <Download className="w-4 h-4" />
               <span>Get Free Guide</span>
@@ -89,7 +89,7 @@ export default function Navbar() {
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             aria-label="Toggle navigation"
-            className="lg:hidden p-2 rounded-lg bg-[#0C66B4]/20 border border-[#0C66B4]/50 text-white hover:text-[#67e8f9]"
+            className="lg:hidden min-w-[44px] min-h-[44px] p-2.5 rounded-lg bg-[#0C66B4]/20 border border-[#0C66B4]/50 text-white hover:text-[#67e8f9] flex items-center justify-center cursor-pointer"
           >
             {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
           </button>
