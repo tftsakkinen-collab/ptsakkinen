@@ -57,9 +57,12 @@ export default function ContactForm() {
         <h2 className="text-2xl font-bold text-white tracking-wide">
           Send a Contact Request
         </h2>
-        <p className="text-gray-300 text-sm">
-          Fill out the form below. Janne will respond to your message promptly.
+        <p className="text-slate-300 text-sm font-normal">
+          Fill out the form below for general inquiries, keynotes, and clinical workshop inquiries.
         </p>
+        <div className="p-3 rounded-xl bg-[#014489]/30 border border-[#00AEEF]/40 text-[#67e8f9] text-xs font-semibold">
+          💡 <strong>Notice:</strong> Appointments are booked only through our partners (Terveystalo, Norre, Hammasvahti). We do not take bookings by phone.
+        </div>
       </div>
 
       {status === "success" ? (
