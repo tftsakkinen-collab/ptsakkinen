@@ -77,7 +77,7 @@ export default function Hero() {
 
           {/* Right Column: Liquid Glass Card with Janne Sakkinen Portrait */}
           <div className="lg:col-span-5 flex justify-center">
-            <div className="relative w-full max-w-[340px] sm:max-w-[380px] p-4 rounded-3xl bg-white/5 border border-white/15 backdrop-blur-md shadow-2xl space-y-4 hover:border-[#00AEEF]/50 transition-all group">
+            <div className="relative w-full max-w-[340px] sm:max-w-[380px] p-4 rounded-3xl bg-[#00122e] border border-[#0C66B4]/40 backdrop-blur-md shadow-2xl space-y-4 hover:border-[#00AEEF]/50 transition-all group">
               {/* Image Frame */}
               <div className="relative aspect-[4/5] w-full rounded-2xl overflow-hidden border border-white/10">
                 <Image
@@ -98,26 +98,26 @@ export default function Hero() {
                 <div className="absolute bottom-3 left-3 right-3 p-3 rounded-xl bg-black/80 backdrop-blur-md border border-white/10 text-left space-y-0.5">
                   <h3 className="text-sm font-bold text-white">Janne Sakkinen</h3>
                   <p className="text-[11px] text-[#67e8f9] font-semibold">OMT Physical Therapist &amp; Specialist</p>
-                  <p className="text-[10px] text-gray-400">Faculty Lecturer, University of Oulu (2017–)</p>
+                  <p className="text-[10px] text-slate-300">Faculty Lecturer, University of Oulu (2017–)</p>
                 </div>
               </div>
 
               {/* Mini Channel Metric Card */}
-              <div className="p-3.5 rounded-xl bg-white/5 border border-white/10 flex items-center justify-between text-xs">
+              <div className="p-3.5 rounded-xl bg-[#000814] border border-[#0C66B4]/60 flex items-center justify-between text-xs">
                 <div className="flex items-center gap-2.5">
-                  <div className="w-8 h-8 rounded-lg bg-[#00AEEF]/20 text-[#67e8f9] flex items-center justify-center font-bold">
+                  <div className="w-8 h-8 rounded-lg bg-[#014489]/50 border border-[#00AEEF]/40 text-[#67e8f9] flex items-center justify-center font-bold">
                     <Users className="w-4 h-4" />
                   </div>
                   <div>
                     <span className="font-bold text-white block">5,380+ Subscribers</span>
-                    <span className="text-[10px] text-gray-400">Global Movement Community</span>
+                    <span className="text-[10px] text-slate-300">Global Movement Community</span>
                   </div>
                 </div>
                 <a
                   href={SITE_CONFIG.youtubeChannelUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="px-2.5 py-1 rounded-lg bg-[#00AEEF]/20 text-[#67e8f9] hover:bg-[#00AEEF] hover:text-black font-bold text-[10px] transition-all"
+                  className="px-2.5 py-1 rounded-lg bg-[#014489]/50 border border-[#00AEEF]/40 text-[#67e8f9] hover:bg-[#00AEEF] hover:text-black font-bold text-[10px] transition-all"
                 >
                   Subscribe ↗
                 </a>
