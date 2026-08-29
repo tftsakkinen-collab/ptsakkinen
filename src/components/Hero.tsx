@@ -5,7 +5,7 @@ import { SITE_CONFIG } from "@/data/config";
 
 export default function Hero() {
   return (
-    <section className="relative min-h-[85vh] bg-[#0c0c0c] text-white flex items-center overflow-x-hidden border-b border-white/10 py-16 sm:py-24">
+    <section className="relative min-h-[85vh] bg-[#0c0c0c] text-white flex items-center overflow-hidden border-b border-white/10 py-16 sm:py-24">
       {/* Background Cinematic Glow Orbs */}
       <div className="absolute -top-32 -left-32 w-96 h-96 bg-[#00AEEF]/15 rounded-full blur-[140px] pointer-events-none" />
       <div className="absolute -bottom-32 -right-32 w-96 h-96 bg-[#014489]/25 rounded-full blur-[140px] pointer-events-none" />
