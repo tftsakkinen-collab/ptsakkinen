@@ -138,8 +138,8 @@ export default function Footer() {
 
           <div className="flex flex-wrap items-center gap-4">
             <VisitorCounter siteKey="ptsakkinen_com" label="Total Site Visitors" />
-            <span className="text-gray-400 font-medium">Business ID: <span className="text-white font-semibold">3305813-7</span></span>
-            <p className="text-gray-500">© {new Date().getFullYear()} {SITE_CONFIG.companyName}. All rights reserved.</p>
+            <span className="text-slate-300 font-medium">Business ID: <span className="text-white font-semibold">3305813-7</span></span>
+            <p className="text-slate-300">© {new Date().getFullYear()} {SITE_CONFIG.companyName}. All rights reserved.</p>
           </div>
         </div>
       </div>

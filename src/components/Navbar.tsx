@@ -73,7 +73,7 @@ export default function Navbar() {
               className="inline-flex items-center gap-1.5 px-3 py-2 rounded-lg border border-[#0C66B4]/60 bg-[#000d21] text-xs font-semibold text-gray-200 hover:text-white hover:border-[#00AEEF] hover:bg-[#0C66B4]/30 transition-all shadow-sm"
             >
               <Globe className="w-4 h-4 text-[#67e8f9]" />
-              <span className="text-gray-500 font-normal">EN /</span>
+              <span className="text-slate-300 font-normal">EN /</span>
               <span>FI</span>
             </a>
             <Link
