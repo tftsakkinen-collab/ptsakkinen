@@ -3,19 +3,20 @@
 @tailwind utilities;
 
 :root {
-  --font-display-heading: 'Outfit', system-ui, sans-serif;
-  --font-roboto: 'Roboto', sans-serif;
+  --font-heading: var(--font-heading, 'Outfit', system-ui, sans-serif);
+  --font-sans: var(--font-sans, 'Inter', system-ui, sans-serif);
 }
 
 body {
   background-color: #000a18;
   color: #ffffff;
-  font-family: var(--font-roboto), system-ui, sans-serif;
+  font-family: var(--font-sans), system-ui, sans-serif;
   overflow-x: hidden;
   max-width: 100vw;
 }
 
 h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading), system-ui, sans-serif;
   overflow-wrap: break-word;
   word-break: break-word;
   hyphens: auto;

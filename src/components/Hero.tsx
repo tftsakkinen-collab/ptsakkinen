@@ -1,12 +1,7 @@
-"use client";
-
-import { motion } from "framer-motion";
 import Link from "next/link";
 import Image from "next/image";
-import { Play, Sparkles, Youtube, CheckCircle2, ArrowRight, ShieldCheck, Download, Eye, Users } from "lucide-react";
+import { Play, Sparkles, Youtube, CheckCircle2, ArrowRight, Eye, Users } from "lucide-react";
 import { SITE_CONFIG } from "@/data/config";
-
-const ease = [0.22, 1, 0.36, 1];
 
 export default function Hero() {
   return (
@@ -18,51 +13,31 @@ export default function Hero() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
           
-          {/* Left Column: Value Proposition & Animated Text */}
+          {/* Left Column: Value Proposition */}
           <div className="lg:col-span-7 space-y-8 text-center lg:text-left">
             
             {/* Top Pill Badge */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, ease }}
-              className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/5 border border-[#00AEEF]/40 text-[#00AEEF] text-xs font-bold uppercase tracking-wider backdrop-blur-md shadow-glow"
-            >
+            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/5 border border-[#00AEEF]/40 text-[#00AEEF] text-xs font-bold uppercase tracking-wider backdrop-blur-md shadow-glow">
               <Sparkles className="w-4 h-4 text-[#00AEEF]" />
               <span>@pt_sakkinen • Global YouTube Channel &amp; Physical Therapy</span>
-            </motion.div>
+            </div>
 
             {/* Main Headline */}
             <div className="space-y-4">
-              <motion.h1
-                initial={{ opacity: 0, y: 24 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.7, delay: 0.1, ease }}
-                className="text-4xl sm:text-6xl lg:text-7xl font-display font-bold text-white tracking-tight leading-[1.08] break-words"
-              >
+              <h1 className="text-4xl sm:text-6xl lg:text-7xl font-display font-bold text-white tracking-tight leading-[1.08] break-words">
                 Evidence-Based <br className="hidden sm:inline" />
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-white via-[#00AEEF] to-[#014489]">
                   Movement &amp; Pain Solutions
                 </span>
-              </motion.h1>
+              </h1>
 
-              <motion.p
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.7, delay: 0.2, ease }}
-                className="text-gray-300 text-base sm:text-lg lg:text-xl font-normal leading-relaxed max-w-2xl mx-auto lg:mx-0"
-              >
+              <p className="text-gray-300 text-base sm:text-lg lg:text-xl font-normal leading-relaxed max-w-2xl mx-auto lg:mx-0">
                 Specialized clinical rehabilitation for TMJ disorders, cervical spine mechanics, and spinal pain by OMT Physical Therapist &amp; Faculty Lecturer Janne Sakkinen.
-              </motion.p>
+              </p>
             </div>
 
             {/* CTAs & YouTube Link */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.7, delay: 0.3, ease }}
-              className="flex flex-wrap gap-4 pt-2 justify-center lg:justify-start items-center"
-            >
+            <div className="flex flex-wrap gap-4 pt-2 justify-center lg:justify-start items-center">
               <a
                 href={SITE_CONFIG.youtubeChannelUrl}
                 target="_blank"
@@ -81,15 +56,10 @@ export default function Hero() {
                 <Play className="w-4 h-4 text-[#00AEEF] fill-current" />
                 <span>Explore Video Library</span>
               </Link>
-            </motion.div>
+            </div>
 
             {/* Trust Bullets & Stats */}
-            <motion.div
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ duration: 0.8, delay: 0.4, ease }}
-              className="pt-4 flex flex-wrap items-center justify-center lg:justify-start gap-6 text-xs text-gray-400 font-medium"
-            >
+            <div className="pt-4 flex flex-wrap items-center justify-center lg:justify-start gap-6 text-xs text-gray-400 font-medium">
               <span className="flex items-center gap-1.5">
                 <CheckCircle2 className="w-4 h-4 text-[#00AEEF] shrink-0" /> Valvira / Terhikki Licensed OMT
               </span>
@@ -101,18 +71,13 @@ export default function Hero() {
               <span className="flex items-center gap-1.5">
                 <Eye className="w-4 h-4 text-[#00AEEF] shrink-0" /> 1.1M+ YouTube Views
               </span>
-            </motion.div>
+            </div>
 
           </div>
 
           {/* Right Column: Liquid Glass Card with Janne Sakkinen Portrait */}
           <div className="lg:col-span-5 flex justify-center">
-            <motion.div
-              initial={{ opacity: 0, scale: 0.95, y: 20 }}
-              animate={{ opacity: 1, scale: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.25, ease }}
-              className="relative w-full max-w-[340px] sm:max-w-[380px] p-4 rounded-3xl bg-white/5 border border-white/15 backdrop-blur-md shadow-2xl space-y-4 hover:border-[#00AEEF]/50 transition-all group"
-            >
+            <div className="relative w-full max-w-[340px] sm:max-w-[380px] p-4 rounded-3xl bg-white/5 border border-white/15 backdrop-blur-md shadow-2xl space-y-4 hover:border-[#00AEEF]/50 transition-all group">
               {/* Image Frame */}
               <div className="relative aspect-[4/5] w-full rounded-2xl overflow-hidden border border-white/10">
                 <Image
@@ -157,7 +122,7 @@ export default function Hero() {
                   Subscribe ↗
                 </a>
               </div>
-            </motion.div>
+            </div>
           </div>
 
         </div>
