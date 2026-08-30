@@ -22,7 +22,7 @@ export default function Navbar() {
   ];
 
   return (
-    <header className="sticky top-0 z-50 bg-[#000814]/95 backdrop-blur-xl border-b border-[#0C66B4]/50 shadow-xl transition-all duration-300">
+    <header className="sticky top-0 z-50 bg-[#000814] border-b border-[#0C66B4] shadow-2xl transition-all duration-300">
       <div className="w-full max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20 gap-4">
           {/* Brand Logo with Official Image */}
@@ -55,9 +55,9 @@ export default function Navbar() {
                   href={link.href}
                   className={`text-sm font-semibold transition-all whitespace-nowrap relative py-1.5 px-2 rounded-lg ${
                     isHighlight
-                      ? "text-[#67e8f9] bg-[#014489]/40 border border-[#00AEEF]/50 hover:bg-[#014489]/70 font-bold"
+                      ? "text-[#67e8f9] bg-[#014489] border border-[#00AEEF] hover:bg-[#014489]/90 font-bold"
                       : isActive
-                      ? "text-[#67e8f9] bg-white/5 font-bold"
+                      ? "text-[#67e8f9] bg-white/10 font-bold"
                       : "text-slate-100 hover:text-[#67e8f9] hover:bg-white/5"
                   }`}
                 >
