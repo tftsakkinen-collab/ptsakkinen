@@ -20,9 +20,13 @@ export async function POST(req: Request) {
     const appsScriptUrl = process.env.APPS_SCRIPT_LEAD_URL || DEFAULT_APPS_SCRIPT_URL;
 
     const payload = {
-      tieto: `LIIDI (${lang === "en" ? "EN" : "FI"}): ${name} (${email}) - ${source || "free-guide"}`,
+      tieto: `🔔 NEW LEAD JOINED SITE!\nName: ${name}\nEmail: ${email}\nLanguage: EN\nSource: ${
+        source || "free-guide"
+      }`,
       name,
       email,
+      recipient: "tiedottajanne@gmail.com",
+      subject: `🔔 New Email Subscriber: ${name} (${email})`,
       lang: lang === "fi" ? "fi" : "en",
       secret: process.env.LEAD_SHARED_SECRET || "sakkinen-lead-secret",
       source: source || "free-guide",
