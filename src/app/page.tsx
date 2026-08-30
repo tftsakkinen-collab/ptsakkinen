@@ -1,14 +1,14 @@
 import Hero from "@/components/Hero";
+import SingleProductLandingSection from "@/components/SingleProductLandingSection";
+import ExternalCourseCard from "@/components/ExternalCourseCard";
 import AboutSection from "@/components/AboutSection";
 import FeaturedMediaSection from "@/components/FeaturedMediaSection";
 import VideoCard from "@/components/VideoCard";
 import EmailLeadForm from "@/components/EmailLeadForm";
-import TrainingsSection from "@/components/TrainingsSection";
-import TestimonialsSection from "@/components/TestimonialsSection";
 import PatientTestimonialsSection from "@/components/PatientTestimonialsSection";
 import AppointmentBookingSection from "@/components/AppointmentBookingSection";
 import Link from "next/link";
-import { ArrowRight, PlayCircle, BookOpen } from "lucide-react";
+import { ArrowRight, PlayCircle, BookOpen, GraduationCap } from "lucide-react";
 import { fetchYouTubeVideos } from "@/lib/youtube";
 import { PersonPhysicianSchema } from "@/components/JsonLdSchemas";
 import type { Metadata } from "next";
@@ -16,10 +16,6 @@ import Script from "next/script";
 import dynamicImport from "next/dynamic";
 
 const SymptomNavigator = dynamicImport(() => import("@/components/SymptomNavigator"), {
-  ssr: true,
-});
-
-const PhysioAiSearch = dynamicImport(() => import("@/components/PhysioAiSearch"), {
   ssr: true,
 });
 
@@ -78,121 +74,6 @@ export default async function HomePage() {
         "email": "tiedottajanne@gmail.com",
         "url": "https://www.ptsakkinen.com"
       },
-      "alumniOf": [
-        "Finnish Society of Orthopedic Manual Therapy (SOMTY)",
-        "Rovaniemi University of Applied Sciences (RAMK)"
-      ],
-      "hasCredential": [
-        {
-          "@type": "EducationalOccupationalCredential",
-          "credentialCategory": "degree",
-          "name": "OMT Physical Therapist (SOMTY 2018–2020)"
-        },
-        {
-          "@type": "EducationalOccupationalCredential",
-          "credentialCategory": "degree",
-          "name": "Physical Therapist (RAMK 2007–2010)"
-        }
-      ],
-      "sameAs": [
-        "https://www.youtube.com/channel/UCbIWSnSD_k3YoTQSqrzi5Bw",
-        "https://www.instagram.com/ptsakkinen/",
-        "https://www.tiktok.com/@ptsakkinen",
-        "https://beacons.ai/ptsakkinen",
-        "https://www.ftsakkinen.com",
-        "https://www.ptsakkinen.com"
-      ]
-    },
-    {
-      "@context": "https://schema.org",
-      "@type": "LocalBusiness",
-      "name": "Tiedottajanne Oy - PT Sakkinen",
-      "description": "OMT Physical Therapy and Orofacial Rehabilitation Workshops.",
-      "url": "https://www.ptsakkinen.com",
-      "image": {
-        "@type": "ImageObject",
-        "url": "https://www.ptsakkinen.com/janne-sakkinen.jpg",
-        "width": 800,
-        "height": 1000
-      },
-      "telephone": "+358413274967",
-      "email": "tiedottajanne@gmail.com",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Oulu",
-        "addressCountry": "FI"
-      },
-      "geo": {
-        "@type": "GeoCoordinates",
-        "latitude": 65.0121,
-        "longitude": 25.4688
-      },
-      "openingHours": [
-        "Mo-Fr 08:00-16:00"
-      ],
-      "priceRange": "€€",
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "5.0",
-        "reviewCount": 13,
-        "bestRating": "5"
-      },
-      "review": [
-        {
-          "@type": "Review",
-          "author": { "@type": "Person", "name": "Occupational Health Client (Field Technician)" },
-          "reviewBody": "I visited your clinic for lower back pain. Under your guidance, I learned the correct lifting technique, and I have had virtually no lower back issues since. Whenever mild tightness appears, I do the physical therapy exercises you taught me and get immediate relief. Thank you for your work – fantastic to see results that last!",
-          "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" }
-        },
-        {
-          "@type": "Review",
-          "author": { "@type": "Person", "name": "Physical Therapy Professional" },
-          "reviewBody": "An absolute top-tier course! I'm thrilled to apply these clinical assessment and manual tools directly with my patients. Janne teaches with exceptional clarity and an approachable style.",
-          "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" }
-        },
-        {
-          "@type": "Review",
-          "author": { "@type": "Person", "name": "TMJ Patient" },
-          "reviewBody": "I had suffered from jaw joint clicking and morning jaw tightness for years. With Janne's OMT physical therapy and precise jaw exercises, the jaw tightness and pain were completely relieved in just three weeks.",
-          "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" }
-        },
-        {
-          "@type": "Review",
-          "author": { "@type": "Person", "name": "Dental Student / University of Oulu" },
-          "reviewBody": "An energetic, engaging lecturer! Fantastic presentation, extremely interesting and delivered with great humor. Kept everyone fully focused.",
-          "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" }
-        },
-        {
-          "@type": "Review",
-          "author": { "@type": "Person", "name": "Post-Op Back Pain Patient" },
-          "reviewBody": "I had suffered from post-operative back pain and feared I might end up in a cycle of surgeries. Thanks to Janne's thorough clinical examination and targeted movement instructions, my normal daily life and pain-free movement returned in a couple of months.",
-          "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" }
-        },
-        {
-          "@type": "Review",
-          "author": { "@type": "Person", "name": "Orofacial Therapy Workshop Attendee" },
-          "reviewBody": "A fresh, inspiring, and deep-dive experience! Clarified complex jaw mechanics and hands-on techniques. The 2-day format is outstanding.",
-          "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" }
-        },
-        {
-          "@type": "Review",
-          "author": { "@type": "Person", "name": "Chronic Back Pain Patient" },
-          "reviewBody": "I had suffered from chronic back pain for years and previous care only covered up symptoms. Janne's detailed evaluation identified the root cause, and with precise movement exercises, the back pain disappeared completely without medication.",
-          "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" }
-        },
-        {
-          "@type": "Review",
-          "author": { "@type": "Person", "name": "Dental Healthcare Personnel" },
-          "reviewBody": "The most engaging online lecture of the whole series! Practical, highly applicable clinical tools for daily practice. Keep up the great work!",
-          "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" }
-        },
-        {
-          "@type": "Review",
-          "author": { "@type": "Person", "name": "Occupational Health Client (Video Home Guides)" },
-          "reviewBody": "Often you just get a stack of paper exercise sheets from physical therapy that sit on a desk. Janne recorded exact rehabilitation exercise videos directly on my phone for me! A perfect way to ensure exercises are done correctly at home.",
-          "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" }
-        }
-      ]
     }
   ];
 
@@ -228,8 +109,13 @@ export default async function HomePage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
 
+      {/* Hero Section */}
       <Hero />
 
+      {/* 1. Single Product Landing Section ($29 USD Core Product per Blueprint) */}
+      <SingleProductLandingSection />
+
+      {/* 2. Free TMD & Neck Resources (YouTube Ecosystem Hub) */}
       <SymptomNavigator />
 
       <section className="py-12 bg-[#000d21] border-b border-[#0C66B4]/30">
@@ -267,9 +153,27 @@ export default async function HomePage() {
         </div>
       </section>
 
+      {/* 3. About @pt_sakkinen (Credibility, not CV) */}
       <AboutSection />
       <FeaturedMediaSection />
 
+      {/* 4. For Professionals Section: foxstudy.de External Course Card */}
+      <section className="py-16 bg-[#000d21] border-b border-[#0C66B4]/30">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
+          <div className="text-center max-w-2xl mx-auto space-y-2">
+            <div className="inline-flex items-center gap-2 text-amber-300 text-xs font-bold uppercase tracking-wider">
+              <GraduationCap className="w-4 h-4 text-amber-400" />
+              <span>For Healthcare Professionals</span>
+            </div>
+            <h2 className="text-2xl sm:text-3xl font-display text-white">
+              PROFESSIONAL <span className="text-amber-400">CMD TRAINING COURSE</span>
+            </h2>
+          </div>
+          <ExternalCourseCard />
+        </div>
+      </section>
+
+      {/* 5. Featured Clinical Videos */}
       <section className="py-16 bg-[#000a18] border-b border-[#0C66B4]/30">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-10">
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-6">
@@ -281,9 +185,6 @@ export default async function HomePage() {
               <h2 className="text-3xl sm:text-4xl font-display text-white tracking-wide">
                 POPULAR <span className="text-[#67e8f9]">REHABILITATION VIDEOS</span>
               </h2>
-              <p className="text-gray-300 text-sm max-w-xl">
-                Evidence-based self-care exercises for temporomandibular joint, masseter, and spinal health.
-              </p>
             </div>
             <Link
               href="/videos"
@@ -302,6 +203,7 @@ export default async function HomePage() {
         </div>
       </section>
 
+      {/* 6. Patient Testimonials & Booking */}
       <PatientTestimonialsSection />
 
       <section className="py-16 bg-[#000d21] border-b border-[#0C66B4]/30">

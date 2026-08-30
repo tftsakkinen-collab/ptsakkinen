@@ -3,20 +3,20 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
-import { Menu, X, Download, Globe, Sparkles } from "lucide-react";
+import { Menu, X, CreditCard, Globe, Sparkles, FolderDown } from "lucide-react";
 
 export default function Navbar() {
   const pathname = usePathname();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
+  const STRIPE_29_USD_URL = "https://buy.stripe.com/dRm14n2C8cM65lEeYl0Ny03";
+
   const navLinks = [
     { name: "Home", href: "/" },
-    { name: "About", href: "/about" },
+    { name: "Video Guide ($29)", href: "/#course" },
     { name: "Video Library", href: "/videos" },
-    { name: "Programs", href: "/programs" },
-    { name: "My Gear", href: "/gear" },
     { name: "Free Guides", href: "/free-guide" },
-    { name: "Workshops", href: "/workshops" },
+    { name: "About", href: "/about" },
     { name: "Contact", href: "/contact" },
   ];
 
@@ -24,7 +24,8 @@ export default function Navbar() {
     <header className="sticky top-0 z-50 bg-[#000814] border-b border-[#0C66B4] shadow-2xl transition-all duration-300">
       <div className="w-full max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20 gap-4">
-          {/* Brand Logo with Official Image */}
+          
+          {/* Brand Logo */}
           <Link href="/" className="flex items-center gap-3 shrink-0 group">
             <div className="relative w-11 h-11 rounded-full overflow-hidden border-2 border-[#00AEEF] bg-[#000a18] flex items-center justify-center shadow-[0_0_15px_rgba(0,174,239,0.8)] group-hover:scale-105 transition-transform p-0.5">
               <img
@@ -43,60 +44,69 @@ export default function Navbar() {
             </div>
           </Link>
 
-          {/* Desktop Nav - Evenly Spaced & Centered */}
-          <nav className="hidden lg:flex items-center justify-center flex-1 gap-4 xl:gap-6">
+          {/* Desktop Nav - Centered */}
+          <nav className="hidden lg:flex items-center justify-center flex-1 gap-3 xl:gap-5">
             {navLinks.map((link) => {
               const isActive = pathname === link.href;
-              const isHighlight = link.href === "/puristus-pois";
+              const isHighlight = link.name.includes("$29");
               return (
                 <Link
                   key={link.href}
                   href={link.href}
-                  className={`text-sm font-semibold transition-all whitespace-nowrap relative py-1.5 px-2 rounded-lg ${
+                  className={`text-sm font-semibold transition-all whitespace-nowrap py-1.5 px-3 rounded-lg ${
                     isHighlight
-                      ? "text-[#67e8f9] bg-[#014489] border border-[#00AEEF] hover:bg-[#014489]/90 font-bold"
+                      ? "text-[#67e8f9] bg-[#014489] border border-[#00AEEF] hover:bg-[#014489]/90 font-extrabold"
                       : isActive
                       ? "text-[#67e8f9] bg-white/10 font-bold"
                       : "text-slate-100 hover:text-[#67e8f9] hover:bg-white/5"
                   }`}
                 >
                   {link.name}
-                  {isActive && !isHighlight && (
-                    <span className="absolute bottom-0 left-0 w-full h-0.5 bg-[#00AEEF] shadow-[0_0_8px_#00AEEF]" />
-                  )}
                 </Link>
               );
             })}
           </nav>
 
-          {/* Desktop CTA & Language Switcher */}
+          {/* Desktop Persistent CTA Button (Blueprint NavGlobal Rule: "Get the course — $29") */}
           <div className="hidden lg:flex items-center gap-3 shrink-0">
             <a
               href="https://www.ftsakkinen.com"
               title="Suomeksi — ftsakkinen.com"
-              className="inline-flex items-center gap-1.5 px-3.5 py-2.5 min-h-[44px] rounded-lg border border-[#0C66B4]/60 bg-[#000d21] text-xs font-semibold text-gray-200 hover:text-white hover:border-[#00AEEF] hover:bg-[#0C66B4]/30 transition-all shadow-sm"
+              className="inline-flex items-center gap-1.5 px-3 py-2.5 min-h-[44px] rounded-lg border border-[#0C66B4]/60 bg-[#000d21] text-xs font-semibold text-gray-200 hover:text-white hover:border-[#00AEEF] transition-all shadow-sm"
             >
               <Globe className="w-4 h-4 text-[#67e8f9]" />
               <span className="text-slate-300 font-normal">EN /</span>
               <span>FI</span>
             </a>
-            <Link
-              href="/free-guide"
-              className="px-5 py-2.5 min-h-[48px] rounded-lg bg-[#00AEEF] text-black font-bold text-xs sm:text-sm hover:bg-[#33C2F5] transition-all shadow-glow flex items-center gap-2 whitespace-nowrap cursor-pointer"
+
+            <a
+              href={STRIPE_29_USD_URL}
+              className="px-5 py-2.5 min-h-[46px] rounded-xl bg-gradient-to-r from-[#00AEEF] to-[#38bdf8] text-[#000a18] font-extrabold text-xs sm:text-sm hover:from-white hover:to-slate-100 transition-all shadow-[0_0_20px_rgba(0,174,239,0.5)] flex items-center gap-2 whitespace-nowrap cursor-pointer"
             >
-              <Download className="w-4 h-4" />
-              <span>Get Free Guide</span>
-            </Link>
+              <CreditCard className="w-4 h-4 text-[#000a18]" />
+              <span>Get the course — $29</span>
+            </a>
           </div>
 
-          {/* Mobile Menu Button */}
-          <button
-            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            aria-label="Toggle navigation"
-            className="lg:hidden min-w-[44px] min-h-[44px] p-2.5 rounded-lg bg-[#0C66B4]/20 border border-[#0C66B4]/50 text-white hover:text-[#67e8f9] flex items-center justify-center cursor-pointer"
-          >
-            {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
-          </button>
+          {/* Mobile Menu Button + Persistent Header CTA */}
+          <div className="flex items-center gap-2 lg:hidden">
+            <a
+              href={STRIPE_29_USD_URL}
+              className="px-3.5 py-2 rounded-lg bg-gradient-to-r from-[#00AEEF] to-[#38bdf8] text-[#000a18] font-extrabold text-xs flex items-center gap-1 shrink-0"
+            >
+              <CreditCard className="w-3.5 h-3.5" />
+              <span>Get Course ($29)</span>
+            </a>
+
+            <button
+              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+              aria-label="Toggle navigation"
+              className="min-w-[44px] min-h-[44px] p-2 rounded-lg bg-[#0C66B4]/20 border border-[#0C66B4]/50 text-white hover:text-[#67e8f9] flex items-center justify-center cursor-pointer"
+            >
+              {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+            </button>
+          </div>
+
         </div>
       </div>
 
@@ -130,14 +140,13 @@ export default function Navbar() {
               <Globe className="w-4 h-4 text-[#67e8f9]" />
               Vaihda Suomeksi (ftsakkinen.com)
             </a>
-            <Link
-              href="/free-guide"
-              onClick={() => setMobileMenuOpen(false)}
-              className="w-full py-3 rounded-lg bg-[#00AEEF] text-black font-semibold text-center text-base hover:bg-[#33C2F5] transition-all shadow-glow flex items-center justify-center gap-2"
+            <a
+              href={STRIPE_29_USD_URL}
+              className="w-full py-3.5 rounded-xl bg-gradient-to-r from-[#00AEEF] to-[#38bdf8] text-[#000a18] font-extrabold text-center text-base hover:from-white hover:to-slate-100 transition-all shadow-glow flex items-center justify-center gap-2"
             >
-              <Download className="w-5 h-5" />
-              Get Free Guide
-            </Link>
+              <CreditCard className="w-5 h-5" />
+              Get the course — $29
+            </a>
           </div>
         </div>
       )}
