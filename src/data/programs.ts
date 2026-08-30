@@ -11,6 +11,22 @@ export interface Program {
 
 export const PROGRAMS: Program[] = [
   {
+    id: "tmj-stiff-jaw-guide-29",
+    name: "TMJ & Stiff Jaw Video Guide",
+    promiseDescription: "A comprehensive, practical 17-minute video guide and self-care protocol to manage jaw tension, stiffness, and TMJ discomfort.",
+    details: [
+      "TMJ anatomy, mechanics, and symptom classification",
+      "Articular (joint) vs. myogenic (muscle) issue differentiation",
+      "Jaw closer muscles: anatomy, palpation, and tension release",
+      "Targeted stretching and mobilization protocols",
+      "Long-term habits and essential self-care cues",
+    ],
+    pricePlaceholder: "$29",
+    checkoutUrl: "https://buy.stripe.com/dRm14n2C8cM65lEeYl0Ny03",
+    badge: "17-Min Video Guide",
+    isPlaceholder: false,
+  },
+  {
     id: "jaw-clenching-tmj-reset",
     name: "Jaw Clenching & TMJ Reset",
     promiseDescription: "Overcome chronic jaw tension, clicking, and teeth grinding with a structured clinical rehabilitation system.",
