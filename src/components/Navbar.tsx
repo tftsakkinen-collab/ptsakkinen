@@ -11,7 +11,6 @@ export default function Navbar() {
 
   const navLinks = [
     { name: "Home", href: "/" },
-    { name: "Puristus Pois Course ⚡", href: "/puristus-pois" },
     { name: "About", href: "/about" },
     { name: "Video Library", href: "/videos" },
     { name: "Programs", href: "/programs" },
