@@ -20,16 +20,34 @@ export async function POST(req: Request) {
     const appsScriptUrl = process.env.APPS_SCRIPT_LEAD_URL || DEFAULT_APPS_SCRIPT_URL;
 
     const payload = {
+      // General log text & notification
       tieto: `🔔 NEW LEAD JOINED SITE!\nName: ${name}\nEmail: ${email}\nLanguage: EN\nSource: ${
         source || "free-guide"
       }`,
+
+      // Standard English fields
       name,
       email,
+      lang: lang === "fi" ? "fi" : "en",
+      source: source || "free-guide",
+
+      // Finnish alias fields for Apps Script compatibility
+      etunimi: name,
+      nimi: name,
+      sahkoposti: email,
+      kieli: lang === "fi" ? "fi" : "en",
+      lahde: source || "free-guide",
+
+      // Sheet & Action specs
+      action: "addLead",
+      sheet: "Liidit",
+      tab: "Liidit",
+      sheetName: "Liidit",
+
+      // Email notification params
       recipient: "tiedottajanne@gmail.com",
       subject: `🔔 New Email Subscriber: ${name} (${email})`,
-      lang: lang === "fi" ? "fi" : "en",
       secret: process.env.LEAD_SHARED_SECRET || "sakkinen-lead-secret",
-      source: source || "free-guide",
       ua: req.headers.get("user-agent") || "",
     };
 
