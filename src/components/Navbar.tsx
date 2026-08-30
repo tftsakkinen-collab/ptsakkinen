@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
-import { Menu, X, Download, Globe } from "lucide-react";
+import { Menu, X, Download, Globe, Sparkles } from "lucide-react";
 
 export default function Navbar() {
   const pathname = usePathname();
@@ -11,6 +11,7 @@ export default function Navbar() {
 
   const navLinks = [
     { name: "Home", href: "/" },
+    { name: "Puristus Pois Course ⚡", href: "/puristus-pois" },
     { name: "About", href: "/about" },
     { name: "Video Library", href: "/videos" },
     { name: "Programs", href: "/programs" },
@@ -18,11 +19,10 @@ export default function Navbar() {
     { name: "Free Guides", href: "/free-guide" },
     { name: "Workshops", href: "/workshops" },
     { name: "Contact", href: "/contact" },
-    { name: "Legal", href: "/legal" },
   ];
 
   return (
-    <header className="sticky top-0 z-50 bg-[#000814] border-b border-[#0C66B4]/60 shadow-xl">
+    <header className="sticky top-0 z-50 bg-[#000814]/95 backdrop-blur-xl border-b border-[#0C66B4]/50 shadow-xl transition-all duration-300">
       <div className="w-full max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20 gap-4">
           {/* Brand Logo with Official Image */}
@@ -45,19 +45,24 @@ export default function Navbar() {
           </Link>
 
           {/* Desktop Nav - Evenly Spaced & Centered */}
-          <nav className="hidden lg:flex items-center justify-center flex-1 gap-6 xl:gap-8">
+          <nav className="hidden lg:flex items-center justify-center flex-1 gap-4 xl:gap-6">
             {navLinks.map((link) => {
               const isActive = pathname === link.href;
+              const isHighlight = link.href === "/puristus-pois";
               return (
                 <Link
                   key={link.href}
                   href={link.href}
-                  className={`text-sm font-semibold transition-colors hover:text-[#67e8f9] whitespace-nowrap relative py-1.5 ${
-                    isActive ? "text-[#67e8f9]" : "text-slate-200"
+                  className={`text-sm font-semibold transition-all whitespace-nowrap relative py-1.5 px-2 rounded-lg ${
+                    isHighlight
+                      ? "text-[#67e8f9] bg-[#014489]/40 border border-[#00AEEF]/50 hover:bg-[#014489]/70 font-bold"
+                      : isActive
+                      ? "text-[#67e8f9] bg-white/5 font-bold"
+                      : "text-slate-100 hover:text-[#67e8f9] hover:bg-white/5"
                   }`}
                 >
                   {link.name}
-                  {isActive && (
+                  {isActive && !isHighlight && (
                     <span className="absolute bottom-0 left-0 w-full h-0.5 bg-[#00AEEF] shadow-[0_0_8px_#00AEEF]" />
                   )}
                 </Link>
@@ -99,7 +104,7 @@ export default function Navbar() {
       {/* Mobile Drawer */}
       {mobileMenuOpen && (
         <div className="lg:hidden bg-[#000d21] border-b border-[#0C66B4]/40 px-4 pt-4 pb-6 space-y-4">
-          <nav className="flex flex-col space-y-3">
+          <nav className="flex flex-col space-y-2">
             {navLinks.map((link) => {
               const isActive = pathname === link.href;
               return (
@@ -107,10 +112,10 @@ export default function Navbar() {
                   key={link.href}
                   href={link.href}
                   onClick={() => setMobileMenuOpen(false)}
-                  className={`px-3 py-2 rounded-md text-base font-medium transition-colors ${
+                  className={`px-3 py-2.5 rounded-xl text-base font-semibold transition-colors ${
                     isActive
                       ? "bg-[#0C66B4]/30 text-[#67e8f9] border-l-4 border-[#00AEEF]"
-                      : "text-gray-300 hover:bg-[#0C66B4]/10 hover:text-white"
+                      : "text-slate-200 hover:bg-[#0C66B4]/10 hover:text-white"
                   }`}
                 >
                   {link.name}
