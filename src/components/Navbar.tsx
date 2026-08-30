@@ -38,7 +38,7 @@ export default function Navbar() {
               <span className="font-display text-xl sm:text-2xl tracking-wide text-white group-hover:text-[#67e8f9] transition-colors">
                 PT SAKKINEN<span className="text-[#67e8f9]">.</span>
               </span>
-              <span className="text-[10px] text-gray-400 uppercase tracking-widest -mt-1 font-sans">
+              <span className="text-[10px] text-slate-300 uppercase tracking-widest -mt-1 font-sans font-semibold">
                 OMT Physical Therapist
               </span>
             </div>
@@ -53,7 +53,7 @@ export default function Navbar() {
                   key={link.href}
                   href={link.href}
                   className={`text-sm font-semibold transition-colors hover:text-[#67e8f9] whitespace-nowrap relative py-1.5 ${
-                    isActive ? "text-[#67e8f9]" : "text-gray-200"
+                    isActive ? "text-[#67e8f9]" : "text-slate-200"
                   }`}
                 >
                   {link.name}
