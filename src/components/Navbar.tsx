@@ -22,7 +22,7 @@ export default function Navbar() {
   ];
 
   return (
-    <header className="sticky top-0 z-50 bg-[#000a18]/95 backdrop-blur-md border-b border-[#0C66B4]/40">
+    <header className="sticky top-0 z-50 bg-[#000814] border-b border-[#0C66B4]/60 shadow-xl">
       <div className="w-full max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20 gap-4">
           {/* Brand Logo with Official Image */}
